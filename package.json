@@ -4,7 +4,9 @@
   "description": "note",
   "main": "index.js",
   "scripts": {
-    "start": "gitbook build content docs"
+    "start": "gitbook serve content docs",
+    "build": "gitbook build content docs",
+    "push": "git add -A && git commit -m msg && git push"
   },
   "repository": {
     "type": "git",
