@@ -1,0 +1,20 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "note",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook build content docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loveagri/note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loveagri/note/issues"
+  },
+  "homepage": "https://github.com/loveagri/note#readme"
+}
