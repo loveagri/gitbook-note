@@ -1,6 +1,6 @@
 
 
-<center>Npm使用npm-check选择升级所有可更新包(全局+局部) + 项目单个依赖</center>
+<center><h1>Npm使用npm-check选择升级所有可更新包(全局+局部) + 项目单个依 </h1></center> 
 
 原文地址：[https://blog.csdn.net/pcaxb/article/details/81773475](https://blog.csdn.net/pcaxb/article/details/81773475)
 
@@ -68,8 +68,7 @@ npm update <name> --save-dev
 
 
 
-
---------------------- 
+---------------------
 
 
 
