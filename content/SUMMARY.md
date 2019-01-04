@@ -18,12 +18,12 @@
 
   - [px to rem](./sass/px-to-rem.md)
 
-* [WEBPACK]('./webpack/index.md')
+* [WEBPACK](./webpack/index.md)
 
   - [文件操作插件](./webpack/file-handle.md)
 
-* [GIT]('./git/index.md')
+* [GIT](./git/index.md)
 
-  - [git还原修改]('./git/git-reset-org.md')
+  - [git还原修改](./git/git-reset-org.md)
 
 
