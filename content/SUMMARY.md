@@ -24,12 +24,3 @@
 * [webpack](./webpack/README.md)
   * [file-handle](./webpack/file-handle.md)
 
-* [测试](./测试/README.md)
-  * [Untitled Folder](./测试/Untitled Folder/README.md)
-  * [Untitled Folder - 副本](./测试/Untitled Folder - 副本/README.md)
-    * [go](./测试/Untitled Folder - 副本/go.md)
-  * [Untitled Folder - 副本README](./测试/Untitled Folder - 副本README.md)
-  * [Untitled FolderREADME](./测试/Untitled FolderREADME.md)
-  * [index](./测试/index.md)
-  * [这是测试](./测试/这是测试.md)
-

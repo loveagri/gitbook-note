@@ -7,6 +7,7 @@
     "start": "git pull && gitbook serve content docs",
     "build": "gitbook build content docs",
     "push": "git pull && php php/pack.php && npm run build && git add -A && git commit -m msg && git push",
+    "test": "git pull && php php/pack.php && npm run build && git add -A && git commit -m msg && git push",
     "php": "php php/pack.php && npm run build",
     "t": "php php/pack.php"
   },
