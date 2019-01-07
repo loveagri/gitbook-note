@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>index · GitBook</title>
+        <title>file-handle · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="reg.html" />
+    <link rel="next" href="./" />
     
     
     <link rel="prev" href="./" />
@@ -154,9 +154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="./">
+        <li class="chapter " data-level="2.2" data-path="../js/">
             
-                <a href="./">
+                <a href="../js/">
             
                     
                     js
@@ -168,9 +168,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1" data-path="./">
+        <li class="chapter " data-level="2.2.1" data-path="../js/">
             
-                <a href="./">
+                <a href="../js/">
             
                     
                     index
@@ -181,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.2" data-path="reg.html">
+        <li class="chapter " data-level="2.2.2" data-path="../js/reg.html">
             
-                <a href="reg.html">
+                <a href="../js/reg.html">
             
                     
                     reg
@@ -392,9 +392,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="../webpack/">
+        <li class="chapter " data-level="2.7" data-path="./">
             
-                <a href="../webpack/">
+                <a href="./">
             
                     
                     webpack
@@ -406,9 +406,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.7.1" data-path="../webpack/file-handle.html">
+        <li class="chapter active" data-level="2.7.1" data-path="file-handle.html">
             
-                <a href="../webpack/file-handle.html">
+                <a href="file-handle.html">
             
                     
                     file-handle
@@ -419,9 +419,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7.2" data-path="../webpack/">
+        <li class="chapter " data-level="2.7.2" data-path="./">
             
-                <a href="../webpack/">
+                <a href="./">
             
                     
                     index
@@ -564,7 +564,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >index</a>
+        <a href=".." >file-handle</a>
     </h1>
 </div>
 
@@ -579,7 +579,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="js-index">js index</h1>
+                                <h1 id="webpack&#x5C06;&#x8D44;&#x6E90;&#x6253;&#x6210;zip&#x5305;"><a href="https://blog.csdn.net/XinZhongYi/article/details/80592599" target="_blank">webpack&#x5C06;&#x8D44;&#x6E90;&#x6253;&#x6210;zip&#x5305;</a></h1>
+<p>&#x8BE5;&#x63D2;&#x4EF6;&#x5141;&#x8BB8;&#x4F60;&#x590D;&#x5236;&#xFF0C;&#x6253;&#x5305;&#xFF0C;&#x79FB;&#x52A8;&#xFF0C;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x53CA;&#x6587;&#x4EF6;&#x5939;&#x5728;build&#x4E4B;&#x524D;&#x53CA;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#xFF1A;</p>
+<p>&#x200B;    npm install filemanager-webpack-plugin --save-dev</p>
+<p>&#x8D44;&#x6E90;&#x6253;zip&#x5305; Webpack.config.js&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> FileManagerPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;filemanager-webpack-plugin&apos;</span>);
+
+<span class="hljs-keyword">new</span> FileManagerPlugin({
+  onEnd: {
+    mkdir: [<span class="hljs-string">&apos;./zip&apos;</span>],
+    archive: [
+      { source: <span class="hljs-string">&apos;./dist&apos;</span>, destination: <span class="hljs-string">&apos;./zip/test.zip&apos;</span> },
+    ]
+  }
+})
+</code></pre>
+<p>&#x5176;&#x4ED6;&#x529F;&#x80FD;&#xFF08;&#x79FB;&#x52A8;&#xFF0C;&#x6253;&#x5305;&#xFF0C;&#x590D;&#x5236;&#xFF09;Webpack.config.js:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> FileManagerPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;filemanager-webpack-plugin&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+  ...
+  ...
+  plugins: [
+    <span class="hljs-keyword">new</span> FileManagerPlugin({
+      onEnd: {
+        copy: [
+          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/**/*.js&apos;</span>, destination: <span class="hljs-string">&apos;/path&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/tofile.txt&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/**/*.{html,js}&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/{file1,file2}.js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/file-[hash].js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> }
+        ],
+        move: [
+          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/tofile.txt&apos;</span> }
+        ],
+        <span class="hljs-keyword">delete</span>: [
+         <span class="hljs-string">&apos;/path/to/file.txt&apos;</span>,
+         <span class="hljs-string">&apos;/path/to/directory/&apos;</span>
+        ],
+        mkdir: [
+         <span class="hljs-string">&apos;/path/to/directory/&apos;</span>,
+         <span class="hljs-string">&apos;/another/directory/&apos;</span>
+        ],
+        archive: [
+          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/**/*.js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
+          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span>, format: <span class="hljs-string">&apos;tar&apos;</span> },
+          { 
+             source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, 
+             destination: <span class="hljs-string">&apos;/path/to.tar.gz&apos;</span>, 
+             format: <span class="hljs-string">&apos;tar&apos;</span>,
+             options: {
+               gzip: <span class="hljs-literal">true</span>,
+               gzipOptions: {
+                level: <span class="hljs-number">1</span>
+               }
+             }
+           }
+
+        ]
+      }
+    })
+  ],
+  ...
+}
+</code></pre>
 
                                 
                                 </section>
@@ -607,12 +675,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: js">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: webpack">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="reg.html" class="navigation navigation-next " aria-label="Next page: reg">
+                <a href="./" class="navigation navigation-next " aria-label="Next page: index">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -623,7 +691,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"index","level":"2.2.1","depth":2,"next":{"title":"reg","level":"2.2.2","depth":2,"path":"js/reg.md","ref":"./js/reg.md","articles":[]},"previous":{"title":"js","level":"2.2","depth":1,"path":"js/README.md","ref":"./js/README.md","articles":[{"title":"index","level":"2.2.1","depth":2,"path":"js/index.md","ref":"./js/index.md","articles":[]},{"title":"reg","level":"2.2.2","depth":2,"path":"js/reg.md","ref":"./js/reg.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"js/index.md","mtime":"2018-12-04T00:57:09.388Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-07T07:45:58.128Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"file-handle","level":"2.7.1","depth":2,"next":{"title":"index","level":"2.7.2","depth":2,"path":"webpack/index.md","ref":"./webpack/index.md","articles":[]},"previous":{"title":"webpack","level":"2.7","depth":1,"path":"webpack/README.md","ref":"./webpack/README.md","articles":[{"title":"file-handle","level":"2.7.1","depth":2,"path":"webpack/file-handle.md","ref":"./webpack/file-handle.md","articles":[]},{"title":"index","level":"2.7.2","depth":2,"path":"webpack/index.md","ref":"./webpack/index.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webpack/file-handle.md","mtime":"2019-01-04T06:19:28.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-07T07:45:58.128Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -16,7 +16,7 @@ function dumpFile($files,$contentPath,$tier){
     $filename = $pathinfo['filename'];
     $ext = $pathinfo['extension'];
 
-    if ($ext) {
+    if ($ext != 'md') {
         return;
     }
 
