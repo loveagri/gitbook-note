@@ -21,7 +21,7 @@
 * [GIT](./git/index.md)
   - [git还原修改](./git/git-reset-org.md)
 
-* [<p style="background: red">测试</p>](./测试/index.md)
+* [测试](./测试/index.md)
   * [这是测试](./测试/这是测试.md)
   
 

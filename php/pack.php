@@ -6,7 +6,39 @@ include ROOT . '/php/class/File.php';
 $File = new File();
 
 $dirs = $File->getOneDirs(ROOT . '/content/');
-var_dump($File->getAllDir(ROOT . '/content/'));
+$dirs = $File->getAllDir(ROOT . '/content/');
+var_dump($dirs);
+
+// foreach ($dirs as $k => $v) {
+//     if (!is_file($path . 'index.md')) {
+//         touch($path . 'index.md');
+//     }
+
+//     if (!is_file($path . 'RESDME.md')) {
+//         touch($path . 'index.md');
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // $dirArr = [];
 // $path = ROOT . '/content/';
