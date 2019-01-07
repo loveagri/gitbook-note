@@ -1,4 +1,9 @@
 <?php
 
+include './php/class/File.php';
 
-touch( '13434.txt');
+$File = new File();
+
+$dirs = $File->getOneDirs('./content/');
+
+var_dump($dirs);

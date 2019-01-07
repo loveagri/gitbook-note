@@ -259,6 +259,24 @@ class File
         return [];
     }
 
+    public function getAllDir($dir) {
+        $files = array();
+        if($handle = opendir($dir)) {
+            while(($file = readdir($handle)) !== false) {
+                if($file != ".." && $file != ".") {
+                    if(is_dir($dir."/".$file)) {
+                        $files[$file] = self::getAllDir($dir."/".$file);
+                    } else {
+                        $files[] = $file;
+                    }
+
+                }
+            }
+            closedir($handle);
+            return $files;
+        }
+    }
+
 
     protected function deleteDir($dir)
     {

@@ -7,7 +7,7 @@
     "start": "git pull && gitbook serve content docs",
     "build": "git pull && gitbook build content docs",
     "push": "npm run build && git add -A && git commit -m msg && git push",
-    "pt": "php 1.php"
+    "t": "php php/pack.php"
   },
   "repository": {
     "type": "git",
