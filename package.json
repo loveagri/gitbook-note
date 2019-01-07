@@ -6,7 +6,8 @@
   "scripts": {
     "start": "git pull && gitbook serve content docs",
     "build": "git pull && gitbook build content docs",
-    "push": "php 1.php && npm run build && git pull && git add -A && git commit -m msg && git push"
+    "push": "npm run build && git add -A && git commit -m msg && git push",
+    "pt": "php 1.php"
   },
   "repository": {
     "type": "git",
