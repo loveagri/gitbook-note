@@ -8,8 +8,8 @@
 * [js](./js/README.md)
 
 * [php](./php/README.md)
-  * [start-end](./php/start-end.md)
   * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
+  * [start-end](./php/start-end.md)
 
 * [webpack](./webpack/README.md)
   * [file-handle](./webpack/file-handle.md)
@@ -18,8 +18,8 @@
   * [px-to-rem](./sass/px-to-rem.md)
 
 * [npm](./npm/README.md)
-  * [npm-update](./npm/npm-update.md)
   * [install-npm-server](./npm/install-npm-server.md)
+  * [npm-update](./npm/npm-update.md)
 
 * [git](./git/README.md)
   * [git-reset-org](./git/git-reset-org.md)
