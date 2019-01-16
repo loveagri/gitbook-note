@@ -6,7 +6,7 @@
 
 ### 1、下载源码包 
 
-运行命令：  git clone --depth=1 git://github.com/phalcon/cphalcon.git
+运行命令：  git clone --depth=1 [git://github.com/phalcon/cphalcon.git](git://github.com/phalcon/cphalcon.git)
 
 进入目录 
 运行命令：  cd build
@@ -17,7 +17,7 @@
 
 安装过程可能中断，提示需要re2c
 然后去下载
-运行命令：  wget [](https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz)
+运行命令：  wget [https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz](https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz)
 解压，编译安装。
 
 然后重新再执行phalcon的
