@@ -1,5 +1,7 @@
 {
     "styles": {
         "website": "styles/website.css"
-    }
+    },
+	"title" : "Gitbook Use",
+	"description" : "记录Gitbook的配置和一些插件的使用"
 }
