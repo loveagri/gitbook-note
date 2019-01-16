@@ -20,8 +20,8 @@
   * [px-to-rem](./sass/px-to-rem.md)
 
 * [npm](./npm/README.md)
-  * [install-npm-server](./npm/install-npm-server.md)
   * [npm-update](./npm/npm-update.md)
+  * [install-npm-server](./npm/install-npm-server.md)
 
 * [git](./git/README.md)
   * [git-reset-org](./git/git-reset-org.md)
