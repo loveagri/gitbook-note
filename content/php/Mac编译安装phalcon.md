@@ -25,10 +25,13 @@
 
 编译完成之后，提示安装成功。
 
-### 2、修改php.ini 添加phalcon.so扩展
 
-运行命令： vi /usr/local/php/etc/php.ini
 
-添加内容： extension="phalcon.so"
-然后保存，重启php。
+### 3、测试是否安装成功
 
+web目录里新建 test.php
+<?php  
+var_dump(get_loaded_extensions());
+?>
+
+运行后看到有 phalcon扩展被加载， 即是安装phalcon框架成功。
