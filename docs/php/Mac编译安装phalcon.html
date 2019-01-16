@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>file-handle · GitBook</title>
+        <title>Mac编译安装phalcon · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../sass/" />
+    <link rel="next" href="未命名.html" />
     
     
     <link rel="prev" href="./" />
@@ -173,9 +173,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../php/">
+        <li class="chapter " data-level="2.3" data-path="./">
             
-                <a href="../php/">
+                <a href="./">
             
                     
                     php
@@ -187,9 +187,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../php/Mac编译安装phalcon.html">
+        <li class="chapter active" data-level="2.3.1" data-path="Mac编译安装phalcon.html">
             
-                <a href="../php/Mac编译安装phalcon.html">
+                <a href="Mac编译安装phalcon.html">
             
                     
                     Mac编译安装phalcon
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="../php/未命名.html">
+        <li class="chapter " data-level="2.3.2" data-path="未命名.html">
             
-                <a href="../php/未命名.html">
+                <a href="未命名.html">
             
                     
                     未命名
@@ -213,9 +213,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.3" data-path="../php/start-end.html">
+        <li class="chapter " data-level="2.3.3" data-path="start-end.html">
             
-                <a href="../php/start-end.html">
+                <a href="start-end.html">
             
                     
                     start-end
@@ -231,9 +231,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="./">
+        <li class="chapter " data-level="2.4" data-path="../webpack/">
             
-                <a href="./">
+                <a href="../webpack/">
             
                     
                     webpack
@@ -245,9 +245,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.4.1" data-path="file-handle.html">
+        <li class="chapter " data-level="2.4.1" data-path="../webpack/file-handle.html">
             
-                <a href="file-handle.html">
+                <a href="../webpack/file-handle.html">
             
                     
                     file-handle
@@ -402,7 +402,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >file-handle</a>
+        <a href=".." >Mac编译安装phalcon</a>
     </h1>
 </div>
 
@@ -417,75 +417,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="webpack&#x5C06;&#x8D44;&#x6E90;&#x6253;&#x6210;zip&#x5305;"><a href="https://blog.csdn.net/XinZhongYi/article/details/80592599" target="_blank">webpack&#x5C06;&#x8D44;&#x6E90;&#x6253;&#x6210;zip&#x5305;</a></h1>
-<p>&#x8BE5;&#x63D2;&#x4EF6;&#x5141;&#x8BB8;&#x4F60;&#x590D;&#x5236;&#xFF0C;&#x6253;&#x5305;&#xFF0C;&#x79FB;&#x52A8;&#xFF0C;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x53CA;&#x6587;&#x4EF6;&#x5939;&#x5728;build&#x4E4B;&#x524D;&#x53CA;&#x4E4B;&#x540E;&#x3002;</p>
-<p>&#x5B89;&#x88C5;&#xFF1A;</p>
-<p>&#x200B;    npm install filemanager-webpack-plugin --save-dev</p>
-<p>&#x8D44;&#x6E90;&#x6253;zip&#x5305; Webpack.config.js&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> FileManagerPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;filemanager-webpack-plugin&apos;</span>);
-
-<span class="hljs-keyword">new</span> FileManagerPlugin({
-  onEnd: {
-    mkdir: [<span class="hljs-string">&apos;./zip&apos;</span>],
-    archive: [
-      { source: <span class="hljs-string">&apos;./dist&apos;</span>, destination: <span class="hljs-string">&apos;./zip/test.zip&apos;</span> },
-    ]
-  }
-})
-</code></pre>
-<p>&#x5176;&#x4ED6;&#x529F;&#x80FD;&#xFF08;&#x79FB;&#x52A8;&#xFF0C;&#x6253;&#x5305;&#xFF0C;&#x590D;&#x5236;&#xFF09;Webpack.config.js:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> FileManagerPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;filemanager-webpack-plugin&apos;</span>);
-
-<span class="hljs-built_in">module</span>.exports = {
-  ...
-  ...
-  plugins: [
-    <span class="hljs-keyword">new</span> FileManagerPlugin({
-      onEnd: {
-        copy: [
-          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/**/*.js&apos;</span>, destination: <span class="hljs-string">&apos;/path&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/tofile.txt&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/**/*.{html,js}&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/{file1,file2}.js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/file-[hash].js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> }
-        ],
-        move: [
-          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/tofile.txt&apos;</span> }
-        ],
-        <span class="hljs-keyword">delete</span>: [
-         <span class="hljs-string">&apos;/path/to/file.txt&apos;</span>,
-         <span class="hljs-string">&apos;/path/to/directory/&apos;</span>
-        ],
-        mkdir: [
-         <span class="hljs-string">&apos;/path/to/directory/&apos;</span>,
-         <span class="hljs-string">&apos;/another/directory/&apos;</span>
-        ],
-        archive: [
-          { source: <span class="hljs-string">&apos;/path/from&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/**/*.js&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span> },
-          { source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, destination: <span class="hljs-string">&apos;/path/to.zip&apos;</span>, format: <span class="hljs-string">&apos;tar&apos;</span> },
-          { 
-             source: <span class="hljs-string">&apos;/path/fromfile.txt&apos;</span>, 
-             destination: <span class="hljs-string">&apos;/path/to.tar.gz&apos;</span>, 
-             format: <span class="hljs-string">&apos;tar&apos;</span>,
-             options: {
-               gzip: <span class="hljs-literal">true</span>,
-               gzipOptions: {
-                level: <span class="hljs-number">1</span>
-               }
-             }
-           }
-
-        ]
-      }
-    })
-  ],
-  ...
-}
-</code></pre>
+                                <p><a href="https://blog.csdn.net/u010474681/article/details/78441468" target="_blank">linux&#x4E0B;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;phalcon centos&#x4E0B;PHP7&#x6DFB;&#x52A0;phalcon&#x6269;&#x5C55;</a></p>
+<h2 id="linux&#x4E0B;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;phalcon">linux&#x4E0B;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;phalcon</h2>
+<h3 id="1&#x3001;&#x4E0B;&#x8F7D;&#x6E90;&#x7801;&#x5305;">1&#x3001;&#x4E0B;&#x8F7D;&#x6E90;&#x7801;&#x5305;</h3>
+<p>&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;  git clone --depth=1 git://github.com/phalcon/cphalcon.git</p>
+<p>&#x8FDB;&#x5165;&#x76EE;&#x5F55; 
+&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;  cd build</p>
+<p>&#x6267;&#x884C;&#x5B89;&#x88C5;&#x6587;&#x4EF6;  &#x63D0;&#x793A;&#x9700;&#x8981;&#x6307;&#x5B9A;PHP&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;  ./install --php-config /usr/local/php/bin/php-config --phpize /usr/local/php/bin/phpize</p>
+<p>&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x4E2D;&#x65AD;&#xFF0C;&#x63D0;&#x793A;&#x9700;&#x8981;re2c
+&#x7136;&#x540E;&#x53BB;&#x4E0B;&#x8F7D;
+&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;  wget <a href="https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz" target="_blank">https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz</a>
+&#x89E3;&#x538B;&#xFF0C;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x91CD;&#x65B0;&#x518D;&#x6267;&#x884C;phalcon&#x7684;
+&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;  ./install --php-config /usr/local/php/bin/php-config --phpize /usr/local/php/bin/phpize</p>
+<p>&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x63D0;&#x793A;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h3 id="2&#x3001;&#x4FEE;&#x6539;phpini-&#x6DFB;&#x52A0;phalconso&#x6269;&#x5C55;">2&#x3001;&#x4FEE;&#x6539;php.ini &#x6DFB;&#x52A0;phalcon.so&#x6269;&#x5C55;</h3>
+<p>&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A; vi /usr/local/php/etc/php.ini</p>
+<p><img src="../Users/intech/Library/Application Support/typora-user-images/image-20190116155126097.png" alt="image-20190116155126097"></p>
+<p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF1A; extension=&quot;phalcon.so&quot;
+&#x7136;&#x540E;&#x4FDD;&#x5B58;&#xFF0C;&#x91CD;&#x542F;php&#x3002;</p>
+<h3 id="3&#x3001;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;">3&#x3001;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h3>
+<p>web&#x76EE;&#x5F55;&#x91CC;&#x65B0;&#x5EFA; test.php
+&lt;?php<br>var_dump(get_loaded_extensions());
+?&gt;</p>
+<p><img src="../Users/intech/Library/Application Support/typora-user-images/image-20190116155209383.png" alt="image-20190116155209383"></p>
+<p>&#x8FD0;&#x884C;&#x540E;&#x770B;&#x5230;&#x6709; phalcon&#x6269;&#x5C55;&#x88AB;&#x52A0;&#x8F7D;&#xFF0C; &#x5373;&#x662F;&#x5B89;&#x88C5;phalcon&#x6846;&#x67B6;&#x6210;&#x529F;&#x3002;</p>
 
                                 
                                 </section>
@@ -513,12 +470,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: webpack">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: php">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../sass/" class="navigation navigation-next " aria-label="Next page: sass">
+                <a href="未命名.html" class="navigation navigation-next " aria-label="Next page: 未命名">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -529,7 +486,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"file-handle","level":"2.4.1","depth":2,"next":{"title":"sass","level":"2.5","depth":1,"path":"sass/README.md","ref":"./sass/README.md","articles":[{"title":"px-to-rem","level":"2.5.1","depth":2,"path":"sass/px-to-rem.md","ref":"./sass/px-to-rem.md","articles":[]}]},"previous":{"title":"webpack","level":"2.4","depth":1,"path":"webpack/README.md","ref":"./webpack/README.md","articles":[{"title":"file-handle","level":"2.4.1","depth":2,"path":"webpack/file-handle.md","ref":"./webpack/file-handle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webpack/file-handle.md","mtime":"2019-01-16T02:15:26.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-16T09:34:53.206Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mac编译安装phalcon","level":"2.3.1","depth":2,"next":{"title":"未命名","level":"2.3.2","depth":2,"path":"php/未命名.md","ref":"./php/未命名.md","articles":[]},"previous":{"title":"php","level":"2.3","depth":1,"path":"php/README.md","ref":"./php/README.md","articles":[{"title":"Mac编译安装phalcon","level":"2.3.1","depth":2,"path":"php/Mac编译安装phalcon.md","ref":"./php/Mac编译安装phalcon.md","articles":[]},{"title":"未命名","level":"2.3.2","depth":2,"path":"php/未命名.md","ref":"./php/未命名.md","articles":[]},{"title":"start-end","level":"2.3.3","depth":2,"path":"php/start-end.md","ref":"./php/start-end.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php/Mac编译安装phalcon.md","mtime":"2019-01-16T07:52:25.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-16T09:34:53.206Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
