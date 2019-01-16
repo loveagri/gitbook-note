@@ -6,12 +6,10 @@
   * [shortcut](./vim/shortcut.md)
 
 * [js](./js/README.md)
-  * [reg](./js/reg.md)
 
 * [php](./php/README.md)
-  * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
-  * [未命名](./php/未命名.md)
   * [start-end](./php/start-end.md)
+  * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
 
 * [webpack](./webpack/README.md)
   * [file-handle](./webpack/file-handle.md)
