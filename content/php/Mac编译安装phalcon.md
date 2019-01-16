@@ -25,3 +25,10 @@
 
 编译完成之后，提示安装成功。
 
+### 2、修改php.ini 添加phalcon.so扩展
+
+运行命令： vi /usr/local/php/etc/php.ini
+
+添加内容： extension="phalcon.so"
+然后保存，重启php。
+
