@@ -24,21 +24,3 @@
 
 可以使用 git reset --hard HEAD^ 来回退到上一次commit的状态。此命令可以用来回退到任意版本：git reset --hard  commitid 
 
-`commit cf0d692e982d8e372a07aaa6901c395eec73e356 (HEAD -> master)
-Author: toyflivver <2440659688@qq.com>
-Date:   Thu Sep 28 14:07:14 2017 +0800
-​    多余的空行
-commit 14aa4d7ad4ac6fba59b4b8261d32e478e8cc99ff
-Author: toyflivver <2440659688@qq.com>
-Date:   Thu Sep 28 14:06:44 2017 +0800
-​    正常的代码
-commit da3a95c84b6a92934ee30b6728e258bcda75f276
-Author: toyflivver <2440659688@qq.com>
-Date:   Thu Sep 28 13:58:12 2017 +0800
-​    qbf
-commit 267466352079296520320991a75321485224d6c6
-Author: toyflivver <2440659688@qq.com>
-Date:   Thu Sep 28 13:40:09 2017 +0800
-​    qbf`
-
-可以看出现在的状态在 commitid 为 cf0d692e982d8e372a07aaa6901c395eec73e356 的提交上（有 HEAD -> master 标记）。
