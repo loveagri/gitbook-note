@@ -3,5 +3,10 @@
         "website": "styles/mark.css"
     },
 	"title" : "Gitbook Use",
-	"description" : "记录Gitbook的配置和一些插件的使用"
+	"description" : "记录Gitbook的配置和一些插件的使用",
+	"links" : {
+    "sidebar" : {
+        "Home" : "http://dotohi.com"
+    }
+}
 }
