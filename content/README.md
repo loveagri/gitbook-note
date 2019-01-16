@@ -51,5 +51,4 @@ CLI version: 2.3.0
 
 
 
-![1](https://github.com/loveagri/note/blob/master/images/1.png)
-
+![1](https://github.com/loveagri/note/blob/master/images/1.png?raw=true)
