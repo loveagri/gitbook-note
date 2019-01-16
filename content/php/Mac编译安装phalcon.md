@@ -25,13 +25,3 @@
 
 编译完成之后，提示安装成功。
 
-
-
-### 3、测试是否安装成功
-
-web目录里新建 test.php
-<?php  
-var_dump(get_loaded_extensions());
-?>
-
-运行后看到有 phalcon扩展被加载， 即是安装phalcon框架成功。
