@@ -35,8 +35,6 @@
 
 运行命令： vi /usr/local/php/etc/php.ini
 
-[](https://img-blog.csdn.net/20171104094629300?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ3NDY4MQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-
 添加内容： extension="phalcon.so"
 然后保存，重启php。
 
@@ -50,7 +48,5 @@ web目录里新建 test.php
 <?php  
 var_dump(get_loaded_extensions());
 ?>
-
-[](https://img-blog.csdn.net/20171104094654936?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ3NDY4MQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 运行后看到有 phalcon扩展被加载， 即是安装phalcon框架成功。
