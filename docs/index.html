@@ -415,7 +415,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a href="">&#x4F7F;&#x7528;npm&#x6210;&#x529F;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x540E;,&#x6267;&#x884C;&#x65F6;&#x5374;&#x62A5;&#x627E;&#x4E0D;&#x5230;&#x547D;&#x4EE4;&#x7684;&#x95EE;&#x9898;</a></p>
+                                <p><a href="https://blog.csdn.net/wirelessqa/article/details/53393248" target="_blank">&#x4F7F;&#x7528;npm&#x6210;&#x529F;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x540E;,&#x6267;&#x884C;&#x65F6;&#x5374;&#x62A5;&#x627E;&#x4E0D;&#x5230;&#x547D;&#x4EE4;&#x7684;&#x95EE;&#x9898;</a></p>
+<pre><code class="lang-js"># &#x4F7F;&#x7528;npm&#x5B89;&#x88C5;newman&#x547D;&#x4EE4;
+~$ npm install newman --global
+...
+/root/node-v6.9.1-linux-x64/bin/newman -&gt; /root/node-v6.9.1-linux-x64/lib/node_modules/newman/bin/newman.js
+/root/node-v6.9.1-linux-x64/lib
+&#x2514;&#x2500;&#x2500; newman@3.3.0   # newman &#x5B89;&#x88C5;&#x6210;&#x529F;
+
+# &#x53EF;&#x662F;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4F1A;&#x62A5;&#x9519;
+~$ newman -v
+bash: newman: command not found...
+
+# &#x5B89;&#x88C5;&#x5176;&#x5B83;&#x547D;&#x4EE4;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#x6EF4;&#xFF5E;
+</code></pre>
+<h2 id="&#x5206;&#x6790;&#x539F;&#x56E0;&#xFF1A;"><strong>&#x5206;&#x6790;&#x539F;&#x56E0;&#xFF1A;</strong></h2>
+<p>&#x5B89;&#x88C5;&#x6210;&#x529F;&#x4E86;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x65F6;&#x786E;&#x627E;&#x4E0D;&#x5230;&#x547D;&#x4EE4;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x95EE;&#x9898;&#xFF0C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h2 id="&#x89E3;&#x51B3;&#x95EE;&#x9898;"><strong>&#x89E3;&#x51B3;&#x95EE;&#x9898;:</strong></h2>
+<pre><code class="lang-js"># &#x7528;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;
+~$ echo -e &quot;export PATH=$(npm prefix -g)/bin:$PATH&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
+
+# &#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#x4F7F;&#x7528; npm prefix -g &#x83B7;&#x53D6;node&#x5B89;&#x88C5;&#x76EE;&#x5F55;
+
+# &#x518D;&#x6267;&#x884C;&#x547D;&#x4EE4;
+~$ newman -v
+3.3.0
+</code></pre>
+<p>&#x518D;&#x5B89;&#x88C5;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x547D;&#x4EE4;&#x8BD5;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-js">~$ npm install gitbook-cli --global
+... &#x5B89;&#x88C5;&#x6210;&#x529F;
+
+# &#x76F4;&#x63A5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x3002;
+~$ gitbook -V
+CLI version: 2.3.0
+</code></pre>
 
                                 
                                 </section>
@@ -455,7 +488,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"vim","level":"2.1","depth":1,"path":"vim/README.md","ref":"./vim/README.md","articles":[{"title":"shortcut","level":"2.1.1","depth":2,"path":"vim/shortcut.md","ref":"./vim/shortcut.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-01-16T09:34:53.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-16T09:34:53.206Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"vim","level":"2.1","depth":1,"path":"vim/README.md","ref":"./vim/README.md","articles":[{"title":"shortcut","level":"2.1.1","depth":2,"path":"vim/shortcut.md","ref":"./vim/shortcut.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-01-16T09:36:37.994Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-16T09:36:42.577Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
