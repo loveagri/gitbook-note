@@ -6,8 +6,11 @@
 
 ### 1、下载源码包   
 
-运行命令：  git clone --depth=1 git://github.com/phalcon/cphalcon.git
+[phalcon包](https://github.com/phalcon/cphalcon/releases)
 
+git clone --depth=1 git://github.com/phalcon/cphalcon.git
+
+​			
 
 进入目录 
 运行命令：  cd build
@@ -18,10 +21,12 @@
 
 运行命令：  ./install --php-config /usr/local/php/bin/php-config --phpize /usr/local/php/bin/phpize
 
-
 安装过程可能中断，提示需要re2c
 然后去下载
 运行命令：  wget https://jaist.dl.sourceforge.net/project/re2c/old/re2c-0.13.4.tar.gz
+
+​			brew install automake #安装aclocal命令
+
 解压，编译安装。
 
 
