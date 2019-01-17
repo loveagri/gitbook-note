@@ -9,9 +9,9 @@
   * [reg](./js/reg.md)
 
 * [php](./php/README.md)
+  * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
   * [未命名](./php/未命名.md)
   * [php-fpm守护进程](./php/php-fpm守护进程.md)
-  * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
   * [start-end](./php/start-end.md)
 
 * [webpack](./webpack/README.md)
