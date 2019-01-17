@@ -49,5 +49,11 @@ bash: newman: command not found...
 CLI version: 2.3.0
 ```
 
+为Gitbook创造软连接
+
+```shell
+ln -s /usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js /usr/local/bin/gitbook
+```
+
 
 
