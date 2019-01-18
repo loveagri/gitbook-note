@@ -2,7 +2,7 @@
 
 错误如图：
 
-![image-20190118112127958](https://raw.githubusercontent.com/loveagri/note/master/images/image-20190118112127958.png)
+![image-20190118112127958](https://raw.githubusercontent.com/loveagri/note/master/u-img/image-20190118112127958.png)
 
 [解决方法](https://gitlab.com/gnachman/iterm2/issues/7088)
 
