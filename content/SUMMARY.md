@@ -8,6 +8,9 @@
 * [js](./js/README.md)
   * [reg](./js/reg.md)
 
+* [友情链接](./友情链接/README.md)
+  * [blog](./友情链接/blog.md)
+
 * [php](./php/README.md)
   * [php-fpm守护进程](./php/php-fpm守护进程.md)
   * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
