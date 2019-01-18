@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce1eb2b9-fcd4-4e3e-a8f9-66fd476c9dc3" name="Default Changelist" comment="" />
+    <list default="true" id="ce1eb2b9-fcd4-4e3e-a8f9-66fd476c9dc3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/image-20190118112127958.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/屏幕快照 2019-01-17 下午2.17.52.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,16 +86,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547782637216</updated>
-      <workItem from="1547782638438" duration="301000" />
+      <workItem from="1547782638438" duration="799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301000" />
+    <option name="totallyTimeSpent" value="799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="254" y="166" width="2059" height="1179" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24987605" />

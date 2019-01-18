@@ -1,4 +1,4 @@
-图片引用路径：https://raw.githubusercontent.com/loveagri/note/master/images/
+图片引用路径：https://raw.githubusercontent.com/loveagri/note/master/ud-img
 
 [使用npm成功安装命令后,执行时却报找不到命令的问题](https://blog.csdn.net/wirelessqa/article/details/53393248)
 
@@ -38,4 +38,6 @@ ln -s /usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js 
 ```
 
 
+
+[文件](https://raw.githubusercontent.com/loveagri/note/master/ud-code/pack.php)
 
