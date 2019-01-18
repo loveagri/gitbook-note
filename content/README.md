@@ -1,24 +1,6 @@
+图片引用路径：https://raw.githubusercontent.com/loveagri/note/master/images/
+
 [使用npm成功安装命令后,执行时却报找不到命令的问题](https://blog.csdn.net/wirelessqa/article/details/53393248)
-
-
-
-```js
-# 使用npm安装newman命令
-~$ npm install newman --global
-...
-/root/node-v6.9.1-linux-x64/bin/newman -> /root/node-v6.9.1-linux-x64/lib/node_modules/newman/bin/newman.js
-/root/node-v6.9.1-linux-x64/lib
-└── newman@3.3.0   # newman 安装成功
-
-# 可是执行命令会报错
-~$ newman -v
-bash: newman: command not found...
-
-# 安装其它命令也是一样滴～
-
-```
-
-
 
 ## **分析原因：**
 
@@ -33,8 +15,8 @@ bash: newman: command not found...
 # 上面的命令中使用 npm prefix -g 获取node安装目录
 
 # 再执行命令
-~$ newman -v
-3.3.0
+~$ gitbook -V
+2.3.0
 
 ```
 
