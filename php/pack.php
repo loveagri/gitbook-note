@@ -31,7 +31,7 @@ function rootDir($path,$contentPath = './',$tier = 0){
     $dirs = $File->getOneDirs($path);
     $files = $File->getOneFiles($path);
 
-    if (!is_file($path . 'README.md.md')) {
+    if (!is_file($path . 'README.md')) {
         touch($path . 'README.md');
     }
 
