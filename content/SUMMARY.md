@@ -20,6 +20,7 @@
   * [file-handle](./webpack/file-handle.md)
 
 * [Nginx](./Nginx/README.md)
+  * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
   * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
 
 * [mobile](./mobile/README.md)

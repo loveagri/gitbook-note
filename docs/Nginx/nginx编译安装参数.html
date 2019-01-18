@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>vim · GitBook</title>
+        <title>nginx编译安装参数 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="shortcut.html" />
+    <link rel="next" href="Mac开机自启动NGINX.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -109,9 +109,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="./">
+        <li class="chapter " data-level="2.1" data-path="../vim/">
             
-                <a href="./">
+                <a href="../vim/">
             
                     
                     vim
@@ -123,9 +123,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="shortcut.html">
+        <li class="chapter " data-level="2.1.1" data-path="../vim/shortcut.html">
             
-                <a href="shortcut.html">
+                <a href="../vim/shortcut.html">
             
                     
                     shortcut
@@ -295,9 +295,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../Nginx/">
+        <li class="chapter " data-level="2.6" data-path="./">
             
-                <a href="../Nginx/">
+                <a href="./">
             
                     
                     Nginx
@@ -309,9 +309,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.6.1" data-path="../Nginx/nginx编译安装参数.html">
+        <li class="chapter active" data-level="2.6.1" data-path="nginx编译安装参数.html">
             
-                <a href="../Nginx/nginx编译安装参数.html">
+                <a href="nginx编译安装参数.html">
             
                     
                     nginx编译安装参数
@@ -322,9 +322,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6.2" data-path="../Nginx/Mac开机自启动NGINX.html">
+        <li class="chapter " data-level="2.6.2" data-path="Mac开机自启动NGINX.html">
             
-                <a href="../Nginx/Mac开机自启动NGINX.html">
+                <a href="Mac开机自启动NGINX.html">
             
                     
                     Mac开机自启动NGINX
@@ -543,7 +543,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >vim</a>
+        <a href=".." >nginx编译安装参数</a>
     </h1>
 </div>
 
@@ -558,7 +558,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="nginx&#x7F16;&#x8BD1;&#x5B89;&#x88C5;">NGINX&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</h1>
+<p>--prefix=/usr/local/Cellar/nginx/1.15.8 --sbin-path=/usr/local/Cellar/nginx/1.15.8/bin/nginx --with-cc-opt=&apos;-I/usr/local/opt/pcre/include -I/usr/local/opt/openssl/include&apos; --with-ld-opt=&apos;-L/usr/local/opt/pcre/lib -L/usr/local/opt/openssl/lib&apos; --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-debug --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-ipv6 --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module</p>
+<blockquote>
+<p>&#x6765;brew install nginx&#x7684;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x914D;&#x7F6E;</p>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -585,12 +590,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Nginx">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="shortcut.html" class="navigation navigation-next " aria-label="Next page: shortcut">
+                <a href="Mac开机自启动NGINX.html" class="navigation navigation-next " aria-label="Next page: Mac开机自启动NGINX">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -601,7 +606,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vim","level":"2.1","depth":1,"next":{"title":"shortcut","level":"2.1.1","depth":2,"path":"vim/shortcut.md","ref":"./vim/shortcut.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vim/README.md","mtime":"2019-01-18T09:03:32.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-18T09:03:33.299Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"nginx编译安装参数","level":"2.6.1","depth":2,"next":{"title":"Mac开机自启动NGINX","level":"2.6.2","depth":2,"path":"Nginx/Mac开机自启动NGINX.md","ref":"./Nginx/Mac开机自启动NGINX.md","articles":[]},"previous":{"title":"Nginx","level":"2.6","depth":1,"path":"Nginx/README.md","ref":"./Nginx/README.md","articles":[{"title":"nginx编译安装参数","level":"2.6.1","depth":2,"path":"Nginx/nginx编译安装参数.md","ref":"./Nginx/nginx编译安装参数.md","articles":[]},{"title":"Mac开机自启动NGINX","level":"2.6.2","depth":2,"path":"Nginx/Mac开机自启动NGINX.md","ref":"./Nginx/Mac开机自启动NGINX.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Nginx/nginx编译安装参数.md","mtime":"2019-01-18T09:03:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-18T09:03:33.299Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
