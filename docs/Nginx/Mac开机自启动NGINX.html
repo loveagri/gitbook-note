@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>mobile · GitBook</title>
+        <title>Mac开机自启动NGINX · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="打包工程.html" />
+    <link rel="next" href="../mobile/" />
     
     
-    <link rel="prev" href="../Nginx/Mac开机自启动NGINX.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -263,9 +263,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="../Nginx/">
+        <li class="chapter " data-level="2.5" data-path="./">
             
-                <a href="../Nginx/">
+                <a href="./">
             
                     
                     Nginx
@@ -277,9 +277,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.5.1" data-path="../Nginx/Mac开机自启动NGINX.html">
+        <li class="chapter active" data-level="2.5.1" data-path="Mac开机自启动NGINX.html">
             
-                <a href="../Nginx/Mac开机自启动NGINX.html">
+                <a href="Mac开机自启动NGINX.html">
             
                     
                     Mac开机自启动NGINX
@@ -295,9 +295,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.6" data-path="./">
+        <li class="chapter " data-level="2.6" data-path="../mobile/">
             
-                <a href="./">
+                <a href="../mobile/">
             
                     
                     mobile
@@ -309,9 +309,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.6.1" data-path="打包工程.html">
+        <li class="chapter " data-level="2.6.1" data-path="../mobile/打包工程.html">
             
-                <a href="打包工程.html">
+                <a href="../mobile/打包工程.html">
             
                     
                     打包工程
@@ -498,7 +498,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >mobile</a>
+        <a href=".." >Mac开机自启动NGINX</a>
     </h1>
 </div>
 
@@ -513,7 +513,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <center><h1 id="mac&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;nginx&#x548C;php">Mac&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;NGINX&#x548C;PHP</h1></center>
+
+<p><a href="https://cn.aliyun.com/jiaocheng/696856.html" target="_blank">Mac&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;NGINX&#x548C;PHP</a></p>
+<ol>
+<li>&#x5F00;&#x673A;&#x542F;&#x52A8;nginx:</li>
+</ol>
+<p>&#x5728; /Library/LaunchDaemons/ &#x76EE;&#x5F55;&#x65B0;&#x5EFA; org.macports.nginx.plist &#x6587;&#x4EF6;:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//ENhttp://www.apple.com/DTDs/PropertyList-1.0.dtd &gt;&lt;plist version=&quot;1.0&quot;&gt;&lt;dict&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;org.macports.nginx&lt;/string&gt; &lt;key&gt;ProgramArguments&lt;/key&gt; &lt;array&gt; &lt;string&gt;/usr/local/bin/nginx&lt;/string&gt; &lt;/array&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt;&lt;/dict&gt;&lt;/plist&gt;
+</code></pre><p>&#x52A0;&#x8F7D;&#x914D;&#x7F6E;:launchctl load -w /Library/LaunchDaemons/org.macports.nginx.plist</p>
+<ol>
+<li>&#x5F00;&#x673A;&#x542F;&#x52A8;php:</li>
+</ol>
+<p>&#x5728; /Library/LaunchDaemons/ &#x76EE;&#x5F55;&#x65B0;&#x5EFA; org.php.php-fpm.plist &#x6587;&#x4EF6;:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//ENhttp://www.apple.com/DTDs/PropertyList-1.0.dtd &gt;&lt;plist version=&quot;1.0&quot;&gt;&lt;dict&gt; &lt;key&gt;Label&lt;/key&gt; &lt;string&gt;org.php.php-fpm&lt;/string&gt; &lt;key&gt;ProgramArguments&lt;/key&gt; &lt;array&gt; &lt;string&gt;/usr/sbin/php-fpm&lt;/string&gt; &lt;/array&gt; &lt;key&gt;KeepAlive&lt;/key&gt; &lt;true/&gt;&lt;/dict&gt;&lt;/plist&gt;
+</code></pre><p>&#x52A0;&#x8F7D;&#x914D;&#x7F6E;:launchctl load -w /Library/LaunchDaemons/org.php.php-fpm.plist</p>
+<p>Reference: launchd.plist-- System wide and per-user daemon/agent configuration files</p>
+
                                 
                                 </section>
                             
@@ -540,12 +556,12 @@
 
             
                 
-                <a href="../Nginx/Mac开机自启动NGINX.html" class="navigation navigation-prev " aria-label="Previous page: Mac开机自启动NGINX">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Nginx">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="打包工程.html" class="navigation navigation-next " aria-label="Next page: 打包工程">
+                <a href="../mobile/" class="navigation navigation-next " aria-label="Next page: mobile">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -556,7 +572,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mobile","level":"2.6","depth":1,"next":{"title":"打包工程","level":"2.6.1","depth":2,"path":"mobile/打包工程.md","ref":"./mobile/打包工程.md","articles":[]},"previous":{"title":"Mac开机自启动NGINX","level":"2.5.1","depth":2,"path":"Nginx/Mac开机自启动NGINX.md","ref":"./Nginx/Mac开机自启动NGINX.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mobile/README.md","mtime":"2019-01-18T08:23:18.379Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-18T08:23:20.073Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mac开机自启动NGINX","level":"2.5.1","depth":2,"next":{"title":"mobile","level":"2.6","depth":1,"path":"mobile/README.md","ref":"./mobile/README.md","articles":[{"title":"打包工程","level":"2.6.1","depth":2,"path":"mobile/打包工程.md","ref":"./mobile/打包工程.md","articles":[]}]},"previous":{"title":"Nginx","level":"2.5","depth":1,"path":"Nginx/README.md","ref":"./Nginx/README.md","articles":[{"title":"Mac开机自启动NGINX","level":"2.5.1","depth":2,"path":"Nginx/Mac开机自启动NGINX.md","ref":"./Nginx/Mac开机自启动NGINX.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Nginx/Mac开机自启动NGINX.md","mtime":"2019-01-18T08:13:18.747Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-18T08:23:20.073Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

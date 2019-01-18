@@ -1,8 +1,4 @@
-图片引用路径：https://raw.githubusercontent.com/loveagri/note/master/ud-img
-
-[使用npm成功安装命令后,执行时却报找不到命令的问题](https://blog.csdn.net/wirelessqa/article/details/53393248)
-
-## **分析原因：**
+## 
 
 安装成功了，但使用直接使用时确找不到命令，应该是环境变量问题，设置环境变量就可以了。
 
@@ -40,4 +36,6 @@ ln -s /usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js 
 
 
 [文件](https://raw.githubusercontent.com/loveagri/note/master/ud-code/pack.php)
+
+
 
