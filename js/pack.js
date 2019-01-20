@@ -84,7 +84,7 @@ for (let i = 0; i < $dirs.length; i++) {
 
     $value = $dirs[i];
 
-    if (['node_modules'].indexOf($value) >= 0) {
+    if (['node_modules','styles'].indexOf($value) >= 0) {
         continue;
     }
 
