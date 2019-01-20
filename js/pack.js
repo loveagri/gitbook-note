@@ -40,7 +40,7 @@ let dumpFile = ($files, $contentPath, $tier) => {
         return;
     }
 
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "### [" + $filename + "](" + $contentPath + $files + ")\n");
+    fs.appendFileSync(SUMMARY, "### [" + $filename + "](" + $contentPath + $files + ")\n");
 };
 
 
