@@ -5,17 +5,15 @@ let path = require('path');
 const ROOT = path.dirname(__dirname);
 const SUMMARY = ROOT + '/content/SUMMARY.md';
 
-
 fs.writeFileSync(SUMMARY, "# Summary\n\n * [loveagri](README.md)\n\n");
 
-$path = ROOT + '/content/';
-
+let $path = ROOT + '/content/';
 
 let dirAndFile = (filePath, type = 0) => {
+    let files = fs.readdirSync(filePath);
+    let dirArrs = [];
+    let fileArrs = [];
     try {
-        let files = fs.readdirSync(filePath);
-        let dirArrs = [];
-        let fileArrs = [];
         if (files && files.length) {
             let fsStats;
             for (let i = 0; i < files.length; i++) {

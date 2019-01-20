@@ -4,13 +4,11 @@
   "description": "note",
   "main": "index.js",
   "scripts": {
-    "start": "git pull && gitbook serve content docs",
+    "server": "git pull && gitbook serve content docs",
     "build": "gitbook build content docs",
-    "push": "php php/pack.php && npm run build && git add -A && git commit -m msg && git push",
-    "jp": "node js/pack.js && npm run build && git add -A && git commit -m msg && git push",
-    "test": "php php/pack.php && npm run build && git add -A && git commit -m msg && git push",
-    "php": "php php/pack.php && npm run build",
-    "t": "php php/pack.php"
+    "push": "node js/pack.js && npm run build && git add -A && git commit -m msg && git push",
+    "start": "npm run push",
+    "test": "npm run push"
   },
   "repository": {
     "type": "git",

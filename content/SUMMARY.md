@@ -38,4 +38,5 @@
 
 * [友情链接](./友情链接/README.md)
     * [blog](./友情链接/blog.md)
+    * [test](./友情链接/test.md)
 
