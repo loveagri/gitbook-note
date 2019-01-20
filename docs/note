@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 20 Jan 2019 14:27:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Jan 2019 14:28:22 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -15,6 +15,19 @@
             <description><![CDATA[每天记录一点点]]></description>
             <link>https://loveagri.github.io/note/</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Linux/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[错误如图：]]></description>
+            <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
