@@ -6,11 +6,7 @@
 
 ## 前置准备
 
-1. 安装PHP环境
-
-   安装PHP7以上环境，根据各个系统去安装
-
-2. 安装gitbook：
+1. 安装gitbook：
 
 ```js
 ~$ npm install gitbook-cli --global
@@ -21,7 +17,7 @@
 CLI version: 2.3.0
 ```
 
-3. 为Gitbook创造软连接
+2. 为Gitbook创造软连接
 
 ```shell
 ln -s /usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js /usr/local/bin/gitbook
