@@ -81,23 +81,13 @@
             "edit": true
         },
         "sharing": {
-            "douban": true,
             "facebook": true,
             "google": true,
-            "hatenaBookmark": true,
-            "instapaper": true,
-            "line": true,
-            "linkedin": true,
             "messenger": true,
-            "pocket": true,
             "qq": true,
             "qzone": true,
-            "stumbleupon": true,
             "twitter": true,
-            "viber": true,
-            "vk": true,
             "weibo": true,
-            "whatsapp": true,
             "all": [
                 "facebook",
                 "google",
