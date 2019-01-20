@@ -1,7 +1,7 @@
 {
-  "title": "GitBook 使用教程",
-  "description": "记录 GitBook 的配置和一些插件的使用",
-  "author": "zhangjikai",
+  "title": "个人笔记",
+  "description": "记录每天的点点滴滴",
+  "author": "loveagri",
   "output.name": "site",
   "language": "zh-hans",
   "gitbook": "3.2.3",
@@ -11,7 +11,7 @@
   },
   "links": {
     "sidebar": {
-      "Home": "http://www.zhangjikai.com"
+      "Home": "https://github.com/loveagri/note"
     }
   },
   "plugins": [
@@ -106,7 +106,7 @@
       ]
     },
     "tbfed-pagefooter": {
-      "copyright": "Copyright © zhangjikai.com 2017",
+      "copyright": "Copyright © dotohi.com 2017",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
@@ -154,10 +154,10 @@
       "title": "个人笔记",
       "description": "记录每天的点点滴滴",
       "author": "loveagri",
-      "feed_url": "http://gitbook.zhangjikai.com/rss",
-      "site_url": "http://gitbook.zhangjikai.com/",
+      "feed_url": "https://loveagri.github.io/note/",
+      "site_url": "https://loveagri.github.io/note/",
       "managingEditor": "me@zhangjikai.com",
-      "webMaster": "me@zhangjikai.com",
+      "webMaster": "1044531744@qq.com",
       "categories": [
         "gitbook"
       ]
