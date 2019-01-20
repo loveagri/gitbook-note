@@ -112,10 +112,10 @@
         "donate": {
             "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
             "alipay": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpeg",
-            "title": "科对对对",
-            "button": "加好友",
+            "title": "",
+            "button": "成为好基友",
             "alipayText": "支付宝打赏",
-            "wechatText": "微信好友"
+            "wechatText": "+微信好友"
         },
         "simple-page-toc": {
             "maxDepth": 3,
