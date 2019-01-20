@@ -112,8 +112,8 @@
         "donate": {
             "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
             "title": "",
-            "button": "成为好基友，共同来刨坑",
-            "wechatText": "+微信好友"
+            "button": "+基友",
+            "wechatText": "+微信"
         },
         "simple-page-toc": {
             "maxDepth": 3,
