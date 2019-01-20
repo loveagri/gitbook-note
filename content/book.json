@@ -1,3 +1,11 @@
 {
-  "title" : "fergson Use"
+  "gitbook" : ">=3.2.3",
+  "title" : "fergson Use",
+  "author" : "loveagri",
+  "description" : "记录日常工作中点滴",
+  "links" : {
+    "sidebar" : {
+      "Home" : "http://zhangjikai.com"
+    }
+  }
 }
