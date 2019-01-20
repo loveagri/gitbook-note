@@ -64,7 +64,7 @@
       "showLevel": true
     },
     "disqus": {
-      "shortName": "gitbookuse"
+      "shortName": "loveagri"
     },
     "github": {
       "url": "https://github.com/loveagri/note"
@@ -83,22 +83,22 @@
     },
     "sharing": {
       "douban": true,
-      "facebook": false,
+      "facebook": true,
       "google": true,
-      "hatenaBookmark": false,
-      "instapaper": false,
-      "line": false,
+      "hatenaBookmark": true,
+      "instapaper": true,
+      "line": true,
       "linkedin": true,
-      "messenger": false,
-      "pocket": false,
+      "messenger": true,
+      "pocket": true,
       "qq": true,
       "qzone": true,
-      "stumbleupon": false,
-      "twitter": false,
-      "viber": false,
-      "vk": false,
+      "stumbleupon": true,
+      "twitter": true,
+      "viber": true,
+      "vk": true,
       "weibo": true,
-      "whatsapp": false,
+      "whatsapp": true,
       "all": [
         "facebook", "google", "twitter",
         "weibo", "instapaper", "linkedin",
