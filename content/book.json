@@ -120,7 +120,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/loveagri/note",
+            "base": "https://github.com/loveagri/note/blob/master",
             "label": "Edit This Page"
         },
         "sitemap-general": {
