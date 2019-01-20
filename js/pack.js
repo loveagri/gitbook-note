@@ -71,7 +71,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0) => {
         let $file;
         for (let z = 0; z < $files.length; z++) {
             $file = $files[z];
-            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico'].indexOf($file) >= 0) {
+            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico','book.json'].indexOf($file) >= 0) {
                 continue;
             }
             dumpFile($file, $contentPath, $tier + 2);
@@ -90,7 +90,7 @@ for (let i = 0; i < $dirs.length; i++) {
 
     rootDir($path + $value + '/', './' + $value + '/', 0);
 
-    fs.appendFileSync(SUMMARY, "\n");
+    fs.appendFileSync(SUMMARY, "---\n");
 }
 
 

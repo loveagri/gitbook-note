@@ -35,5 +35,7 @@ npm start
 
 [更多关于Gitbook](http://gitbook.zhangjikai.com/)
 
+[插件文档](http://gitbook.zhangjikai.com/plugins.html)
+
 
 
