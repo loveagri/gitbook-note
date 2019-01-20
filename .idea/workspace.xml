@@ -2,7 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91259d43-8b6f-4970-8a96-d35263001fd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/GLOSSARY.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Linux/Mac-item2-crontab无法写入.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Linux/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Nginx/Mac开机自启动NGINX.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Nginx/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Nginx/nginx编译安装参数.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/git/git-reset-org.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/git/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mobile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mobile/打包工程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/npm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/npm/install-npm-server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/npm/npm-update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/php/Mac编译安装phalcon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/php/image-20190116224747035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/php/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/php/php-fpm守护进程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/php/start-end.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sass/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sass/px-to-rem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/search_index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/vim/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/vim/shortcut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/webpack/file-handle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/webpack/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/友情链接/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/友情链接/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/友情链接/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pack.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +69,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="js" value="4" />
-          <entry key="json" value="2" />
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="5" />
+          <entry key="json" value="3" />
           <entry key="md" value="8" />
           <entry key="php" value="3" />
           <entry key="png" value="1" />
@@ -36,17 +80,17 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="8" />
           <entry key="PHP" value="3" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="16" />
-          <entry key="js" value="1158" />
+          <entry key="gitignore" value="28" />
+          <entry key="js" value="1173" />
           <entry key="json" value="246" />
           <entry key="md" value="169" />
         </counts>
@@ -54,20 +98,43 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="246" />
-          <entry key="JavaScript" value="1158" />
+          <entry key="JavaScript" value="1173" />
           <entry key="Markdown" value="169" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/pack.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/book.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="157" column="6" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="6" />
+            <state relative-caret-position="134">
+              <caret line="64" column="15" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/book.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -138,6 +205,7 @@
     <findStrings>
       <find>Expandable-chapters-small</find>
       <find>content</find>
+      <find>disqus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,9 +219,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/content/book.json" />
-        <option value="$PROJECT_DIR$/js/pack.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/book.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/pack.js" />
       </list>
     </option>
   </component>
@@ -210,6 +278,16 @@
               <item name="Note" type="b2602c69:ProjectViewProjectNode" />
               <item name="Note" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Note" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Note" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,6 +305,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -273,10 +354,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15350000" />
+    <option name="totallyTimeSpent" value="16460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25824177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -293,7 +375,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34285715" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5132653" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -376,22 +458,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/book.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/pack.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+        <state relative-caret-position="291">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="157" column="6" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="6" />
+        <state relative-caret-position="134">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -84,6 +84,10 @@ for (let i = 0; i < $dirs.length; i++) {
 
     $value = $dirs[i];
 
+    if (['node_modules'].indexOf($value) >= 0) {
+        continue;
+    }
+
     rootDir($path + $value + '/', './' + $value + '/', 0);
 
     fs.appendFileSync(SUMMARY, "\n");
