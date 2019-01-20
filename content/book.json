@@ -44,7 +44,6 @@
         "anchor-navigation-ex@0.1.8",
         "favicon@^0.0.2",
         "todo@^0.1.3",
-        "3-ba@^0.9.0",
         "terminal@^0.3.2",
         "alerts@^0.2.0",
         "include-csv@^0.1.0",
@@ -105,9 +104,6 @@
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "3-ba": {
-            "token": "ff100361cdce95dd4c8fb96b4009f7bc"
-        },
         "donate": {
             "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
             "title": "",
@@ -119,7 +115,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/loveagri/note/blob/master",
+            "base": "https://github.com/loveagri/note/blob/master/content",
             "label": "Edit This Page"
         },
         "sitemap-general": {
