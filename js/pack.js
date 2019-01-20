@@ -5,7 +5,7 @@ let path = require('path');
 const ROOT = path.dirname(__dirname);
 const SUMMARY = ROOT + '/content/SUMMARY.md';
 
-fs.writeFileSync(SUMMARY, "# Summary\n\n * [loveagri](README.md)\n\n");
+fs.writeFileSync(SUMMARY, "# Summary\n\n* [loveagri](README.md)\n\n");
 
 let $path = ROOT + '/content/';
 

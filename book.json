@@ -9,11 +9,11 @@
     "structure": {
         "readme": "README.md"
     },
-    "links": {
-        "sidebar": {
-            "Home": "https://github.com/loveagri/note"
-        }
-    },
+//    "links": {
+//        "sidebar": {
+//            "Home": "https://github.com/loveagri/note"
+//        }
+//    },
     "plugins": [
         "-lunr",
         "-search",
@@ -81,38 +81,35 @@
             "edit": true
         },
         "sharing": {
-            "douban": true,
+            "douban": false,
             "facebook": true,
             "google": true,
-            "hatenaBookmark": true,
-            "instapaper": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
             "line": true,
-            "linkedin": true,
+            "linkedin": false,
             "messenger": true,
-            "pocket": true,
+            "pocket": false,
             "qq": true,
             "qzone": true,
-            "stumbleupon": true,
+            "stumbleupon": false,
             "twitter": true,
-            "viber": true,
-            "vk": true,
+            "viber": false,
+            "vk": false,
             "weibo": true,
-            "whatsapp": true,
+            "whatsapp": false,
             "all": [
                 "facebook",
                 "google",
                 "twitter",
                 "weibo",
-                "instapaper",
-                "linkedin",
                 "pocket",
-                "stumbleupon",
                 "qq",
                 "qzone"
             ]
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © dotohi.com 2017",
+            "copyright": "每天记录一点点，每天进步一点点",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -132,7 +129,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/loveagri/note",
+            "base": "https://github.com/loveagri/note/content",
             "label": "Edit This Page"
         },
         "sitemap-general": {
