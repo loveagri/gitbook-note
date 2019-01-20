@@ -9,12 +9,12 @@
 1. 安装gitbook：
 
 ```js
-~$ npm install gitbook-cli --global
+~$ npm install gitbook-cli -g
 ... 安装成功
 
 # 直接执行命令，可正常使用。
-~$ gitbook -V
-CLI version: 2.3.0
+~$ CLI version: 2.3.2
+   GitBook version: 3.2.3
 ```
 
 2. 为Gitbook创造软连接
@@ -22,8 +22,18 @@ CLI version: 2.3.0
 ```shell
 ln -s /usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js /usr/local/bin/gitbook
 ```
+or
+```shell
+echo alisa 'gitbook="/usr/local/Cellar/node/11.6.0/lib/node_modules/gitbook-cli/bin/gitbook.js"' >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+3. 编辑好文件后执行编译和上传
+```$xslt
+npm start
+```
+
+[更多关于Gitbook](http://gitbook.zhangjikai.com/)
 
 
-
-[文件](https://raw.githubusercontent.com/loveagri/note/master/ud-code/pack.php)
 

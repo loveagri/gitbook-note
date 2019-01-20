@@ -71,7 +71,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0) => {
         let $file;
         for (let z = 0; z < $files.length; z++) {
             $file = $files[z];
-            if (['README.md', 'SUMMARY.md'].indexOf($file) >= 0) {
+            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md'].indexOf($file) >= 0) {
                 continue;
             }
             dumpFile($file, $contentPath, $tier + 2);
