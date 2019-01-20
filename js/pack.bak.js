@@ -57,7 +57,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0) => {
 
     let $filename = path.basename($path);
 
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "## [" + $filename + "](" + $contentPath + "README.md)\n");
+    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + "README.md)\n");
 
     let $dir;
     if ($dirs.length) {
