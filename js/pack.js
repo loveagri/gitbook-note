@@ -5,7 +5,7 @@ let path = require('path');
 const ROOT = path.dirname(__dirname);
 const SUMMARY = ROOT + '/content/SUMMARY.md';
 
-fs.writeFileSync(SUMMARY, "# Summary\n\n* [loveagri](README.md)\n---\n\n");
+fs.writeFileSync(SUMMARY, "# Summary\n\n- [loveagri](README.md)\n\n---\n\n");
 
 let $path = ROOT + '/content/';
 
@@ -40,11 +40,11 @@ let dumpFile = ($files, $contentPath, $tier) => {
         return;
     }
 
-    fs.appendFileSync(SUMMARY, "* [" + $filename + "](" + $contentPath + $files + ")\n");
+    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + $files + ")\n");
 };
 
 
-let rootDir = ($path, $contentPath = './', $tier = 0) => {
+let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
 
     let $dirs = dirAndFile($path, 0);
     let $files = dirAndFile($path, 1);
@@ -57,7 +57,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0) => {
 
     let $filename = path.basename($path);
 
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "## [" + $filename + "](" + $contentPath + "README.md)\n");
+    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + index+". [" + $filename + "](" + $contentPath + "README.md)\n");
 
     let $dir;
     if ($dirs.length) {
@@ -88,7 +88,7 @@ for (let i = 0; i < $dirs.length; i++) {
         continue;
     }
 
-    rootDir($path + $value + '/', './' + $value + '/', 0);
+    rootDir($path + $value + '/', './' + $value + '/', 0,i+1);
 
     fs.appendFileSync(SUMMARY, "---\n\n");
 }

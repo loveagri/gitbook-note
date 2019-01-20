@@ -4,11 +4,11 @@
   "description": "note",
   "main": "index.js",
   "scripts": {
-    "server": "git pull && gitbook serve content docs",
+    "server": "npm run jsbuild && gitbook serve content docs",
+    "jsbuild": "node js/pack.js",
     "build": "gitbook build content docs",
-    "push": "node js/pack.js && npm run build && git add -A && git commit -m msg && git push",
-    "start": "npm run push",
-    "test": "npm run push"
+    "push": "npm run jsbuild && npm run build && git add -A && git commit -m msg && git push",
+    "start": "npm run push"
   },
   "repository": {
     "type": "git",
