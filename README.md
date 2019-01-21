@@ -2,8 +2,6 @@
 
 图片拼接地址：https://raw.githubusercontent.com/loveagri/note/master/ud-img/
 
-
-
 ## 前置准备
 
 1. 安装gitbook：
