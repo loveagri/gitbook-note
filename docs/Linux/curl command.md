@@ -12,8 +12,6 @@
 
 常见参数：
 
-[![复制代码](http://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
 ```
 -A/--user-agent <string>              设置用户代理发送给服务器
 -b/--cookie <name=string/file>    cookie字符串或文件读取位置
@@ -32,8 +30,6 @@
 -x/--proxy <host[:port]>              在给定的端口上使用HTTP代理
 -#/--progress-bar                        进度条显示当前的传送状态
 ```
-
-[![复制代码](http://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 例子：
 1、基本用法
