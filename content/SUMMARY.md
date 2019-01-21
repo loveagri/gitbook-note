@@ -4,25 +4,25 @@
 
 ---
 
-1. [Linux](./Linux/README.md)
-    * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
----
-
-2. [Nginx](./Nginx/README.md)
-    * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
-    * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
----
-
-3. [git](./git/README.md)
+1. [git](./git/README.md)
     * [git-reset-org](./git/git-reset-org.md)
 ---
 
-4. [js](./js/README.md)
+2. [js](./js/README.md)
     * [reg](./js/reg.md)
 ---
 
-5. [mobile](./mobile/README.md)
+3. [Linux](./Linux/README.md)
+    * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
+---
+
+4. [mobile](./mobile/README.md)
     * [打包工程](./mobile/打包工程.md)
+---
+
+5. [Nginx](./Nginx/README.md)
+    * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+    * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
 ---
 
 7. [npm](./npm/README.md)
@@ -36,19 +36,23 @@
     * [start-end](./php/start-end.md)
 ---
 
-9. [sass](./sass/README.md)
+9. [python](./python/README.md)
+    * [pip set proxy](./python/pip set proxy.md)
+---
+
+10. [sass](./sass/README.md)
     * [px-to-rem](./sass/px-to-rem.md)
 ---
 
-11. [vim](./vim/README.md)
+12. [vim](./vim/README.md)
     * [shortcut](./vim/shortcut.md)
 ---
 
-12. [webpack](./webpack/README.md)
+13. [webpack](./webpack/README.md)
     * [file-handle](./webpack/file-handle.md)
 ---
 
-13. [友情链接](./友情链接/README.md)
+14. [友情链接](./友情链接/README.md)
     * [blog](./友情链接/blog.md)
     * [test](./友情链接/test.md)
 ---
