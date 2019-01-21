@@ -4,25 +4,25 @@
 
 ---
 
-1. [git](./git/README.md)
-    * [git-reset-org](./git/git-reset-org.md)
----
-
-2. [js](./js/README.md)
-    * [reg](./js/reg.md)
----
-
-3. [Linux](./Linux/README.md)
+1. [Linux](./Linux/README.md)
     * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
 ---
 
-4. [mobile](./mobile/README.md)
-    * [打包工程](./mobile/打包工程.md)
----
-
-5. [Nginx](./Nginx/README.md)
+2. [Nginx](./Nginx/README.md)
     * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
     * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
+---
+
+3. [git](./git/README.md)
+    * [git-reset-org](./git/git-reset-org.md)
+---
+
+4. [js](./js/README.md)
+    * [reg](./js/reg.md)
+---
+
+5. [mobile](./mobile/README.md)
+    * [打包工程](./mobile/打包工程.md)
 ---
 
 7. [npm](./npm/README.md)
