@@ -49,6 +49,7 @@
 
 12. [vim](./vim/README.md)
     * [shortcut](./vim/shortcut.md)
+    * [study](./vim/study.md)
 ---
 
 13. [webpack](./webpack/README.md)

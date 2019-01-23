@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 23 Jan 2019 15:30:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jan 2019 15:32:40 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -207,6 +207,12 @@ gitlab之webhook自动部署]]></description>
             <description><![CDATA[Ctrl + v 进入块选择模式，然后移动光标选中你要注释的行，再按大写的 I 进入行首插入模式输入注释符号如 // 或 #，输入完毕之后，按两下 ESC，Vim 会自动将你选中的所有行首都加上注释，保存退出完成注释。]]></description>
             <link>https://loveagri.github.io/note/vim/shortcut.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/vim/shortcut.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Ubuntu]]></title>
+            <link>https://loveagri.github.io/note/vim/study.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/vim/study.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
