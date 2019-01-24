@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 23 Jan 2019 15:32:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Jan 2019 02:03:04 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -15,46 +15,6 @@
             <description><![CDATA[每天记录一点点]]></description>
             <link>https://loveagri.github.io/note/</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <link>https://loveagri.github.io/note/Linux/README.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/README.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[错误如图：]]></description>
-            <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Linux curl命令详解]]></title>
-            <description><![CDATA[在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。]]></description>
-            <link>https://loveagri.github.io/note/Linux/curl command.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/curl command.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <link>https://loveagri.github.io/note/Nginx/README.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/README.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
-            <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[NGINX编译安装]]></title>
-            <description><![CDATA[--prefix=/usr/local/Cellar/nginx/1.15.8 --sbin-path=/usr/local/Cellar/nginx/1.15.8/bin/nginx --with-cc-opt='-I/usr/local/opt/pcre/include -I/usr/local/opt/openssl/include' --with-ld-opt='-L/usr/local/opt/pcre/lib -L/usr/local/opt/openssl/lib' --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-debug --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-ipv6 --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module]]></description>
-            <link>https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -106,6 +66,33 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[nodejs读取文件内容并替换]]></title>
+            <description><![CDATA[链接]]></description>
+            <link>https://loveagri.github.io/note/js/正则读文件内容替换.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/js/正则读文件内容替换.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Linux/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Linux curl命令详解]]></title>
+            <description><![CDATA[在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。]]></description>
+            <link>https://loveagri.github.io/note/Linux/curl command.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/curl command.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[错误如图：]]></description>
+            <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/mobile/README.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/mobile/README.html</guid>
@@ -116,6 +103,26 @@
             <description><![CDATA[​]]></description>
             <link>https://loveagri.github.io/note/mobile/打包工程.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/mobile/打包工程.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Nginx/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
+            <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[NGINX编译安装]]></title>
+            <description><![CDATA[--prefix=/usr/local/Cellar/nginx/1.15.8 --sbin-path=/usr/local/Cellar/nginx/1.15.8/bin/nginx --with-cc-opt='-I/usr/local/opt/pcre/include -I/usr/local/opt/openssl/include' --with-ld-opt='-L/usr/local/opt/pcre/lib -L/usr/local/opt/openssl/lib' --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-debug --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-ipv6 --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module]]></description>
+            <link>https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
