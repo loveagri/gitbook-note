@@ -1,11 +1,15 @@
-# [Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
+# [
+
+Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
 
 [Git教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
 
-![image-20190121143518956](https://raw.githubusercontent.com/loveagri/note/master/ud-img/image-20190121143518956.png)
-
-![image-20190121143537253](https://raw.githubusercontent.com/loveagri/note/master/ud-img/image-20190121143537253.png)
+![Gitå½ä"¤.jpg](https://raw.githubusercontent.com/loveagri/note/master/ud-img\Git命令.jpg)
 
 
 
-![image-20190121143549094](https://raw.githubusercontent.com/loveagri/note/master/ud-img/image-20190121143549094.png)
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img\git-ml.png)
+
+
+
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img\git常用命令图解.png)
