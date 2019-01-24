@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 24 Jan 2019 02:52:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Jan 2019 02:55:16 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -24,8 +24,8 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[[]]></title>
-            <description><![CDATA[Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)]]></description>
+            <title><![CDATA[Git使用教程]]></title>
+            <description><![CDATA[Git教程]]></description>
             <link>https://loveagri.github.io/note/git/git command.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/git/git command.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>

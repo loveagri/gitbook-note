@@ -1,6 +1,4 @@
-# [
-
-Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
+# [Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
 
 [Git教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document)
 
@@ -12,4 +10,4 @@ Git使用教程](https://github.com/DickyQie/Tool-use/tree/git-learning-document
 
 
 
-![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img\git常用命令图解.png)
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img\git常用命令图解-1548298475565.png)
