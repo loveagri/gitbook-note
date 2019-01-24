@@ -5,7 +5,6 @@ let path = require('path');
 const ROOT = path.dirname(__dirname);
 const SUMMARY = ROOT + '/content/SUMMARY.md';
 
-fs.writeFileSync(SUMMARY, "# Summary\n\n- [loveagri](README.md)\n---\n\n");
 
 let $path = ROOT + '/content/';
 
@@ -29,20 +28,7 @@ let dirAndFile = (filePath, type = 0) => {
     } catch (err) {
         console.log(err)
     }
-
 };
-
-let dumpFile = ($files, $contentPath, $tier) => {
-    $filename = path.parse($files).name;
-    $ext = path.extname($files);
-
-    if ($ext !== '.md') {
-        return;
-    }
-
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + $files + ")\n");
-};
-
 
 let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
 
@@ -54,10 +40,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
         fs.createWriteStream($path + 'README.md');
     }
 
-
     let $filename = path.basename($path);
-
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + index+". [" + $filename + "](" + $contentPath + "README.md)\n");
 
     let $dir;
     if ($dirs.length) {
@@ -68,14 +51,21 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
     }
 
     if ($files.length) {
-        let $file;
-        for (let z = 0; z < $files.length; z++) {
-            $file = $files[z];
-            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico','book.json'].indexOf($file) >= 0) {
-                continue;
-            }
-            dumpFile($file, $contentPath, $tier + 2);
+        let $filename,$ext;
+        $files.forEach(function(item, index) {
+           $filename = path.parse(item).name;
+           $ext = path.extname(item);
+
+           if ($ext !== '.md') {
+            return;
         }
+        fs.readFile($path+item,'utf8',function(err,files){
+            var result = files.replace(/!\[(.*)\]\((.*)ud-img(.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img$3)');
+            fs.writeFile($path+item, result, 'utf8', function (err) {
+               if (err) return console.log(err);
+           });
+        })
+    });
     }
 };
 
@@ -90,8 +80,9 @@ for (let i = 0; i < $dirs.length; i++) {
 
     rootDir($path + $value + '/', './' + $value + '/', 0,i+1);
 
-    fs.appendFileSync(SUMMARY, "---\n\n");
 }
+
+
 
 
 
