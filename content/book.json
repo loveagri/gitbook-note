@@ -19,7 +19,9 @@
         "-search",
         "-highlight",
         "-livereload",
+        "toggle-chapters",
         "search-plus@^0.0.11",
+        "diy-introduction",
         "simple-page-toc@^0.1.1",
         "github@^2.0.0",
         "github-buttons@2.1.0",
@@ -61,6 +63,9 @@
     "pluginsConfig": {
         "theme-default": {
             "showLevel": true
+        },
+        "pluginsConfig": {
+            "introduction-text": "封面"
         },
         "disqus": {
             "shortName": "loveagri"
