@@ -66,3 +66,7 @@ input[type=checkbox]{
     border-radius: 4px;
     background: #efefef;
 }
+
+.book .book-summary ul.summary .gitbook-link{
+    display: none
+}
