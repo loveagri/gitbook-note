@@ -1,63 +1,63 @@
 # Summary
 
-- [loveagri](README.md)
+* [loveagri](README.md)
 ---
 
-1. [git](./git/README.md)
+* [git](./git/README.md)
     * [git command](./git/git command.md)
     * [git-reset-org](./git/git-reset-org.md)
     * [ssh-keygen](./git/ssh-keygen.md)
 ---
 
-2. [js](./js/README.md)
+* [js](./js/README.md)
     * [reg](./js/reg.md)
     * [skills](./js/skills.md)
     * [正则读文件内容替换](./js/正则读文件内容替换.md)
 ---
 
-3. [Linux](./Linux/README.md)
+* [Linux](./Linux/README.md)
     * [curl command](./Linux/curl command.md)
     * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
 ---
 
-4. [mobile](./mobile/README.md)
+* [mobile](./mobile/README.md)
     * [打包工程](./mobile/打包工程.md)
 ---
 
-5. [Nginx](./Nginx/README.md)
+* [Nginx](./Nginx/README.md)
     * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
     * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
 ---
 
-7. [npm](./npm/README.md)
+* [npm](./npm/README.md)
     * [install-npm-server](./npm/install-npm-server.md)
     * [npm-update](./npm/npm-update.md)
 ---
 
-8. [php](./php/README.md)
+* [php](./php/README.md)
     * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
     * [php-fpm守护进程](./php/php-fpm守护进程.md)
     * [start-end](./php/start-end.md)
 ---
 
-9. [python](./python/README.md)
+* [python](./python/README.md)
     * [pip set proxy](./python/pip set proxy.md)
 ---
 
-10. [sass](./sass/README.md)
+* [sass](./sass/README.md)
     * [px-to-rem](./sass/px-to-rem.md)
 ---
 
-12. [vim](./vim/README.md)
+* [vim](./vim/README.md)
     * [shortcut](./vim/shortcut.md)
     * [study](./vim/study.md)
 ---
 
-13. [webpack](./webpack/README.md)
+* [webpack](./webpack/README.md)
     * [file-handle](./webpack/file-handle.md)
 ---
 
-14. [友情链接](./友情链接/README.md)
+* [友情链接](./友情链接/README.md)
     * [blog](./友情链接/blog.md)
     * [test](./友情链接/test.md)
 ---
