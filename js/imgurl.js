@@ -61,7 +61,6 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
         fs.readFile($path+item,'utf8',function(err,files){
 
             var result = files.replace(/!\[(.*)\]\((.*)ud-img[\/|\\](.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img/$3)');
-            // console.log(result,'![img](P:\Users\Fergson.H\note\ud-img\20170119175053609.png)')
             fs.writeFile($path+item, result, 'utf8', function (err) {
                if (err) return console.log(err);
            });
