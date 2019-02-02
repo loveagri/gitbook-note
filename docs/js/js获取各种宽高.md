@@ -13,7 +13,7 @@
 5. screen.availWidth:屏幕可用宽度（屏幕分辨率的宽度-左右侧任务栏的宽度）
 6. 前面这两个数表示：屏幕可用宽高(像素) ---- 定值
 
-![img](P:\Users\Fergson.H\note\ud-img\20170119173647334.png)
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img/20170119173647334.png)
 
 ### **浏览器信息**
 
@@ -22,7 +22,7 @@
 3. 工具栏高度=window.outerHeight-window.innerHeight;
 4. 相应的还有window.outerWidth、window.innerWidth
 
-![img](P:\Users\Fergson.H\note\ud-img\20170119175053609.png)
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img/20170119175053609.png)
 
 ### **页面信息**
 
@@ -36,7 +36,7 @@
 8. scrollHeight：对象的滚动高度为对象的height值
 9. scrollWidth：对象的滚动宽度为对象的width值
 
-![img](P:\Users\Fergson.H\note\ud-img\20170119180615096.png)
+![img](https://raw.githubusercontent.com/loveagri/note/master/ud-img/20170119180615096.png)
 
 总之：
 
