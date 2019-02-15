@@ -44,6 +44,24 @@ clientWidth=width+padding
 
 offsetWidth=clientWidth+border
 
+# [获取元素到body/html的距离函数](https://www.cnblogs.com/handsomehan/p/5858974.html)
+
+```js
+ function offsetDis(obj) {
+        var l = 0, t = 0;
+        while(obj) {
+            l = l + obj.offsetLeft + obj.clientLeft;
+            t = t + obj.offsetTop + obj.clientTop;
+            obj = obj.offsetParent;
+        }
+        return {left: l, top: t};
+    }
+```
+
+
+
+
+
 
 
 # [js获取页面元素距离浏览器工作区顶端的距离](https://www.cnblogs.com/fnz0/p/5510758.html)
@@ -62,15 +80,9 @@ offsetWidth=clientWidth+border
 
 **(javascript)**        document.body.scrollLeft //IE
 
-**(jqurey)**             $(window).scrollTop() 
-
-**(jqurey)**             $(window).scrollLeft()
-
  **网页工作区域的高度和宽度**  
 
 **(javascript)**       document.documentElement.clientHeight// IE firefox       
-
-**(jqurey)**             $(window).height()
 
  **元素距离文档顶端和左边的偏移值**  
 
@@ -90,13 +102,9 @@ offsetWidth=clientWidth+border
 
  **页面元素距离浏览器工作区顶端的距离** =  DOM元素对象.offsetTop  **-**  document.documentElement.scrollTop 
 
-
-
-
-
 # [获取任意元素距离页面顶部的距离 楼梯效果](https://www.cnblogs.com/ws-zhangbo/p/5806703.html)
 
-```
+```js
 HTMLElement.prototype.getElementTop=function(){
      var top = this.offsetTop;
      var cur = this.offsetParent;
@@ -112,7 +120,7 @@ var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
 ```
 
-```
+```js
 window.addEventListener("load",function(){
     floor.init();
 },false);
