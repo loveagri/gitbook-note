@@ -3,6 +3,10 @@
 ## [loveagri](README.md)
 
 
+## HRML
+* [HTML实体符号代码速查表](./HRML/HTML实体符号代码速查表.md)
+
+
 ## Linux
 * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
 * [curl command](./Linux/curl command.md)
@@ -15,13 +19,17 @@
 
 ## git
 * [git command](./git/git command.md)
+* [git-create](./git/git-create.md)
 * [git-reset-org](./git/git-reset-org.md)
 * [ssh-keygen](./git/ssh-keygen.md)
 
 
 ## js
+* [js实现上划下拉](./js/js实现上划下拉.md)
+* [js获取各种宽高](./js/js获取各种宽高.md)
 * [reg](./js/reg.md)
 * [skills](./js/skills.md)
+* [taobao-html-fontsize](./js/taobao-html-fontsize.md)
 * [正则读文件内容替换](./js/正则读文件内容替换.md)
 
 

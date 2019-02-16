@@ -6,6 +6,7 @@
   "scripts": {
     "server": "npm run jsbuild && gitbook serve content docs",
     "jsbuild": "node js/pack.js",
+    "img": "node js/imgurl.js",
     "build": "gitbook build content docs",
     "push": "npm run jsbuild && npm run build && git add -A && git commit -m msg && git push",
     "start": "npm run push"

@@ -35,7 +35,6 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
     let $dirs = dirAndFile($path, 0);
     let $files = dirAndFile($path, 1);
 
-
     if (!fs.existsSync($path + 'README.md')) {
         fs.createWriteStream($path + 'README.md');
     }
@@ -60,7 +59,8 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
             return;
         }
         fs.readFile($path+item,'utf8',function(err,files){
-            var result = files.replace(/!\[(.*)\]\((.*)ud-img\/(.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img/$3)');
+
+            var result = files.replace(/!\[(.*)\]\((.*)ud-img[\/|\\](.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img/$3)');
             fs.writeFile($path+item, result, 'utf8', function (err) {
                if (err) return console.log(err);
            });
