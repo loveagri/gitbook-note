@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 24 Jan 2019 06:17:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Feb 2019 07:05:48 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -15,6 +15,34 @@
             <description><![CDATA[每天记录一点点]]></description>
             <link>https://loveagri.github.io/note/</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[错误如图：]]></description>
+            <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Linux curl命令详解]]></title>
+            <description><![CDATA[在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。]]></description>
+            <link>https://loveagri.github.io/note/Linux/curl command.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/curl command.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
+            <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[NGINX编译安装]]></title>
+            <description><![CDATA[--prefix=/usr/local/Cellar/nginx/1.15.8 --sbin-path=/usr/local/Cellar/nginx/1.15.8/bin/nginx --with-cc-opt='-I/usr/local/opt/pcre/include -I/usr/local/opt/openssl/include' --with-ld-opt='-L/usr/local/opt/pcre/lib -L/usr/local/opt/openssl/lib' --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-debug --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-ipv6 --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module]]></description>
+            <link>https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -61,38 +89,10 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Linux curl命令详解]]></title>
-            <description><![CDATA[在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。]]></description>
-            <link>https://loveagri.github.io/note/Linux/curl command.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/curl command.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[错误如图：]]></description>
-            <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
             <title><![CDATA[APP打包步骤]]></title>
             <description><![CDATA[​]]></description>
             <link>https://loveagri.github.io/note/mobile/打包工程.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/mobile/打包工程.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
-            <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[NGINX编译安装]]></title>
-            <description><![CDATA[--prefix=/usr/local/Cellar/nginx/1.15.8 --sbin-path=/usr/local/Cellar/nginx/1.15.8/bin/nginx --with-cc-opt='-I/usr/local/opt/pcre/include -I/usr/local/opt/openssl/include' --with-ld-opt='-L/usr/local/opt/pcre/lib -L/usr/local/opt/openssl/lib' --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-debug --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-ipv6 --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module]]></description>
-            <link>https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/nginx编译安装参数.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -158,6 +158,29 @@ gitlab之webhook自动部署]]></description>
         </item>
         <item>
             <title><![CDATA[Ubuntu]]></title>
+            <description><![CDATA[h,j,k,l 上，下，左，右
+ctrl-e 移动页面
+ctrl-f 上翻一页
+ctrl-b 下翻一页
+ctrl-u 上翻半页
+ctrl-d 下翻半页
+w 跳到下一个字首，按标点或单词分割
+W 跳到下一个字首，长跳，如end-of-line被认为是一个字
+e 跳到下一个字尾
+E 跳到下一个字尾，长跳
+b 跳到上一个字
+B 跳到上一个字，长跳
+0 跳至行首，不管有无缩进，就是跳到第0个字符
+^ 跳至行首的第一个字符
+$ 跳至行尾
+gg 跳至文首
+G 调至文尾
+5gg/5G 调至第5行
+gd 跳至当前光标所在的变量的声明处
+fx 在当前行中找x字符，找到了就跳转至
+; 重复上一个f命令，而不用重复的输入fx
+* 查找光标所在处的单词，向下查找
+# 查找光标所在处的单词，向上查找]]></description>
             <link>https://loveagri.github.io/note/vim/study.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/vim/study.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>

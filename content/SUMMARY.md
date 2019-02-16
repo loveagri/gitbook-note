@@ -3,6 +3,16 @@
 ## [loveagri](README.md)
 
 
+## Linux
+* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
+* [curl command](./Linux/curl command.md)
+
+
+## Nginx
+* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
+
+
 ## git
 * [git command](./git/git command.md)
 * [git-reset-org](./git/git-reset-org.md)
@@ -15,18 +25,8 @@
 * [正则读文件内容替换](./js/正则读文件内容替换.md)
 
 
-## Linux
-* [curl command](./Linux/curl command.md)
-* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
-
-
 ## mobile
 * [打包工程](./mobile/打包工程.md)
-
-
-## Nginx
-* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
-* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
 
 
 ## npm
