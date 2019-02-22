@@ -3,25 +3,15 @@
 ## [loveagri](README.md)
 
 
-## HRML
-* [HTML实体符号代码速查表](./HRML/HTML实体符号代码速查表.md)
-
-
-## Linux
-* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
-* [curl command](./Linux/curl command.md)
-
-
-## Nginx
-* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
-* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
-
-
 ## git
 * [git command](./git/git command.md)
 * [git-create](./git/git-create.md)
 * [git-reset-org](./git/git-reset-org.md)
 * [ssh-keygen](./git/ssh-keygen.md)
+
+
+## HRML
+* [HTML实体符号代码速查表](./HRML/HTML实体符号代码速查表.md)
 
 
 ## js
@@ -33,8 +23,18 @@
 * [正则读文件内容替换](./js/正则读文件内容替换.md)
 
 
+## Linux
+* [curl command](./Linux/curl command.md)
+* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
+
+
 ## mobile
 * [打包工程](./mobile/打包工程.md)
+
+
+## Nginx
+* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
 
 
 ## npm
@@ -50,6 +50,10 @@
 
 ## python
 * [pip set proxy](./python/pip set proxy.md)
+
+
+## react
+* [hot reload](./react/hot reload.md)
 
 
 ## sass
