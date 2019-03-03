@@ -30,3 +30,4 @@ Unix系统安装按照官网检查配置下载https://xdebug.org/download.php
 
 端口号在ini配置文件要和PHPstorm里统一，不需要和php服务端口号一样
 
+如果配置不正常，可以在debug configuration->debug-preconfiguration->validate里检验错误
