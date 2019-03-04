@@ -15,6 +15,7 @@
 ## Nginx
 * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
 * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
+* [proxy](./Nginx/proxy.md)
 
 
 ## git
