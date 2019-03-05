@@ -3,21 +3,6 @@
 ## [loveagri](README.md)
 
 
-## HRML
-* [HTML实体符号代码速查表](./HRML/HTML实体符号代码速查表.md)
-
-
-## Linux
-* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
-* [curl command](./Linux/curl command.md)
-
-
-## Nginx
-* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
-* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
-* [proxy](./Nginx/proxy.md)
-
-
 ## git
 * [git command](./git/git command.md)
 * [git-create](./git/git-create.md)
@@ -25,18 +10,33 @@
 * [ssh-keygen](./git/ssh-keygen.md)
 
 
+## HRML
+* [HTML实体符号代码速查表](./HRML/HTML实体符号代码速查表.md)
+
+
 ## js
-* [Object](./js/Object.md)
 * [js实现上划下拉](./js/js实现上划下拉.md)
 * [js获取各种宽高](./js/js获取各种宽高.md)
+* [Object](./js/Object.md)
 * [reg](./js/reg.md)
 * [skills](./js/skills.md)
 * [taobao-html-fontsize](./js/taobao-html-fontsize.md)
 * [正则读文件内容替换](./js/正则读文件内容替换.md)
 
 
+## Linux
+* [curl command](./Linux/curl command.md)
+* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
+
+
 ## mobile
 * [打包工程](./mobile/打包工程.md)
+
+
+## Nginx
+* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
+* [proxy](./Nginx/proxy.md)
 
 
 ## npm
