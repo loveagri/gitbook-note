@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 10 Mar 2019 11:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Mar 2019 13:01:31 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -42,6 +42,13 @@
             <description><![CDATA[错误如图：]]></description>
             <link>https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Linux/Mac-item2-crontab无法写入.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CentOS nginx 从 安装 到 自配yum本地源]]></title>
+            <description><![CDATA[CentOS nginx 从 安装 到 自配yum本地源]]></description>
+            <link>https://loveagri.github.io/note/Linux/centos yum rpm源.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/centos yum rpm源.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
