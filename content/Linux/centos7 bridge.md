@@ -49,3 +49,8 @@
 虚拟机也能ping通主机：
 
 ![img](https://www.centos.bz/wp-content/uploads/2017/08/14-6.png)
+
+
+
+##所有的一切就绪之后需要重新生成uuid(uuidgen)和Mac地址,替换之后重启网络(systemctl restart network)
+
