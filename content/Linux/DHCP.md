@@ -6,6 +6,8 @@
 
 [重启网络报错 Failed to start LSB: Bring up/down](http://www.raksmart.com/29.html?l=zh-cn)
 
+[dhcp服务](https://blog.csdn.net/csdn_immortal/article/details/81068259)
+
 配置dhcpd.conf
 
 ```
@@ -91,7 +93,7 @@ vim /etc/resolv.conf 配置DNS解析服务器
 nameserver 203.167.97.66 ip ip
 ```
 
-
+重点注意：开启动态DHCP获取ip前先执行静态static获取，然后在重启DHCP服务，接着重启network服务
 
 ## 问题描述:
 
