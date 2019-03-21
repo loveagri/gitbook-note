@@ -75,6 +75,10 @@
 * [px-to-rem](./sass/px-to-rem.md)
 
 
+## sublime
+* [License](./sublime/License.md)
+
+
 ## vim
 * [shortcut](./vim/shortcut.md)
 * [study](./vim/study.md)
