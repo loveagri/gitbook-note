@@ -1,5 +1,7 @@
 # [mac php-fpm 守护进程运行](https://blog.csdn.net/weixin_36429334/article/details/83021052 )
 
+[CGI、FastCGI和PHP-FPM关系图解](https://www.awaimai.com/371.html)
+
 问题是没有开启守护进程运行，php-fpm的时候出现 ready to handle connections … 关闭命令行窗口后又断开了 php-fpm ready to handle connections
 
 解决方法：
