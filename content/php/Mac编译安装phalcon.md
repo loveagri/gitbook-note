@@ -40,7 +40,7 @@ git clone --depth=1 git://github.com/phalcon/cphalcon.git
 
 运行命令： vi /usr/local/php/etc/php.ini
 
-![image-20190116155126097](/Users/intech/Library/Application Support/typora-user-images/image-20190116155126097.png)
+![image-20190116155126097](/Users/love/Library/Application Support/typora-user-images/image-20190116155126097.png)
 
 
 
@@ -60,7 +60,7 @@ web目录里新建 test.php
 var_dump(get_loaded_extensions());
 ?>
 
-![image-20190116155209383](/Users/intech/Library/Application Support/typora-user-images/image-20190116155209383.png)
+![image-20190116155209383](/Users/love/Library/Application Support/typora-user-images/image-20190116155209383.png)
 
 
 

@@ -1,3 +1,9 @@
+
+
+
+
+
+
 ## 2019 年编写现代 JavaScript 代码的5个小技巧
 
 [链接](https://mp.weixin.qq.com/s?__biz=MzAwNjI5MTYyMw==&mid=2651496983&idx=1&sn=bd97b20b8339e220aea4cff70056e5a5&chksm=80f1abdfb78622c9a594f8976b06b34aa7f4e300768c3ec7bd65fe6219395e1f4afbb4e09058&mpshare=1&scene=1&srcid=0123nJLprKuDMLJDPmTWVUDk&key=6e5e6d2df7d1a731c73d8fd8b1789dbb0c908e399bdc6791d4111b7ff55ac99bfd43fd1e9975720f3677d4173518b160cb644fc2787d58c69c9cea9af36b18cb140524b34dd431c471aa92ce6ee54844&ascene=1&uin=MTE3NjE0MDIwMg%3D%3D&devicetype=Windows-QQBrowser&version=6103000b&lang=zh_CN&pass_ticket=eDk827Faphrg%2F1YdPlMPz9u5k7juZyQPJ4mbKrp7Qy%2BhyqmoQO3B4VsU09ZqGIfR)
