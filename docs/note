@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Mar 2019 03:57:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Mar 2019 03:57:40 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -210,7 +210,7 @@ gitlab之webhook自动部署]]></description>
         </item>
         <item>
             <title><![CDATA[mac php-fpm 守护进程运行]]></title>
-            <description><![CDATA[问题是没有开启守护进程运行，php-fpm的时候出现 ready to handle connections … 关闭命令行窗口后又断开了 php-fpm ready to handle connections]]></description>
+            <description><![CDATA[CGI、FastCGI和PHP-FPM关系图解]]></description>
             <link>https://loveagri.github.io/note/php/php-fpm守护进程.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/php/php-fpm守护进程.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
