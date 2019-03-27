@@ -4,11 +4,11 @@
 （1）在指定的用户目录下，右键打开git bash 执行 命名：`ssh-agent bash`
 （2）生成RSA密钥，执行命令：`ssh-keygen -t rsa -C 742981086@qq.com`
 
-![这里写图片描述](/Users/intech/Note/images/20161120145047649.png)
+![这里写图片描述](/Users/loveagri/Note/images/20161120145047649.png)
 
 
 
-![image-20190121150726433](/Users/intech/Note/images/image-20190121150726433.png)
+![image-20190121150726433](/Users/loveagri/Note/images/image-20190121150726433.png)
 
 
 
