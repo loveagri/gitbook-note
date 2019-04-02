@@ -87,5 +87,17 @@ Please report any problems with the /application/mysql//scripts/mysqlbug script!
 chmod +x /etc/init.d/mysqld
 
 netstat -ltnup | grep 3306
+
+select user,host from mysql.user;
+
+delete from mysql.user where user='';
+
+grant all privileges on *.* to system@'localhost' identified by 'lodboy123' with grant option;
+
+chkconfig mysql on
+
+chkconfig --list mysqld
+
+
 ```
 
