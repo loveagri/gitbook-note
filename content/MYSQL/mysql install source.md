@@ -727,3 +727,366 @@ yum search ifconfig
 通过yum search 这个命令我们发现ifconfig这个命令是在net-tools.x86_64这个包里，接下来我们安装这个包就行了
 
 运行  yum install net-tools  就OK了
+
+
+
+
+
+---
+
+
+
+
+
+
+
+# centos7编译安装MySQL5.7.23
+
+[Link](https://www.jianshu.com/p/e689b8700f1a) 
+
+关注
+
+2018.09.02 17:57* 字数 1297 阅读 568评论 0喜欢 1
+
+**一、安装准备**
+
+​    源码包放在/usr/local/src 目录。我的软件安装目录统一指定在 /usr/local/'软件名'（如：/usr/local/nginx、/usr/local/mysql）
+
+​    下载mysql安装包、boot安装包
+
+> [root@study ~]# cd /usr/local/src/
+>
+> [root@study src]# wget https://sourceforge.net/projects/boost/files/boost/1.59.0/boost_1_59_0.tar.gz
+>
+> [root@study src]# wget http://cdn.mysql.com/Downloads/MySQL-5.7/mysql-5.7.23.tar.gz
+
+**二、安装依赖包**
+
+> [root@study src]# yum -y install gcc gcc-c++ ncurses ncurses-devel cmake bison
+
+**三、新建MySQL用户和用户组**
+
+> [root@study src]#groupadd -r mysql && useradd -r -g mysql -s /sbin/nologin -M mysql
+
+**四、解压压缩包、预编译。创建MySQL数据库数据保存目录 /data/mysql**
+
+> [root@study src]# tar -zxvf boost_1_59_0.tar.gz
+>
+> [root@study src]# tar -zxvf mysql-5.7.23.tar.gz
+>
+> [root@study src]# mkdir -p /data/mysql
+>
+> [root@study src]# cd mysql-5.7.23
+>
+> [root@study mysql-5.7.23]# cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+>
+> -DMYSQL_DATADIR=/data/mysql \
+>
+> -DSYSCONFDIR=/etc \
+>
+> -DWITH_INNOBASE_STORAGE_ENGINE=1 \
+>
+> -DWITH_PARTITION_STORAGE_ENGINE=1 \
+>
+> -DWITH_FEDERATED_STORAGE_ENGINE=1 \
+>
+> -DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
+>
+> -DWITH_MYISAM_STORAGE_ENGINE=1 \
+>
+> -DENABLED_LOCAL_INFILE=1 \
+>
+> -DENABLE_DTRACE=0 \
+>
+> -DDEFAULT_CHARSET=utf8mb4 \
+>
+> -DDEFAULT_COLLATION=utf8mb4_general_ci \
+>
+> -DWITH_EMBEDDED_SERVER=1 \
+>
+> -DDOWNLOAD_BOOST=1 \ 
+>
+> -DWITH_BOOST=/usr/local/src/boost_1_59_0
+
+**五、编译安装，过程很漫长**
+
+> [root@study mysql-5.7.23]# make -j `grep processor /proc/cpuinfo | wc -l`
+
+​    \#编译很消耗系统资源，小内存可能编译通不过
+
+​    如报错：c++: internal compiler error: Killed (program cc1plus)
+
+​    主要原因大体上是因为内存不足。例如我用阿里云单核、1G内存就出现这样问题，网上找了办法。临时使用交换分区来解决
+
+​    命令：
+
+​    [root@ study mysql-5.7.23]# dd if=/dev/zero of=/swapfile bs=64M count=16
+
+​    [root@ study mysql-5.7.23]# mkswap /swapfile
+
+​    [root@ study mysql-5.7.23]# swapon /swapfile
+
+​    [root@ study mysql-5.7.23]# swapon -s
+
+​    完成后继续上面 make 命令
+
+​    *注：安装完毕后，删除交换分区*
+
+​    *[root@ study mysql-5.7.23]# swapoff /swapfile*
+
+​    *[root@ study mysql-5.7.23]# rm -rf /swapfile*
+
+> *[root@ study mysql-5.7.23]# make install*
+
+**六、安装完毕后，设置启动脚本，开机自启动**
+
+> [root@study mysql-5.7.23]# ls -lrt /usr/local/mysql
+>
+> [root@study mysql-5.7.23]# cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld
+>
+> [root@study mysql-5.7.23]# chmod +x /etc/init.d/mysqld
+>
+> [root@study mysql-5.7.23]# systemctl enable mysqld
+>
+> mysqld.service is not a native service, redirecting to /sbin/chkconfig.
+>
+> Executing /sbin/chkconfig mysqld on
+
+**七、添加配置文件，设置项比较多，需要根据自己环境、硬件来设置，下面仅供参考。**
+
+> vi /etc/my.cnf
+>
+> [client]
+>
+> port = 3306
+>
+> socket = /tmp/mysql.sock
+>
+> [mysqld]
+>
+> port = 3306
+>
+> socket = /tmp/mysql.sock
+>
+> basedir = /usr/local/mysql
+>
+> datadir = /data/mysql
+>
+> pid-file = /data/mysql/mysql.pid
+>
+> user = mysql
+>
+> bind-address = 0.0.0.0
+>
+> server-id = 1
+>
+> init-connect = 'SET NAMES utf8mb4'
+>
+> character-set-server = utf8mb4
+>
+> \#skip-name-resolve
+>
+> \#skip-networking
+>
+> back_log = 300
+>
+> max_connections = 1000
+>
+> max_connect_errors = 6000
+>
+> open_files_limit = 65535
+>
+> table_open_cache = 128
+>
+> max_allowed_packet = 4M
+>
+> binlog_cache_size = 1M
+>
+> max_heap_table_size = 8M
+>
+> tmp_table_size = 16M
+>
+> read_buffer_size = 2M
+>
+> read_rnd_buffer_size = 8M
+>
+> sort_buffer_size = 8M
+>
+> join_buffer_size = 8M
+>
+> key_buffer_size = 4M
+>
+> thread_cache_size = 8
+>
+> query_cache_type = 1
+>
+> query_cache_size = 8M
+>
+> query_cache_limit = 2M
+>
+> ft_min_word_len = 4
+>
+> log_bin = mysql-bin
+>
+> binlog_format = mixed
+>
+> expire_logs_days = 30
+>
+> log_error = /data/mysql/error.log
+>
+> slow_query_log = 1
+>
+> long_query_time = 1
+>
+> slow_query_log_file = /data/mysql/slow.log
+>
+> performance_schema = 0
+>
+> explicit_defaults_for_timestamp
+>
+> \#lower_case_table_names = 1
+>
+> skip-external-locking
+>
+> default_storage_engine = InnoDB
+>
+> \#default-storage-engine = MyISAM
+>
+> innodb_file_per_table = 1
+>
+> innodb_open_files = 500
+>
+> innodb_buffer_pool_size = 64M
+>
+> innodb_write_io_threads = 4
+>
+> innodb_read_io_threads = 4
+>
+> innodb_thread_concurrency = 0
+>
+> innodb_purge_threads = 1
+>
+> innodb_flush_log_at_trx_commit = 2
+>
+> innodb_log_buffer_size = 2M
+>
+> innodb_log_file_size = 32M
+>
+> innodb_log_files_in_group = 3
+>
+> innodb_max_dirty_pages_pct = 90
+>
+> innodb_lock_wait_timeout = 120
+>
+> bulk_insert_buffer_size = 8M
+>
+> myisam_sort_buffer_size = 8M
+>
+> myisam_max_sort_file_size = 10G
+>
+> myisam_repair_threads = 1
+>
+> interactive_timeout = 28800
+>
+> wait_timeout = 28800
+>
+> [mysqldump]
+>
+> quick
+>
+> max_allowed_packet = 16M
+>
+> [myisamchk]
+>
+> key_buffer_size = 8M
+>
+> sort_buffer_size = 8M
+>
+> read_buffer = 4M
+>
+> write_buffer = 4M
+
+**八、添加mysql的环境变量**
+
+> [root@study mysql-5.7.23]# echo -e '\n\nexport PATH=/usr/local/mysql/bin:$PATH\n' >> /etc/profile && source /etc/profile
+
+**九、初始化数据库**
+
+> [root@study mysql-5.7.23]# mysql_install_db --verbose --user=mysql --basedir=/usr/local/mysql --datadir=/data/mysql
+
+**十、启动数据库，顺利的话，应该能正常启动**
+
+> [root@study mysql-5.7.23]# systemctl start mysqld
+>
+> [root@study mysql-5.7.23]# systemctl status mysqld
+
+**十一、设置数据库root用户密码**
+
+> [root@study mysql-5.7.23]# mysql_secure_installation
+>
+> 一路往下 y ，提示输入密码的地方，输入自己需要设置的密码即可。 用户密码策略分成低级 LOW 、中等 MEDIUM 和超强 STRONG 三种，推荐使用中等 MEDIUM 级别！
+
+**十二、将MySQL数据库的动态链接库共享至系统链接库**
+
+一般MySQL数据库还会被类似于PHP等服务调用，所以我们需要将MySQL编译后的lib库文件添加至当前Linux主机链接库 /etc/ld.so.conf.d/下，这样MySQL服务就可以被其它服务调用了。
+
+> [root@study mysql-5.7.23]# ldconfig | grep mysql
+>
+> [root@study mysql-5.7.23]# echo "/usr/local/mysql/lib" > /etc/ld.so.conf.d/mysql.conf
+>
+> [root@study mysql-5.7.23]# ldconfig
+>
+> [root@study mysql-5.7.23]# ldconfig -v | grep mysql
+>
+> ldconfig: Can't stat /libx32: No such file or directory
+>
+> ldconfig: Path `/usr/lib' given more than once
+>
+> ldconfig: Path `/usr/lib64' given more than once
+>
+> ldconfig: Can't stat /usr/libx32: No such file or directory
+>
+> /usr/lib64/mysql:
+>
+> libmysqlclient.so.18 -> libmysqlclient.so.18.0.0
+>
+> /usr/local/mysql/lib:
+>
+> libmysqlclient.so.20 -> libmysqlclient.so.20.3.10
+
+**十三、安装完毕，使用root登录试一把**
+
+> [root@study mysql-5.7.23]# mysql -u root -p
+>
+> Enter password:
+>
+> 此时，输入密码后，若提示：You must reset your password using ALTER USER statement before executing，则如下操作
+>
+> SET PASSWORD = PASSWORD('**your password**');
+>
+> ALTER USER ‘root‘@‘localhost‘ PASSWORD EXPIRE NEVER; 
+>
+> FLUSH PRIVILEGES;
+>
+> 完毕后，重新登录MySQL即可
+>
+> mysql> show databases; 
+>
+> +--------------------+
+>
+> | Database |
+>
+> +--------------------+
+>
+> | information_schema |
+>
+> | mysql |
+>
+> | performance_schema |
+>
+> | sys |
+>
+> +--------------------+
+>
+> 4 rows in set (0.00 sec)
+
