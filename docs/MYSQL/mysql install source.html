@@ -1,0 +1,1703 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mysql install source · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="loveagri">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-diy-introduction/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mysql isntall rpm.html" />
+    
+    
+    <link rel="prev" href="mysql install param.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    <link href="https://loveagri.github.io/note/" title="个人笔记" rel="alternate" type="application/rss+xml" />
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"loveagri/note","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/loveagri/note" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">loveagri</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS3</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CSS3/CSS3 三角形.html">
+            
+                <a href="../CSS3/CSS3 三角形.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    CSS3 三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">HTML</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../HTML/HTML实体符号代码速查表.html">
+            
+                <a href="../HTML/HTML实体符号代码速查表.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    HTML实体符号代码速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Linux/DHCP.html">
+            
+                <a href="../Linux/DHCP.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    DHCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Linux/Mac-item2-crontab无法写入.html">
+            
+                <a href="../Linux/Mac-item2-crontab无法写入.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Mac-item2-crontab无法写入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../Linux/centos yum rpm源.html">
+            
+                <a href="../Linux/centos yum rpm源.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    centos yum rpm源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../Linux/centos7 bridge.html">
+            
+                <a href="../Linux/centos7 bridge.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    centos7 bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Linux/curl command.html">
+            
+                <a href="../Linux/curl command.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    curl command
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MAC</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../MAC/APP.html">
+            
+                <a href="../MAC/APP.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    APP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MYSQL</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="mysql install bundle.html">
+            
+                <a href="mysql install bundle.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    mysql install bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="mysql install param.html">
+            
+                <a href="mysql install param.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    mysql install param
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.3" data-path="mysql install source.html">
+            
+                <a href="mysql install source.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    mysql install source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="mysql isntall rpm.html">
+            
+                <a href="mysql isntall rpm.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    mysql isntall rpm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Nginx</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Nginx/Mac开机自启动NGINX.html">
+            
+                <a href="../Nginx/Mac开机自启动NGINX.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    Mac开机自启动NGINX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../Nginx/nginx编译安装参数.html">
+            
+                <a href="../Nginx/nginx编译安装参数.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    nginx编译安装参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../Nginx/proxy.html">
+            
+                <a href="../Nginx/proxy.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Untitled Folder</li>
+        
+        
+    
+
+    
+        
+        <li class="header">git</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../git/git command.html">
+            
+                <a href="../git/git command.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    git command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../git/git-create.html">
+            
+                <a href="../git/git-create.html">
+            
+                    
+                        <b>9.2.</b>
+                    
+                    git-create
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../git/git-reset-org.html">
+            
+                <a href="../git/git-reset-org.html">
+            
+                    
+                        <b>9.3.</b>
+                    
+                    git-reset-org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../git/ssh-keygen.html">
+            
+                <a href="../git/ssh-keygen.html">
+            
+                    
+                        <b>9.4.</b>
+                    
+                    ssh-keygen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">js</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../js/Object.html">
+            
+                <a href="../js/Object.html">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../js/download base64 img.html">
+            
+                <a href="../js/download base64 img.html">
+            
+                    
+                        <b>10.2.</b>
+                    
+                    download base64 img
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../js/js实现上划下拉.html">
+            
+                <a href="../js/js实现上划下拉.html">
+            
+                    
+                        <b>10.3.</b>
+                    
+                    js实现上划下拉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../js/js获取各种宽高.html">
+            
+                <a href="../js/js获取各种宽高.html">
+            
+                    
+                        <b>10.4.</b>
+                    
+                    js获取各种宽高
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../js/reg.html">
+            
+                <a href="../js/reg.html">
+            
+                    
+                        <b>10.5.</b>
+                    
+                    reg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="../js/skills.html">
+            
+                <a href="../js/skills.html">
+            
+                    
+                        <b>10.6.</b>
+                    
+                    skills
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="../js/taobao-html-fontsize.html">
+            
+                <a href="../js/taobao-html-fontsize.html">
+            
+                    
+                        <b>10.7.</b>
+                    
+                    taobao-html-fontsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="../js/正则读文件内容替换.html">
+            
+                <a href="../js/正则读文件内容替换.html">
+            
+                    
+                        <b>10.8.</b>
+                    
+                    正则读文件内容替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">mobile</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../mobile/打包工程.html">
+            
+                <a href="../mobile/打包工程.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    打包工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">npm</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../npm/install-npm-server.html">
+            
+                <a href="../npm/install-npm-server.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    install-npm-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../npm/npm-update.html">
+            
+                <a href="../npm/npm-update.html">
+            
+                    
+                        <b>12.2.</b>
+                    
+                    npm-update
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">php</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../php/Mac编译安装phalcon.html">
+            
+                <a href="../php/Mac编译安装phalcon.html">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    Mac编译安装phalcon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="../php/php-fpm守护进程.html">
+            
+                <a href="../php/php-fpm守护进程.html">
+            
+                    
+                        <b>13.2.</b>
+                    
+                    php-fpm守护进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="../php/start-end.html">
+            
+                <a href="../php/start-end.html">
+            
+                    
+                        <b>13.3.</b>
+                    
+                    start-end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" data-path="../php/xdebug.html">
+            
+                <a href="../php/xdebug.html">
+            
+                    
+                        <b>13.4.</b>
+                    
+                    xdebug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../python/pip set proxy.html">
+            
+                <a href="../python/pip set proxy.html">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    pip set proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">react</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../react/hot reload.html">
+            
+                <a href="../react/hot reload.html">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    hot reload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">sass</li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../sass/px-to-rem.html">
+            
+                <a href="../sass/px-to-rem.html">
+            
+                    
+                        <b>16.1.</b>
+                    
+                    px-to-rem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">sublime</li>
+        
+        
+    
+        <li class="chapter " data-level="17.1" data-path="../sublime/License.html">
+            
+                <a href="../sublime/License.html">
+            
+                    
+                        <b>17.1.</b>
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">vim</li>
+        
+        
+    
+        <li class="chapter " data-level="18.1" data-path="../vim/shortcut.html">
+            
+                <a href="../vim/shortcut.html">
+            
+                    
+                        <b>18.1.</b>
+                    
+                    shortcut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="18.2" data-path="../vim/study.html">
+            
+                <a href="../vim/study.html">
+            
+                    
+                        <b>18.2.</b>
+                    
+                    study
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">webpack</li>
+        
+        
+    
+        <li class="chapter " data-level="19.1" data-path="../webpack/file-handle.html">
+            
+                <a href="../webpack/file-handle.html">
+            
+                    
+                        <b>19.1.</b>
+                    
+                    file-handle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="19.2" data-path="../webpack/打包全过程.html">
+            
+                <a href="../webpack/打包全过程.html">
+            
+                    
+                        <b>19.2.</b>
+                    
+                    打包全过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">友情链接</li>
+        
+        
+    
+        <li class="chapter " data-level="20.1" data-path="../友情链接/blog.html">
+            
+                <a href="../友情链接/blog.html">
+            
+                    
+                        <b>20.1.</b>
+                    
+                    blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="20.2" data-path="../友情链接/test.html">
+            
+                <a href="../友情链接/test.html">
+            
+                    
+                        <b>20.2.</b>
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >mysql install source</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#centos-72&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;mysql-5722&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;">CentOS 7.2&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;MySQL 5.7.22&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;</a></li></ul></div><a href="#centos-72&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;mysql-5722&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="centos-72&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;mysql-5722&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;"><a name="centos-72&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;mysql-5722&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#centos-72&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;mysql-5722&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>CentOS 7.2&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5305;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;MySQL 5.7.22&#x53CA;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;</h1>
+<p><a href="https://blog.csdn.net/sssssscccccc/article/details/80919826" target="_blank">Link</a></p>
+<p>&#x4F7F;&#x7528;<code>yum</code>&#x5B89;&#x88C5;&#x7684;MySQL&#x4E00;&#x822C;&#x7248;&#x672C;&#x6BD4;&#x8F83;&#x65E7;&#xFF0C;&#x4F46;&#x662F;&#x8FD0;&#x884C;&#x7A33;&#x5B9A;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5C1D;&#x8BD5;&#x6700;&#x65B0;&#x7684;&#x529F;&#x80FD;&#x6216;&#x8005;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7279;&#x6B8A;&#x7684;&#x529F;&#x80FD;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#x4E86;&#x3002;</p>
+<h4 id="&#x4E00;&#x3001;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;"><a name="&#x4E00;&#x3001;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;</h4>
+<h5 id="&#x4E00;&#x3001;&#x5148;&#x4E0B;&#x8F7D;mysql&#x6E90;&#x7801;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;httpsdevmysqlcomdownloadsmysql-"><a name="&#x4E00;&#x3001;&#x5148;&#x4E0B;&#x8F7D;mysql&#x6E90;&#x7801;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;httpsdevmysqlcomdownloadsmysql-" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x5148;&#x4E0B;&#x8F7D;mysql&#x6E90;&#x7801;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;httpsdevmysqlcomdownloadsmysql-"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E00;)&#x3001;&#x5148;&#x4E0B;&#x8F7D;MySQL&#x6E90;&#x7801;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;https://dev.mysql.com/downloads/mysql/ :</h5>
+<ol>
+<li>&#x5728;<code>Select Operationg System</code>&#x4E2D;&#x9009;&#x62E9;<code>Source Code</code>&#xFF1B;</li>
+<li>&#x5728;&#x4E0B;&#x9762;&#x7684;<code>Select OS Version</code>&#x9009;&#x62E9;<code>Generic Linux(Architecture Independent)</code>&#xFF1B;</li>
+<li>&#x7136;&#x540E;&#x518D;&#x4E0B;&#x9762;&#x7684;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x770B;&#x5230;<code>Compressed TAR Archive</code>&#xFF0C;&#x5355;&#x51FB;&#x540E;&#x9762;&#x7684;<code>Download</code>&#xFF1B;</li>
+<li>&#x5728;&#x5F39;&#x51FA;&#x7684;&#x754C;&#x9762;&#x4E2D;&#x9009;&#x62E9;&#x6700;&#x4E0B;&#x9762;&#x7684;<code>No thanks, just start my download</code>&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x4E0B;&#x8F7D;&#x4E86;&#x3002; 
+&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F7F;&#x7528;<code>WinSCP</code>&#x5C06;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;<code>/usr/local/src</code>&#x76EE;&#x5F55;&#x4E0B;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x76F4;&#x63A5;&#x5728;Linux&#x4E2D;&#x4E0B;&#x8F7D;&#x6E90;&#x7801;&#x5305;&#xFF0C;&#x5728;<code>/usr/local/src</code>&#x76EE;&#x5F55;&#x4E0B;&#x76F4;&#x63A5;&#x7528;<code>wget</code>&#x8FDB;&#x884C;&#x4E0B;&#x8F7D;&#xFF1A;</p>
+<pre class="language-"><code>cd /usr/local/src
+
+
+
+wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.20.tar.gz
+</code></pre><h5 id="&#x4E8C;&#x3001;&#x4E0B;&#x8F7D;-boost"><a name="&#x4E8C;&#x3001;&#x4E0B;&#x8F7D;-boost" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x4E0B;&#x8F7D;-boost"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E8C;)&#x3001;&#x4E0B;&#x8F7D; boost</h5>
+<p>&#x4E0B;&#x8F7D;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;<a href="http://www.boost.org/users/download/" target="_blank">http://www.boost.org/users/download/</a> 
+&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x7684;MySQL&#x8981;&#x6C42;boost&#x7684;&#x7248;&#x672C;&#x662F;1.59&#xFF0C;&#x94FE;&#x63A5;&#x4E3A;&#xFF1A; 
+<a href="http://www.boost.org/users/history/version_1_59_0.html" target="_blank">http://www.boost.org/users/history/version_1_59_0.html</a> 
+&#x4E0B;&#x9762;&#x7ED9;&#x51FA;boost 1.59.0&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x5728;<code>/usr/local/src</code>&#x76EE;&#x5F55;&#x4E0B;&#x76F4;&#x63A5;&#x7528;<code>wget</code>&#x8FDB;&#x884C;&#x4E0B;&#x8F7D;</p>
+<pre class="language-"><code>wget --no-check-certificate http://sourceforge.net/projects/boost/files/boost/1.59.0/boost_1_59_0.tar.gz
+</code></pre><h4 id="&#x4E8C;&#x3001;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><a name="&#x4E8C;&#x3001;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</h4>
+<h5 id="&#x4E00;&#x3001;&#x5B89;&#x88C5;&#x5FC5;&#x8981;&#x7684;&#x8F6F;&#x4EF6;&#x4F9D;&#x8D56;&#xFF1A;"><a name="&#x4E00;&#x3001;&#x5B89;&#x88C5;&#x5FC5;&#x8981;&#x7684;&#x8F6F;&#x4EF6;&#x4F9D;&#x8D56;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x5B89;&#x88C5;&#x5FC5;&#x8981;&#x7684;&#x8F6F;&#x4EF6;&#x4F9D;&#x8D56;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E00;)&#x3001;&#x5B89;&#x88C5;&#x5FC5;&#x8981;&#x7684;&#x8F6F;&#x4EF6;&#x4F9D;&#x8D56;&#xFF1A;</h5>
+<pre class="language-"><code>yum install -y cmake bison bison-devel libaio-devel gcc gcc-c++ git  ncurses-devel
+</code></pre><h5 id="&#x4E8C;&#x3001;&#x89E3;&#x538B;mysql&#x6E90;&#x6587;&#x4EF6;&#xFF1A;"><a name="&#x4E8C;&#x3001;&#x89E3;&#x538B;mysql&#x6E90;&#x6587;&#x4EF6;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x89E3;&#x538B;mysql&#x6E90;&#x6587;&#x4EF6;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E8C;)&#x3001;&#x89E3;&#x538B;MySQL&#x6E90;&#x6587;&#x4EF6;&#xFF1A;</h5>
+<pre class="language-"><code>tar -zxvf mysql-5.7.20.tar.gz
+</code></pre><p>&#x5C06;boost&#x7684;&#x538B;&#x7F29;&#x5305;&#x79FB;&#x52A8;&#x81F3;&#x89E3;&#x538B;&#x540E;&#x7684;&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x5185;:</p>
+<pre class="language-"><code>mv boost_1_65_1.tar.gz mysql-5.7.20
+</code></pre><h5 id="&#x4E09;&#x3001;&#x8FDB;&#x5165;mysql&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x65B0;&#x5EFA;configure&#x505A;&#x4E3A;&#x7F16;&#x8BD1;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8FDB;&#x5165;&#x8BE5;&#x76EE;&#x5F55;"><a name="&#x4E09;&#x3001;&#x8FDB;&#x5165;mysql&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x65B0;&#x5EFA;configure&#x505A;&#x4E3A;&#x7F16;&#x8BD1;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8FDB;&#x5165;&#x8BE5;&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x8FDB;&#x5165;mysql&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x65B0;&#x5EFA;configure&#x505A;&#x4E3A;&#x7F16;&#x8BD1;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8FDB;&#x5165;&#x8BE5;&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E09;)&#x3001;&#x8FDB;&#x5165;MySQL&#x6E90;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x65B0;&#x5EFA;configure&#x505A;&#x4E3A;&#x7F16;&#x8BD1;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8FDB;&#x5165;&#x8BE5;&#x76EE;&#x5F55;:</h5>
+<pre class="language-"><code>cd mysql-5.7.20
+
+
+
+mkdir configure
+
+
+
+cd configure
+</code></pre><h5 id="&#x56DB;&#x3001;&#x4F7F;&#x7528;cmake&#x8FDB;&#x884C;&#x751F;&#x6210;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#xFF1A;"><a name="&#x56DB;&#x3001;&#x4F7F;&#x7528;cmake&#x8FDB;&#x884C;&#x751F;&#x6210;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x4F7F;&#x7528;cmake&#x8FDB;&#x884C;&#x751F;&#x6210;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x56DB;)&#x3001;&#x4F7F;&#x7528;cmake&#x8FDB;&#x884C;&#x751F;&#x6210;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#xFF1A;</h5>
+<pre class="language-"><code>cmake .. -DBUILD_CONFIG=mysql_release \
+
+
+
+-DINSTALL_LAYOUT=STANDALONE \
+
+
+
+-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+
+
+
+-DENABLE_DTRACE=OFF \
+
+
+
+-DWITH_EMBEDDED_SERVER=OFF \
+
+
+
+-DWITH_INNODB_MEMCACHED=ON \
+
+
+
+-DWITH_SSL=bundled \
+
+
+
+-DWITH_ZLIB=system \
+
+
+
+-DWITH_PAM=ON \
+
+
+
+-DCMAKE_INSTALL_PREFIX=/var/mysql/ \
+
+
+
+-DINSTALL_PLUGINDIR=&quot;/var/mysql/lib/plugin&quot; \
+
+
+
+-DDEFAULT_CHARSET=utf8 \
+
+
+
+-DDEFAULT_COLLATION=utf8_general_ci \
+
+
+
+-DWITH_EDITLINE=bundled \
+
+
+
+-DFEATURE_SET=community \
+
+
+
+-DCOMPILATION_COMMENT=&quot;MySQL Server (GPL)&quot; \
+
+
+
+-DWITH_DEBUG=OFF \
+
+
+
+-DWITH_BOOST=..
+</code></pre><p>&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x5148;&#x5220;&#x9664;CMakeCache.txt&#x540E;&#xFF0C;&#x518D;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#xFF1A;</p>
+<pre class="language-"><code>rm -rf CMakeCache.txt
+</code></pre><p>&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x7684;&#x63D0;&#x793A;&#x5C31;&#x8868;&#x793A;&#x6210;&#x529F;&#x751F;&#x6210;&#x4E86;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#xFF1A;</p>
+<pre class="language-"><code>-- Configuring done
+
+
+
+-- Generating done
+</code></pre><h5 id="&#x4E94;&#x3001;&#x4F7F;&#x7528;make&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF1A;"><a name="&#x4E94;&#x3001;&#x4F7F;&#x7528;make&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;&#x4F7F;&#x7528;make&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E94;)&#x3001;&#x4F7F;&#x7528;make&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF1A;</h5>
+<pre class="language-"><code>make
+</code></pre><p>&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre class="language-"><code>[100%] Building CXX object sql/CMakeFiles/udf_example.dir/udf_example.cc.o
+
+
+
+Linking CXX shared module udf_example.so
+
+
+
+[100%] Built target udf_example
+
+
+
+[100%] Built target my_safe_process
+</code></pre><h5 id="&#x516D;&#x3001;&#x5B89;&#x88C5;mysql"><a name="&#x516D;&#x3001;&#x5B89;&#x88C5;mysql" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;&#x5B89;&#x88C5;mysql"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x516D;)&#x3001;&#x5B89;&#x88C5;MySQL:</h5>
+<pre class="language-"><code>make install
+</code></pre><h4 id="&#x4E09;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;"><a name="&#x4E09;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;</h4>
+<h5 id="&#x4E00;&#x3001;&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;"><a name="&#x4E00;&#x3001;&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E00;)&#x3001;&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;:</h5>
+<pre class="language-"><code>useradd -s /sbin/nologin mysql
+</code></pre><h5 id="&#x4E8C;&#x3001;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x66F4;&#x6539;&#x7528;&#x6237;&#x4E3A;mysql"><a name="&#x4E8C;&#x3001;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x66F4;&#x6539;&#x7528;&#x6237;&#x4E3A;mysql" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x66F4;&#x6539;&#x7528;&#x6237;&#x4E3A;mysql"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E8C;)&#x3001;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x66F4;&#x6539;&#x7528;&#x6237;&#x4E3A;mysql:</h5>
+<pre class="language-"><code>mkdir /mysql_data
+
+
+
+mkdir /var/mysql/log
+
+
+
+chown -R mysql:mysql /mysql_data/
+
+
+
+chown -R mysql:mysql /var/mysql/log
+</code></pre><p>#&#x5EFA;&#x7ACB;&#x6587;&#x4EF6;</p>
+<p>touch error.log</p>
+<p>#&#x8D4B;&#x6743;&#x9650;&#x5B50;&#x76EE;&#x5F55;&#x53CA;&#x6587;&#x4EF6;</p>
+<p>chmod -R 777 /var/mysql/log</p>
+<h5 id="&#x4E09;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x4E09;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E09;)&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h5>
+<pre class="language-"><code>vim /etc/my.cnf
+</code></pre><p>&#x5C06;[mysqld]&#x9879;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x66FF;&#x6362;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>[mysqld]
+
+
+
+port=3306
+
+
+
+datadir=/mysql_data
+
+
+
+log_error=/var/mysql/log/error.log
+
+
+
+basedir=/var/mysql/
+
+
+
+
+
+
+
+&#x6CE8;&#x610F;&#xFF1A;my.cnf&#x6587;&#x4EF6;&#x6709;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;
+
+
+
+socket=/var/lib/mysql/mysql.sock
+
+
+
+&#x9700;&#x8981;&#x624B;&#x52A8;&#x5EFA;&#x7ACB;mysql.sock,&#x5E76;&#x8D4B;&#x503C;&#x8BFB;&#x5199;&#x6267;&#x884C;&#x6743;&#x9650;
+
+
+
+chmod -R 777 mysql.sock
+</code></pre><h5 id="&#x56DB;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;"><a name="&#x56DB;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x56DB;)&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;:</h5>
+<pre class="language-"><code>/var/mysql/bin/mysqld  --initialize --user=mysql
+</code></pre><p>&#x67E5;&#x770B;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x751F;&#x6210;:</p>
+<pre class="language-"><code>[root@localhost configure]# ll /mysql_data/
+
+
+
+&#x603B;&#x7528;&#x91CF; 110620
+
+
+
+-rw-r-----. 1 mysql mysql       56 10&#x6708;  2 19:44 auto.cnf
+
+
+
+-rw-r-----. 1 mysql mysql      419 10&#x6708;  2 19:44 ib_buffer_pool
+
+
+
+-rw-r-----. 1 mysql mysql 12582912 10&#x6708;  2 19:44 ibdata1
+
+
+
+-rw-r-----. 1 mysql mysql 50331648 10&#x6708;  2 19:44 ib_logfile0
+
+
+
+-rw-r-----. 1 mysql mysql 50331648 10&#x6708;  2 19:44 ib_logfile1
+
+
+
+drwxr-x---. 2 mysql mysql     4096 10&#x6708;  2 19:44 mysql
+
+
+
+drwxr-x---. 2 mysql mysql     4096 10&#x6708;  2 19:44 performance_schema
+
+
+
+drwxr-x---. 2 mysql mysql    12288 10&#x6708;  2 19:44 sys
+</code></pre><p>&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x751F;&#x6210;&#xFF1A;</p>
+<pre class="language-"><code>[root@localhost mysql]# ll /var/mysql/log/
+
+
+
+&#x603B;&#x7528;&#x91CF; 4
+
+
+
+-rw-r-----. 1 mysql mysql 802 10&#x6708;  2 19:47 error.log
+</code></pre><h4 id="&#x56DB;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x66F4;"><a name="&#x56DB;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x66F4;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x66F4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x66F4;</h4>
+<h5 id="&#x4E00;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;"><a name="&#x4E00;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E00;)&#x3001;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x6587;&#x4EF6;</h5>
+<p><strong>1. &#x4ECE;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x4E2D;&#x590D;&#x5236;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#xFF1A;</strong></p>
+<pre class="language-"><code>cp /var/mysql/support-files/mysql.server /etc/init.d/mysqld
+</code></pre><p><strong>2. &#x4FEE;&#x6539;&#x542F;&#x52A8;&#x6587;&#x4EF6;&#xFF1A;</strong></p>
+<pre class="language-"><code>vim /etc/init.d/mysqld
+</code></pre><p>&#x627E;&#x5230;&#x5982;&#x4E0B;&#x4E8C;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code>basedir=
+
+
+
+datadir=
+</code></pre><p>&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>basedir=/var/mysql/
+
+
+
+datadir=/mysql_data
+</code></pre><p><strong>3. &#x542F;&#x52A8;mysql:</strong></p>
+<pre class="language-"><code>[root@localhost mysql]# /etc/init.d/mysqld start
+
+
+
+Starting MySQL. SUCCESS!
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x63D0;&#x793A;&#xFF0C;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x542F;&#x52A8;&#x3002;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;systemctl&#x6765;&#x542F;&#x52A8;MySQL&#xFF0C;&#x4F46;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x63D0;&#x793A;&#x3002;</p>
+<pre class="language-"><code>[root@localhost ~]# systemctl start mysqld
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x5982;&#x679C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x63D0;&#x793A;</p>
+<p>Failed to start mysqld.service: Unit not found</p>
+<p>&#xFF08;&#x6709;&#x4E9B;&#x6587;&#x7AE0;&#x8BF4;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#xFF0C;&#x4F1A;&#x51B2;&#x7A81;&#x53C2;&#x8003;&#xFF1A;<a href="https://www.zhihu.com/question/41832866" target="_blank">CentOS 7&#x4E3A;&#x4EC0;&#x4E48;&#x653E;&#x5F03;&#x4E86;MySQL&#xFF0C;&#x800C;&#x6539;&#x4F7F;&#x7528;MariaDB&#xFF1F;&#xFF09;</a></p>
+<p>&#xFF08;<a href="https://www.cnblogs.com/progor/archive/2018/01/30/8387301.html&#xFF09;" target="_blank">https://www.cnblogs.com/progor/archive/2018/01/30/8387301.html&#xFF09;</a></p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;:</p>
+<p>&#x3000;&#x3000;&#x9996;&#x5148;&#x9700;&#x8981;&#x5B89;&#x88C5;mariadb-server</p>
+<p>&#x3000;&#x3000;~]# yum install -y mariadb-server</p>
+<p>&#x3000;&#x3000;&#x542F;&#x52A8;&#x670D;&#x52A1;</p>
+<p>&#x3000;&#x3000;~]# systemctl start mariadb.service</p>
+<p>&#x3000;&#x3000;&#x6DFB;&#x52A0;&#x5230;&#x5F00;&#x673A;&#x542F;&#x52A8;</p>
+<p>&#x3000;&#x3000;~]# systemctl enable mariadb.service</p>
+<p>&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x5B89;&#x5168;&#x8BBE;&#x7F6E;&#xFF0C;&#x4EE5;&#x53CA;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;</p>
+<p>&#x3000;&#x3000;~]# mysql_sceure_installation</p>
+<p>&#x81F3;&#x6B64;&#x5B8C;&#x6210;!</p>
+<p>&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;</p>
+<p>&#x3000;&#x3000;~]#  mysql -u root -p</p>
+<h5 id="&#x4E8C;&#x3001;&#x8BBE;&#x7F6E;mysql&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#xFF1A;"><a name="&#x4E8C;&#x3001;&#x8BBE;&#x7F6E;mysql&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x8BBE;&#x7F6E;mysql&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E8C;)&#x3001;&#x8BBE;&#x7F6E;MySQL&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#xFF1A;</h5>
+<pre class="language-"><code>[root@localhost ~]# systemctl enable mysqld
+
+
+
+mysqld.service is not a native service, redirecting to /sbin/chkconfig.
+
+
+
+Executing /sbin/chkconfig mysqld on
+</code></pre><h5 id="&#x4E09;&#x3001;&#x914D;&#x7F6E;mysql&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;"><a name="&#x4E09;&#x3001;&#x914D;&#x7F6E;mysql&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x914D;&#x7F6E;mysql&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E09;)&#x3001;&#x914D;&#x7F6E;MySQL&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</h5>
+<pre class="language-"><code>vim /root/.bash_profile
+</code></pre><p>&#x627E;&#x5230;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code>PATH=$PATH:$HOME/bin
+</code></pre><p>&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>PATH=$PATH:$HOME/bin:/var/mysql/bin
+</code></pre><h5 id="&#x56DB;&#x3001;&#x4FEE;&#x6539;root&#x7684;&#x521D;&#x59CB;&#x5BC6;&#x7801;"><a name="&#x56DB;&#x3001;&#x4FEE;&#x6539;root&#x7684;&#x521D;&#x59CB;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x4FEE;&#x6539;root&#x7684;&#x521D;&#x59CB;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x56DB;)&#x3001;&#x4FEE;&#x6539;root&#x7684;&#x521D;&#x59CB;&#x5BC6;&#x7801;</h5>
+<p><strong>1. &#x67E5;&#x770B;root&#x7684;&#x521D;&#x59CB;&#x5BC6;&#x7801;</strong> 
+MySQL&#x4ECE;5.7&#x5F00;&#x59CB;&#x4E0D;&#x652F;&#x6301;&#x5B89;&#x88C5;&#x540E;&#x4F7F;&#x7528;&#x7A7A;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x767B;&#x5F55;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5148;&#x67E5;&#x8BE2;&#x7A0B;&#x5E8F;&#x751F;&#x6210;&#x7684;&#x4E34;&#x65F6;&#x5BC6;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code>[root@localhost ~]# cat /var/mysql/log/error.log |grep &apos;A temporary password&apos;
+
+
+
+2017-11-13T06:28:23.096812Z 1 [Note] A temporary password is generated for root@localhost: wa&amp;sk371_,US
+</code></pre><p>&#x6700;&#x540E;&#x4E00;&#x884C;&#x5192;&#x53F7;&#x540E;&#x9762;&#x7684;&#x90E8;&#x5206;bkv,dy,)o7Ss&#x5C31;&#x662F;&#x521D;&#x59CB;&#x5BC6;&#x7801;&#x3002; 
+<strong>2. &#x767B;&#x5F55;MySQL&#x5E76;&#x4FEE;&#x6539;&#x521D;&#x59CB;&#x5BC6;&#x7801;&#xFF1A;</strong> 
+&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x5BC6;&#x7801;&#x767B;&#x5F55;MySQL:</p>
+<pre class="language-"><code>[root@localhost ~]# mysql -uroot -p
+
+
+
+Enter password:
+</code></pre><p>&#x767B;&#x5F55;&#x540E;&#x7ACB;&#x5373;&#x4FEE;&#x6539;root&#x5BC6;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code>mysql&gt; alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;your_password&apos;;
+
+
+
+&#x5E76;&#x4E0D;&#x662F;&#x671F;&#x671B;&#x7684;&#xFF1A;
+
+
+
+ Query OK, 0 rows affected (0.00 sec)
+
+
+
+&#x800C;&#x662F;&#xFF1A;
+
+
+
+bash: alter: command not found...
+
+
+
+mysql&gt; update user set passsword=&quot;123456&quot; where user=&quot;root&quot;;
+
+
+
+&#x4E5F;&#x662F;&#xFF1A;bash: alter: command not found.
+
+
+
+
+
+
+
+&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;
+</code></pre><p>1&#x3001;&#x4FEE;&#x6539; /etc/my.cnf&#xFF0C;&#x5728; [mysqld] &#x5C0F;&#x8282;&#x4E0B;&#x6DFB;&#x52A0;&#x4E00;&#x884C;&#xFF1A;skip-grant-tables=1</p>
+<p>&#x8FD9;&#x4E00;&#x884C;&#x914D;&#x7F6E;&#x8BA9; mysqld &#x542F;&#x52A8;&#x65F6;&#x4E0D;&#x5BF9;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;</p>
+<p>2&#x3001;&#x91CD;&#x542F; mysqld &#x670D;&#x52A1;&#xFF1A;systemctl restart mysqld</p>
+<p>3&#x3001;&#x4F7F;&#x7528; root &#x7528;&#x6237;&#x767B;&#x5F55;&#x5230; mysql&#xFF1A;mysql -u root </p>
+<p>4&#x3001;&#x5207;&#x6362;&#x5230;mysql&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x66F4;&#x65B0; user &#x8868;&#xFF1A;</p>
+<p>update user set authentication_string = password(&apos;root&apos;), password_expired = &apos;N&apos;, password_last_changed = now() where user = &apos;root&apos;;</p>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5BC6;&#x7801;&#x5B57;&#x6BB5;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x662F; password&#xFF0C;5.7&#x7248;&#x672C;&#x6539;&#x4E3A;&#x4E86; authentication_string</p>
+<p>5&#x3001;&#x9000;&#x51FA; mysql&#xFF0C;&#xFF08;exit&#x6216;&#x8005;quit&#xFF09;&#x7F16;&#x8F91; /etc/my.cnf &#x6587;&#x4EF6;&#xFF0C;&#x5220;&#x9664; skip-grant-tables=1 &#x7684;&#x5185;&#x5BB9;</p>
+<p>6&#x3001;&#x91CD;&#x542F; mysqld &#x670D;&#x52A1;&#xFF0C;&#x518D;&#x7528;&#x65B0;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x5373;&#x53EF;</p>
+<pre class="language-"><code>
+
+</code></pre><p>``</p>
+<h5 id="&#x4E94;&#x3001;&#x6D4B;&#x8BD5;"><a name="&#x4E94;&#x3001;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E94;)&#x3001;&#x6D4B;&#x8BD5;</h5>
+<p>&#x8BBE;&#x7F6E;&#x597D;&#x4EE5;&#x540E;&#xFF0C;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#xFF1A;</p>
+<pre class="language-"><code>[root@localhost ~]# ps aux |grep mysqld
+
+
+
+root       816  0.0  0.1 115388  1716 ?        S    14:45   0:00 /bin/sh /var/mysql//bin/mysqld_safe --datadir=/mysql_data --pid-file=/mysql_data/localhost.localdomain.pid
+
+
+
+mysql     1034  1.0 17.6 1122908 179688 ?      Sl   14:45   0:00 /var/mysql/bin/mysqld --basedir=/var/mysql/ --datadir=/mysql_data --plugin-dir=/var/mysql//lib/plugin --user=mysql --log-error=/var/mysql/log/error.log --pid-file=/mysql_data/localhost.localdomain.pid --port=3306
+
+
+
+root      1119  0.0  0.0 112676   984 pts/1    R+   14:46   0:00 grep --color=auto mysqld
+</code></pre><p>&#x51FA;&#x73B0;&#x4EE5;&#x4E0A;&#x4FE1;&#x606F;&#x5C31;&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x5728;CentOS7.2&#x4E0A;&#x624B;&#x5DE5;&#x7F16;&#x8BD1;&#x3001;&#x5B89;&#x88C5;MySQL5.7.22&#x5168;&#x90E8;&#x8FC7;&#x7A0B;)</p>
+<h5 id="&#x516D;&#x3001;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;"><a name="&#x516D;&#x3001;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x516D;)&#x3001;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</h5>
+<h5 id="1&#x7528;navicat&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;"><a name="1&#x7528;navicat&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1&#x7528;navicat&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x7528;navicat&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;</h5>
+<p>&#x5148;&#x7528;telnet 192.168.<strong><em>.</em></strong> 3306 ,&#x8FDE;&#x63A5;&#x4E0D;&#x4E0A;&#xFF0C;&#x8BF4;&#x660E;linux&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x7AEF;&#x53E3;&#xFF1A;</p>
+<p>&#x5F00;&#x542F;&#x7AEF;&#x53E3;&#x547D;&#x4EE4;&#xFF1A;</p>
+<p>/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT</p>
+<p><img src="https://img-blog.csdn.net/20180705095817853?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Nzc3Nzc2NjY2NjYw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>&#x767B;&#x5F55;mysql&#x6388;&#x6743;&#xFF1A;</p>
+<p>grant all privileges on <em>.</em> to &apos;root&apos;@&apos;%&apos; identified by &apos;123456&apos;&#xFF1B;</p>
+<p>flush privileges;</p>
+<p><img src="https://img-blog.csdn.net/20180705101632107?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Nzc3Nzc2NjY2NjYw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>&#x5728;windows&#x4E0B;&#xFF0C;&#x7528;navicat&#x8FDE;&#x63A5;&#x6210;&#x529F;</p>
+<h5 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h5>
+<h5 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h5>
+<h5 id="&#x4E03;&#x3001;&#x5176;&#x5B83;&#x64CD;&#x4F5C;"><a name="&#x4E03;&#x3001;&#x5176;&#x5B83;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x4E03;&#x3001;&#x5176;&#x5B83;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x4E03;)&#x3001;&#x5176;&#x5B83;&#x64CD;&#x4F5C;</h5>
+<p>&#x67E5;&#x770B;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;&#x7684;&#x670D;&#x52A1;&#x4F7F;&#x7528;chkconfig&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment">#chkconfig --list</span>
+</code></pre>
+<p>&#x6216;&#x662F;&#x53EA;&#x67E5;&#x770B;MySQL&#x670D;&#x52A1;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment">#chkconfig --list mysqld</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;mysql&#x7684;2~5&#x4E3A;on&#xFF0C;&#x8BF4;&#x660E;mysql&#x670D;&#x52A1;&#x4F1A;&#x968F;&#x673A;&#x5668;&#x542F;&#x52A8;&#x800C;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x3002;</p>
+<p>2&#x3001;&#x914D;&#x7F6E;MySQL&#x7684;&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x542F;&#x52A8;</p>
+<pre class="language-"><code class="lang-cs">
+
+</code></pre>
+<ol>
+<li>chkconfig --add mysql</li>
+<li>chkconfig mysqld on</li>
+</ol>
+<p>3&#x3001;&#x547D;&#x4EE4;&#x542F;&#x52A8;/&#x5173;&#x95ED;MySQL&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">
+
+</code></pre>
+<ol>
+<li>&#x5728;bin&#x76EE;&#x5F55;&#x4E0B;&#xFF1A;service mysqld start/stop</li>
+<li>/etc/init.d/mysqld start/stop</li>
+</ol>
+<p>4&#x3001;&#x547D;&#x4EE4;&#x5173;&#x95ED;MySQL</p>
+<pre class="language-"><code class="lang-perl">mysqladmin <span class="token operator">-p</span> <span class="token operator">-u</span> root shutdown
+</code></pre>
+<p>5&#x3001;&#x68C0;&#x67E5;mysql&#x662F;&#x5426;&#x771F;&#x6B63;&#x7684;&#x542F;&#x52A8;</p>
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x67E5;&#x8BE2;&#x7AEF;&#x53E3;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment">#netstat -tulpn</span>
+</code></pre>
+<p>MySQL&#x76D1;&#x63A7;&#x7684;&#x662F;TCP&#x7684;3306&#x7AEF;&#x53E3;&#xFF0C;&#x56FE;&#x4E2D;&#x547D;&#x4EE4;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#x5373;&#x662F;MySQL&#x670D;&#x52A1;&#x5728;&#x8FD0;&#x884C;&#x4E2D;&#x3002;</p>
+<p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x67E5;&#x8BE2;&#x8FDB;&#x7A0B;</p>
+<pre class="language-"><code class="lang-perl">ps <span class="token operator">-</span>ef <span class="token operator">|</span> grep mysqld
+</code></pre>
+<p>&#x5982;&#x679C;&#x6709;mysqld_safe&#x548C;mysqld&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x8BF4;&#x660E;MySQL&#x670D;&#x52A1;&#x5F53;&#x524D;&#x5728;&#x542F;&#x52A8;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>centos7.2 &#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x72B6;&#x6001;</strong></p>
+<p>firewall-cmd --state #&#x67E5;&#x770B;&#x9ED8;&#x8BA4;&#x9632;&#x706B;&#x5899;&#x72B6;&#x6001;&#xFF08;&#x5173;&#x95ED;&#x540E;&#x663E;&#x793A;notrunning&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x663E;&#x793A;running&#xFF09;</p>
+<p>systemctl stop firewalld.service #&#x505C;&#x6B62;firewall</p>
+<p>systemctl disable firewalld.service #&#x7981;&#x6B62;firewall&#x5F00;&#x673A;&#x542F;&#x52A8;</p>
+<p>init 6 &#x6216;&#x8005; reboot #&#x91CD;&#x542F;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8F93;&#x5165;&#x7B2C;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x72B6;&#x6001;</p>
+<p><strong>netstat &#x548C;ifconfig&#x4E0D;&#x53EF;&#x7528;</strong></p>
+<p>yum search ifconfig</p>
+<p>&#x901A;&#x8FC7;yum search &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6211;&#x4EEC;&#x53D1;&#x73B0;ifconfig&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x662F;&#x5728;net-tools.x86_64&#x8FD9;&#x4E2A;&#x5305;&#x91CC;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x8FD9;&#x4E2A;&#x5305;&#x5C31;&#x884C;&#x4E86;</p>
+<p>&#x8FD0;&#x884C;  yum install net-tools  &#x5C31;OK&#x4E86; </p>
+<footer class="page-footer"><span class="copyright">&#x6BCF;&#x5929;&#x8BB0;&#x5F55;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x6BCF;&#x5929;&#x63D0;&#x9AD8;&#x4E00;&#x70B9;&#x70B9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-04-13 21:39:23
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql install param.html" class="navigation navigation-prev " aria-label="Previous page: mysql install param">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mysql isntall rpm.html" class="navigation navigation-next " aria-label="Next page: mysql isntall rpm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mysql install source","level":"6.3","depth":1,"next":{"title":"mysql isntall rpm","level":"6.4","depth":1,"path":"MYSQL/mysql isntall rpm.md","ref":"./MYSQL/mysql isntall rpm.md","articles":[]},"previous":{"title":"mysql install param","level":"6.2","depth":1,"path":"MYSQL/mysql install param.md","ref":"./MYSQL/mysql install param.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","chart@^0.2.0"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"每天记录一点点，每天提高一点点","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"loveagri"},"pluginsConfig":{"introduction-text":"封面"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"+基友","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg","wechatText":"+微信"},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"个人笔记","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"google":true,"qq":true,"qzone":true,"twitter":true,"weibo":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://github.com/loveagri/note"}},"gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"MYSQL/mysql install source.md","mtime":"2019-04-13T13:39:23.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-13T13:39:33.500Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Apr 2019 13:33:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Apr 2019 13:39:40 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -83,6 +83,13 @@
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/MYSQL/mysql install param.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/MYSQL/mysql install param.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CentOS 7.2使用源码包编译安装MySQL 5.7.22及一些操作]]></title>
+            <description><![CDATA[Link]]></description>
+            <link>https://loveagri.github.io/note/MYSQL/mysql install source.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/MYSQL/mysql install source.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
