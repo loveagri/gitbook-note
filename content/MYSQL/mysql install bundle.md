@@ -56,6 +56,25 @@ rpm -ivh mysql-community-devel-5.7.18-1.el7.x87_64.rpm //包含开发用的库�
 
 ![img](http://i.imgur.com/RSt2SAW.jpg)
 
+
+
+```
+[root@localhost upload]# rpm -ivh MySQL-server-5.5.25a-1.rhel5.x86_64.rpm
+error: Failed dependencies:
+libaio.so.1()(64bit) is needed by MySQL-server-5.5.25a-1.rhel5.x86_64
+libaio.so.1(LIBAIO_0.1)(64bit) is needed by MySQL-server-5.5.25a-1.rhel5.x86_64
+
+libaio.so.1(LIBAIO_0.4)(64bit) is needed by MySQL-server-5.5.25a-1.rhel5.x86_64
+
+网站百度了很多个文章，都不行，后来发现有一篇文章写的方法可以，命令如下：
+
+yum install libaio
+
+这样就ok了，就可以继续安装mysql了
+```
+
+
+
 ### 五、数据库初始化
 
 #### 1.为了保证数据库目录为与文件的所有者为 mysql 登陆用户，如果你的linux系统是以 root 身份运行 mysql 服务，需要执行下面的命令初始化
