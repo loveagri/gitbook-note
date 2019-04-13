@@ -24,6 +24,7 @@
 
 
 ## MYSQL
+* [mysql install bundle](./MYSQL/mysql install bundle.md)
 * [mysql install param](./MYSQL/mysql install param.md)
 * [mysql isntall rpm](./MYSQL/mysql isntall rpm.md)
 * [mysql](./MYSQL/mysql.md)
