@@ -80,6 +80,7 @@ yum install libaio
 #### 1.为了保证数据库目录为与文件的所有者为 mysql 登陆用户，如果你的linux系统是以 root 身份运行 mysql 服务，需要执行下面的命令初始化
 
 ```
+groupadd -r mysql && useradd -r -g mysql -s /sbin/nologin -M mysql
 [root@localhost mysql]# mysqld --initialize --user=mysql
 ```
 

@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Apr 2019 13:55:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Apr 2019 17:48:59 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -240,6 +240,20 @@ gitlab之webhook自动部署]]></description>
             <description><![CDATA[linux下编译安装最新版phalcon centos下PHP7添加phalcon扩展]]></description>
             <link>https://loveagri.github.io/note/php/Mac编译安装phalcon.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/php/Mac编译安装phalcon.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CentOS7.2编译安装PHP7.2.3之史上最详细步骤。]]></title>
+            <description><![CDATA[Link]]></description>
+            <link>https://loveagri.github.io/note/php/centos source install.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/php/centos source install.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Centos7Yum安装PHP7.2]]></title>
+            <description><![CDATA[1、安装源]]></description>
+            <link>https://loveagri.github.io/note/php/centos yum install.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/php/centos yum install.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

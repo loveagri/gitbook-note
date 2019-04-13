@@ -69,6 +69,8 @@
 
 ## php
 * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
+* [centos source install](./php/centos source install.md)
+* [centos yum install](./php/centos yum install.md)
 * [php-fpm守护进程](./php/php-fpm守护进程.md)
 * [start-end](./php/start-end.md)
 * [xdebug](./php/xdebug.md)

@@ -130,11 +130,19 @@ success
 
 修改/etc/my.cnf配置文件，在[mysqld]下添加编码配置，如下所示：
 
+
+
 [mysqld]
 
 character_set_server=utf8
 
 init_connect='SET NAMES utf8'
+
+
+
+[client]
+
+default-character-set=utf8　　
 
  
 
