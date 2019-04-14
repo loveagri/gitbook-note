@@ -11,6 +11,10 @@
 * [HTML实体符号代码速查表](./HTML/HTML实体符号代码速查表.md)
 
 
+## Laravel
+* [扩展包开发](./Laravel/扩展包开发.md)
+
+
 ## Linux
 * [DHCP](./Linux/DHCP.md)
 * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
@@ -37,11 +41,16 @@
 * [proxy](./Nginx/proxy.md)
 
 
+## PHPStorm
+* [configuration](./PHPStorm/configuration.md)
+
+
 ## Untitled Folder
 
 
 ## git
 * [git command](./git/git command.md)
+* [git user](./git/git user.md)
 * [git-create](./git/git-create.md)
 * [git-reset-org](./git/git-reset-org.md)
 * [ssh-keygen](./git/ssh-keygen.md)
@@ -69,6 +78,7 @@
 
 ## php
 * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
+* [api develop](./php/api develop.md)
 * [centos source install](./php/centos source install.md)
 * [centos yum install](./php/centos yum install.md)
 * [php-fpm守护进程](./php/php-fpm守护进程.md)
@@ -95,6 +105,10 @@
 ## vim
 * [shortcut](./vim/shortcut.md)
 * [study](./vim/study.md)
+
+
+## virtualBox
+* [homestead](./virtualBox/homestead.md)
 
 
 ## webpack

@@ -222,6 +222,8 @@ cp /usr/src/php-7.2.3/sapi/fpm/init.d.php-fpm.in /etc/init.d/php-fpm
 PATH=$PATH:/usr/local/php/bin
 export PATH
 12
+
+ln -s /usr/local/php/bin/php /usr/bin/php
 ```
 
 然后执行 命令 `source /etc/profile`
@@ -244,7 +246,7 @@ chmod +x /etc/init.d/php-fpm
 
 ```
 groupadd www-data
-useradd -g www-data www-data
+useradd -g www-data www-data  #对应configure里的用户组
 12
 ```
 

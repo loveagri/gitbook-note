@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Apr 2019 17:48:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2019 04:41:52 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -28,6 +28,13 @@
             <description><![CDATA[1.特色的]]></description>
             <link>https://loveagri.github.io/note/HTML/HTML实体符号代码速查表.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/HTML/HTML实体符号代码速查表.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[扩展包开发]]></title>
+            <description><![CDATA[扩展包是对软件功能的扩充，下面我们开发一个多网关上传扩展包，目前支持阿里云OSS上传。]]></description>
+            <link>https://loveagri.github.io/note/Laravel/扩展包开发.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Laravel/扩展包开发.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -126,10 +133,24 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[PHPSTORM]]></title>
+            <description><![CDATA[下面在windows系统中介绍PHPSTORM使用,MAC使用与windows只是键盘布局差异。所以就不重复介绍了。]]></description>
+            <link>https://loveagri.github.io/note/PHPStorm/configuration.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/PHPStorm/configuration.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[Git使用教程]]></title>
             <description><![CDATA[Git教程]]></description>
             <link>https://loveagri.github.io/note/git/git command.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/git/git command.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[远程仓库]]></title>
+            <description><![CDATA[自诞生于 2005 年以来，Git 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目 。]]></description>
+            <link>https://loveagri.github.io/note/git/git user.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/git/git user.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -243,6 +264,13 @@ gitlab之webhook自动部署]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[REST是所有Web应用都应该遵守的架构设计指导原则。  Representational State Transfer，翻译是”表现层状态转化”。]]></description>
+            <link>https://loveagri.github.io/note/php/api develop.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/php/api develop.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[CentOS7.2编译安装PHP7.2.3之史上最详细步骤。]]></title>
             <description><![CDATA[Link]]></description>
             <link>https://loveagri.github.io/note/php/centos source install.html</link>
@@ -338,6 +366,15 @@ fx 在当前行中找x字符，找到了就跳转至
 # 查找光标所在处的单词，向上查找]]></description>
             <link>https://loveagri.github.io/note/vim/study.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/vim/study.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Homestead Win]]></title>
+            <description><![CDATA[Laravel 致力于让整个 PHP 开发体验变得愉快， 包括你的本地开发环境。 Vagrant 提供了一种简单，优雅的方式来管理和配置虚拟机。
+Laravel Homestead 是一个官方预封装的 Vagrant box，它为你提供了一个完美的开发环境，而无需在本地机器安装 PHP 、Web 服务器和其他服务器软件。不用担心会搞乱你的操作系统！Vagrant boxes 是一次性的。如果出现问题，你可以在几分钟内销毁并创建 Box!
+Homestead 可以运行在任何 Windows，Mac，或 Linux 系统，它包括了 Nginx web 服务器， PHP 7.2，PHP 7.1，PHP 7.0，PHP 5.6， MySQL，PostgreSQL，Redis，Memcached， Node，以及开发 Laravel 应用程序所需要的东西。]]></description>
+            <link>https://loveagri.github.io/note/virtualBox/homestead.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/virtualBox/homestead.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

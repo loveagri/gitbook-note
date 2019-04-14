@@ -1,0 +1,1800 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>api develop · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="loveagri">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-diy-introduction/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="centos source install.html" />
+    
+    
+    <link rel="prev" href="Mac编译安装phalcon.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    <link href="https://loveagri.github.io/note/" title="个人笔记" rel="alternate" type="application/rss+xml" />
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"loveagri/note","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/loveagri/note" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">loveagri</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS3</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../CSS3/CSS3 三角形.html">
+            
+                <a href="../CSS3/CSS3 三角形.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    CSS3 三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">HTML</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../HTML/HTML实体符号代码速查表.html">
+            
+                <a href="../HTML/HTML实体符号代码速查表.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    HTML实体符号代码速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Laravel</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Laravel/扩展包开发.html">
+            
+                <a href="../Laravel/扩展包开发.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    扩展包开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Linux/DHCP.html">
+            
+                <a href="../Linux/DHCP.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    DHCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../Linux/Mac-item2-crontab无法写入.html">
+            
+                <a href="../Linux/Mac-item2-crontab无法写入.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Mac-item2-crontab无法写入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../Linux/centos yum rpm源.html">
+            
+                <a href="../Linux/centos yum rpm源.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    centos yum rpm源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Linux/centos7 bridge.html">
+            
+                <a href="../Linux/centos7 bridge.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    centos7 bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../Linux/curl command.html">
+            
+                <a href="../Linux/curl command.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    curl command
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MAC</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../MAC/APP.html">
+            
+                <a href="../MAC/APP.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    APP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MYSQL</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../MYSQL/mysql install bundle.html">
+            
+                <a href="../MYSQL/mysql install bundle.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    mysql install bundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../MYSQL/mysql install param.html">
+            
+                <a href="../MYSQL/mysql install param.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    mysql install param
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../MYSQL/mysql install source.html">
+            
+                <a href="../MYSQL/mysql install source.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    mysql install source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../MYSQL/mysql isntall rpm.html">
+            
+                <a href="../MYSQL/mysql isntall rpm.html">
+            
+                    
+                        <b>7.4.</b>
+                    
+                    mysql isntall rpm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../MYSQL/mysql.html">
+            
+                <a href="../MYSQL/mysql.html">
+            
+                    
+                        <b>7.5.</b>
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Nginx</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Nginx/Mac开机自启动NGINX.html">
+            
+                <a href="../Nginx/Mac开机自启动NGINX.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    Mac开机自启动NGINX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../Nginx/nginx编译安装参数.html">
+            
+                <a href="../Nginx/nginx编译安装参数.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    nginx编译安装参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../Nginx/proxy.html">
+            
+                <a href="../Nginx/proxy.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">PHPStorm</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../PHPStorm/configuration.html">
+            
+                <a href="../PHPStorm/configuration.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Untitled Folder</li>
+        
+        
+    
+
+    
+        
+        <li class="header">git</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../git/git command.html">
+            
+                <a href="../git/git command.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    git command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../git/git user.html">
+            
+                <a href="../git/git user.html">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    git user
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../git/git-create.html">
+            
+                <a href="../git/git-create.html">
+            
+                    
+                        <b>11.3.</b>
+                    
+                    git-create
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../git/git-reset-org.html">
+            
+                <a href="../git/git-reset-org.html">
+            
+                    
+                        <b>11.4.</b>
+                    
+                    git-reset-org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../git/ssh-keygen.html">
+            
+                <a href="../git/ssh-keygen.html">
+            
+                    
+                        <b>11.5.</b>
+                    
+                    ssh-keygen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">js</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../js/Object.html">
+            
+                <a href="../js/Object.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../js/download base64 img.html">
+            
+                <a href="../js/download base64 img.html">
+            
+                    
+                        <b>12.2.</b>
+                    
+                    download base64 img
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../js/js实现上划下拉.html">
+            
+                <a href="../js/js实现上划下拉.html">
+            
+                    
+                        <b>12.3.</b>
+                    
+                    js实现上划下拉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../js/js获取各种宽高.html">
+            
+                <a href="../js/js获取各种宽高.html">
+            
+                    
+                        <b>12.4.</b>
+                    
+                    js获取各种宽高
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="../js/reg.html">
+            
+                <a href="../js/reg.html">
+            
+                    
+                        <b>12.5.</b>
+                    
+                    reg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="../js/skills.html">
+            
+                <a href="../js/skills.html">
+            
+                    
+                        <b>12.6.</b>
+                    
+                    skills
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="../js/taobao-html-fontsize.html">
+            
+                <a href="../js/taobao-html-fontsize.html">
+            
+                    
+                        <b>12.7.</b>
+                    
+                    taobao-html-fontsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="../js/正则读文件内容替换.html">
+            
+                <a href="../js/正则读文件内容替换.html">
+            
+                    
+                        <b>12.8.</b>
+                    
+                    正则读文件内容替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">mobile</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../mobile/打包工程.html">
+            
+                <a href="../mobile/打包工程.html">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    打包工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">npm</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../npm/install-npm-server.html">
+            
+                <a href="../npm/install-npm-server.html">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    install-npm-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../npm/npm-update.html">
+            
+                <a href="../npm/npm-update.html">
+            
+                    
+                        <b>14.2.</b>
+                    
+                    npm-update
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">php</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="Mac编译安装phalcon.html">
+            
+                <a href="Mac编译安装phalcon.html">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    Mac编译安装phalcon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="15.2" data-path="api develop.html">
+            
+                <a href="api develop.html">
+            
+                    
+                        <b>15.2.</b>
+                    
+                    api develop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="centos source install.html">
+            
+                <a href="centos source install.html">
+            
+                    
+                        <b>15.3.</b>
+                    
+                    centos source install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="centos yum install.html">
+            
+                <a href="centos yum install.html">
+            
+                    
+                        <b>15.4.</b>
+                    
+                    centos yum install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.5" data-path="php-fpm守护进程.html">
+            
+                <a href="php-fpm守护进程.html">
+            
+                    
+                        <b>15.5.</b>
+                    
+                    php-fpm守护进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.6" data-path="start-end.html">
+            
+                <a href="start-end.html">
+            
+                    
+                        <b>15.6.</b>
+                    
+                    start-end
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.7" data-path="xdebug.html">
+            
+                <a href="xdebug.html">
+            
+                    
+                        <b>15.7.</b>
+                    
+                    xdebug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python</li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../python/pip set proxy.html">
+            
+                <a href="../python/pip set proxy.html">
+            
+                    
+                        <b>16.1.</b>
+                    
+                    pip set proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">react</li>
+        
+        
+    
+        <li class="chapter " data-level="17.1" data-path="../react/hot reload.html">
+            
+                <a href="../react/hot reload.html">
+            
+                    
+                        <b>17.1.</b>
+                    
+                    hot reload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">sass</li>
+        
+        
+    
+        <li class="chapter " data-level="18.1" data-path="../sass/px-to-rem.html">
+            
+                <a href="../sass/px-to-rem.html">
+            
+                    
+                        <b>18.1.</b>
+                    
+                    px-to-rem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">sublime</li>
+        
+        
+    
+        <li class="chapter " data-level="19.1" data-path="../sublime/License.html">
+            
+                <a href="../sublime/License.html">
+            
+                    
+                        <b>19.1.</b>
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">vim</li>
+        
+        
+    
+        <li class="chapter " data-level="20.1" data-path="../vim/shortcut.html">
+            
+                <a href="../vim/shortcut.html">
+            
+                    
+                        <b>20.1.</b>
+                    
+                    shortcut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="20.2" data-path="../vim/study.html">
+            
+                <a href="../vim/study.html">
+            
+                    
+                        <b>20.2.</b>
+                    
+                    study
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">virtualBox</li>
+        
+        
+    
+        <li class="chapter " data-level="21.1" data-path="../virtualBox/homestead.html">
+            
+                <a href="../virtualBox/homestead.html">
+            
+                    
+                        <b>21.1.</b>
+                    
+                    homestead
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">webpack</li>
+        
+        
+    
+        <li class="chapter " data-level="22.1" data-path="../webpack/file-handle.html">
+            
+                <a href="../webpack/file-handle.html">
+            
+                    
+                        <b>22.1.</b>
+                    
+                    file-handle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="22.2" data-path="../webpack/打包全过程.html">
+            
+                <a href="../webpack/打包全过程.html">
+            
+                    
+                        <b>22.2.</b>
+                    
+                    打包全过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">友情链接</li>
+        
+        
+    
+        <li class="chapter " data-level="23.1" data-path="../友情链接/blog.html">
+            
+                <a href="../友情链接/blog.html">
+            
+                    
+                        <b>23.1.</b>
+                    
+                    blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.2" data-path="../友情链接/test.html">
+            
+                <a href="../友情链接/test.html">
+            
+                    
+                        <b>23.2.</b>
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >api develop</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="api"><a name="api" class="anchor-navigation-ex-anchor" href="#api"><i class="fa fa-link" aria-hidden="true"></i></a>Api</h2>
+<p>REST&#x662F;&#x6240;&#x6709;Web&#x5E94;&#x7528;&#x90FD;&#x5E94;&#x8BE5;&#x9075;&#x5B88;&#x7684;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x6307;&#x5BFC;&#x539F;&#x5219;&#x3002;  Representational State Transfer&#xFF0C;&#x7FFB;&#x8BD1;&#x662F;&#x201D;&#x8868;&#x73B0;&#x5C42;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x201D;&#x3002;</p>
+<p>&#x9762;&#x5411;&#x8D44;&#x6E90;&#x662F;REST&#x6700;&#x660E;&#x663E;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x7684;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x8D44;&#x6E90;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4E00;&#x4E2A;&#x53EF;&#x547D;&#x540D;&#x7684;&#x62BD;&#x8C61;&#x6982;&#x5FF5;&#xFF0C;&#x8D44;&#x6E90;&#x662F;&#x4EE5;&#x540D;&#x8BCD;&#x4E3A;&#x6838;&#x5FC3;&#x6765;&#x7EC4;&#x7EC7;&#x7684;&#xFF0C;&#x9996;&#x5148;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x540D;&#x8BCD;&#x3002;REST&#x8981;&#x6C42;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#x6765;&#x5BF9;&#x8D44;&#x6E90;&#x6267;&#x884C;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x8D44;&#x6E90;&#x53EA;&#x80FD;&#x6267;&#x884C;&#x4E00;&#x7EC4;&#x6709;&#x9650;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x52A8;&#x4F5C;"><a name="&#x52A8;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x4F5C;</h3>
+<pre class="language-"><code>GET &#xFF08;SELECT&#xFF09;&#xFF1A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x68C0;&#x7D22;&#x7279;&#x5B9A;&#x8D44;&#x6E90;&#xFF0C;&#x6216;&#x8D44;&#x6E90;&#x5217;&#x8868;
+POST &#xFF08;CREATE&#xFF09;&#xFF1A;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8D44;&#x6E90;
+PUT &#xFF08;UPDATE&#xFF09;&#xFF1A;&#x66F4;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x63D0;&#x4F9B;&#x6574;&#x4E2A;&#x8D44;&#x6E90;
+PATCH &#xFF08;UPDATE&#xFF09;&#xFF1A;&#x66F4;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x4EC5;&#x63D0;&#x4F9B;&#x66F4;&#x6539;&#x7684;&#x5C5E;&#x6027;
+DELETE &#xFF08;DELETE&#xFF09;&#xFF1A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5220;&#x9664;&#x8D44;&#x6E90;
+</code></pre><h3 id="&#x547D;&#x540D;"><a name="&#x547D;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x540D;</h3>
+<p>&#x8DEF;&#x5F84;&#x53C8;&#x79F0;&quot;&#x7EC8;&#x70B9;&quot;&#xFF08;endpoint&#xFF09;&#xFF0C;&#x8868;&#x793A;API&#x7684;&#x5177;&#x4F53;&#x7F51;&#x5740;&#x3002;</p>
+<p>&#x5728;RESTful&#x67B6;&#x6784;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x7F51;&#x5740;&#x4EE3;&#x8868;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#xFF08;resource&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x7F51;&#x5740;&#x4E2D;&#x4E0D;&#x80FD;&#x6709;&#x52A8;&#x8BCD;&#xFF0C;&#x53EA;&#x80FD;&#x6709;&#x540D;&#x8BCD;&#xFF0C;&#x800C;&#x4E14;&#x6240;&#x7528;&#x7684;&#x540D;&#x8BCD;&#x5F80;&#x5F80;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;&#x5BF9;&#x5E94;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x90FD;&#x662F;&#x540C;&#x79CD;&#x8BB0;&#x5F55;&#x7684;&quot;&#x96C6;&#x5408;&quot;&#xFF08;collection&#xFF09;&#xFF0C;&#x6240;&#x4EE5;API&#x4E2D;&#x7684;&#x540D;&#x8BCD;&#x4E5F;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x590D;&#x6570;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;API&#x63D0;&#x4F9B;&#x52A8;&#x7269;&#x56ED;&#xFF08;zoo&#xFF09;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x5404;&#x79CD;&#x52A8;&#x7269;&#x548C;&#x96C7;&#x5458;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x5B83;&#x7684;&#x8DEF;&#x5F84;&#x5E94;&#x8BE5;&#x8BBE;&#x8BA1;&#x6210;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<p>&#x63A5;&#x53E3;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x540D;&#x8BCD;&#xFF0C;&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x52A8;&#x8BCD;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre class="language-"><code>GET         /zoos&#xFF1A;&#x5217;&#x51FA;&#x6240;&#x6709;&#x52A8;&#x7269;&#x56ED;
+POST        /zoos&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x52A8;&#x7269;&#x56ED;
+GET         /zoos/ID&#xFF1A;&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x4FE1;&#x606F;
+PUT         /zoos/ID&#xFF1A;&#x66F4;&#x65B0;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x63D0;&#x4F9B;&#x8BE5;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x5168;&#x90E8;&#x4FE1;&#x606F;&#xFF09;
+PATCH       /zoos/ID&#xFF1A;&#x66F4;&#x65B0;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x63D0;&#x4F9B;&#x8BE5;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x90E8;&#x5206;&#x4FE1;&#x606F;&#xFF09;
+DELETE      /zoos/ID&#xFF1A;&#x5220;&#x9664;&#x67D0;&#x4E2A;&#x52A8;&#x7269;&#x56ED;
+GET         /zoos/ID/animals&#xFF1A;&#x5217;&#x51FA;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x6240;&#x6709;&#x52A8;&#x7269;
+DELETE      /zoos/ID/animals/ID&#xFF1A;&#x5220;&#x9664;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x52A8;&#x7269;&#x56ED;&#x7684;&#x6307;&#x5B9A;&#x52A8;&#x7269;
+</code></pre><p>&#x518D;&#x6BD4;&#x5982;&#xFF0C;&#x67D0;&#x4E2A;URI&#x662F;/posts/show/1&#xFF0C;&#x5176;&#x4E2D;show&#x662F;&#x52A8;&#x8BCD;&#xFF0C;&#x8FD9;&#x4E2A;URI&#x5C31;&#x8BBE;&#x8BA1;&#x9519;&#x4E86;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x5199;&#x6CD5;&#x5E94;&#x8BE5;&#x662F;/posts/1&#xFF0C;&#x7136;&#x540E;&#x7528;GET&#x65B9;&#x6CD5;&#x8868;&#x793A;show&#x3002;</p>
+<h3 id="&#x7248;&#x672C;"><a name="&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7248;&#x672C;</h3>
+<p>&#x5E94;&#x8BE5;&#x5C06;API&#x7684;&#x7248;&#x672C;&#x53F7;&#x653E;&#x5165;URL&#x3002;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code>https://api.example.com/v1
+</code></pre><h3 id="&#x8FC7;&#x6EE4;"><a name="&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FC7;&#x6EE4;</h3>
+<p>&#x5982;&#x679C;&#x8BB0;&#x5F55;&#x6570;&#x91CF;&#x5F88;&#x591A;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x53EF;&#x80FD;&#x90FD;&#x5C06;&#x5B83;&#x4EEC;&#x8FD4;&#x56DE;&#x7ED9;&#x7528;&#x6237;&#x3002;API&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x53C2;&#x6570;&#xFF0C;&#x8FC7;&#x6EE4;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<pre class="language-"><code>?limit=10&#xFF1A;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x8BB0;&#x5F55;&#x7684;&#x6570;&#x91CF;
+?offset=10&#xFF1A;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x8BB0;&#x5F55;&#x7684;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;
+?page_number=2&amp;page_size=100&#xFF1A;&#x6307;&#x5B9A;&#x7B2C;&#x51E0;&#x9875;&#xFF0C;&#x4EE5;&#x53CA;&#x6BCF;&#x9875;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#x3002;
+?sortby=name&amp;order=asc&#xFF1A;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6309;&#x7167;&#x54EA;&#x4E2A;&#x5C5E;&#x6027;&#x6392;&#x5E8F;&#xFF0C;&#x4EE5;&#x53CA;&#x6392;&#x5E8F;&#x987A;&#x5E8F;&#x3002;
+?animal_type_id=1&#xFF1A;&#x6307;&#x5B9A;&#x7B5B;&#x9009;&#x6761;&#x4EF6;
+</code></pre><h3 id="&#x72B6;&#x6001;&#x7801;"><a name="&#x72B6;&#x6001;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x72B6;&#x6001;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x72B6;&#x6001;&#x7801;</h3>
+<pre class="language-"><code>200 OK - [GET]&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8BE5;&#x64CD;&#x4F5C;&#x662F;&#x5E42;&#x7B49;&#x7684;&#xFF08;Idempotent&#xFF09;&#x3002;
+201 CREATED - [POST/PUT/PATCH]&#xFF1A;&#x7528;&#x6237;&#x65B0;&#x5EFA;&#x6216;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x6210;&#x529F;&#x3002;
+202 Accepted - [*]&#xFF1A;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#x6392;&#x961F;&#xFF08;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#xFF09;
+204 NO CONTENT - [DELETE]&#xFF1A;&#x7528;&#x6237;&#x5220;&#x9664;&#x6570;&#x636E;&#x6210;&#x529F;&#x3002;
+400 INVALID REQUEST - [POST/PUT/PATCH]&#xFF1A;&#x7528;&#x6237;&#x53D1;&#x51FA;&#x7684;&#x8BF7;&#x6C42;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x65B0;&#x5EFA;&#x6216;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;
+401 Unauthorized - [*]&#xFF1A;&#x8868;&#x793A;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x6743;&#x9650;&#xFF08;&#x4EE4;&#x724C;&#x3001;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&#xFF09;&#x3002;
+403 Forbidden - [*] &#x8868;&#x793A;&#x7528;&#x6237;&#x5F97;&#x5230;&#x6388;&#x6743;&#xFF08;&#x4E0E;401&#x9519;&#x8BEF;&#x76F8;&#x5BF9;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x8BBF;&#x95EE;&#x662F;&#x88AB;&#x7981;&#x6B62;&#x7684;&#x3002;
+404 NOT FOUND - [*]&#xFF1A;&#x7528;&#x6237;&#x53D1;&#x51FA;&#x7684;&#x8BF7;&#x6C42;&#x9488;&#x5BF9;&#x7684;&#x662F;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x8BE5;&#x64CD;&#x4F5C;&#x662F;&#x5E42;&#x7B49;&#x7684;&#x3002;
+406 Not Acceptable - [GET]&#xFF1A;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x7684;&#x683C;&#x5F0F;&#x4E0D;&#x53EF;&#x5F97;&#xFF08;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x8BF7;&#x6C42;JSON&#x683C;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x6709;XML&#x683C;&#x5F0F;&#xFF09;&#x3002;
+410 Gone -[GET]&#xFF1A;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x7684;&#x8D44;&#x6E90;&#x88AB;&#x6C38;&#x4E45;&#x5220;&#x9664;&#xFF0C;&#x4E14;&#x4E0D;&#x4F1A;&#x518D;&#x5F97;&#x5230;&#x7684;&#x3002;
+422 Unprocesable entity - [POST/PUT/PATCH] &#x5F53;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x53D1;&#x751F;&#x4E00;&#x4E2A;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#x3002;
+429 Too Many Requests - &#x7531;&#x4E8E;&#x8BF7;&#x6C42;&#x9891;&#x6B21;&#x8FBE;&#x5230;&#x4E0A;&#x9650;&#x800C;&#x88AB;&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;
+500 INTERNAL SERVER ERROR - [*]&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x7528;&#x6237;&#x5C06;&#x65E0;&#x6CD5;&#x5224;&#x65AD;&#x53D1;&#x51FA;&#x7684;&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;
+</code></pre><h3 id="&#x54CD;&#x5E94;&#x683C;&#x5F0F;"><a name="&#x54CD;&#x5E94;&#x683C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x54CD;&#x5E94;&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x54CD;&#x5E94;&#x683C;&#x5F0F;</h3>
+<p>&#x4ECE;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x901A;&#x7528;&#x6027;&#x6765;&#x8BB2; <code>JSON</code> &#x662F;&#x6700;&#x597D;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+<pre class="language-"><code>{   
+    &apos;message&apos; =&gt; &apos;:message&apos;,
+    &apos;errors&apos; =&gt; &apos;:errors&apos;,
+    &apos;code&apos; =&gt; &apos;:code&apos;,
+    &apos;status_code&apos; =&gt; &apos;:status_code&apos;,
+    &apos;debug&apos; =&gt; &apos;:debug&apos;
+}
+</code></pre><ul>
+<li>message&#xFF1A;&#x8868;&#x793A;&#x5728;API&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x76F4;&#x63A5;&#x5448;&#x73B0;&#x7ED9;&#x7528;&#x6237;</li>
+<li>errors&#xFF1A;&#x53C2;&#x6570;&#x5177;&#x4F53;&#x9519;&#x8BEF;&#xFF0C;&#x6BD4;&#x5982;&#x5B57;&#x6BB5;&#x8F83;&#x5BF9;&#x9519;&#x8BEF;&#x5185;&#x5BB9;</li>
+<li>code&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x7801;</li>
+<li>status_code&#xFF1A;http&#x72B6;&#x6001;&#x7801;</li>
+<li>debug&#xFF1A;debug&#x8C03;&#x8BD5;&#x4FE1;&#x606F;</li>
+</ul>
+<blockquote>
+<p>&#x9519;&#x8BEF;&#x8FD4;&#x56DE;&#x503C;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x5220;&#x51CF;</p>
+</blockquote>
+<h2 id="postman"><a name="postman" class="anchor-navigation-ex-anchor" href="#postman"><i class="fa fa-link" aria-hidden="true"></i></a>Postman</h2>
+<p>postman&#x53EF;&#x4EE5;&#x9AD8;&#x6548;&#x7684;&#x6D4B;&#x8BD5;&#x548C;&#x7EF4;&#x62A4;&#x63A5;&#x53E3;&#x3002;<a href="https://www.getpostman.com/apps" target="_blank">https://www.getpostman.com/apps</a></p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615595.png" alt="aa"></p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615605.png" alt="aa"></p>
+<p>&#x4F7F;&#x7528; <code>postMan</code> &#x5DE5;&#x5177;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;</p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615617.png" alt="aa"></p>
+<h3 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;"><a name="&#x73AF;&#x5883;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73AF;&#x5883;&#x53D8;&#x91CF;</h3>
+<p>&#x6211;&#x4EEC;&#x5728;&#x672C;&#x5730;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90FD;&#x60F3;&#x6D4B;&#x8BD5;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x57DF;&#x540D;&#x5B9A;&#x4E49;&#x4E3A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x6539;&#x53D8;&#x73AF;&#x5883;&#x57DF;&#x540D;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x53D8;&#x5316;&#x3002;</p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615633.png" alt="aa"></p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615644.png" alt="aa"></p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615656.png" alt="aa"></p>
+<h2 id="dingo"><a name="dingo" class="anchor-navigation-ex-anchor" href="#dingo"><i class="fa fa-link" aria-hidden="true"></i></a>Dingo</h2>
+<p>Dingo Api &#x662F;&#x81F4;&#x529B;&#x4E8E;&#x63D0;&#x4F9B;&#x7ED9;&#x5F00;&#x53D1;&#x8005;&#x4E00;&#x5957;&#x5DE5;&#x5177;&#xFF0C;&#x5E2E;&#x52A9;&#x4F60;&#x65B9;&#x4FBF;&#x5FEB;&#x6377;&#x7684;&#x5EFA;&#x9020;&#x4F60;&#x81EA;&#x5DF1;&#x7684;API&#x3002;&#x8FD9;&#x4E2A;&#x5305;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4FDD;&#x6301;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x7075;&#x6D3B;&#xFF0C;&#x5B83;&#x5E76;&#x4E0D;&#x80FD;&#x8986;&#x76D6;&#x6240;&#x6709;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x89E3;&#x51B3;&#x6240;&#x6709;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5B98;&#x7F51;&#xFF1A;<a href="https://github.com/dingo/api/" target="_blank">https://github.com/dingo/api/</a></p>
+<p>&#x6587;&#x6863;&#xFF1A;<a href="https://github.com/dingo/api/wiki/Configuration" target="_blank">https://github.com/dingo/api/wiki/Configuration</a></p>
+<h3 id="&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;"><a name="&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;</h3>
+<pre class="language-"><code>composer require dingo/api:2.0.0-alpha2
+</code></pre><p>&#x6267;&#x884C;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6; <code>/config/api.php</code></p>
+<pre class="language-"><code>php artisan vendor:publish
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><a name="&#x914D;&#x7F6E;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x8BF4;&#x660E;</h3>
+<p>&#x914D;&#x7F6E;&#x7EDF;&#x4E00;&#x5B9A;&#x4E49;&#x5728; <code>config/api.php</code> &#x6587;&#x6863;&#x4E2D;</p>
+<pre class="language-"><code>#&#x63A5;&#x53E3;&#x56F4;&#x7ED5;&#xFF1A;[x]&#x672C;&#x5730;&#x548C;&#x79C1;&#x6709;&#x73AF;&#x5883; [prs]&#x516C;&#x53F8;&#x5185;&#x90E8;app&#x4F7F;&#x7528; [vnd]&#x516C;&#x5F00;&#x63A5;&#x53E3;
+&apos;standardsTree&apos; =&gt; env(&apos;API_STANDARDS_TREE&apos;, &apos;x&apos;)
+
+#&#x9879;&#x76EE;&#x540D;&#x79F0;
+&apos;subtype&apos; =&gt; env(&apos;API_SUBTYPE&apos;, &apos;hdcms&apos;)
+
+#Api&#x524D;&#x7F00; &#x901A;&#x8FC7; www.hdcms.com/api &#x6765;&#x8BBF;&#x95EE; API&#x3002;
+&apos;prefix&apos; =&gt; env(&apos;API_PREFIX&apos;, &apos;api&apos;)
+
+#api&#x57DF;&#x540D;
+&apos;domain&apos; =&gt; env(&apos;API_DOMAIN&apos;, &apos;api.hdcms.com&apos;),
+
+#&#x7248;&#x672C;&#x53F7;
+&apos;version&apos; =&gt; env(&apos;API_VERSION&apos;, &apos;v1&apos;)
+
+#&#x5F00;&#x53D1;&#x65F6;&#x5F00;&#x542F;DEBUG&#x4FBF;&#x4E8E;&#x53D1;&#x73B0;&#x9519;&#x8BEF;
+&apos;debug&apos; =&gt; env(&apos;API_DEBUG&apos;, false)
+</code></pre><blockquote>
+<p>prefix &#x4E0E; domain &#x53EA;&#x80FD;&#x4E8C;&#x9009;&#x4E00;</p>
+</blockquote>
+<h3 id="&#x63A5;&#x53E3;&#x7248;&#x672C;"><a name="&#x63A5;&#x53E3;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x53E3;&#x7248;&#x672C;</h3>
+<p>&#x5728; <code>routes/api.php</code> &#x6587;&#x4EF6;&#x5B9A;&#x4E49;</p>
+<pre class="language-"><code>$api = app(\Dingo\Api\Routing\Router::class);
+
+#&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6307;&#x5B9A;&#x7684;&#x662F;v1&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7; {host}/api/version &#x8BBF;&#x95EE;&#x5230;
+$api-&gt;version(&apos;v1&apos;, function ($api) {
+    $api-&gt;get(&apos;version&apos;, function () {
+        return &apos;v1&apos;;
+    });
+});
+
+#&#x5982;&#x679C;v2&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x7248;&#x672C;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x5934;  
+#Accept: application/[&#x914D;&#x7F6E;&#x9879; standardsTree].[&#x914D;&#x7F6E;&#x9879; subtype].v2+json
+$api-&gt;version(&apos;v2&apos;, function ($api) {
+    $api-&gt;get(&apos;version&apos;, function () {
+        return &apos;v2&apos;;
+    });
+});
+</code></pre><h3 id="&#x57FA;&#x7840;&#x63A7;&#x5236;&#x5668;"><a name="&#x57FA;&#x7840;&#x63A7;&#x5236;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x63A7;&#x5236;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x63A7;&#x5236;&#x5668;</h3>
+<pre class="language-"><code>php artisan make:controller Api/Controller
+</code></pre><p>&#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code>namespace App\Http\Controllers\Api;
+
+use Dingo\Api\Routing\Helpers;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller as SysController;
+
+class Controller extends SysController
+{
+    use Helpers;
+}
+</code></pre><h3 id="transformers"><a name="transformers" class="anchor-navigation-ex-anchor" href="#transformers"><i class="fa fa-link" aria-hidden="true"></i></a>Transformers</h3>
+<p>Transformers &#x5141;&#x8BB8;&#x4F60;&#x4FBF;&#x6377;&#x5730;&#x3001;&#x59CB;&#x7EC8;&#x5982;&#x4E00;&#x5730;&#x5C06;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; transformer &#x4F60;&#x53EF;&#x4EE5;&#x5BF9;&#x6574;&#x6570;&#x548C;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5305;&#x62EC;&#x5206;&#x9875;&#x7ED3;&#x679C;&#x548C;&#x5D4C;&#x5957;&#x5173;&#x7CFB;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<h4 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x4F7F;&#x7528;</h4>
+<p>&#x4E00;&#x4E2A; <strong>transformer</strong> &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x5B83;&#x4F1A;&#x83B7;&#x53D6;&#x539F;&#x59CB;&#x6570;&#x636E;&#x5E76;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x5316;&#x4E4B;&#x540E;&#x7684;&#x6807;&#x51C6;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code>namespace App\Transformers;
+
+use App\User;
+use League\Fractal\TransformerAbstract;
+
+class UserTransformer extends TransformerAbstract
+{
+    public function transform(User $user)
+    {
+        return [
+            &apos;id&apos;        =&gt; $user[&apos;id&apos;],
+            &apos;name&apos;      =&gt; $user[&apos;name&apos;],
+            &apos;created_at&apos;=&gt; $user-&gt;created_at-&gt;toDateTimeString()
+        ];
+    }
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6570;&#x636E;</strong></p>
+<pre class="language-"><code>return $this-&gt;response-&gt;item(User::find(1),new UserTransformer());
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x96C6;&#x5408;</strong></p>
+<pre class="language-"><code>return $this-&gt;response-&gt;collection(User::get(),new UserTransformer());
+</code></pre><p><strong>&#x5206;&#x9875;&#x6570;&#x636E;</strong></p>
+<pre class="language-"><code>return $this-&gt;response-&gt;paginator(User::paginate(2),new UserTransformer());
+</code></pre><h4 id="include"><a name="include" class="anchor-navigation-ex-anchor" href="#include"><i class="fa fa-link" aria-hidden="true"></i></a>include</h4>
+<p>&#x83B7;&#x53D6;&#x6587;&#x7AE0;&#x65F6;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x83B7;&#x53D6;&#x6587;&#x7AE0;&#x7684;&#x680F;&#x76EE;&#x6570;&#x636E;&#xFF0C;include&#x7684;&#x7279;&#x6027;&#x5C31;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x4E86;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;ContentTransformer&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;</p>
+<pre class="language-"><code>class ContentTransformer extends TransformerAbstract
+{
+    # &#x5B9A;&#x4E49;&#x53EF;&#x4EE5;include&#x53EF;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x6BB5;
+    protected $availableIncludes = [&apos;category&apos;];
+
+    public function transform(Content $content)
+    {
+        return [
+            &apos;id&apos;   =&gt; $content[&apos;id&apos;],
+            &apos;name&apos; =&gt; $content[&apos;title&apos;],
+        ];
+    }
+
+    public function includeCategory(Content $content)
+    {
+        return $this-&gt;item($content-&gt;category,new CategoryTransformer());
+    }
+}
+</code></pre><p>&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528; <code>{host}/api/contents?include=category</code> &#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x680F;&#x76EE;&#x6570;&#x636E;&#x4E5F;&#x4E00;&#x5E76;&#x4F1A;&#x8FD4;&#x56DE;</p>
+<pre class="language-"><code>return $this-&gt;response-&gt;paginator(Content::paginate(1),new ContentTransformer());
+</code></pre><p>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code>{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;&#x540E;&#x76FE;&#x4EBA; &#x4EBA;&#x4EBA;&#x505A;&#x540E;&#x76FE;&quot;,
+            &quot;category&quot;: {
+                &quot;data&quot;: {
+                    &quot;id&quot;: 2,
+                    &quot;name&quot;: &quot;&#x7F16;&#x7A0B;&quot;
+                }
+            }
+        }
+    ],
+    &quot;meta&quot;: {
+        &quot;pagination&quot;: {
+            &quot;total&quot;: 100,
+            &quot;count&quot;: 1,
+            &quot;per_page&quot;: 1,
+            &quot;current_page&quot;: 1,
+            &quot;total_pages&quot;: 100,
+            &quot;links&quot;: {
+                &quot;next&quot;: &quot;http://xiang.houdunren.com/api/contents?page=2&quot;
+            }
+        }
+    }
+}
+</code></pre><h3 id="&#x54CD;&#x5E94;&#x7ED3;&#x679C;"><a name="&#x54CD;&#x5E94;&#x7ED3;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x54CD;&#x5E94;&#x7ED3;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x54CD;&#x5E94;&#x7ED3;&#x679C;</h3>
+<p><strong>&#x8BBE;&#x7F6E;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;</strong></p>
+<pre class="language-"><code>return $this-&gt;response-&gt;array(User::get())-&gt;setStatusCode(200);
+return response()-&gt;json([&apos;error&apos; =&gt; &apos;Unauthorized&apos;], 401);
+</code></pre><p><strong>&#x9519;&#x8BEF;&#x54CD;&#x5E94;</strong></p>
+<pre class="language-"><code>// &#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x548C;&#x72B6;&#x6001;&#x7801;&#x7684;&#x666E;&#x901A;&#x9519;&#x8BEF;&#x3002;
+return $this-&gt;response-&gt;error(&apos;This is an error.&apos;, 404);
+
+// &#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x8D44;&#x6E90;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x3002;
+return $this-&gt;response-&gt;errorNotFound();
+
+// &#x4E00;&#x4E2A; bad request &#x9519;&#x8BEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x3002;
+return $this-&gt;response-&gt;errorBadRequest();
+
+// &#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x62D2;&#x7EDD;&#x9519;&#x8BEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x3002;
+return $this-&gt;response-&gt;errorForbidden();
+
+// &#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x9519;&#x8BEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x3002;
+return $this-&gt;response-&gt;errorInternal();
+
+// &#x4E00;&#x4E2A;&#x672A;&#x8BA4;&#x8BC1;&#x9519;&#x8BEF;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x3002;
+return $this-&gt;response-&gt;errorUnauthorized(&apos;&#x5E10;&#x53F7;&#x6216;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&apos;);
+</code></pre><h3 id="&#x9650;&#x5236;&#x8BF7;&#x6C42;&#x6570;"><a name="&#x9650;&#x5236;&#x8BF7;&#x6C42;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x9650;&#x5236;&#x8BF7;&#x6C42;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9650;&#x5236;&#x8BF7;&#x6C42;&#x6570;</h3>
+<p>&#x4F7F;&#x7528; <code>api.throttle</code>&#x4E2D;&#x95F4;&#x4EF6;&#x7ED3;&#x5408; <code>limit&#x3001;expires</code> &#x53C2;&#x6570;&#x53EF;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6B21;&#x6570;&#x9650;&#x5236;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x5B9A;&#x4E49;&#x5728; <code>routes/api.php</code> &#x8DEF;&#x7531;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x793A;&#x4F8B;&#x3002;</p>
+<pre class="language-"><code>$api-&gt;version(&apos;v1&apos;, [&apos;namespace&apos; =&gt; &apos;\App\Api&apos;], function ($api) {
+    $api-&gt;group([&apos;middleware&apos; =&gt; &apos;api.throttle&apos;, &apos;limit&apos; =&gt; 2, &apos;expires&apos; =&gt; 1], function ($api) {
+        $api-&gt;get(&apos;user&apos;, &apos;UserController@all&apos;);
+    });
+});
+</code></pre><p>&#x9650;&#x5236;1&#x5206;&#x949F;&#x53EA;&#x80FD;&#x8BBF;&#x95EE;2&#x6B21;&#x3002;</p>
+<h3 id="&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;"><a name="&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>api.auth</code> &#x8DEF;&#x7531;&#x4E2D;&#x95F4;&#x4EF6;&#x6765;&#x542F;&#x7528;&#x8DEF;&#x7531;&#x6216;&#x8005;&#x8DEF;&#x7531;&#x7FA4;&#x7EC4;&#x7684;&#x4FDD;&#x62A4;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x8BB2;&#x89E3;&#x7684;jwt&#x7EC4;&#x4EF6;&#x5B8C;&#x6210;&#x63A5;&#x53E3;&#x9A8C;&#x8BC1;&#x3002;</p>
+<p><strong>&#x5728;&#x6240;&#x6709;&#x7684;&#x8DEF;&#x7531;&#x4E0A;&#x542F;&#x7528;</strong></p>
+<pre class="language-"><code>$api-&gt;version(&apos;v1&apos;, [&apos;middleware&apos; =&gt; &apos;api.auth&apos;], function ($api) {
+    // &#x5728;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x7FA4;&#x7EC4;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x7531;&#x5C06;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;
+});
+</code></pre><p><strong>&#x7279;&#x5B9A;&#x7684;&#x8DEF;&#x7531;&#x4E0A;&#x542F;&#x7528;</strong></p>
+<pre class="language-"><code>$api-&gt;version(&apos;v1&apos;, function ($api) {
+    $api-&gt;get(&apos;user&apos;, [&apos;middleware&apos; =&gt; &apos;api.auth&apos;, function () {
+        // &#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x5C06;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;
+    }]);
+
+    $api-&gt;get(&apos;posts&apos;, function () {
+        // &#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x4E0D;&#x4F1A;&#x9A8C;&#x8BC1;&#x8EAB;&#x4EFD;&#x3002;
+    });
+});
+</code></pre><p><strong>&#x63A7;&#x5236;&#x5668;&#x4E0A;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</strong></p>
+<p><code>Laravel</code>&#x53EF;&#x4EE5;&#x5728;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x542F;&#x7528;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x91CC;&#x4F7F;&#x7528; <code>middleware</code> &#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code>class UserController extends Illuminate\Routing\Controller
+{
+    use Helpers;
+
+    public function __construct()
+    {
+        $this-&gt;middleware(&apos;api.auth&apos;);
+
+        // &#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x53EA;&#x5728;  index  &#x4E2D;&#x542F;&#x7528;
+        $this-&gt;middleware(&apos;api.auth&apos;, [&apos;only&apos; =&gt; [&apos;index&apos;]]);
+    }
+...
+</code></pre><h2 id="jwt"><a name="jwt" class="anchor-navigation-ex-anchor" href="#jwt"><i class="fa fa-link" aria-hidden="true"></i></a>Jwt</h2>
+<p>Jwt&#x662F;&#x9AD8;&#x6548;&#x7B80;&#x5355;&#x7684;&#x63A5;&#x53E3;&#x9A8C;&#x8BC1;&#x7EC4;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x3002;</p>
+<p>GitHub&#xFF1A;<a href="https://github.com/tymondesigns/jwt-auth" target="_blank">https://github.com/tymondesigns/jwt-auth</a></p>
+<p>Packagist&#xFF1A;<a href="https://packagist.org/packages/tymon/jwt-auth" target="_blank">https://packagist.org/packages/tymon/jwt-auth</a></p>
+<p>&#x5728;&#x7EBF;&#x6587;&#x6863;&#xFF1A; <a href="http://jwt-auth.readthedocs.io/en/develop/quick-start/" target="_blank">http://jwt-auth.readthedocs.io/en/develop/quick-start/</a></p>
+<h3 id="&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;"><a name="&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;</h3>
+<p>&#x76EE;&#x524D;2.0&#x7248;&#x672C;&#x6B63;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x8FD8;&#x4E0D;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F7F;&#x7528; 1.0.0-rc.2&#x3002;</p>
+<pre class="language-"><code>composer require tymon/jwt-auth:1.0.0-rc.2
+</code></pre><p><strong>&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</strong></p>
+<pre class="language-"><code>php artisan vendor:publish
+</code></pre><p><strong>&#x751F;&#x6210;&#x5BC6;&#x94A5;</strong></p>
+<p>&#x8FD9;&#x662F;&#x7528;&#x6765;&#x7ED9;&#x4F60;&#x7684;token&#x7B7E;&#x540D;&#x7684;&#x94A5;&#x5319;&#xFF0C;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;:</p>
+<pre class="language-"><code>php artisan jwt:secret
+</code></pre><p>&#x8FD9;&#x5C06;&#x7528; <code>JWT_SECRET=foobar</code> &#x66F4;&#x65B0;.env&#x6587;&#x4EF6;</p>
+<h3 id="&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><a name="&#x914D;&#x7F6E;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x8BF4;&#x660E;</h3>
+<p>JWT&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F; <code>config/jwt.php</code>&#xFF0C;&#x4E0B;&#x9762;&#x6709;&#x90E8;&#x5206;&#x914D;&#x7F6E;&#x9879;&#x8FDB;&#x884C;&#x8BF4;&#x660E;&#xFF1A;</p>
+<pre class="language-"><code>#&#x4EE4;&#x724C;&#x8FC7;&#x671F;&#x65F6;&#x95F4;(&#x5355;&#x4F4D;&#x5206;&#x949F;)&#xFF0C;&#x8BBE;&#x7F6E;null&#x4E3A;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;
+&apos;ttl&apos; =&gt; env(&apos;JWT_TTL&apos;, 60)
+
+#&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x65F6;&#x95F4;(&#x5355;&#x4F4D;&#x5206;&#x949F;)&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;null&#x53EF;&#x6C38;&#x4E45;&#x968F;&#x65F6;&#x5237;&#x65B0;
+&apos;refresh_ttl&apos; =&gt; env(&apos;JWT_REFRESH_TTL&apos;, 20160)
+</code></pre><h3 id="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6A21;&#x578B;"><a name="&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6A21;&#x578B;</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x5728;&#x7528;&#x6237;&#x6A21;&#x578B;&#x4E0A;&#x5B9E;&#x73B0; <code>Tymon\JWTAuth\Contracts\JWTSubject</code> &#x5951;&#x7EA6;&#xFF0C;&#x5B83;&#x8981;&#x6C42;&#x60A8;&#x5B9E;&#x73B0;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5; <code>getJWTIdentifier()</code> &#x548C; <code>getJWTCustomClaims()</code>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x5E94;&#x8BE5;&#x80FD;&#x8BA9;&#x60A8;&#x4E86;&#x89E3;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x7684;&#x3002;&#x663E;&#x7136;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x66F4;&#x6539;&#xFF0C;&#x4EE5;&#x6EE1;&#x8DB3;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#x3002;</p>
+<pre class="language-"><code>&lt;?php
+
+namespace App;
+
+use Tymon\JWTAuth\Contracts\JWTSubject;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class User extends Authenticatable implements JWTSubject
+{
+    use Notifiable;
+
+    /**
+     * &#x83B7;&#x53D6;&#x5C06;&#x5B58;&#x50A8;&#x5728;JWT&#x4E3B;&#x9898;&#x58F0;&#x660E;&#x4E2D;&#x7684;&#x6807;&#x8BC6;&#x7B26;.
+     * &#x5C31;&#x662F;&#x7528;&#x6237;&#x8868;&#x4E3B;&#x952E; id
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this-&gt;getKey();
+    }
+
+    /**
+     * &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x8981;&#x6DFB;&#x52A0;&#x5230;JWT&#x7684;&#x4EFB;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;&#x58F0;&#x660E;.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+}
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x9A8C;&#x8BC1;&#x5B88;&#x536B;"><a name="&#x914D;&#x7F6E;&#x9A8C;&#x8BC1;&#x5B88;&#x536B;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x9A8C;&#x8BC1;&#x5B88;&#x536B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x9A8C;&#x8BC1;&#x5B88;&#x536B;</h3>
+<p>&#x4FEE;&#x6539; <code>config/auth.php</code> &#x6587;&#x4EF6;&#x4EE5;&#x4F7F;&#x7528;jwt&#x4FDD;&#x62A4;&#x6765;&#x4E3A;&#x63A5;&#x53E3;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x3002;</p>
+<pre class="language-"><code>&apos;guards&apos; =&gt; [
+    &apos;web&apos; =&gt; [
+        &apos;driver&apos; =&gt; &apos;session&apos;,
+        &apos;provider&apos; =&gt; &apos;users&apos;,
+    ],
+    &apos;api&apos; =&gt; [
+        &apos;driver&apos; =&gt; &apos;jwt&apos;,
+        &apos;provider&apos; =&gt; &apos;users&apos;,
+    ],
+]
+</code></pre><p>&#x4FEE;&#x6539;dingo&#x914D;&#x7F6E;&#x6587;&#x4EF6; <code>config/api.php</code> &#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x63D0;&#x4F9B;&#x8005;</p>
+<pre class="language-"><code>&apos;auth&apos; =&gt; [
+    &apos;jwt&apos; =&gt; \Dingo\Api\Auth\Provider\JWT::class,
+],
+</code></pre><h3 id="&#x9A8C;&#x8BC1;&#x64CD;&#x4F5C;"><a name="&#x9A8C;&#x8BC1;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x9A8C;&#x8BC1;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9A8C;&#x8BC1;&#x64CD;&#x4F5C;</h3>
+<p><strong>&#x8DEF;&#x7531;&#x5B9A;&#x4E49;</strong></p>
+<pre class="language-"><code>$api = app(\Dingo\Api\Routing\Router::class);
+$api-&gt;version(&apos;v1&apos;, [&apos;namespace&apos; =&gt; &apos;App\Http\Controllers\Api&apos;,], function ($api) {
+    $api-&gt;post(&apos;login&apos;, &apos;AuthController@login&apos;);
+    $api-&gt;get(&apos;logout&apos;, &apos;AuthController@logout&apos;);
+    $api-&gt;get(&apos;me&apos;, &apos;AuthController@me&apos;);
+});
+</code></pre><p><strong>&#x63A7;&#x5236;&#x5668;&#x5B9A;&#x4E49;</strong></p>
+<pre class="language-"><code>class AuthController extends Controller
+{
+    public function __construct()
+    {
+        // &#x9664;login&#x5916;&#x90FD;&#x9700;&#x8981;&#x9A8C;&#x8BC1;
+        $this-&gt;middleware(&apos;auth:api&apos;, [&apos;except&apos; =&gt; [&apos;login&apos;]]);
+    }
+
+    //&#x767B;&#x5F55;&#x83B7;&#x53D6;token
+    public function login()
+    {
+        $credentials = request([&apos;email&apos;, &apos;password&apos;]);
+
+        if (!$token = auth(&apos;api&apos;)-&gt;attempt($credentials)) {
+            return $this-&gt;response-&gt;errorUnauthorized(&apos;&#x5E10;&#x53F7;&#x6216;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&apos;);
+        }
+
+        return $this-&gt;respondWithToken($token);
+    }
+
+    //&#x83B7;&#x53D6;&#x7528;&#x6237;&#x8D44;&#x6599;
+    public function me()
+    {
+        return response()-&gt;json(auth(&apos;api&apos;)-&gt;user());
+    }
+
+    //&#x9500;&#x6BC1;token
+    public function logout()
+    {
+        auth(&apos;api&apos;)-&gt;logout();
+
+        return response()-&gt;json([&apos;message&apos; =&gt; &apos;Successfully logged out&apos;]);
+    }
+
+    //&#x5237;&#x65B0;token
+    public function refresh()
+    {
+        return $this-&gt;respondWithToken(auth(&apos;api&apos;)-&gt;refresh());
+    }
+
+    //&#x54CD;&#x5E94;token
+    protected function respondWithToken($token)
+    {
+        return response()-&gt;json([
+            &apos;access_token&apos; =&gt; $token,
+            &apos;token_type&apos;   =&gt; &apos;bearer&apos;,
+            &apos;expires_in&apos;   =&gt; auth(&apos;api&apos;)-&gt;factory()-&gt;getTTL() * 60,
+        ]);
+    }
+}
+</code></pre><h3 id="&#x4F7F;&#x7528;&#x4EE4;&#x724C;"><a name="&#x4F7F;&#x7528;&#x4EE4;&#x724C;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x4EE4;&#x724C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x4EE4;&#x724C;</h3>
+<p>&#x5F53;&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x7684;api&#x65F6;&#x5FC5;&#x987B;&#x5E26;&#x6709;token&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4F7F;&#x7528;header&#x5934;&#x643A;&#x5E26;&#x4EE4;&#x724C;&#x6570;&#x636E;</p>
+<pre class="language-"><code>Authorization: Bearer &#x4EE4;&#x724C;&#x6570;&#x636E;
+</code></pre><p>&#x5728;postman &#x5DE5;&#x5177;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x7B80;&#x5316;&#x64CD;&#x4F5C;</p>
+<p><img src="https://houdunren-image.oss-cn-qingdao.aliyuncs.com/11553615678.png" alt="aa"></p>
+<p> &#x70B9;&#x4E2A;&#x8D5E;&#x5457;3 </p>
+<footer class="page-footer"><span class="copyright">&#x6BCF;&#x5929;&#x8BB0;&#x5F55;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x6BCF;&#x5929;&#x63D0;&#x9AD8;&#x4E00;&#x70B9;&#x70B9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-04-14 12:41:13
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Mac编译安装phalcon.html" class="navigation navigation-prev " aria-label="Previous page: Mac编译安装phalcon">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="centos source install.html" class="navigation navigation-next " aria-label="Next page: centos source install">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"api develop","level":"15.2","depth":1,"next":{"title":"centos source install","level":"15.3","depth":1,"path":"php/centos source install.md","ref":"./php/centos source install.md","articles":[]},"previous":{"title":"Mac编译安装phalcon","level":"15.1","depth":1,"path":"php/Mac编译安装phalcon.md","ref":"./php/Mac编译安装phalcon.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","chart@^0.2.0"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"每天记录一点点，每天提高一点点","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"loveagri"},"pluginsConfig":{"introduction-text":"封面"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"+基友","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg","wechatText":"+微信"},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"个人笔记","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"google":true,"qq":true,"qzone":true,"twitter":true,"weibo":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://github.com/loveagri/note"}},"gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"php/api develop.md","mtime":"2019-04-14T04:41:13.350Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T04:41:42.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
