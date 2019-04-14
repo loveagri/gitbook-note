@@ -25,6 +25,7 @@
 
 ## MAC
 * [APP](./MAC/APP.md)
+* [mac开机启动原理](./MAC/mac开机启动原理.md)
 
 
 ## MYSQL
@@ -37,6 +38,7 @@
 
 ## Nginx
 * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+* [brew install nginx](./Nginx/brew install nginx.md)
 * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
 * [proxy](./Nginx/proxy.md)
 

@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 14 Apr 2019 04:41:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2019 06:47:38 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -79,6 +79,13 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[mac开机启动原理和关闭apachectl开机启动]]></title>
+            <description><![CDATA[cd  /System/Library/LaunchDaemons/     //可以看到所有自动启动的plist文件]]></description>
+            <link>https://loveagri.github.io/note/MAC/mac开机启动原理.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/MAC/mac开机启动原理.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[Centos7.3.1611安装mysql5.7.18 rpm教程 并设置datadir]]></title>
             <description><![CDATA[CentOS7默认安装MariaDB而不是MySQL，而且yum服务器上也移除了mysql相关的软件包。因为MariaDB和MySQL可能会冲突，故先卸载MariaDB。
 \1. 安装新版mysql之前，我们需要将系统自带的mariadb-lib卸载]]></description>
@@ -117,6 +124,12 @@
             <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
             <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Nginx/brew install nginx.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/brew install nginx.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
