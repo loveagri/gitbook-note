@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 14 Apr 2019 06:47:38 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2019 07:02:42 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -127,7 +127,10 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied)]]></title>
+            <description><![CDATA[nginx: the configuration file /home/work/local-qc/nginx/conf/nginx.conf syntax is ok
+nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied)
+nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]]></description>
             <link>https://loveagri.github.io/note/Nginx/brew install nginx.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/brew install nginx.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>

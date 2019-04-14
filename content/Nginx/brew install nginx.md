@@ -103,3 +103,43 @@ Or, if you don't want/need a background service you can just run:
   nginxZZ
 ```
 
+
+
+# nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied)
+
+nginx: the configuration file /home/work/local-qc/nginx/conf/nginx.conf syntax is ok
+nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied)
+nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed
+
+
+
+原因：当前用户对该位置没有写入权限
+
+解决办法：
+
+1.使用命令：sudo /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf 以root权限启动
+
+2.使用命令：sudo chmod -R a+rw /usr/local/nginx 给所有用户赋权限（个人学习，不考虑安全问题）
+
+​                    /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf  启动Nginx
+
+
+
+注：以非root权限启动时，会出现 nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied) 错误
+
+原因：Linux只有root用户可以使用1024一下的端口
+
+解决办法：1.已root权限启动
+
+  2.将 /usr/local/nginx/conf/nginx.conf 文件中的80端口改为1024以上
+
+server {
+
+\# listen 80
+
+   listen 8080
+
+……
+
+}
+
