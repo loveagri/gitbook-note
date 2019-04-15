@@ -144,11 +144,35 @@ laravel-ide-helper 用于实现方便的代码提示功能，详细[查看插件
 composer require --dev barryvdh/laravel-ide-helper
 ```
 
-生成代码跟踪支持
+**第一步：在项目的composer.json中添加如下一行**
 
-```
-php artisan ide-helper:generate
-```
+"require": {
+
+"laravel/framework": "5.0.*",
+
+"barryvdh/laravel-ide-helper":"dev-master"
+
+}
+
+**第二步：执行composer update**
+
+**第三步：添加service provider**，打开项目config/app.php 于providers添加如下一行：
+
+Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+**第四步：执行 php artisan ide-helper:generate**
+
+**第五步：修改composer.json的script里添加一行（这一步好像不需要就可以自动提示了**
+
+"post-update-cmd": [
+
+"php artisan clear-compiled",
+
+"php artisan optimize",
+
+"php artisan ide-helper:generate"
+
+ ]
 
 ### 其他插件
 

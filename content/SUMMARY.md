@@ -96,6 +96,10 @@
 * [hot reload](./react/hot reload.md)
 
 
+## redis
+* [mac redis](./redis/mac redis.md)
+
+
 ## sass
 * [px-to-rem](./sass/px-to-rem.md)
 
