@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 15 Apr 2019 15:58:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Apr 2019 08:09:41 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -404,6 +404,13 @@ Laravel Homestead 是一个官方预封装的 Vagrant box，它为你提供了�
 Homestead 可以运行在任何 Windows，Mac，或 Linux 系统，它包括了 Nginx web 服务器， PHP 7.2，PHP 7.1，PHP 7.0，PHP 5.6， MySQL，PostgreSQL，Redis，Memcached， Node，以及开发 Laravel 应用程序所需要的东西。]]></description>
             <link>https://loveagri.github.io/note/virtualBox/homestead.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/virtualBox/homestead.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Vagrant]]></title>
+            <description><![CDATA[vagrant  Link]]></description>
+            <link>https://loveagri.github.io/note/virtualBox/vagrant.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/virtualBox/vagrant.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

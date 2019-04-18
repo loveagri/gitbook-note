@@ -119,6 +119,7 @@
 
 ## virtualBox
 * [homestead](./virtualBox/homestead.md)
+* [vagrant](./virtualBox/vagrant.md)
 
 
 ## webpack
