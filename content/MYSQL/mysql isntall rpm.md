@@ -133,6 +133,7 @@ success
 
 
 ```
+[mysqld]
 character_set_server=utf8
 init_connect='SET NAMES utf8'
 datadir=/var/lib/mysql

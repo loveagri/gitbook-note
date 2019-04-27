@@ -6,8 +6,6 @@
 
 首先，我们的CentOS版本信息如下：
 
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309105531791-1537898688.png)
-
 开始我们的编译。
 
 第一步：
@@ -18,8 +16,6 @@
 `cd` `/usr/src` `&& wget http:``//cn2``.php.net``/distributions/php-7``.2.3.``tar``.gz`
 ```
 
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309105823117-516964063.png)
-
 第二步:
 
 加压这个压缩包
@@ -27,8 +23,6 @@
 ```
 tar -xzxvf php-7.2.3.tar.gz
 ```
-
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309105938338-374859696.png)
 
 第三步：
 
@@ -61,15 +55,9 @@ cd php-7.2.3/
 
 执行以下命令（编译的配置参数）
 
-![复制代码](http://common.cnblogs.com/images/copycode.gif)
-
 ```
 ./configure --prefix=/usr/local/php --with-pdo-pgsql --with-zlib-dir --with-freetype-dir --enable-mbstring --with-libxml-dir=/usr --enable-soap --enable-calendar --with-curl --with-mcrypt --with-gd --with-pgsql --disable-rpath --enable-inline-optimization --with-bz2 --with-zlib --enable-sockets --enable-sysvsem --enable-sysvshm --enable-pcntl --enable-mbregex --enable-exif --enable-bcmath --with-mhash --enable-zip --with-pcre-regex --with-pdo-mysql --with-mysqli --with-jpeg-dir=/usr --with-png-dir=/usr --enable-gd-native-ttf --with-openssl --with-fpm-user=www-data --with-fpm-group=www-data --with-libdir=/lib/x86_64-linux-gnu/--enable-ftp --with-gettext --with-xmlrpc --with-xsl --enable-opcache --enable-fpm --with-iconv --with-xpm-dir=/usr
 ```
-
-![复制代码](http://common.cnblogs.com/images/copycode.gif)
-
-
 
 ```
 wget http://ftp.gnu.org/gnu/bison/bison-2.4.1.tar.gz
@@ -102,8 +90,6 @@ make && make install
 
 这时候 我们输入php -v可以看到php的版本。 
 
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309152826224-1196609914.png)
-
 但是，我们一般还需要做一个配置。让php成为一个服务。并且开机自启。
 
 但是却发现php-fpm不知道咋哪里。 那我们就应该安装php-fpm.
@@ -114,8 +100,6 @@ find / -name php-fpm.conf
 #没找到就安装
 yum install php-fpm php-mysql
 ```
-
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309153101672-1698605975.png)
 
 做如下的配置
 
@@ -149,10 +133,6 @@ cp /usr/src/php-7.2.3/sapi/fpm/init.d.php-fpm.in /etc/init.d/php-fpm
 ```
 
 此时我们的php编译就大功告成。
-
-如下：
-
-![img](https://images2018.cnblogs.com/blog/978478/201803/978478-20180309155702948-227815475.png)
 
  
 
