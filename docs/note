@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 28 Apr 2019 08:35:11 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Apr 2019 12:06:49 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -198,6 +198,14 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <description><![CDATA[https://www.cnblogs.com/qufanblog/p/7606105.html]]></description>
             <link>https://loveagri.github.io/note/git/git-reset-org.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/git/git-reset-org.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Git -- 解决github提交代码不用输入密码]]></title>
+            <description><![CDATA[解决方案：
+方案一：]]></description>
+            <link>https://loveagri.github.io/note/git/git免密码推送.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/git/git免密码推送.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

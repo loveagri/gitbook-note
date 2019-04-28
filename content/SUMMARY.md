@@ -63,6 +63,7 @@
 * [git user](./git/git user.md)
 * [git-create](./git/git-create.md)
 * [git-reset-org](./git/git-reset-org.md)
+* [git免密码推送](./git/git免密码推送.md)
 * [ssh-keygen](./git/ssh-keygen.md)
 
 
