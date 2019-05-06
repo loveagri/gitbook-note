@@ -7,55 +7,12 @@
 * [Api mock website](./API/Api mock website.md)
 
 
-## CSS3
-* [CSS3 三角形](./CSS3/CSS3 三角形.md)
-
-
-## HTML
-* [HTML实体符号代码速查表](./HTML/HTML实体符号代码速查表.md)
-
-
-## Laravel
-* [扩展包开发](./Laravel/扩展包开发.md)
-
-
-## Linux
-* [DHCP](./Linux/DHCP.md)
-* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
-* [centos yum rpm源](./Linux/centos yum rpm源.md)
-* [centos7 bridge](./Linux/centos7 bridge.md)
-* [curl command](./Linux/curl command.md)
-
-
-## MAC
-* [APP](./MAC/APP.md)
-* [mac开机启动原理](./MAC/mac开机启动原理.md)
-
-
-## MYSQL
-* [mysql install bundle](./MYSQL/mysql install bundle.md)
-* [mysql install param](./MYSQL/mysql install param.md)
-* [mysql install source](./MYSQL/mysql install source.md)
-* [mysql isntall rpm](./MYSQL/mysql isntall rpm.md)
-* [mysql](./MYSQL/mysql.md)
-
-
-## Nginx
-* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
-* [brew install nginx](./Nginx/brew install nginx.md)
-* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
-* [proxy](./Nginx/proxy.md)
-
-
-## PHPStorm
-* [configuration](./PHPStorm/configuration.md)
-
-
-## Untitled Folder
-
-
 ## bootstrap
 * [bootstrap组件和全局样式](./bootstrap/bootstrap组件和全局样式.md)
+
+
+## CSS3
+* [CSS3 三角形](./CSS3/CSS3 三角形.md)
 
 
 ## git
@@ -67,19 +24,59 @@
 * [ssh-keygen](./git/ssh-keygen.md)
 
 
+## HTML
+* [HTML实体符号代码速查表](./HTML/HTML实体符号代码速查表.md)
+
+
+## java
+* [install](./java/install.md)
+
+
 ## js
-* [Object](./js/Object.md)
 * [download base64 img](./js/download base64 img.md)
 * [js实现上划下拉](./js/js实现上划下拉.md)
 * [js获取各种宽高](./js/js获取各种宽高.md)
+* [Object](./js/Object.md)
 * [reg](./js/reg.md)
 * [skills](./js/skills.md)
 * [taobao-html-fontsize](./js/taobao-html-fontsize.md)
 * [正则读文件内容替换](./js/正则读文件内容替换.md)
 
 
+## Laravel
+* [扩展包开发](./Laravel/扩展包开发.md)
+
+
+## Linux
+* [centos yum rpm源](./Linux/centos yum rpm源.md)
+* [centos7 bridge](./Linux/centos7 bridge.md)
+* [curl command](./Linux/curl command.md)
+* [DHCP](./Linux/DHCP.md)
+* [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
+
+
+## MAC
+* [APP](./MAC/APP.md)
+* [mac开机启动原理](./MAC/mac开机启动原理.md)
+
+
 ## mobile
 * [打包工程](./mobile/打包工程.md)
+
+
+## MYSQL
+* [mysql install bundle](./MYSQL/mysql install bundle.md)
+* [mysql install param](./MYSQL/mysql install param.md)
+* [mysql install source](./MYSQL/mysql install source.md)
+* [mysql isntall rpm](./MYSQL/mysql isntall rpm.md)
+* [mysql](./MYSQL/mysql.md)
+
+
+## Nginx
+* [brew install nginx](./Nginx/brew install nginx.md)
+* [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
+* [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
+* [proxy](./Nginx/proxy.md)
 
 
 ## npm
@@ -88,13 +85,17 @@
 
 
 ## php
-* [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
 * [api develop](./php/api develop.md)
 * [centos source install](./php/centos source install.md)
 * [centos yum install](./php/centos yum install.md)
+* [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
 * [php-fpm守护进程](./php/php-fpm守护进程.md)
 * [start-end](./php/start-end.md)
 * [xdebug](./php/xdebug.md)
+
+
+## PHPStorm
+* [configuration](./PHPStorm/configuration.md)
 
 
 ## python
@@ -115,6 +116,9 @@
 
 ## sublime
 * [License](./sublime/License.md)
+
+
+## Untitled Folder
 
 
 ## vim
