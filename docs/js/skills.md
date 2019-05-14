@@ -156,3 +156,64 @@ function getUnicode (charCode) {
 }
 ```
 
+### 7 数组对象去重
+
+```js
+//根据单一字段去重
+var arr2 = [
+
+  { name: "name1", num: "1" },
+
+  { name: "name2", num: "11" },
+
+  { name: "name3", num: "12" },
+
+  { name: "name4", num: "13" },
+
+  { name: "name2", num: "1" },
+
+  { name: "name6", num: "12" }
+
+]
+
+function arrayUnique2(arr, name) {
+
+  var hash = {};
+
+  return arr.reduce(function (item, next) {
+
+    hash[next[name]] ? '' : hash[next[name]] = true && item.push(next);
+
+    return item;
+
+  }, []);
+
+}
+
+console.log(arrayUnique2(arr2, "name"));
+
+console.log(arrayUnique2(arr2, "num"));
+
+
+
+
+var array = [{id:1},{id:3},{id:3},{id:5},{id:5},{id:7},{id:9}];
+var hash = {};
+array = array.reduce(function (item, next) {
+    hash[next.id] ? '' : hash[next.id] = true && item.push(next);
+    return item;
+}, []);
+
+//根据整体去重
+var arr = [["aa","bb","cc"],["aa","bb","cc"],["b","b","v"]];  
+var hash = {};  
+var result = [];  
+for(var i = 0, len = arr.length; i < len; i++){  
+    if(!hash[arr[i]]){  
+        result.push(arr[i]);  
+        hash[arr[i]] = true;  
+    }  
+}  
+alert(result);  
+```
+
