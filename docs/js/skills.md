@@ -209,9 +209,9 @@ var arr = [["aa","bb","cc"],["aa","bb","cc"],["b","b","v"]];
 var hash = {};  
 var result = [];  
 for(var i = 0, len = arr.length; i < len; i++){  
-    if(!hash[arr[i]]){  
+    if(!hash[JSON.stringify(arr[i])]){  
         result.push(arr[i]);  
-        hash[arr[i]] = true;  
+        hash[JSON.stringify(arr[i])] = true;  
     }  
 }  
 alert(result);  
