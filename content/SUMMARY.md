@@ -11,12 +11,17 @@
 * [bootstrap组件和全局样式](./bootstrap/bootstrap组件和全局样式.md)
 
 
+## cocos
+* [webstorm 提示](./cocos/webstorm 提示.md)
+
+
 ## CSS3
 * [CSS3 三角形](./CSS3/CSS3 三角形.md)
 
 
 ## git
 * [git command](./git/git command.md)
+* [git pull](./git/git pull.md)
 * [git user](./git/git user.md)
 * [git-create](./git/git-create.md)
 * [git-reset-org](./git/git-reset-org.md)

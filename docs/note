@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 14 May 2019 07:54:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 May 2019 09:29:46 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -35,6 +35,12 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/cocos/webstorm 提示.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/cocos/webstorm 提示.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[CSS3实现三角形]]></title>
             <description><![CDATA[2.8k 次阅读  ·  读完需要 69 分钟]]></description>
             <link>https://loveagri.github.io/note/CSS3/CSS3 三角形.html</link>
@@ -46,6 +52,13 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <description><![CDATA[Git教程]]></description>
             <link>https://loveagri.github.io/note/git/git command.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/git/git command.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[git 拉取远程指定分支 pull本地不存在的分支]]></title>
+            <description><![CDATA[默认，git项目只有一个分支，就是master,我们当然可以在本地创建多个分支，并推送到远程git管理平台上，或者将远程git管理平台上的其他分支拉取到自己电脑上。]]></description>
+            <link>https://loveagri.github.io/note/git/git pull.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/git/git pull.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
