@@ -98,6 +98,7 @@
 * [php-fpm守护进程](./php/php-fpm守护进程.md)
 * [start-end](./php/start-end.md)
 * [xdebug](./php/xdebug.md)
+* [完全跨域](./php/完全跨域.md)
 
 
 ## PHPStorm

@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 28 May 2019 09:29:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jun 2019 08:33:29 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -364,6 +364,17 @@ gitlab之webhook自动部署]]></description>
             <description><![CDATA[php.ini]]></description>
             <link>https://loveagri.github.io/note/php/xdebug.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/php/xdebug.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Expose-Headers: Date');
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+header('Access-Control-Allow-Headers: Origin, Access-Control-Request-Headers, SERVER_NAME, Access-Control-Allow-Headers, cache-control, token, X-Requested-With, Content-Type, Accept, Connection, User-Agent, Cookie');]]></description>
+            <link>https://loveagri.github.io/note/php/完全跨域.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/php/完全跨域.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
