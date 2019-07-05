@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 05 Jul 2019 03:46:57 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2019 03:51:05 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -503,8 +503,9 @@ poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[数据结构与算法]]></description>
+            <title><![CDATA[数据结构与算法]]></title>
+            <description><![CDATA[数据结构是指相互之间存在着一种或多种关系的数据元素的集合和该集合中数据元素之间的关系组成 。
+常用的数据结构有：数组，栈，链表，队列，树，图，堆，散列表等，如图所示：]]></description>
             <link>https://loveagri.github.io/note/数据结构与算法/javascript 数据结构与算法.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/javascript 数据结构与算法.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
