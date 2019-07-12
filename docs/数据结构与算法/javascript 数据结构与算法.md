@@ -78,9 +78,87 @@ int[] data = new int[100]；data[0]  = 1;
 扩展：
 
 1. 编辑器撤销操作
+
 2. 程序调用的系统栈（函数内嵌入子函数）
+
 3. 复杂度低，操作快
-4. 编译器的括号匹配
+
+4. 编译器的括号匹配(leekcode 20)
+
+    ```javascript
+    /**
+     * @param {string} s
+     * @return {boolean}
+     *  push(value):添加一个新元素到栈顶
+        pop():移除栈顶的元素，同时返回该元素
+        peek():获取栈顶的元素
+        isEmpty():判断栈是否为空。是返回true,否返回fallse
+        size():获取栈里元素的个数
+        */
+        var isValid = function(s) {
+    
+            /*使用栈stack类的实现*/
+            function Stack() {
+                this.dataStore = [];//保存栈内元素，初始化为一个空数组
+                this.size = 0;//栈顶位置，初始化为0
+                this.push = push;//入栈
+                this.pop = pop;//出栈
+                this.peek = peek;//查看栈顶元素
+                this.isEmpty = isEmpty;//判断栈是否为空
+    
+                function push(element){
+                    this.dataStore[this.size++] = element;
+                }
+    
+                function pop(){
+                    return this.dataStore[--this.size];
+                }
+    
+                function peek(){
+                    return this.dataStore[this.size-1];
+                }
+    
+                function isEmpty(){
+                    return this.size == 0;
+                }
+            }
+    
+    
+    
+            let stack = new Stack();
+    
+            for(let z = 0; z < s.length; z++){
+                let c = s.charAt(z);
+                if (['(','[','{'].indexOf(c) >= 0) {
+                    stack.push(c);
+                }else{
+                    if (stack.isEmpty()) {
+                        return false;
+                    }
+    
+                    let topChar = stack.pop();
+                    if (c == ')' && topChar != '(') {
+                        return false;
+                    }
+    
+                    if (c == ']' && topChar != '[') {
+                        return false;
+                    }
+    
+                    if (c == '}' && topChar != '{') {
+                        return false;
+                    }
+                }
+            }
+    
+    
+            return stack.isEmpty();
+    };
+    
+    
+    
+    ```
+
 5. 不去追求完美主义
 
 # 3、队列（FIFO）
@@ -132,7 +210,116 @@ int[] data = new int[100]；data[0]  = 1;
 
 8. 循环列表实现队列（head出栈，tail入栈）
 
-9. 
+9. 删除重复元素leekcode(203)
+
+    ```javascript
+    //solution 1
+    /**
+     * Definition for singly-linked list.
+     * function ListNode(val) {
+     *     this.val = val;
+     *     this.next = null;
+     * }
+     */
+    /**
+     * @param {ListNode} head
+     * @param {number} val
+     * @return {ListNode}
+     */
+    var removeElements = function(head, val) {
+        while(head != null && head.val == val){
+            let delNode = head;
+            head = head.next;
+            delNode.next = null;
+        }
+    
+        if (head === null) {
+            return head;
+        }
+    
+        let prev = head;
+        while(prev.next != null){
+            if(prev.next.val == val){
+                let delNode = prev.next;
+                prev.next = delNode.next;
+                delNode.next = null;
+            }else{
+                prev = prev.next;
+            }
+        }
+    
+        return head;
+    };
+    ```
+
+    ```javascript
+    solution 2
+    /**
+     * Definition for singly-linked list.
+     * function ListNode(val) {
+     *     this.val = val;
+     *     this.next = null;
+     * }
+     */
+    /**
+     * @param {ListNode} head
+     * @param {number} val
+     * @return {ListNode}
+     */
+    var removeElements = function(head, val) {
+        while(head != null && head.val == val){
+            head = head.next
+        }
+    
+        if (head === null) {
+            return head;
+        }
+    
+        let prev = head;
+        while(prev.next != null){
+            if(prev.next.val == val){
+                prev.next = prev.next.next
+            }else{
+                prev = prev.next;
+            }
+        }
+    
+        return head;
+    };
+    ```
+
+    ```javascript
+    solution 3
+    /**
+     * Definition for singly-linked list.
+     * function ListNode(val) {
+     *     this.val = val;
+     *     this.next = null;
+     * }
+     */
+    /**
+     * @param {ListNode} head
+     * @param {number} val
+     * @return {ListNode}
+     */
+    var removeElements = function(head, val) {
+    
+        let dummyNode = new ListNode(null);
+        dummyNode.next = head;
+    
+        let prev = dummyNode;
+        while(prev.next != null){
+            if(prev.next.val == val){
+                prev.next = prev.next.next
+            }else{
+                prev = prev.next;
+            }
+        }
+    
+        return dummyNode.next;
+    };
+    ```
+
 
 
 # 5、树
