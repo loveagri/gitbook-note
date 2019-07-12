@@ -320,6 +320,33 @@ int[] data = new int[100]；data[0]  = 1;
     };
     ```
 
+##### 递归扩展：本质是将原来的问题，转化为更小的同一问题
+
+ 例如：数组求和
+
+```javascript
+Sum(arr[0,...,N-1]) = arr[0] + Sum(arr[1,...,N-1]);
+Sum(arr[1,...,N-1]) = arr[1] + Sum(arr[2,...,N-1]);
+......
+Sum(arr[N-1,N-1]) = arr[N-1] + Sum([]);
+
+
+function sum(arr){
+    function sumRecusion(arr,l){
+        
+        //基本问题
+        if(l == arr.length){
+            return 0;
+        }
+        
+        //把问题转化为更小的问题
+        return arr[l] + sum(arr,l + 1)
+    }
+    
+    return sumRecusion(arr, 0);
+}
+```
+
 
 
 # 5、树
