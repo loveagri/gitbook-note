@@ -703,7 +703,11 @@ console.log(print(head));
 
 
 
+## 7、hash
 
+
+
+https://planetmath.org/goodhashtableprimes
 
 
 
