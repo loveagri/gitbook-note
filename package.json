@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/loveagri/note/issues"
   },
-  "homepage": "https://github.com/loveagri/note#readme"
+  "homepage": "https://github.com/loveagri/note#readme",
+  "devDependencies": {
+    "prism": "^4.1.2"
+  }
 }
