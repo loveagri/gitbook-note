@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Jul 2019 07:24:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2019 08:20:12 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -544,6 +544,13 @@ poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/数据结构与算法/LinkedList.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/LinkedList.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[集合与映射]]></title>
+            <description><![CDATA[承载元素的容器，元素的去重操作。不能盛放重复元素的二分搜索树是非常好的实现“集合”的底层数据结构。]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/Map and Set.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Map and Set.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
