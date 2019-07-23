@@ -151,6 +151,7 @@
 
 
 ## 数据结构与算法
+* [Binary Tree](./数据结构与算法/Binary Tree.md)
 * [BinarySearchTree](./数据结构与算法/BinarySearchTree.md)
 * [DoublyLinkedList](./数据结构与算法/DoublyLinkedList.md)
 * [friendly gift](./数据结构与算法/friendly gift.md)
@@ -158,6 +159,5 @@
 * [LinkedList](./数据结构与算法/LinkedList.md)
 * [Queue](./数据结构与算法/Queue.md)
 * [Stack](./数据结构与算法/Stack.md)
-* [Tree](./数据结构与算法/Tree.md)
 
 

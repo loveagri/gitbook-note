@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Jul 2019 07:12:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2019 07:24:05 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -508,6 +508,13 @@ poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[树]]></title>
+            <description><![CDATA[树结构是一种天然的组织结构：计算机文件夹，图书馆书籍分类，公司架构，家谱]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/Binary Tree.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Binary Tree.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/数据结构与算法/BinarySearchTree.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/BinarySearchTree.html</guid>
@@ -549,13 +556,6 @@ poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/数据结构与算法/Stack.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Stack.html</guid>
-            <dc:creator><![CDATA[loveagri]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[树]]></title>
-            <description><![CDATA[树结构是一种天然的组织结构：计算机文件夹，图书馆书籍分类，公司架构，家谱]]></description>
-            <link>https://loveagri.github.io/note/数据结构与算法/Tree.html</link>
-            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Tree.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
