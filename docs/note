@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Jul 2019 09:38:11 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2019 10:59:10 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -567,9 +567,30 @@ poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[线段树（区间树Segment Tree）]]></title>
+            <description><![CDATA[对于有一类问题，我们关心的是线段(或者区间)]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/Segment Tree.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Segment Tree.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/数据结构与算法/Stack.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Stack.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[前缀树 Trie]]></title>
+            <description><![CDATA[映射结构: 字典。但Trie 专门为处理字符串而生。]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/Trie.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Trie.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[并查集（Union Find）]]></title>
+            <description><![CDATA[并查集 一种很不一样的树形结构]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/Union Find.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/Union Find.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

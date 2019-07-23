@@ -160,6 +160,9 @@
 * [Map and Set](./数据结构与算法/Map and Set.md)
 * [priorityQueue and heap](./数据结构与算法/priorityQueue and heap.md)
 * [Queue](./数据结构与算法/Queue.md)
+* [Segment Tree](./数据结构与算法/Segment Tree.md)
 * [Stack](./数据结构与算法/Stack.md)
+* [Trie](./数据结构与算法/Trie.md)
+* [Union Find](./数据结构与算法/Union Find.md)
 
 
