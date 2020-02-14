@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 14 Feb 2020 04:08:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Feb 2020 04:11:25 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -12,7 +12,7 @@
         <category><![CDATA[gitbook]]></category>
         <item>
             <title><![CDATA[No title]]></title>
-            <description><![CDATA[每天记录一点点]]></description>
+            <description><![CDATA[每天记录一点点 每天分享一点点]]></description>
             <link>https://loveagri.github.io/note/</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
