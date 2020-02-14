@@ -110,6 +110,18 @@
             "modify_label": "网站备案信息：冀ICP备19024518号-1       ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
+        "page-copyright": {
+              "description": "modified at",
+              "signature": "你的签名",
+              "wisdom": "Designer, Frontend Developer & overall web enthusiast",
+              "format": "YYYY-MM-dd hh:mm:ss",
+              "copyright": "Copyright &#169; 你的名字",
+              "timeColor": "#666",
+              "copyrightColor": "#666",
+              "utcOffset": "8",
+              "style": "normal",
+              "noPowered": false
+        },
         "donate": {
             "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
             "title": "",
