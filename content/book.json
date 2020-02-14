@@ -106,8 +106,8 @@
             ]
         },
         "tbfed-pagefooter": {
-            "copyright": "冀ICP备19024518号-1",
-            "modify_label": "该文件修订时间：",
+            "copyright": "每天记录一点点，每天提高一点点",
+            "modify_label": "网站备案信息：冀ICP备19024518号-1       ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "donate": {
