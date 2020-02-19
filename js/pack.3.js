@@ -42,7 +42,7 @@ let dumpFile = ($files, $contentPath, $tier) => {
     }
 
     // fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + $files + ")\n");
-    fs.appendFileSync(SUMMARY, "    * [" + $filename + "](" + $contentPath + $files + ")\n");
+    fs.appendFileSync(SUMMARY, "* [" + $filename + "](" + $contentPath + $files + ")\n");
 };
 
 
@@ -60,7 +60,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
     let $filename = path.basename($path);
 
     // fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + "README.md)\n");
-    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* " + $filename + "[loveagri](README.md)\n");
+    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "## " + $filename + "\n");
 
     let $dir;
     if ($dirs.length) {
