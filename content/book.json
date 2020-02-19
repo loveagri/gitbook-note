@@ -86,20 +86,13 @@
         },
         "sharing": {
             "facebook": true,
-            "google": true,
             "qq": true,
             "qzone": true,
-            "twitter": true,
             "weibo": true,
             "all": [
                 "facebook",
-                "google",
                 "twitter",
                 "weibo",
-                "instapaper",
-                "linkedin",
-                "pocket",
-                "stumbleupon",
                 "qq",
                 "qzone"
             ]
