@@ -3,23 +3,23 @@
 ## [loveagri](README.md)
 
 
-* API[loveagri](README.md)
+* [API](README.md)
     * [Api mock website](./API/Api mock website.md)
 
 
-* CSS3[loveagri](README.md)
+* [CSS3](README.md)
     * [CSS3 三角形](./CSS3/CSS3 三角形.md)
 
 
-* HTML[loveagri](README.md)
+* [HTML](README.md)
     * [HTML实体符号代码速查表](./HTML/HTML实体符号代码速查表.md)
 
 
-* Laravel[loveagri](README.md)
+* [Laravel](README.md)
     * [扩展包开发](./Laravel/扩展包开发.md)
 
 
-* Linux[loveagri](README.md)
+* [Linux](README.md)
     * [DHCP](./Linux/DHCP.md)
     * [Mac-item2-crontab无法写入](./Linux/Mac-item2-crontab无法写入.md)
     * [centos yum rpm源](./Linux/centos yum rpm源.md)
@@ -27,12 +27,12 @@
     * [curl command](./Linux/curl command.md)
 
 
-* MAC[loveagri](README.md)
+* [MAC](README.md)
     * [APP](./MAC/APP.md)
     * [mac开机启动原理](./MAC/mac开机启动原理.md)
 
 
-* MYSQL[loveagri](README.md)
+* [MYSQL](README.md)
     * [mysql install bundle](./MYSQL/mysql install bundle.md)
     * [mysql install param](./MYSQL/mysql install param.md)
     * [mysql install source](./MYSQL/mysql install source.md)
@@ -40,29 +40,29 @@
     * [mysql](./MYSQL/mysql.md)
 
 
-* Nginx[loveagri](README.md)
+* [Nginx](README.md)
     * [Mac开机自启动NGINX](./Nginx/Mac开机自启动NGINX.md)
     * [brew install nginx](./Nginx/brew install nginx.md)
     * [nginx编译安装参数](./Nginx/nginx编译安装参数.md)
     * [proxy](./Nginx/proxy.md)
 
 
-* PHPStorm[loveagri](README.md)
+* [PHPStorm](README.md)
     * [configuration](./PHPStorm/configuration.md)
 
 
-* Untitled Folder[loveagri](README.md)
+* [Untitled Folder](README.md)
 
 
-* bootstrap[loveagri](README.md)
+* [bootstrap](README.md)
     * [bootstrap组件和全局样式](./bootstrap/bootstrap组件和全局样式.md)
 
 
-* cocos[loveagri](README.md)
+* [cocos](README.md)
     * [webstorm 提示](./cocos/webstorm 提示.md)
 
 
-* git[loveagri](README.md)
+* [git](README.md)
     * [git command](./git/git command.md)
     * [git pull](./git/git pull.md)
     * [git user](./git/git user.md)
@@ -72,11 +72,11 @@
     * [ssh-keygen](./git/ssh-keygen.md)
 
 
-* java[loveagri](README.md)
+* [java](README.md)
     * [install](./java/install.md)
 
 
-* js[loveagri](README.md)
+* [js](README.md)
     * [Object](./js/Object.md)
     * [Untitled](./js/Untitled.md)
     * [download base64 img](./js/download base64 img.md)
@@ -89,16 +89,16 @@
     * [浏览器抖动](./js/浏览器抖动.md)
 
 
-* mobile[loveagri](README.md)
+* [mobile](README.md)
     * [打包工程](./mobile/打包工程.md)
 
 
-* npm[loveagri](README.md)
+* [npm](README.md)
     * [install-npm-server](./npm/install-npm-server.md)
     * [npm-update](./npm/npm-update.md)
 
 
-* php[loveagri](README.md)
+* [php](README.md)
     * [Mac编译安装phalcon](./php/Mac编译安装phalcon.md)
     * [api develop](./php/api develop.md)
     * [centos source install](./php/centos source install.md)
@@ -110,47 +110,47 @@
     * [完全跨域](./php/完全跨域.md)
 
 
-* python[loveagri](README.md)
+* [python](README.md)
     * [pip set proxy](./python/pip set proxy.md)
 
 
-* react[loveagri](README.md)
+* [react](README.md)
     * [hot reload](./react/hot reload.md)
 
 
-* redis[loveagri](README.md)
+* [redis](README.md)
     * [mac redis](./redis/mac redis.md)
 
 
-* sass[loveagri](README.md)
+* [sass](README.md)
     * [px-to-rem](./sass/px-to-rem.md)
 
 
-* sublime[loveagri](README.md)
+* [sublime](README.md)
     * [License](./sublime/License.md)
 
 
-* vim[loveagri](README.md)
+* [vim](README.md)
     * [shortcut](./vim/shortcut.md)
     * [study](./vim/study.md)
 
 
-* virtualBox[loveagri](README.md)
+* [virtualBox](README.md)
     * [homestead](./virtualBox/homestead.md)
     * [vagrant](./virtualBox/vagrant.md)
 
 
-* webpack[loveagri](README.md)
+* [webpack](README.md)
     * [file-handle](./webpack/file-handle.md)
     * [打包全过程](./webpack/打包全过程.md)
 
 
-* 友情链接[loveagri](README.md)
+* [友情链接](README.md)
     * [blog](./友情链接/blog.md)
     * [test](./友情链接/test.md)
 
 
-* 数据结构与算法[loveagri](README.md)
+* [数据结构与算法](README.md)
     * [AVL](./数据结构与算法/AVL.md)
     * [Binary Tree](./数据结构与算法/Binary Tree.md)
     * [BinarySearchTree](./数据结构与算法/BinarySearchTree.md)
