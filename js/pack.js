@@ -7,7 +7,8 @@ const SUMMARY = ROOT + '/content/SUMMARY.md';
 
 // fs.writeFileSync(SUMMARY, "# Summary\n\n## [loveagri](README.md)\n---\n\n");
 // fs.writeFileSync(SUMMARY, "# Summary\n\n## [loveagri](README.md)\n\n\n");
-fs.writeFileSync(SUMMARY, "bui# Summary\n\n");
+// fs.writeFileSync(SUMMARY, "# Summary\n\n");// single dirs
+fs.writeFileSync(SUMMARY, "bui# Summary\n\n");//multiply dirs
 
 let $path = ROOT + '/content/';
 
