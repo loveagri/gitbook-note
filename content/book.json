@@ -72,7 +72,7 @@
   ],
   "pluginsConfig": {
     "change_girls" : {
-      "time" : 10,
+      "time" : 0,
       "urls" : [
         "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b1.jpg",
         "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b2.jpg"
