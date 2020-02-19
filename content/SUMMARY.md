@@ -6,7 +6,7 @@
 
 * [CSS3](./CSS3/README.md)
     * [Test](./CSS3/Test/README.md)
-    * [HTML实体符号代码速查表](./CSS3/Test/HTML实体符号代码速查表.md)
+        * [HTML实体符号代码速查表](./CSS3/Test/HTML实体符号代码速查表.md)
     * [CSS3 三角形](./CSS3/CSS3 三角形.md)
     * [TestREADME](./CSS3/TestREADME.md)
 

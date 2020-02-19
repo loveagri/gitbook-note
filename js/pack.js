@@ -43,7 +43,7 @@ let dumpFile = ($files, $contentPath, $tier) => {
     }
 
     // fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + $files + ")\n");
-    fs.appendFileSync(SUMMARY, "    * [" + $filename + "](" + $contentPath + $files + ")\n");
+    fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + $files + ")\n");
 };
 
 
@@ -64,9 +64,11 @@ let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
     fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + "README.md)\n");
 
     let $dir;
+    console.log($dirs.length, 999)
     if ($dirs.length) {
         for (let y = 0; y < $dirs.length; y++) {
             $dir = $dirs[y];
+            console.log($dir, 6777, $tier + 2)
             rootDir($path + $dir + '/', $contentPath + $dir + '/', $tier + 2);
         }
     }
@@ -78,6 +80,8 @@ let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
             if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico', 'book.json'].indexOf($file) >= 0) {
                 continue;
             }
+
+            console.log($tier + 2, 4567)
             dumpFile($file, $contentPath, $tier + 2);
         }
     }
