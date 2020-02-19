@@ -148,7 +148,8 @@
       "alipay": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg",
       "title": "",
       "button": "打赏",
-      "wechatText": ""
+      "wechatText": "",
+      "alipayText": "支付宝捐赠"
     },
     "simple-page-toc": {
       "maxDepth": 3,
