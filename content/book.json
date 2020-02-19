@@ -112,7 +112,7 @@
               "copyrightColor": "#666",
               "utcOffset": "8",
               "style": "normal",
-              "noPowered": false
+              "noPowered": true
         },
         "donate": {
             "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
