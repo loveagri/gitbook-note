@@ -9,11 +9,6 @@
     "structure": {
         "readme": "README.md"
     },
-    "links": {
-        "sidebar": {
-            "Home": "https://github.com/loveagri/note"
-        }
-    },
     "plugins": [
         "-lunr",
         "-search",
