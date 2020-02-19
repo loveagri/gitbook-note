@@ -40,7 +40,6 @@
     "prism",
     "-highlight",
     "lightbox",
-    "theme-fexa",
     "hide-element",
     "donate@^1.0.2",
     "local-video@^1.0.1",
@@ -72,11 +71,6 @@
     "chart@^0.2.0"
   ],
   "pluginsConfig": {
-    "theme-fexa":{
-      "search-placeholder":"输入关键字搜索",
-      "logo":"./logo.png",
-      "favicon": "./favicon.ico"
-    },
     "theme-default": {
       "showLevel": false
     },
@@ -182,17 +176,6 @@
       "webMaster": "1044531744@qq.com",
       "categories": [
         "gitbook"
-      ]
-    }
-  },
-  "variables": {
-    "themeFexa":{
-      "nav":[
-        {
-          "url":"http://www.dotohi.com",
-          "target":"_blank",
-          "name": "我心飞翔"
-        }
       ]
     }
   }
