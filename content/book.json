@@ -40,6 +40,7 @@
         "prism",
         "-highlight",
         "lightbox",
+        "hide-element",
         "donate@^1.0.2",
         "local-video@^1.0.1",
         "sitemap-general@^0.1.1",
@@ -71,11 +72,6 @@
         "chart@^0.2.0"
     ],
     "pluginsConfig": {
-        "prism": {
-            "css": [
-                "prismjs/themes/prism-tomorrow.css"
-            ]
-        },
         "theme-default": {
             "showLevel": false
         },
