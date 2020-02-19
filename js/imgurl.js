@@ -30,7 +30,7 @@ let dirAndFile = (filePath, type = 0) => {
     }
 };
 
-let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
+let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
 
     let $dirs = dirAndFile($path, 0);
     let $files = dirAndFile($path, 1);
@@ -42,30 +42,31 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
     let $filename = path.basename($path);
 
     let $dir;
+
     if ($dirs.length) {
         for (let y = 0; y < $dirs.length; y++) {
             $dir = $dirs[y];
-            rootDir($path + $dir, $contentPath + $dir + '/', $tier + 2);
+            rootDir($path + $dir + '/', $contentPath + $dir + '/', $tier + 2);
         }
     }
 
     if ($files.length) {
-        let $filename,$ext;
-        $files.forEach(function(item, index) {
-           $filename = path.parse(item).name;
-           $ext = path.extname(item);
+        let $filename, $ext;
+        $files.forEach(function (item, index) {
+            $filename = path.parse(item).name;
+            $ext = path.extname(item);
 
-           if ($ext !== '.md') {
-            return;
-        }
-        fs.readFile($path+item,'utf8',function(err,files){
+            if ($ext !== '.md') {
+                return;
+            }
+            fs.readFile($path + item, 'utf8', function (err, files) {
 
-            var result = files.replace(/!\[(.*)\]\((.*)ud-img[\/|\\](.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img/$3)');
-            fs.writeFile($path+item, result, 'utf8', function (err) {
-               if (err) return console.log(err);
-           });
-        })
-    });
+                var result = files.replace(/!\[(.*)\]\((.*)ud-img[\/|\\](.*)\)/g, '![$1](https://raw.githubusercontent.com/loveagri/note/master/ud-img/$3)');
+                fs.writeFile($path + item, result, 'utf8', function (err) {
+                    if (err) return console.log(err);
+                });
+            })
+        });
     }
 };
 
@@ -74,11 +75,11 @@ for (let i = 0; i < $dirs.length; i++) {
 
     $value = $dirs[i];
 
-    if (['node_modules','styles'].indexOf($value) >= 0) {
+    if (['node_modules', 'styles'].indexOf($value) >= 0) {
         continue;
     }
 
-    rootDir($path + $value + '/', './' + $value + '/', 0,i+1);
+    rootDir($path + $value + '/', './' + $value + '/', 0, i + 1);
 
 }
 

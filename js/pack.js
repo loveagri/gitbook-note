@@ -47,7 +47,7 @@ let dumpFile = ($files, $contentPath, $tier) => {
 };
 
 
-let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
+let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
 
     let $dirs = dirAndFile($path, 0);
     let $files = dirAndFile($path, 1);
@@ -67,7 +67,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
     if ($dirs.length) {
         for (let y = 0; y < $dirs.length; y++) {
             $dir = $dirs[y];
-            rootDir($path + $dir, $contentPath + $dir + '/', $tier + 2);
+            rootDir($path + $dir + '/', $contentPath + $dir + '/', $tier + 2);
         }
     }
 
@@ -75,7 +75,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0,index) => {
         let $file;
         for (let z = 0; z < $files.length; z++) {
             $file = $files[z];
-            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico','book.json'].indexOf($file) >= 0) {
+            if (['README.md', 'SUMMARY.md', 'GLOSSARY.md', 'favicon.ico', 'book.json'].indexOf($file) >= 0) {
                 continue;
             }
             dumpFile($file, $contentPath, $tier + 2);
@@ -88,11 +88,11 @@ for (let i = 0; i < $dirs.length; i++) {
 
     $value = $dirs[i];
 
-    if (['node_modules','styles'].indexOf($value) >= 0) {
+    if (['node_modules', 'styles'].indexOf($value) >= 0) {
         continue;
     }
 
-    rootDir($path + $value + '/', './' + $value + '/', 0,i+1);
+    rootDir($path + $value + '/', './' + $value + '/', 0, i + 1);
 
     // fs.appendFileSync(SUMMARY, "---\n\n");
     fs.appendFileSync(SUMMARY, "\n\n");
