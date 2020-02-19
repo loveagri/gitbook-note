@@ -57,6 +57,7 @@
     "versions-select@^0.1.1",
     "rss@^3.0.2",
     "-sharing",
+    "code",
     "sharing-plus@^0.0.2",
     "graph@^0.1.0",
     "copy-code-button",
@@ -69,6 +70,9 @@
     "chart@^0.2.0"
   ],
   "pluginsConfig": {
+    "code": {
+      "copyButtons": false
+    },
     "theme-default": {
       "showLevel": false
     },
