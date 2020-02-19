@@ -71,11 +71,6 @@
         "chart@^0.2.0"
     ],
     "pluginsConfig": {
-        "prism": {
-            "css": [
-                "prismjs/themes/prism-dark.css"
-            ]
-        },
         "theme-default": {
             "showLevel": false
         },
