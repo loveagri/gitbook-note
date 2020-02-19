@@ -74,9 +74,10 @@
     "change_girls" : {
       "time" : 10,
       "urls" : [
-        "girlUrl1", "girlUrl2",...""
+        "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b1.jpg",
+        "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b2.jpg"
       ]
-    }
+    },
     "code": {
       "copyButtons": false
     },
