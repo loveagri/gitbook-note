@@ -71,6 +71,11 @@
         "chart@^0.2.0"
     ],
     "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
+        },
         "theme-default": {
             "showLevel": false
         },
