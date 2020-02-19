@@ -69,6 +69,7 @@ input[type=checkbox]{
 
 .book .book-summary ul.summary .gitbook-link,
 .page-footer .copyright,
-.disqus-footer{
+.placement-bottom,
+.disqus-footer__wrapper{
     display: none
 }
