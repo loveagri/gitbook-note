@@ -57,7 +57,7 @@
         "sharing-plus@^0.0.2",
         "graph@^0.1.0",
         "copy-code-button",
-        "chapter-fold",
+        "expandable-chapters",
         "chart@^0.2.0"
     ],
     "pluginsConfig": {

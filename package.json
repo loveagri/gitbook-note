@@ -24,5 +24,8 @@
   "homepage": "https://github.com/loveagri/note#readme",
   "devDependencies": {
     "prism": "^4.1.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-expandable-chapters": "^0.2.0"
   }
 }
