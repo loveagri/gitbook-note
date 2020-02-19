@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 19 Feb 2020 09:09:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Feb 2020 09:10:38 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -82,6 +82,13 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/Laravel/README.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Laravel/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[扩展包开发]]></title>
+            <description><![CDATA[扩展包是对软件功能的扩充，下面我们开发一个多网关上传扩展包，目前支持阿里云OSS上传。]]></description>
+            <link>https://loveagri.github.io/note/Laravel/eee.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Laravel/eee.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

@@ -16,6 +16,7 @@ bui# Summary
 
 
 * [Laravel](./Laravel/README.md)
+    * [eee](./Laravel/eee.md)
     * [扩展包开发](./Laravel/扩展包开发.md)
 
 
