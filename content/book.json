@@ -56,6 +56,7 @@
     "klipse@^1.2.0",
     "versions-select@^0.1.1",
     "rss@^3.0.2",
+    "page-copyright",
     "-sharing",
     "code",
     "sharing-plus@^0.0.2",
@@ -70,6 +71,12 @@
     "chart@^0.2.0"
   ],
   "pluginsConfig": {
+    "change_girls" : {
+      "time" : 10,
+      "urls" : [
+        "girlUrl1", "girlUrl2",...""
+      ]
+    }
     "code": {
       "copyButtons": false
     },
@@ -150,6 +157,7 @@
     },
     "donate": {
       "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
+      "alipay": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpeg",
       "title": "",
       "button": "打赏",
       "wechatText": ""
