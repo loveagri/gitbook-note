@@ -144,8 +144,8 @@
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "donate": {
-      "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpeg",
-      "alipay": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpeg",
+      "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg",
+      "alipay": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg",
       "title": "",
       "button": "打赏",
       "wechatText": ""
