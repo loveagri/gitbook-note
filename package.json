@@ -7,8 +7,9 @@
     "server": "npm run jsbuild && gitbook serve content docs",
     "jsbuild": "node js/pack.js",
     "img": "node js/imgurl.js",
+    "cname": "node js/cname.js",
     "build": "gitbook build content docs",
-    "pushgit": "npm run img && npm run jsbuild && npm run build && git add -A && git commit -m msg && git push",
+    "pushgit": "npm run img && npm run jsbuild && npm run build && npm run cname && git add -A && git commit -m msg && git push",
     "push": "npm run img && npm run jsbuild && npm run build && git add -A && git commit -m msg",
     "start": "npm run pushgit"
   },
