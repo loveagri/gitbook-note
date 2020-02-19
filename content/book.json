@@ -50,6 +50,7 @@
     "alerts@^0.2.0",
     "flexible-alerts",
     "page-toc-button",
+    "ancre-navigation",
     "pageview-count",
     "include-csv@^0.1.0",
     "puml@^1.0.1",
@@ -80,7 +81,7 @@
         ".copyright",
         ".book-anchor",
         ".disqus-footer",
-        ".disqus-footer__wrapper .disqus-footer",
+        ".disqus-footer__wrapper",
         ".page-footer .copyright"
       ]
     },
