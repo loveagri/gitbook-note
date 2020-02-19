@@ -23,7 +23,6 @@
     "anchor-navigation-ex",
     "github-buttons@2.1.0",
     "edit-link@^2.0.2",
-    "disqus@^0.1.0",
     "prism-themes@^0.0.2",
     "advanced-emoji@^0.2.1",
     "anchors@^0.7.1",
@@ -91,15 +90,10 @@
         "span.copyright",
         ".copyright",
         ".book-anchor",
-        ".disqus-footer",
-        ".disqus-footer__wrapper",
         ".page-footer .copyright"
       ]
     },
     "introduction-text": "封面",
-    "disqus": {
-      "shortName": "loveagri"
-    },
     "github": {
       "url": "https://github.com/loveagri/note"
     },
