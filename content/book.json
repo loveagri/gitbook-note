@@ -83,6 +83,8 @@
     "hide-element": {
       "elements": [
         ".gitbook-link",
+        "span.copyright",
+        ".copyright",
         ".page-footer.copyright"
       ]
     },
@@ -185,9 +187,9 @@
     "themeFexa":{
       "nav":[
         {
-          "url":"http://...",
+          "url":"http://www.dotohi.com",
           "target":"_blank",
-          "name": "简易教程"
+          "name": "我心飞翔"
         }
       ]
     }
