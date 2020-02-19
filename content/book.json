@@ -18,7 +18,9 @@
         "search-plus@^0.0.11",
         "diy-introduction",
         "simple-page-toc@^0.1.1",
+        "back-to-top-button",
         "github@^2.0.0",
+        "accordion",
         "github-buttons@2.1.0",
         "edit-link@^2.0.2",
         "disqus@^0.1.0",
@@ -33,7 +35,11 @@
         "mermaid-gb3@2.1.0",
         "tbfed-pagefooter@^0.0.1",
         "expandable-chapters-small@^0.1.7",
-        "sectionx@^3.1.0",
+        "sectionx",
+        "popup",
+        "prism",
+        "-highlight",
+        "lightbox",
         "donate@^1.0.2",
         "local-video@^1.0.1",
         "sitemap-general@^0.1.1",
@@ -43,6 +49,8 @@
         "terminal@^0.3.2",
         "alerts@^0.2.0",
         "flexible-alerts",
+        "page-toc-button",
+        "ancre-navigation",
         "pageview-count",
         "page-treeview",
         "include-csv@^0.1.0",
@@ -64,8 +72,17 @@
         "chart@^0.2.0"
     ],
     "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-okaidia.css"
+            ]
+        },
         "theme-default": {
             "showLevel": false
+        },
+        "page-toc-button": {
+            "maxTocDepth": 2,
+            "minTocSize": 2
         },
         "page-treeview": {
             "copyright": "Copyright &#169; aleen42",
@@ -140,6 +157,8 @@
         },
         "anchor-navigation-ex": {
             "isRewritePageTitle": false,
+            "showLevel": false,
+            "showGoTop": false,
             "tocLevel1Icon": "fa fa-hand-o-right",
             "tocLevel2Icon": "fa fa-hand-o-right",
             "tocLevel3Icon": "fa fa-hand-o-right"
