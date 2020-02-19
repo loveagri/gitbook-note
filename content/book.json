@@ -56,6 +56,7 @@
     "klipse@^1.2.0",
     "versions-select@^0.1.1",
     "rss@^3.0.2",
+    "page-treeview",
     "-sharing",
     "sharing-plus@^0.0.2",
     "graph@^0.1.0",
@@ -69,6 +70,11 @@
     "chart@^0.2.0"
   ],
   "pluginsConfig": {
+    "page-treeview": {
+      "copyright": "Copyright &#169; aleen42",
+      "minHeaderCount": "2",
+      "minHeaderDeep": "2"
+    },
     "theme-default": {
       "showLevel": false
     },
