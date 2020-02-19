@@ -52,7 +52,6 @@
         "page-toc-button",
         "ancre-navigation",
         "pageview-count",
-        "page-treeview",
         "include-csv@^0.1.0",
         "puml@^1.0.1",
         "musicxml@^1.0.2",
@@ -83,11 +82,6 @@
         "page-toc-button": {
             "maxTocDepth": 2,
             "minTocSize": 2
-        },
-        "page-treeview": {
-            "copyright": "Copyright &#169; aleen42",
-            "minHeaderCount": "2",
-            "minHeaderDeep": "2"
         },
         "introduction-text": "封面",
         "disqus": {
