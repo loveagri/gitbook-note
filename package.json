@@ -8,8 +8,9 @@
     "jsbuild": "node js/pack.js",
     "img": "node js/imgurl.js",
     "build": "gitbook build content docs",
-    "push": "npm run img && npm run jsbuild && npm run build && git add -A && git commit -m msg && git push",
-    "start": "npm run push"
+    "pushgit": "npm run img && npm run jsbuild && npm run build && git add -A && git commit -m msg && git push",
+    "push": "npm run img && npm run jsbuild && npm run build && git add -A && git commit -m msg",
+    "start": "npm run pushgit"
   },
   "repository": {
     "type": "git",
