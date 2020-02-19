@@ -185,9 +185,9 @@
     "gtalk": {
       "clientID": "497cd5036bdc5a0166e1",
       "clientSecret": "81533b88196ad22d16417310b5fdaedc5a59daa4",
-      "repo": "https://github.com/loveagri/note.git",
+      "repo": "loveagri.github.io",
       "owner": "loveagri",
-      "admin": ["git+https://github.com/loveagri/note.git"],
+      "admin": ["loveagri"],
       "id": "window.location.pathname",
       "distractionFreeMode": false
     }
