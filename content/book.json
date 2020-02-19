@@ -58,6 +58,7 @@
         "graph@^0.1.0",
         "copy-code-button",
         "expandable-chapters",
+        "chapter-fold",
         "chart@^0.2.0"
     ],
     "pluginsConfig": {
