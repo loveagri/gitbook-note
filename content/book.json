@@ -187,7 +187,9 @@
       "clientSecret": "81533b88196ad22d16417310b5fdaedc5a59daa4",
       "repo": "https://github.com/loveagri/note.git",
       "owner": "loveagri",
-      "admin": ["git+https://github.com/loveagri/note.git"]
+      "admin": ["git+https://github.com/loveagri/note.git"],
+      "id": "window.location.pathname",
+      "distractionFreeMode": false
     }
   }
 }
