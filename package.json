@@ -28,7 +28,6 @@
     "prism": "^4.1.2"
   },
   "dependencies": {
-    "gitbook-plugin-ancre-navigation": "^1.0.0",
     "gitbook-plugin-expandable-chapters": "^0.2.0",
     "gitbook-plugin-page-toc-button": "^0.1.1"
   }
