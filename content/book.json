@@ -81,6 +81,7 @@
         ".copyright",
         ".book-anchor",
         ".disqus-footer",
+        ".disqus-footer__wrapper .disqus-footer",
         ".page-footer.copyright"
       ]
     },
