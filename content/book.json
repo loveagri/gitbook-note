@@ -44,6 +44,7 @@
         "alerts@^0.2.0",
         "flexible-alerts",
         "pageview-count",
+        "page-treeview",
         "include-csv@^0.1.0",
         "puml@^1.0.1",
         "musicxml@^1.0.2",
@@ -66,9 +67,12 @@
         "theme-default": {
             "showLevel": false
         },
-        "pluginsConfig": {
-            "introduction-text": "封面"
+        "page-treeview": {
+            "copyright": "Copyright &#169; aleen42",
+            "minHeaderCount": "2",
+            "minHeaderDeep": "2"
         },
+        "introduction-text": "封面",
         "disqus": {
             "shortName": "loveagri"
         },
