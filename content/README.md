@@ -2,4 +2,4 @@
 
 交流邮箱：1044531744@qq.com
 
-![weixin](/Users/fh/Note/ud-img/weixin.jpeg)
+![weixin](https://raw.githubusercontent.com/loveagri/note/master/ud-img/weixin.jpeg)
