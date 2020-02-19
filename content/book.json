@@ -63,7 +63,7 @@
     ],
     "pluginsConfig": {
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
         },
         "pluginsConfig": {
             "introduction-text": "封面"
