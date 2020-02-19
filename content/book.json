@@ -85,6 +85,7 @@
         ".gitbook-link",
         "span.copyright",
         ".copyright",
+        ".disqus-footer",
         ".page-footer.copyright"
       ]
     },
