@@ -84,11 +84,6 @@
             "maxTocDepth": 2,
             "minTocSize": 2
         },
-        "page-treeview": {
-            "copyright": "Copyright &#169; aleen42",
-            "minHeaderCount": "2",
-            "minHeaderDeep": "2"
-        },
         "introduction-text": "封面",
         "disqus": {
             "shortName": "loveagri"
