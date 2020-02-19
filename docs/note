@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 19 Feb 2020 04:50:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Feb 2020 05:30:42 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -18,6 +18,12 @@
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/API/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/API/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[开放API]]></title>
             <description><![CDATA[【1】daimajia提供的干货集中营：
 http://gank.io/api
@@ -28,10 +34,22 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/CSS3/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/CSS3/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[CSS3实现三角形]]></title>
             <description><![CDATA[2.8k 次阅读  ·  读完需要 69 分钟]]></description>
             <link>https://loveagri.github.io/note/CSS3/CSS3 三角形.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/CSS3/CSS3 三角形.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/HTML/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/HTML/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -42,10 +60,22 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Laravel/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Laravel/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[扩展包开发]]></title>
             <description><![CDATA[扩展包是对软件功能的扩充，下面我们开发一个多网关上传扩展包，目前支持阿里云OSS上传。]]></description>
             <link>https://loveagri.github.io/note/Laravel/扩展包开发.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Laravel/扩展包开发.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Linux/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -84,6 +114,12 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/MAC/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/MAC/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[Go2shell]]></title>
             <link>https://loveagri.github.io/note/MAC/APP.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/MAC/APP.html</guid>
@@ -94,6 +130,12 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <description><![CDATA[cd  /System/Library/LaunchDaemons/     //可以看到所有自动启动的plist文件]]></description>
             <link>https://loveagri.github.io/note/MAC/mac开机启动原理.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/MAC/mac开机启动原理.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/MYSQL/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/MYSQL/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -132,6 +174,12 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Nginx/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
             <description><![CDATA[Mac开机自启动NGINX和PHP]]></description>
             <link>https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/Mac开机自启动NGINX.html</guid>
@@ -160,10 +208,28 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/PHPStorm/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/PHPStorm/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[PHPSTORM]]></title>
             <description><![CDATA[下面在windows系统中介绍PHPSTORM使用,MAC使用与windows只是键盘布局差异。所以就不重复介绍了。]]></description>
             <link>https://loveagri.github.io/note/PHPStorm/configuration.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/PHPStorm/configuration.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Untitled Folder/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Untitled Folder/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/bootstrap/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/bootstrap/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -175,8 +241,20 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
         </item>
         <item>
             <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/cocos/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/cocos/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/cocos/webstorm 提示.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/cocos/webstorm 提示.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/git/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/git/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -231,10 +309,22 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/java/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/java/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[centos安装jdk1.8的三种方法]]></title>
             <description><![CDATA[link]]></description>
             <link>https://loveagri.github.io/note/java/install.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/java/install.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/js/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/js/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -305,10 +395,22 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/mobile/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/mobile/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[APP打包步骤]]></title>
             <description><![CDATA[​]]></description>
             <link>https://loveagri.github.io/note/mobile/打包工程.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/mobile/打包工程.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/npm/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/npm/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -328,6 +430,12 @@ gitlab之webhook自动部署]]></description>
             <description><![CDATA[原文地址：https://blog.csdn.net/pcaxb/article/details/81773475]]></description>
             <link>https://loveagri.github.io/note/npm/npm-update.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/npm/npm-update.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/php/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/php/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -393,10 +501,22 @@ gitlab之webhook自动部署]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/python/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/python/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[让PIP源使用国内镜像，提升下载速度和安装成功率。]]></title>
             <description><![CDATA[对于Python开发用户来讲，PIP安装软件包是家常便饭。但国外的源下载速度实在太慢，浪费时间。而且经常出现下载后安装出错问题。所以把PIP安装源替换成国内镜像，可以大幅提升下载速度，还可以提高安装成功率。]]></description>
             <link>https://loveagri.github.io/note/python/pip set proxy.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/python/pip set proxy.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/react/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/react/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -407,8 +527,20 @@ gitlab之webhook自动部署]]></description>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/redis/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/redis/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
             <link>https://loveagri.github.io/note/redis/mac redis.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/redis/mac redis.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/sass/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/sass/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -420,9 +552,21 @@ gitlab之webhook自动部署]]></description>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/sublime/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/sublime/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
             <description><![CDATA[Link]]></description>
             <link>https://loveagri.github.io/note/sublime/License.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/sublime/License.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/vim/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/vim/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -462,6 +606,12 @@ fx 在当前行中找x字符，找到了就跳转至
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/virtualBox/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/virtualBox/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[Homestead Win]]></title>
             <description><![CDATA[Laravel 致力于让整个 PHP 开发体验变得愉快， 包括你的本地开发环境。 Vagrant 提供了一种简单，优雅的方式来管理和配置虚拟机。
 Laravel Homestead 是一个官方预封装的 Vagrant box，它为你提供了一个完美的开发环境，而无需在本地机器安装 PHP 、Web 服务器和其他服务器软件。不用担心会搞乱你的操作系统！Vagrant boxes 是一次性的。如果出现问题，你可以在几分钟内销毁并创建 Box!
@@ -475,6 +625,12 @@ Homestead 可以运行在任何 Windows，Mac，或 Linux 系统，它包括了 
             <description><![CDATA[vagrant  Link]]></description>
             <link>https://loveagri.github.io/note/virtualBox/vagrant.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/virtualBox/vagrant.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/webpack/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/webpack/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
@@ -492,6 +648,13 @@ Homestead 可以运行在任何 Windows，Mac，或 Linux 系统，它包括了 
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[让PIP源使用国内镜像，提升下载速度和安装成功率。]]></title>
+            <description><![CDATA[新版ubuntu要求使用https源，要注意。]]></description>
+            <link>https://loveagri.github.io/note/友情链接/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/友情链接/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <description><![CDATA[全栈博客]]></description>
             <link>https://loveagri.github.io/note/友情链接/blog.html</link>
@@ -505,6 +668,13 @@ Homestead 可以运行在任何 Windows，Mac，或 Linux 系统，它包括了 
 poster="https://zhangjikai.com/resource/poster.jpg" data-setup='{"aspectRatio":"16:9"}'>]]></description>
             <link>https://loveagri.github.io/note/友情链接/test.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/友情链接/test.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[数据结构的JavaScript实现]]></description>
+            <link>https://loveagri.github.io/note/数据结构与算法/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/数据结构与算法/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
