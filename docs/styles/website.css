@@ -67,6 +67,6 @@ input[type=checkbox]{
     background: #efefef;
 }
 
-.book .book-summary ul.summary .gitbook-link{
+.book .book-summary ul.summary .gitbook-link, .disqus-footer__wrapper .disqus-footer{
     display: none
 }
