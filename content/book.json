@@ -49,8 +49,6 @@
     "terminal@^0.3.2",
     "alerts@^0.2.0",
     "flexible-alerts",
-    "page-toc-button",
-    "ancre-navigation",
     "pageview-count",
     "include-csv@^0.1.0",
     "puml@^1.0.1",
@@ -84,10 +82,6 @@
         ".disqus-footer__wrapper",
         ".page-footer .copyright"
       ]
-    },
-    "page-toc-button": {
-      "maxTocDepth": 2,
-      "minTocSize": 2
     },
     "introduction-text": "封面",
     "disqus": {
