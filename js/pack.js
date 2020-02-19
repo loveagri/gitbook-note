@@ -65,7 +65,7 @@ let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
     fs.appendFileSync(SUMMARY, '  '.repeat($tier) + "* [" + $filename + "](" + $contentPath + "README.md)\n");
 
     let $dir;
-    console.log($dirs.length, 999)
+
     if ($dirs.length) {
         for (let y = 0; y < $dirs.length; y++) {
             $dir = $dirs[y];
@@ -82,7 +82,6 @@ let rootDir = ($path, $contentPath = './', $tier = 0, index) => {
                 continue;
             }
 
-            console.log($tier + 2, 4567)
             dumpFile($file, $contentPath, $tier + 2);
         }
     }
