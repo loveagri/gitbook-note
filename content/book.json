@@ -68,13 +68,12 @@
     "chart@^0.2.0",
     "theme-comscore",
     "gtalk",
-    "icp"
+    "ad"
   ],
   "pluginsConfig": {
-    "icp": {
-      "label": " 工信部备案号：",
-      "number": "冀ICP备19024518号-1",
-      "link":"http://www.beianbeian.com/"
+    "ad": {
+      "contentTop": "<div>Ads at the top of the page</div>",
+      "contentBottom": "网站备案信息：冀ICP备19024518号-1"
     },
     "code": {
       "copyButtons": false
@@ -133,9 +132,7 @@
       ]
     },
     "tbfed-pagefooter": {
-      "copyright": "",
-      "modify_label": "网站备案信息：冀ICP备19024518号-1       ",
-      "modify_format": ""
+      "modify_label": "网站备案信息：冀ICP备19024518号-1"
     },
     "donate": {
       "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg",
