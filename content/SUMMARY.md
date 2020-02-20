@@ -54,9 +54,6 @@ bui# Summary
     * [configuration](./PHPStorm/configuration.md)
 
 
-* [__images](./__images/README.md)
-
-
 * [bootstrap](./bootstrap/README.md)
     * [bootstrap组件和全局样式](./bootstrap/bootstrap组件和全局样式.md)
 
