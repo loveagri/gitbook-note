@@ -14,7 +14,7 @@ if ($signature) {
     file_put_contents('./6.txt',shell_exec("cd {$path} && /usr/bin/git rest --hard origin/master && /usr/bin/git/ clean -f"));
     if (strcmp($signature, $hash) == 0) {
 //        echo shell_exec("cd {$path} && /usr/bin/git rest --hard origin/master && /usr/bin/git/ clean -f && /usr/bin/git pull 2>&1");
-        shell_exec("cd {$path} && /usr/bin/git rest --hard origin/master && /usr/bin/git/ clean -f && /usr/bin/git pull");
+        shell_exec("cd {$path} && /usr/bin/git pull");
         exit();
     }
 }
