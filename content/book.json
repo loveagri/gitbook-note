@@ -60,7 +60,6 @@
     "sharing-plus@^0.0.2",
     "graph@^0.1.0",
     "copy-code-button",
-    "change_girls",
     "expandable-chapters",
     "chapter-fold",
     "-lunr",
@@ -71,13 +70,6 @@
     "gtalk"
   ],
   "pluginsConfig": {
-    "change_girls" : {
-      "time" : 0,
-      "urls" : [
-        "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b1.jpg",
-        "https://raw.githubusercontent.com/loveagri/note/master/ud-img/b2.jpg"
-      ]
-    },
     "code": {
       "copyButtons": false
     },
