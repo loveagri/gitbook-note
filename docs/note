@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 20 Feb 2020 08:48:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2020 08:53:19 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -25,7 +25,7 @@
         </item>
         <item>
             <title><![CDATA[开放API]]></title>
-            <description><![CDATA[【1】daimajia提供的干货集中营760：
+            <description><![CDATA[【1】daimajia提供的干货集中营760234：
 http://gank.io/api
 举个栗子：
 Url: http://gank.io/api/data/Android/10/1]]></description>
