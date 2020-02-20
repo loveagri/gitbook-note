@@ -67,9 +67,15 @@
     "search-pro",
     "chart@^0.2.0",
     "theme-comscore",
-    "gtalk"
+    "gtalk",
+    "icp"
   ],
   "pluginsConfig": {
+    "icp": {
+      "label": "网站备案信息：",
+      "number": "冀ICP备19024518号-1",
+      "link":"http://www.beianbeian.com/"
+    },
     "code": {
       "copyButtons": false
     },
