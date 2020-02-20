@@ -131,7 +131,8 @@
       ]
     },
     "tbfed-pagefooter": {
-      "modify_label": "网站备案信息：冀ICP备19024518号-1"
+      "modify_label": "UPDATE TIME:",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "donate": {
       "wechat": "https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg",
