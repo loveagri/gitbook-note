@@ -72,7 +72,7 @@
   ],
   "pluginsConfig": {
     "icp": {
-      "label": "网站备案信息：",
+      "label": " 工信部备案号：",
       "number": "冀ICP备19024518号-1",
       "link":"http://www.beianbeian.com/"
     },
