@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 20 Feb 2020 09:26:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2020 09:50:55 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -31,6 +31,31 @@ http://gank.io/api
 Url: http://gank.io/api/data/Android/10/1]]></description>
             <link>https://loveagri.github.io/note/API/Api mock website.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/API/Api mock website.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[开放API]]></title>
+            <description><![CDATA[{% chart %}
+{
+"data": {
+"type": "bar",
+"columns": [
+["data1", 30, 200, 100, 400, 150, 250],
+["data2", 50, 20, 10, 40, 15, 25]
+],
+"axes": {
+"data2": "y2"
+}
+},
+"axis": {
+"y2": {
+"show": true
+}
+}
+}
+{% endchart %}]]></description>
+            <link>https://loveagri.github.io/note/API/test.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/API/test.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
