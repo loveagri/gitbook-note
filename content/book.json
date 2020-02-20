@@ -72,7 +72,7 @@
   ],
   "pluginsConfig": {
     "ad": {
-      "contentBottom": "<div style='text-align: center;'>网站备案信息：<a href='http://www.beian.miit.gov.cn/' target='__blank'>冀ICP备19024518号-1</a></div>"
+      "contentBottom": "<div style='text-align: center;'>工信部备案信息：<a href='http://www.beian.miit.gov.cn/' target='__blank'>冀ICP备19024518号-1</a></div>"
     },
     "code": {
       "copyButtons": false
