@@ -4,6 +4,7 @@ bui# Summary
 
 * [API](./API/README.md)
     * [Api mock website](./API/Api mock website.md)
+    * [deploy](./API/deploy.md)
 
 
 * [CSS3](./CSS3/README.md)

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HTML · 静思田园</title>
+        <title>deploy · 静思田园</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -184,10 +184,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="HTML实体符号代码速查表.html" />
+    <link rel="next" href="../CSS3/" />
     
     
-    <link rel="prev" href="../CSS3/TestREADME.html" />
+    <link rel="prev" href="Api mock website.html" />
     
 
     
@@ -260,9 +260,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../API/">
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <a href="../API/">
+                <a href="./">
             
                     
                     API
@@ -274,9 +274,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../API/Api mock website.html">
+        <li class="chapter " data-level="1.2.1" data-path="Api mock website.html">
             
-                <a href="../API/Api mock website.html">
+                <a href="Api mock website.html">
             
                     
                     Api mock website
@@ -287,9 +287,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../API/deploy.html">
+        <li class="chapter active" data-level="1.2.2" data-path="deploy.html">
             
-                <a href="../API/deploy.html">
+                <a href="deploy.html">
             
                     
                     deploy
@@ -396,9 +396,9 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="./">
+        <li class="chapter " data-level="3.1" data-path="../HTML/">
             
-                <a href="./">
+                <a href="../HTML/">
             
                     
                     HTML
@@ -410,9 +410,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="HTML实体符号代码速查表.html">
+        <li class="chapter " data-level="3.1.1" data-path="../HTML/HTML实体符号代码速查表.html">
             
-                <a href="HTML实体符号代码速查表.html">
+                <a href="../HTML/HTML实体符号代码速查表.html">
             
                     
                     HTML实体符号代码速查表
@@ -2096,7 +2096,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >HTML</a>
+        <a href=".." >deploy</a>
     </h1>
 </div>
 
@@ -2114,11 +2114,139 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <footer class="page-footer"><span class="copyright">&#x6BCF;&#x5929;&#x8BB0;&#x5F55;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x6BCF;&#x5929;&#x63D0;&#x9AD8;&#x4E00;&#x70B9;&#x70B9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x7F51;&#x7AD9;&#x5907;&#x6848;&#x4FE1;&#x606F;&#xFF1A;&#x5180;ICP&#x5907;19024518&#x53F7;-1       
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#deploy"><b>1. </b>Deploy</a></li><ul><li><span class="title-icon "></span><a href="#github-pages"><b>1.1. </b>GitHub Pages</a></li><li><span class="title-icon "></span><a href="#gitlab-pages"><b>1.2. </b>GitLab Pages</a></li><li><span class="title-icon "></span><a href="#firebase-hosting"><b>1.3. </b>Firebase Hosting</a></li><li><span class="title-icon "></span><a href="#vps"><b>1.4. </b>VPS</a></li><li><span class="title-icon "></span><a href="#netlify"><b>1.5. </b>Netlify</a></li><ul><li><span class="title-icon "></span><a href="#html5-router"><b>1.5.1. </b>HTML5 router</a></li></ul><li><span class="title-icon "></span><a href="#zeit-now"><b>1.6. </b>ZEIT Now</a></li><li><span class="title-icon "></span><a href="#aws-amplify"><b>1.7. </b>AWS Amplify</a></li></ul></ul></div><a href="#deploy" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="deploy"><a name="deploy" class="plugin-anchor" href="#deploy"><i class="fa fa-link" aria-hidden="true"></i></a><a name="deploy" class="anchor-navigation-ex-anchor" href="#deploy"><i class="fa fa-link" aria-hidden="true"></i></a>1. Deploy</h1>
+<p>Similar to <a href="https://www.gitbook.com" target="_blank">GitBook</a>, you can deploy files to GitHub Pages, GitLab Pages or VPS.</p>
+<h2 id="github-pages"><a name="github-pages" class="plugin-anchor" href="#github-pages"><i class="fa fa-link" aria-hidden="true"></i></a><a name="github-pages" class="anchor-navigation-ex-anchor" href="#github-pages"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. GitHub Pages</h2>
+<p>There&apos;re three places to populate your docs for your Github repository:</p>
+<ul>
+<li><code>docs/</code> folder</li>
+<li>master branch</li>
+<li>gh-pages branch</li>
+</ul>
+<p>It is recommended that you save your files to the <code>./docs</code> subfolder of the <code>master</code> branch of your repository. Then select <code>master branch /docs folder</code> as your Github Pages source in your repositories&apos; settings page.</p>
+<p><a href="_images/deploy-github-pages.png" data-lightbox="9a0d9945-e548-48c9-9594-cc18ae03f1ea" data-title="github pages"><img src="_images/deploy-github-pages.png" alt="github pages"></a></p>
+<p>!&gt; You can also save files in the root directory and select <code>master branch</code>.
+You&apos;ll need to place a <code>.nojekyll</code> file in the deploy location (such as <code>/docs</code> or the gh-pages branch)</p>
+<h2 id="gitlab-pages"><a name="gitlab-pages" class="plugin-anchor" href="#gitlab-pages"><i class="fa fa-link" aria-hidden="true"></i></a><a name="gitlab-pages" class="anchor-navigation-ex-anchor" href="#gitlab-pages"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. GitLab Pages</h2>
+<p>If you are deploying your master branch, include <code>.gitlab-ci.yml</code> with the following script:</p>
+<p>?&gt; The <code>.public</code> workaround is so <code>cp</code> doesn&apos;t also copy <code>public/</code> to itself in an infinite loop.</p>
+<pre class="language-"><code class="lang-YAML">pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre>
+<p>!&gt; You can replace script with <code>- cp -r docs/. public</code>, if <code>./docs</code> is your Docsify subfolder.</p>
+<h2 id="firebase-hosting"><a name="firebase-hosting" class="plugin-anchor" href="#firebase-hosting"><i class="fa fa-link" aria-hidden="true"></i></a><a name="firebase-hosting" class="anchor-navigation-ex-anchor" href="#firebase-hosting"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Firebase Hosting</h2>
+<p>!&gt; You&apos;ll need to install the Firebase CLI using <code>npm i -g firebase-tools</code> after signing into the <a href="https://console.firebase.google.com" target="_blank">Firebase Console</a> using a Google Account.</p>
+<p>Using Terminal determine and navigate to the directory for your Firebase Project - this could be <code>~/Projects/Docs</code> etc. From there, run <code>firebase init</code>, choosing <code>Hosting</code> from the menu (use <strong>space</strong> to select, <strong>arrow keys</strong> to change options and <strong>enter</strong> to confirm). Follow the setup instructions.</p>
+<p>You should have your <code>firebase.json</code> file looking similar to this (I changed the deployment directory from <code>public</code> to <code>site</code>):</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;hosting&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;public&quot;</span><span class="token operator">:</span> <span class="token string">&quot;site&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ignore&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;firebase.json&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;**/.*&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;**/node_modules/**&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Once finished, build the starting template by running <code>docsify init ./site</code> (replacing site with the deployment directory you determined when running <code>firebase init</code> - public by default). Add/edit the documentation, then run <code>firebase deploy</code> from the base project directory.</p>
+<h2 id="vps"><a name="vps" class="plugin-anchor" href="#vps"><i class="fa fa-link" aria-hidden="true"></i></a><a name="vps" class="anchor-navigation-ex-anchor" href="#vps"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. VPS</h2>
+<p>Try following nginx config.</p>
+<pre class="language-"><code class="lang-nginx"><span class="token keyword">server</span> <span class="token punctuation">{</span>
+  <span class="token keyword">listen</span> <span class="token number">80</span><span class="token punctuation">;</span>
+  <span class="token keyword">server_name</span>  your<span class="token punctuation">.</span>domain<span class="token punctuation">.</span>com<span class="token punctuation">;</span>
+
+  <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+    <span class="token keyword">alias</span> <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>dir<span class="token operator">/</span>of<span class="token operator">/</span>docs<span class="token operator">/</span><span class="token punctuation">;</span>
+    <span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="netlify"><a name="netlify" class="plugin-anchor" href="#netlify"><i class="fa fa-link" aria-hidden="true"></i></a><a name="netlify" class="anchor-navigation-ex-anchor" href="#netlify"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Netlify</h2>
+<ol>
+<li>Login to your <a href="https://www.netlify.com/" target="_blank">Netlify</a> account.</li>
+<li>In the <a href="https://app.netlify.com/" target="_blank">dashboard</a> page, click <strong>New site from Git</strong>.</li>
+<li>Choose a repository where you store your docs, leave the <strong>Build Command</strong> area blank, fill in the Publish directory area with the directory of your <code>index.html</code>, for example it should be docs if you populated it at <code>docs/index.html</code>.</li>
+</ol>
+<h3 id="html5-router"><a name="html5-router" class="plugin-anchor" href="#html5-router"><i class="fa fa-link" aria-hidden="true"></i></a><a name="html5-router" class="anchor-navigation-ex-anchor" href="#html5-router"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. HTML5 router</h3>
+<p>When using the HTML5 router, you need to set up redirect rules that redirect all requests to your <code>index.html</code>, it&apos;s pretty simple when you&apos;re using Netlify, create a file named <code>_redirects</code> in the docs directory, add this snippet to the file and you&apos;re all set:</p>
+<pre class="language-"><code class="lang-sh">/*    /index.html   200
+</code></pre>
+<h2 id="zeit-now"><a name="zeit-now" class="plugin-anchor" href="#zeit-now"><i class="fa fa-link" aria-hidden="true"></i></a><a name="zeit-now" class="anchor-navigation-ex-anchor" href="#zeit-now"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. ZEIT Now</h2>
+<ol>
+<li>Install <a href="https://zeit.co/download" target="_blank">Now CLI</a>, <code>npm i -g now</code></li>
+<li>Change directory to your docsify website, for example <code>cd docs</code></li>
+<li>Deploy with a single command, <code>now</code> </li>
+</ol>
+<h2 id="aws-amplify"><a name="aws-amplify" class="plugin-anchor" href="#aws-amplify"><i class="fa fa-link" aria-hidden="true"></i></a><a name="aws-amplify" class="anchor-navigation-ex-anchor" href="#aws-amplify"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. AWS Amplify</h2>
+<ol>
+<li>Set the routerMode in the Docsify project <code>index.html</code> to <em>history</em> mode.</li>
+</ol>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+    window.$docsify = {
+      loadSidebar: true,
+      routerMode: &apos;history&apos;
+    }
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<ol>
+<li>Login to your <a href="https://aws.amazon.com" target="_blank">AWS Console</a>.</li>
+<li>Go to the <a href="https://aws.amazon.com/amplify" target="_blank">AWS Amplify Dashboard</a>.</li>
+<li>Choose the <strong>Deploy</strong> route to setup your project.</li>
+<li>When prompted, keep the build settings empty if you&apos;re serving your docs within the root directory. If you&apos;re serving your docs from a different directory, customise your amplify.yml</li>
+</ol>
+<pre class="language-"><code class="lang-yml">version: 0.1
+frontend:
+  phases:
+    build:
+      commands: 
+        - echo &quot;Nothing to build&quot;
+  artifacts:
+    baseDirectory: /docs
+    files:
+      - &apos;**/*&apos;
+  cache:
+    paths: []
+</code></pre>
+<ol>
+<li>Add the following Redirect rules in their displayed order. Note that the second record is a PNG image where you can change it with any image format you are using. </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Source address</th>
+<th>Target address</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/&lt;*&gt;.md</td>
+<td>/&lt;*&gt;.md</td>
+<td>200 (Rewrite)</td>
+</tr>
+<tr>
+<td>/&lt;*&gt;.png</td>
+<td>/&lt;*&gt;.png</td>
+<td>200 (Rewrite)</td>
+</tr>
+<tr>
+<td>/&lt;*&gt;</td>
+<td>/index.html</td>
+<td>200 (Rewrite)</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">&#x6BCF;&#x5929;&#x8BB0;&#x5F55;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x6BCF;&#x5929;&#x63D0;&#x9AD8;&#x4E00;&#x70B9;&#x70B9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x7F51;&#x7AD9;&#x5907;&#x6848;&#x4FE1;&#x606F;&#xFF1A;&#x5180;ICP&#x5907;19024518&#x53F7;-1       
 2020-02-20 08:30:04
 </span></footer>
 
-<p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/HTML/README.html","distractionFreeMode":false});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/HTML/README.html","distractionFreeMode":false});gitalk.render("gitalk-container");</script><p></p>
+<p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/API/deploy.html","distractionFreeMode":false});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/API/deploy.html","distractionFreeMode":false});gitalk.render("gitalk-container");</script><p></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
                                 
@@ -2163,12 +2291,12 @@
 
             
                 
-                <a href="../CSS3/TestREADME.html" class="navigation navigation-prev " aria-label="Previous page: TestREADME">
+                <a href="Api mock website.html" class="navigation navigation-prev " aria-label="Previous page: Api mock website">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="HTML实体符号代码速查表.html" class="navigation navigation-next " aria-label="Next page: HTML实体符号代码速查表">
+                <a href="../CSS3/" class="navigation navigation-next " aria-label="Next page: CSS3">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2179,7 +2307,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML","level":"3.1","depth":1,"next":{"title":"HTML实体符号代码速查表","level":"3.1.1","depth":2,"path":"HTML/HTML实体符号代码速查表.md","ref":"./HTML/HTML实体符号代码速查表.md","articles":[]},"previous":{"title":"TestREADME","level":"2.1.3","depth":2,"path":"CSS3/TestREADME.md","ref":"./CSS3/TestREADME.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","accordion","anchor-navigation-ex","github-buttons@2.1.0","edit-link@^2.0.2","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx","popup","prism","-highlight","lightbox","hide-element","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","flexible-alerts","pageview-count","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","code","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","expandable-chapters","chapter-fold","-lunr","-search","search-pro","chart@^0.2.0","theme-comscore","gtalk"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"每天记录一点点，每天提高一点点","modify_label":"网站备案信息：冀ICP备19024518号-1       ","modify_format":"YYYY-MM-DD HH:mm:ss"},"introduction-text":"封面","chapter-fold":{},"prism":{},"include-csv":{},"emphasize":{},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg","wechatText":""},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"hide-element":{"elements":[".gitbook-link","span.copyright",".copyright",".book-anchor",".page-footer .copyright"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"静思田园","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"gtalk":{"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"window.location.pathname","distractionFreeMode":false},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","vk","weibo","pocket","stumbleupon","whatsapp"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"静思田园","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"HTML/README.md","mtime":"2020-02-20T01:30:04.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-20T01:30:06.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"deploy","level":"1.2.2","depth":2,"next":{"title":"CSS3","level":"2.1","depth":1,"path":"CSS3/README.md","ref":"./CSS3/README.md","articles":[{"title":"Test","level":"2.1.1","depth":2,"path":"CSS3/Test/README.md","ref":"./CSS3/Test/README.md","articles":[{"title":"HTML实体符号代码速查表","level":"2.1.1.1","depth":3,"path":"CSS3/Test/HTML实体符号代码速查表.md","ref":"./CSS3/Test/HTML实体符号代码速查表.md","articles":[]}]},{"title":"CSS3 三角形","level":"2.1.2","depth":2,"path":"CSS3/CSS3 三角形.md","ref":"./CSS3/CSS3 三角形.md","articles":[]},{"title":"TestREADME","level":"2.1.3","depth":2,"path":"CSS3/TestREADME.md","ref":"./CSS3/TestREADME.md","articles":[]}]},"previous":{"title":"Api mock website","level":"1.2.1","depth":2,"path":"API/Api mock website.md","ref":"./API/Api mock website.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","accordion","anchor-navigation-ex","github-buttons@2.1.0","edit-link@^2.0.2","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx","popup","prism","-highlight","lightbox","hide-element","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","flexible-alerts","pageview-count","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","code","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","expandable-chapters","chapter-fold","-lunr","-search","search-pro","chart@^0.2.0","theme-comscore","gtalk"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"每天记录一点点，每天提高一点点","modify_label":"网站备案信息：冀ICP备19024518号-1       ","modify_format":"YYYY-MM-DD HH:mm:ss"},"introduction-text":"封面","chapter-fold":{},"prism":{},"include-csv":{},"emphasize":{},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg","wechatText":""},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"hide-element":{"elements":[".gitbook-link","span.copyright",".copyright",".book-anchor",".page-footer .copyright"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"静思田园","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"gtalk":{"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"window.location.pathname","distractionFreeMode":false},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","vk","weibo","pocket","stumbleupon","whatsapp"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"静思田园","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"API/deploy.md","mtime":"2020-02-20T01:30:04.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-20T01:30:06.725Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
