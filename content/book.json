@@ -72,8 +72,7 @@
   ],
   "pluginsConfig": {
     "ad": {
-      "contentTop": "<div>Ads at the top of the page</div>",
-      "contentBottom": "网站备案信息：冀ICP备19024518号-1"
+      "contentBottom": "<div>网站备案信息：<a href='http://www.beian.miit.gov.cn/' target='__blank'>冀ICP备19024518号-1</a></div>"
     },
     "code": {
       "copyButtons": false
