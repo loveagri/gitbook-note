@@ -2,9 +2,10 @@
 $secret = 'loveagri';
 
 $path = '/home/wwwroot/default';
-
+//sha1=021208b331d3ca51451e57b084fab7f353a2150e#
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'];
 file_put_contents('./1.txt', $signature);
+file_put_contents('./4.txt', file_get_contents("php://input"));
 if ($signature) {
     $hash = "sha1" . hash_hmac('sha1', file_get_contents("php://input"), $secret);
     file_put_contents('./2.txt', $hash);
