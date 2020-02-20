@@ -2,7 +2,7 @@
 
 
 
-【1】daimajia提供的干货集中营7： 
+【1】daimajia提供的干货集中营799： 
 http://gank.io/api 
 举个栗子： 
 Url: http://gank.io/api/data/Android/10/1
