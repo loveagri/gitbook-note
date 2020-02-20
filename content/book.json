@@ -131,7 +131,7 @@
       ]
     },
     "tbfed-pagefooter": {
-      "modify_label": "UPDATE TIME:",
+      "modify_label": "<span style='color:pink'>UPDATE TIME:</span>",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "donate": {
