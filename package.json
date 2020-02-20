@@ -12,6 +12,7 @@
     "pushgit": "npm run img && npm run jsbuild && npm run build && npm run cname && git add -A && git commit -m msg && git push",
     "jb": "npm run img && npm run jsbuild && npm run build && npm run cname",
     "push": "git add -A && git commit -m msg",
+    "p": "git add -A && git commit -m ${msg}",
     "start": "npm run pushgit"
   },
   "repository": {
