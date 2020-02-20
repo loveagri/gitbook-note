@@ -1,4 +1,4 @@
 <?php
 
 
-file_put_contents('./1.txt','999');
+file_put_contents('./1.txt',strcmp($signature,$hash));
