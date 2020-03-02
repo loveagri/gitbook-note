@@ -107,7 +107,7 @@
     },
     "sharing": {
       "douban": false,
-      "facebook": false,
+      "facebook": true,
       "google": false,
       "hatenaBookmark": false,
       "instapaper": false,
@@ -115,7 +115,7 @@
       "linkedin": false,
       "messenger": false,
       "pocket": false,
-      "qq": true,
+      "qq": false,
       "qzone": true,
       "stumbleupon": false,
       "twitter": false,
