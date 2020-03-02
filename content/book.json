@@ -108,26 +108,27 @@
     "sharing": {
       "douban": false,
       "facebook": false,
-      "google": true,
+      "google": false,
       "hatenaBookmark": false,
       "instapaper": false,
-      "line": true,
-      "linkedin": true,
+      "line": false,
+      "linkedin": false,
       "messenger": false,
       "pocket": false,
-      "qq": false,
+      "qq": true,
       "qzone": true,
       "stumbleupon": false,
       "twitter": false,
       "viber": false,
       "vk": false,
-      "weibo": true,
+      "weibo": false,
       "whatsapp": false,
       "all": [
-        "douban", "facebook", "google", "hatenaBookmark",
-        "instapaper", "linkedin","twitter", "weibo",
-        "messenger","qq", "qzone","viber","vk","weibo",
-        "pocket", "stumbleupon","whatsapp"
+        "facebook", 
+        "instapaper",
+        "messenger",
+        "qq", 
+        "qzone"
       ]
     },
     "tbfed-pagefooter": {
