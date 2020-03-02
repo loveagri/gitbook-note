@@ -125,9 +125,6 @@
       "whatsapp": false,
       "all": [
         "facebook", 
-        "instapaper",
-        "messenger",
-        "qq", 
         "qzone"
       ]
     },
