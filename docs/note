@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 07 Mar 2020 15:55:04 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Apr 2020 11:09:41 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -255,6 +255,19 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <description><![CDATA[下面在windows系统中介绍PHPSTORM使用,MAC使用与windows只是键盘布局差异。所以就不重复介绍了。]]></description>
             <link>https://loveagri.github.io/note/PHPStorm/configuration.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/PHPStorm/configuration.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Word/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Word/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[word如何从中间开始插入页码]]></title>
+            <description><![CDATA[全文共20页，页码从第6页开始以1.2.3等形式编号。]]></description>
+            <link>https://loveagri.github.io/note/Word/Untitled.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Word/Untitled.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
