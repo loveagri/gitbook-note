@@ -117,6 +117,7 @@ bui# Summary
 
 * [python](./python/README.md)
     * [pip set proxy](./python/pip set proxy.md)
+    * [youtube downloader](./python/youtube downloader.md)
 
 
 * [react](./react/README.md)

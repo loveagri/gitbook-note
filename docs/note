@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 20 Jun 2020 12:28:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Jun 2020 13:28:12 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -545,7 +545,8 @@ gitlab之webhook自动部署]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[YouTube download]]></title>
+            <description><![CDATA[git link https://github.com/KW0jtowicz/PyPlaylister]]></description>
             <link>https://loveagri.github.io/note/python/README.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/python/README.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
@@ -555,6 +556,12 @@ gitlab之webhook自动部署]]></description>
             <description><![CDATA[对于Python开发用户来讲，PIP安装软件包是家常便饭。但国外的源下载速度实在太慢，浪费时间。而且经常出现下载后安装出错问题。所以把PIP安装源替换成国内镜像，可以大幅提升下载速度，还可以提高安装成功率。]]></description>
             <link>https://loveagri.github.io/note/python/pip set proxy.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/python/pip set proxy.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/python/youtube downloader.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/python/youtube downloader.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
