@@ -11,7 +11,6 @@
     "build": "gitbook build content docs",
     "pushgit": "npm run img && npm run jsbuild && npm run build && npm run cname && git add -A && git commit -m msg && git push",
     "start": "npm run pushgit",
-
     "jb": "npm run img && npm run jsbuild && npm run build && npm run cname",
     "push": "git add -A && git commit -m msg",
     "p:msg": "git add -A && git commit -m --msg"
