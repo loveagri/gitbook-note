@@ -138,6 +138,7 @@ bui# Summary
 
 * [sublime](./sublime/README.md)
     * [License](./sublime/License.md)
+    * [setting](./sublime/setting.md)
 
 
 * [vim](./vim/README.md)

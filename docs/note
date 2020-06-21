@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 20 Jun 2020 17:24:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jun 2020 06:41:54 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -621,10 +621,17 @@ gitlab之webhook自动部署]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[keys]]></title>
             <description><![CDATA[Link]]></description>
             <link>https://loveagri.github.io/note/sublime/License.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/sublime/License.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Setting]]></title>
+            <description><![CDATA[Path: Sublime Text 3/Packages/User]]></description>
+            <link>https://loveagri.github.io/note/sublime/setting.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/sublime/setting.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
