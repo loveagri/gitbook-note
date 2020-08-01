@@ -29,6 +29,7 @@ bui# Summary
     * [centos yum rpm源](./Linux/centos yum rpm源.md)
     * [centos7 bridge](./Linux/centos7 bridge.md)
     * [curl command](./Linux/curl command.md)
+    * [zsh](./Linux/zsh.md)
 
 
 * [MAC](./MAC/README.md)
