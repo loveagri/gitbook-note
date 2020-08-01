@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 01 Aug 2020 11:50:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Aug 2020 13:09:45 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -148,6 +148,13 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <description><![CDATA[在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。]]></description>
             <link>https://loveagri.github.io/note/Linux/curl command.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Linux/curl command.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[shell echo写入多行文字到文本中]]></title>
+            <description><![CDATA[其中，<<EOF 表示当遇到EOF时结束输入。]]></description>
+            <link>https://loveagri.github.io/note/Linux/shell echo写入多行文字到文本中.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Linux/shell echo写入多行文字到文本中.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

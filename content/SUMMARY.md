@@ -29,6 +29,7 @@ bui# Summary
     * [centos yum rpm源](./Linux/centos yum rpm源.md)
     * [centos7 bridge](./Linux/centos7 bridge.md)
     * [curl command](./Linux/curl command.md)
+    * [shell echo写入多行文字到文本中](./Linux/shell echo写入多行文字到文本中.md)
     * [zsh](./Linux/zsh.md)
 
 
