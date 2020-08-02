@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 01 Aug 2020 13:09:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Aug 2020 06:37:44 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -256,6 +256,19 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
             <title><![CDATA[NGINX配置]]></title>
             <link>https://loveagri.github.io/note/Nginx/proxy.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/Nginx/proxy.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/Nodejs/README.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nodejs/README.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[在CentOS 7上安装Node.js的4种方法（yum安装和源码安装）]]></title>
+            <description><![CDATA[CentOS 7上的安装方法，其中涵盖了源码安装，已编译版本安装，EPEL（Extra Packages for Enterprise Linux）安装和通过NVM（Node version manager）安装这四种方法，其中，前两种方法基本上都是Linux通用的安装方式，特别是前者，其优点自然是可以安装最新的版本，至于后两者，因为安装简单且管理方便]]></description>
+            <link>https://loveagri.github.io/note/Nodejs/install nodejs.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/Nodejs/install nodejs.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>mysql install param · 静思田园</title>
+        <title>Nodejs · 静思田园</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -188,10 +188,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mysql install source.html" />
+    <link rel="next" href="install nodejs.html" />
     
     
-    <link rel="prev" href="mysql install bundle.html" />
+    <link rel="prev" href="../Nginx/proxy.html" />
     
 
     
@@ -641,9 +641,9 @@
         
         
     
-        <li class="chapter " data-level="8.1" data-path="./">
+        <li class="chapter " data-level="8.1" data-path="../MYSQL/">
             
-                <a href="./">
+                <a href="../MYSQL/">
             
                     
                     MYSQL
@@ -655,9 +655,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="8.1.1" data-path="mysql install bundle.html">
+        <li class="chapter " data-level="8.1.1" data-path="../MYSQL/mysql install bundle.html">
             
-                <a href="mysql install bundle.html">
+                <a href="../MYSQL/mysql install bundle.html">
             
                     
                     mysql install bundle
@@ -668,9 +668,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="8.1.2" data-path="mysql install param.html">
+        <li class="chapter " data-level="8.1.2" data-path="../MYSQL/mysql install param.html">
             
-                <a href="mysql install param.html">
+                <a href="../MYSQL/mysql install param.html">
             
                     
                     mysql install param
@@ -681,9 +681,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.3" data-path="mysql install source.html">
+        <li class="chapter " data-level="8.1.3" data-path="../MYSQL/mysql install source.html">
             
-                <a href="mysql install source.html">
+                <a href="../MYSQL/mysql install source.html">
             
                     
                     mysql install source
@@ -694,9 +694,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.4" data-path="mysql isntall rpm.html">
+        <li class="chapter " data-level="8.1.4" data-path="../MYSQL/mysql isntall rpm.html">
             
-                <a href="mysql isntall rpm.html">
+                <a href="../MYSQL/mysql isntall rpm.html">
             
                     
                     mysql isntall rpm
@@ -707,9 +707,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.5" data-path="mysql.html">
+        <li class="chapter " data-level="8.1.5" data-path="../MYSQL/mysql.html">
             
-                <a href="mysql.html">
+                <a href="../MYSQL/mysql.html">
             
                     
                     mysql
@@ -810,9 +810,9 @@
         
         
     
-        <li class="chapter " data-level="10.1" data-path="../Nodejs/">
+        <li class="chapter active" data-level="10.1" data-path="./">
             
-                <a href="../Nodejs/">
+                <a href="./">
             
                     
                     Nodejs
@@ -824,9 +824,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="10.1.1" data-path="../Nodejs/install nodejs.html">
+        <li class="chapter " data-level="10.1.1" data-path="install nodejs.html">
             
-                <a href="../Nodejs/install nodejs.html">
+                <a href="install nodejs.html">
             
                     
                     install nodejs
@@ -2263,7 +2263,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >mysql install param</a>
+        <a href=".." >Nodejs</a>
     </h1>
 </div>
 
@@ -2281,102 +2281,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <pre class="language-"><code>cmake . -DCMAKE_INSTALL_PREFIX=/application/mysql-5.5.32 \
--DMYSQL_DATADIR=/application/mysql-5.5.32/data \
--DMYSQL_UNIX_ADDR=/application/mysql-5.5.32/tmp/msyql.sock \
--DDEFAULT_CHARSET=utf8 \
--DDEFAULT_COLLATION=utf8_general_ci \
--DEXTRA_CHARSETS=gbk,gb2312,utf8,ascii \
--DENABLED_LOCAL_INFILE=ON \
--DWITH_INNOBASE_STORAGE_ENGINE=1 \
--DWITH_FEDERATED_STORAGE_ENGINE=1 \
--DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
--DWITHOUT_EXAMPLE_STORAGE_ENGINE=1 \
--DWITHOUT_RARTITION_STORAGE_ENGINE=1 \
--DWITH_FAST_MUTEXES=1 \
--DWITH_ZLIB=bundled \
--DENABLED_LOCAL_INFILE=1 \
--DWITH_PEADLINE=1 \
--DWITH_EMBEDDED_SERVER=1 \
--DWITH_DEBUG=0
-</code></pre><h4 id="create-user-and-group"><a name="create-user-and-group" class="plugin-anchor" href="#create-user-and-group"><i class="fa fa-link" aria-hidden="true"></i></a><a name="create-user-and-group" class="anchor-navigation-ex-anchor" href="#create-user-and-group"><i class="fa fa-link" aria-hidden="true"></i></a>create user and group</h4>
-<pre class="language-"><code>groupadd mysql
-useradd mysql -s /sbin/nologin -M -g mysql
-
-ln -s /application/mysql-5.5.32/ /application/mysql
-
-cpm mysql-5.5.32/support-files/my-small.cnf /etc/my.cnf
-
-
-echo &apos;export PATH=/application/mysql/bin:$PATH&apos; &gt;&gt; /etc/profile
-tail -l /etc/profile
-source /etc/profile
-echo $PATH
-
-ln -s  /application/mysql-5.5.32 /application/mysql
-
-cp mysql-5.5.32/support-files/my-small.cnf /etc/my.cnf
-
-chown -R mysql.mysql /application/mysql/data
-
-chmod -R 1777 /tmp
-
-cd /application/mysql/scripts
-
-&#x279C;  scripts ./mysql_install_db --basedir=/application/mysql/ --datadir=/application/mysql/data --user=mysql
-
-Installing MySQL system tables...
-OK
-Filling help tables...
-OK
-
-To start mysqld at boot time you have to copy
-support-files/mysql.server to the right place for your system
-
-PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
-To do so, start the server, then issue the following commands:
-
-/application/mysql//bin/mysqladmin -u root password &apos;new-password&apos;
-/application/mysql//bin/mysqladmin -u root -h VM_0_3_centos password &apos;new-password&apos;
-
-Alternatively you can run:
-/application/mysql//bin/mysql_secure_installation
-
-which will also give you the option of removing the test
-databases and anonymous user created by default.  This is
-strongly recommended for production servers.
-
-See the manual for more instructions.
-
-You can start the MySQL daemon with:
-cd /application/mysql/ ; /application/mysql//bin/mysqld_safe &amp;
-
-You can test the MySQL daemon with mysql-test-run.pl
-cd /application/mysql//mysql-test ; perl mysql-test-run.pl
-
-Please report any problems with the /application/mysql//scripts/mysqlbug script!
-
-~ cd /application
-&#x279C;  /application cp mysql/support-files/mysql.server /etc/init.d/mysqld
-
-chmod +x /etc/init.d/mysqld
-
-netstat -ltnup | grep 3306
-
-select user,host from mysql.user;
-
-delete from mysql.user where user=&apos;&apos;;
-
-grant all privileges on *.* to system@&apos;localhost&apos; identified by &apos;lodboy123&apos; with grant option;
-
-chkconfig mysql on
-
-chkconfig --list mysqld
-</code></pre><footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification"><span style="color:pink">UPDATE TIME:</span>
+                                <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification"><span style="color:pink">UPDATE TIME:</span>
 2020-08-02 13:37:15
 </span></footer>
 
-<p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/MYSQL/mysql install param.html","distractionFreeMode":false});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/MYSQL/mysql install param.html","distractionFreeMode":false});gitalk.render("gitalk-container");</script><p></p>
+<p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/Nodejs/README.html","distractionFreeMode":false});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"/Nodejs/README.html","distractionFreeMode":false});gitalk.render("gitalk-container");</script><p></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
                                 
@@ -2421,12 +2330,12 @@ chkconfig --list mysqld
 
             
                 
-                <a href="mysql install bundle.html" class="navigation navigation-prev " aria-label="Previous page: mysql install bundle">
+                <a href="../Nginx/proxy.html" class="navigation navigation-prev " aria-label="Previous page: proxy">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mysql install source.html" class="navigation navigation-next " aria-label="Next page: mysql install source">
+                <a href="install nodejs.html" class="navigation navigation-next " aria-label="Next page: install nodejs">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2437,7 +2346,7 @@ chkconfig --list mysqld
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mysql install param","level":"8.1.2","depth":2,"next":{"title":"mysql install source","level":"8.1.3","depth":2,"path":"MYSQL/mysql install source.md","ref":"./MYSQL/mysql install source.md","articles":[]},"previous":{"title":"mysql install bundle","level":"8.1.1","depth":2,"path":"MYSQL/mysql install bundle.md","ref":"./MYSQL/mysql install bundle.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","accordion","anchor-navigation-ex","github-buttons@2.1.0","edit-link@^2.0.2","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx","popup","prism","-highlight","lightbox","hide-element","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","flexible-alerts","pageview-count","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","code","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","expandable-chapters","chapter-fold","-lunr","-search","search-pro","chart@^0.2.0","theme-comscore","gtalk","ad"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"<span style='color:pink'>UPDATE TIME:</span>","modify_format":"YYYY-MM-DD HH:mm:ss"},"introduction-text":"封面","chapter-fold":{},"prism":{},"include-csv":{},"emphasize":{},"ad":{"contentBottom":"<div style='text-align: center;'>工信部备案信息：<a href='http://www.beian.miit.gov.cn/' target='__blank'>冀ICP备19024518号-1</a></div>"},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg","wechatText":""},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"hide-element":{"elements":[".gitbook-link","span.copyright",".copyright",".book-anchor",".page-footer .copyright"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"静思田园","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"gtalk":{"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"window.location.pathname","distractionFreeMode":false},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","qzone"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"静思田园","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"MYSQL/mysql install param.md","mtime":"2020-08-02T06:37:15.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-02T06:37:17.544Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Nodejs","level":"10.1","depth":1,"next":{"title":"install nodejs","level":"10.1.1","depth":2,"path":"Nodejs/install nodejs.md","ref":"./Nodejs/install nodejs.md","articles":[]},"previous":{"title":"proxy","level":"9.1.4","depth":2,"path":"Nginx/proxy.md","ref":"./Nginx/proxy.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","toggle-chapters","search-plus@^0.0.11","diy-introduction","simple-page-toc@^0.1.1","github@^2.0.0","accordion","anchor-navigation-ex","github-buttons@2.1.0","edit-link@^2.0.2","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx","popup","prism","-highlight","lightbox","hide-element","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","flexible-alerts","pageview-count","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","rss@^3.0.2","-sharing","code","sharing-plus@^0.0.2","graph@^0.1.0","copy-code-button","expandable-chapters","chapter-fold","-lunr","-search","search-pro","chart@^0.2.0","theme-comscore","gtalk","ad"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"<span style='color:pink'>UPDATE TIME:</span>","modify_format":"YYYY-MM-DD HH:mm:ss"},"introduction-text":"封面","chapter-fold":{},"prism":{},"include-csv":{},"emphasize":{},"ad":{"contentBottom":"<div style='text-align: center;'>工信部备案信息：<a href='http://www.beian.miit.gov.cn/' target='__blank'>冀ICP备19024518号-1</a></div>"},"ace":{},"github":{"url":"https://github.com/loveagri/note"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"search-pro":{},"accordion":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":false},"versions-select":{"type":"branches"},"graph":{},"donate":{"alipay":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/loveagri/note/master/ud-img/wechat.jpg","wechatText":""},"sitemap-general":{"prefix":"https://loveagri.github.io/note/"},"hide-element":{"elements":[".gitbook-link","span.copyright",".copyright",".book-anchor",".page-footer .copyright"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["gitbook"],"title":"静思田园","description":"记录每天的点点滴滴","author":"loveagri","feed_url":"https://loveagri.github.io/note/","site_url":"https://loveagri.github.io/note/","managingEditor":"1044531744@qq.com","webMaster":"1044531744@qq.com"},"musicxml":{},"diy-introduction":{},"gtalk":{"clientID":"497cd5036bdc5a0166e1","clientSecret":"81533b88196ad22d16417310b5fdaedc5a59daa4","repo":"loveagri.github.io","owner":"loveagri","admin":["loveagri"],"id":"window.location.pathname","distractionFreeMode":false},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"loveagri/note","types":["star"],"size":"small"},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"local-video":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","qzone"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit This Page","base":"https://github.com/loveagri/note/blob/master/content"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"loveagri","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"静思田园","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"记录每天的点点滴滴"},"file":{"path":"Nodejs/README.md","mtime":"2020-08-02T06:37:15.483Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-02T06:37:17.544Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
