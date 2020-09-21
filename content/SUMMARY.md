@@ -126,6 +126,7 @@ bui# Summary
 
 
 * [python](./python/README.md)
+    * [Python绘制双柱状图并显示数值](./python/Python绘制双柱状图并显示数值.md)
     * [pip set proxy](./python/pip set proxy.md)
     * [youtube downloader](./python/youtube downloader.md)
 
