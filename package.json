@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "gitbook-plugin-expandable-chapters": "^0.2.0",
-    "gitbook-plugin-page-toc-button": "^0.1.1"
+    "gitbook-plugin-page-toc-button": "^0.1.1",
+    "react": "^17.0.1"
   }
 }
