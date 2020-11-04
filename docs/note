@@ -4,7 +4,7 @@
         <description><![CDATA[记录每天的点点滴滴]]></description>
         <link>https://loveagri.github.io/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 31 Oct 2020 12:16:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Nov 2020 07:23:39 GMT</lastBuildDate>
         <atom:link href="https://loveagri.github.io/note/" rel="self" type="application/rss+xml"/>
         <author><![CDATA[loveagri]]></author>
         <managingEditor><![CDATA[1044531744@qq.com]]></managingEditor>
@@ -34,26 +34,13 @@ Url: http://gank.io/api/data/Android/10/1]]></description>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[开放API]]></title>
-            <description><![CDATA[{% chart %}
-{
-"data": {
-"type": "bar",
-"columns": [
-["data1", 30, 200, 100, 400, 150, 250],
-["data2", 50, 20, 10, 40, 15, 25]
-],
-"axes": {
-"data2": "y2"
-}
-},
-"axis": {
-"y2": {
-"show": true
-}
-}
-}
-{% endchart %}]]></description>
+            <title><![CDATA[No title]]></title>
+            <link>https://loveagri.github.io/note/API/Untitled.html</link>
+            <guid isPermaLink="true">https://loveagri.github.io/note/API/Untitled.html</guid>
+            <dc:creator><![CDATA[loveagri]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[this is title]]></title>
             <link>https://loveagri.github.io/note/API/test.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/API/test.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>
@@ -356,7 +343,7 @@ nginx: configuration file /home/work/local-qc/nginx/conf/nginx.conf test failed]
         </item>
         <item>
             <title><![CDATA[远程仓库]]></title>
-            <description><![CDATA[自诞生于 2005 年以来，Git 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目 。]]></description>
+            <description><![CDATA[<iframe width="1206" height="678" src="https://www.youtube.com/embed/ZSFjbD0GWYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></description>
             <link>https://loveagri.github.io/note/git/git user.html</link>
             <guid isPermaLink="true">https://loveagri.github.io/note/git/git user.html</guid>
             <dc:creator><![CDATA[loveagri]]></dc:creator>

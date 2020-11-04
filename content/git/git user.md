@@ -2,6 +2,8 @@
 
 #### 安装
 
+<iframe width="1206" height="678" src="https://www.youtube.com/embed/ZSFjbD0GWYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 自诞生于 2005 年以来，Git 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目 。
 
 Git可以在windows、Mac、Linux全平台系统使用。登录 <https://git-scm.com/downloads> 下载你系统的Git软件并进行安装。
