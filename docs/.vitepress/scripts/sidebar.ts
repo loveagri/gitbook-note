@@ -1,5 +1,5 @@
 import {resolve, dirname} from 'node:path'
-import {writeFileSync} from 'node:fs'
+import {writeFileSync, existsSync} from 'node:fs'
 import {Sidebar} from "vitepress/types/default-theme";
 import {
 	getDirTree,
@@ -14,8 +14,11 @@ import {
 
 export function sidebarTree(tree: FileItem[] = []): Sidebar {
 	return tree.map((v: FileItem) => {
-		const indexPath = resolve(v.path!, 'index.md')
 		if (v.type === 'directory') {
+			const indexPath = resolve(v.path!, 'index.md')
+			if (!existsSync(indexPath)) {
+				writeFileSync(indexPath, `---\nbarName: ${v.name}\n---\n\n# ${v.name}`,)
+			}
 			return {
 				text: getTitleName(indexPath, v.name),
 				collapsed: isCollapsible(indexPath),
