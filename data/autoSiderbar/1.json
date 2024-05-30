@@ -1,0 +1,360 @@
+[
+  {
+    "text": "Linux",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "commands",
+        "collapsible": true,
+        "children": [
+          "/Linux/commands/README.md",
+          "/Linux/commands/mkdir.md"
+        ]
+      },
+      {
+        "text": "kali",
+        "collapsible": true,
+        "children": [
+          "/Linux/kali/air-crack.md"
+        ]
+      },
+      "/Linux/knowledge.md",
+      {
+        "text": "shell",
+        "collapsible": true,
+        "children": [
+          "/Linux/shell/README.md",
+          "/Linux/shell/awk.md",
+          "/Linux/shell/function.md",
+          "/Linux/shell/grep.md",
+          "/Linux/shell/sed.md",
+          "/Linux/shell/shell-array.md",
+          "/Linux/shell/string-handle.md",
+          "/Linux/shell/tools-command.md",
+          "/Linux/shell/var-replace.md",
+          "/Linux/shell/variable.md"
+        ]
+      }
+    ]
+  },
+  "/README.md",
+  "/README1.md",
+  {
+    "text": "advanced",
+    "collapsible": true,
+    "children": [
+      "/advanced/architecture.md",
+      {
+        "text": "cookbook",
+        "collapsible": true,
+        "children": [
+          "/advanced/cookbook/README.md",
+          "/advanced/cookbook/adding-extra-pages.md",
+          "/advanced/cookbook/making-a-theme-extendable.md",
+          "/advanced/cookbook/markdown-and-vue-sfc.md",
+          "/advanced/cookbook/passing-data-to-client-code.md",
+          "/advanced/cookbook/usage-of-client-config.md"
+        ]
+      },
+      "/advanced/plugin.md",
+      "/advanced/theme.md"
+    ]
+  },
+  {
+    "text": "coding",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "Javascript",
+        "collapsible": true,
+        "children": [
+          "/coding/Javascript/console-color.md",
+          "/coding/Javascript/regexp.md",
+          "/coding/Javascript/skill.md"
+        ]
+      },
+      {
+        "text": "PHP",
+        "collapsible": true,
+        "children": [
+          {
+            "text": "Laravel",
+            "collapsible": true,
+            "children": [
+              "/coding/PHP/Laravel/faker.md",
+              "/coding/PHP/Laravel/problems.md"
+            ]
+          },
+          {
+            "text": "Lnmp",
+            "collapsible": true,
+            "children": [
+              "/coding/PHP/Lnmp/lnmp-laravel.md"
+            ]
+          },
+          "/coding/PHP/set-composer-source.md"
+        ]
+      },
+      "/coding/README.md",
+      {
+        "text": "html",
+        "collapsible": true,
+        "children": [
+          "/coding/html/emmet.md"
+        ]
+      },
+      {
+        "text": "vue",
+        "collapsible": true,
+        "children": [
+          "/coding/vue/scroll.md",
+          "/coding/vue/style.md"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "computer",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "Http",
+        "collapsible": true,
+        "children": [
+          "/computer/Http/status-code.md"
+        ]
+      },
+      {
+        "text": "Mac",
+        "collapsible": true,
+        "children": [
+          "/computer/Mac/proxy-setting.md"
+        ]
+      },
+      "/computer/README.md",
+      "/computer/computer-assemble.md"
+    ]
+  },
+  {
+    "text": "database",
+    "collapsible": true,
+    "children": [
+      "/database/MySQL-param.md",
+      "/database/README.md",
+      "/database/mariadb.md",
+      "/database/mysql-import-export.md",
+      "/database/remote-connect.md"
+    ]
+  },
+  {
+    "text": "guide",
+    "collapsible": true,
+    "children": [
+      "/guide/assets.md",
+      "/guide/bundler.md",
+      "/guide/configuration.md",
+      "/guide/deployment.md",
+      "/guide/getting-started.md",
+      "/guide/i18n.md",
+      "/guide/introduction.md",
+      "/guide/markdown.md",
+      "/guide/migration.md",
+      "/guide/page.md",
+      "/guide/plugin.md",
+      "/guide/theme.md",
+      "/guide/troubleshooting.md"
+    ]
+  },
+  {
+    "text": "language",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "Javascript",
+        "collapsible": true,
+        "children": [
+          "/language/Javascript/console-color.md",
+          "/language/Javascript/regexp.md",
+          "/language/Javascript/skill.md"
+        ]
+      },
+      {
+        "text": "PHP",
+        "collapsible": true,
+        "children": [
+          {
+            "text": "Laravel",
+            "collapsible": true,
+            "children": [
+              "/language/PHP/Laravel/faker.md",
+              "/language/PHP/Laravel/problems.md"
+            ]
+          },
+          {
+            "text": "Lnmp",
+            "collapsible": true,
+            "children": [
+              "/language/PHP/Lnmp/lnmp-laravel.md"
+            ]
+          },
+          "/language/PHP/README.md",
+          "/language/PHP/set-composer-source.md"
+        ]
+      },
+      "/language/README.md",
+      {
+        "text": "html",
+        "collapsible": true,
+        "children": [
+          "/language/html/emmet.md"
+        ]
+      },
+      {
+        "text": "vue",
+        "collapsible": true,
+        "children": [
+          "/language/vue/scroll.md",
+          "/language/vue/style.md"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "reference",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "bundler",
+        "collapsible": true,
+        "children": [
+          "/reference/bundler/vite.md",
+          "/reference/bundler/webpack.md"
+        ]
+      },
+      "/reference/cli.md",
+      "/reference/client-api.md",
+      "/reference/components.md",
+      "/reference/config.md",
+      {
+        "text": "default-theme",
+        "collapsible": true,
+        "children": [
+          "/reference/default-theme/components.md",
+          "/reference/default-theme/config.md",
+          "/reference/default-theme/extending.md",
+          "/reference/default-theme/frontmatter.md",
+          "/reference/default-theme/markdown.md",
+          "/reference/default-theme/styles.md"
+        ]
+      },
+      "/reference/frontmatter.md",
+      "/reference/node-api.md",
+      {
+        "text": "plugin",
+        "collapsible": true,
+        "children": [
+          "/reference/plugin/active-header-links.md",
+          "/reference/plugin/back-to-top.md",
+          "/reference/plugin/container.md",
+          "/reference/plugin/docsearch.md",
+          "/reference/plugin/external-link-icon.md",
+          "/reference/plugin/git.md",
+          "/reference/plugin/google-analytics.md",
+          "/reference/plugin/medium-zoom.md",
+          "/reference/plugin/nprogress.md",
+          "/reference/plugin/palette.md",
+          "/reference/plugin/prismjs.md",
+          "/reference/plugin/pwa-popup.md",
+          "/reference/plugin/pwa.md",
+          "/reference/plugin/register-components.md",
+          "/reference/plugin/search.md",
+          "/reference/plugin/shiki.md",
+          "/reference/plugin/theme-data.md",
+          "/reference/plugin/toc.md"
+        ]
+      },
+      "/reference/plugin-api.md",
+      "/reference/theme-api.md"
+    ]
+  },
+  {
+    "text": "tools",
+    "collapsible": true,
+    "children": [
+      {
+        "text": "Brew",
+        "collapsible": true,
+        "children": [
+          "/tools/Brew/change-brew-source.md"
+        ]
+      },
+      {
+        "text": "Docker",
+        "collapsible": true,
+        "children": [
+          "/tools/Docker/README.md",
+          "/tools/Docker/docker-install.md"
+        ]
+      },
+      {
+        "text": "FTP",
+        "collapsible": true,
+        "children": [
+          "/tools/FTP/setting.md"
+        ]
+      },
+      {
+        "text": "Laradock",
+        "collapsible": true,
+        "children": [
+          "/tools/Laradock/README.md",
+          "/tools/Laradock/laradock-setting.md",
+          "/tools/Laradock/php-inner-request-error.md"
+        ]
+      },
+      "/tools/README.md",
+      {
+        "text": "VScode",
+        "collapsible": true,
+        "children": [
+          "/tools/VScode/keys.md",
+          "/tools/VScode/plugin.md",
+          "/tools/VScode/problem.md",
+          "/tools/VScode/vscode.md"
+        ]
+      },
+      {
+        "text": "git",
+        "collapsible": true,
+        "children": [
+          "/tools/git/Command-line-instructions.md",
+          "/tools/git/README.md",
+          "/tools/git/git-basic-command.md",
+          "/tools/git/git-error.md",
+          "/tools/git/git-proxy.md",
+          "/tools/git/git-setting.md",
+          "/tools/git/push-to-multi-repo.md"
+        ]
+      },
+      {
+        "text": "npm",
+        "collapsible": true,
+        "children": [
+          "/tools/npm/npm-registry.md"
+        ]
+      },
+      {
+        "text": "phpstorm",
+        "collapsible": true,
+        "children": [
+          "/tools/phpstorm/README.md",
+          "/tools/phpstorm/keys.md",
+          "/tools/phpstorm/laravel-code-tip.md",
+          "/tools/phpstorm/laravel-model-tool-and-debugbar.md",
+          "/tools/phpstorm/laravel-print-sql.md",
+          "/tools/phpstorm/setting-skills.md"
+        ]
+      }
+    ]
+  }
+]

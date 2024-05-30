@@ -1,0 +1,43 @@
+/coverage
+/src/client/shared.ts
+/src/node/shared.ts
+*.log
+*.tgz
+.DS_Store
+.idea
+.temp
+.vite_opt_cache
+.vscode
+dist
+.cache
+cache
+temp
+examples-temp
+node_modules
+pnpm-global
+TODOs.md
+*.timestamp-*.mjs
+# VuePress files
+docs/.vitepress/.temp/
+docs/.vitepress/.cache/
+docs/.vitepress/dist/
+# Node modules
+node_modules/
+# MacOS Desktop Services Store
+.env
+.env.gitlab
+# VuePress files
+# Dist files
+lib/
+download/
+# Test temp files
+**/__fixtures__/.temp/
+# Test coverage files
+coverage/
+# Node modules
+*..DS_Store
+# Log files
+# Typescript build info
+*.tsbuildinfo
+test.*
+download.sh
