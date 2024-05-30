@@ -49,11 +49,6 @@ function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
 					},
 				]
 				sidebarObj = Object.assign(sidebarObj, sidebarSingleDir(v.children))
-				return ''
-			} else {
-				// const link = `${dirname(v.path).replace(SRC_PATH, '')}/`
-				// sidebarObj[link].push({text: getTitleName(v.path), link: getFileDirPathFromSrc(v.path)})
-				return ''
 			}
 		})
 

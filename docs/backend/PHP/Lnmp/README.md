@@ -1,5 +1,0 @@
----
-barName: Lnmp
----
-
-# Lnmp

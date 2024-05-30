@@ -131,6 +131,10 @@ export function dirAndFileOrder(
 			}
 		})
 		.sort((a: FileItem, b: FileItem) => {//文件夹和文件分类排序
+			// return reverse
+			// 	? a.type.length - b.type.length
+			// 	: b.type.length - a.type.length
+
 			return reverse
 				? b.type.length - a.type.length
 				: a.type.length - b.type.length
