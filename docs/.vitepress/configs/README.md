@@ -1,5 +1,0 @@
----
-barName: configs
----
-
-# configs

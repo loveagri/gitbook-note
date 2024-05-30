@@ -7,8 +7,8 @@ import dirTree from 'directory-tree'
 import type {GrayMatterFile} from 'gray-matter'
 import markdown from 'markdown-it'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const SRC_PATH = resolve(__dirname, '../../').replace(/\\/g, '/')
+export const __dirname = dirname(fileURLToPath(import.meta.url))
+export const SRC_PATH = resolve(__dirname, '../../').replace(/\\/g, '/')
 
 export interface ItemInfo {
 	path: string
@@ -94,15 +94,27 @@ export function getReadme(path: string): {
 	}
 }
 
+export function getTitleName(path: string, name: string = ''): string {
+	const {barName, h1} = getReadme(path)
+	return barName ?? h1 ?? name
+}
+
+export function isCollapsible(path: string): boolean {
+	return getReadme(path).collapsible
+}
+
+export function getFileDirPathFromSrc(way: string): string {
+	return way.replace(SRC_PATH, '').replace(/\.md$/, "")
+}
+
 export function getDirPathFromSrc(way: string, end = '/'): string {
 	return way.replace(SRC_PATH, '') + end
 }
 
-//获取标题
-export function getTitleName(path: string, name: string): string {
-	const {barName, h1} = getReadme(path)
-	return barName ?? h1 ?? name
-}
+// export function orderDirAndFile(way: string, end = '/'): string {
+// 	return way.replace(SRC_PATH, '') + end
+// }
+
 
 //文件夹和文件分类排序
 export function dirAndFileOrder(
@@ -120,8 +132,8 @@ export function dirAndFileOrder(
 		})
 		.sort((a: FileItem, b: FileItem) => {//文件夹和文件分类排序
 			return reverse
-				? a.type.length - b.type.length
-				: b.type.length - a.type.length
+				? b.type.length - a.type.length
+				: a.type.length - b.type.length
 		})
 		.sort((a: FileItem, b: FileItem) => {
 			let an: number

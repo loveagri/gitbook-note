@@ -1,5 +1,0 @@
----
-barName: styles
----
-
-# styles

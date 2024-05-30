@@ -1,12 +1,10 @@
 import {existsSync, writeFileSync} from 'node:fs'
-import {dirname, resolve} from 'node:path'
-import {fileURLToPath} from 'node:url'
-import fg from 'fast-glob'
+import { resolve} from 'node:path'
 import {NavItem} from "vitepress/types/default-theme";
-import {getDirTree, dirAndFileOrder, getTitleName, getDirPathFromSrc, FileItem} from './tools'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const SRC_PATH = resolve(__dirname, '../../').replace(/\\/g, '/')
+import {
+	getDirTree, dirAndFileOrder, getTitleName, getDirPathFromSrc, FileItem,
+	SRC_PATH
+} from './tools'
 
 
 function getNavbar(tree: FileItem[] = []): NavItem[] {
@@ -39,39 +37,15 @@ function getNavbar(tree: FileItem[] = []): NavItem[] {
 		.filter((v) => {
 			return v
 		})
-		.sort((a, b) => {
-			if (typeof a === 'string') {
-				return -1
-			} else if (Object.prototype.hasOwnProperty.call(a, 'children') && Object.prototype.hasOwnProperty.call(b, 'link')) {
-				return 1
-			} else if (Object.prototype.hasOwnProperty.call(a, 'link') && Object.prototype.hasOwnProperty.call(b, 'children')) {
-				return -1
-			} else {
-				return 0
-			}
-		})
 }
 
 function nav(srcPath: string = SRC_PATH): NavItem[] {
 	const srcDir = getDirTree(srcPath)
 	const orderedDir = dirAndFileOrder(srcDir.children)
-	writeFileSync('orderedDir.json', JSON.stringify(orderedDir, null, 2) + '\n')
 	const navbar = getNavbar(orderedDir)
-	console.log('Generated navbar finished :) ')
 	navbar.shift()
-	writeFileSync('navbar.json', JSON.stringify(navbar, null, 2) + '\n')
+	console.log('Generated navbar finished :) ')
 	return navbar
-	return [
-		{text: 'Guide', link: '/guide'},
-		{
-			text: 'Dropdown Menu',
-			items: [
-				{text: 'Item A', link: '/item-1'},
-				{text: 'Item B', link: '/item-2'},
-				{text: 'Item C', link: '/item-3'}
-			]
-		}
-	]
 }
 
 export default nav

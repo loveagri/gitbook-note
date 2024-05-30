@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress'
 
 import nav from './scripts/nav'
+import sidebar from "./scripts/sidebar";
 
 export default defineConfig({
 	title: "静思田园",
@@ -40,12 +41,16 @@ export default defineConfig({
 	themeConfig: {
 		logo: '/images/logo.png',
 		nav: nav(),
+		sidebar: sidebar(),
+
+		outline: {
+			level: [2, 3],
+		},
 
 		footer: {
 			message: '',
 			copyright: `<div style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" ><a style="text-decoration: none;color: #3eaf7c;" href="https://beian.miit.gov.cn/">冀ICP备19024518号-1</a> </div><p style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >  <a  style="text-decoration: none;color: #3eaf7c;" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802043456" rel="noreferrer" target="_blank">京公网安备11010802043456</a></p>`
 		},
-
 
 		socialLinks: [
 			{icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github'},
