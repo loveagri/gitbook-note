@@ -5,6 +5,7 @@
 *.tgz
 .DS_Store
 .idea
+.idea.bak
 .temp
 .vite_opt_cache
 .vscode
@@ -14,6 +15,7 @@ cache
 temp
 examples-temp
 node_modules
+node_modules.bak
 pnpm-global
 TODOs.md
 *.timestamp-*.mjs

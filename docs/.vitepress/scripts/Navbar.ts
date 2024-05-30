@@ -10,7 +10,7 @@ const SRC_PATH = resolve(__dirname, '../../').replace(/\\/g, '/')
 
 function Navbar(srcPath: string = SRC_PATH): NavItem {
 	const srcDir = getDirTree(srcPath)
-	writeFileSync('tree.json', JSON.stringify(srcDir, null, 2) + '\n')
+	writeFileSync('tree1.json', JSON.stringify(srcDir, null, 2) + '\n')
 	// const orderedDir = dirAndFileOrder(srcDir.children)
 	// const navbar = getNavbar(orderedDir)
 	// console.log('Generated navbar finished :) ')
