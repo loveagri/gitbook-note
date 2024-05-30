@@ -19,27 +19,17 @@ node_modules.bak
 pnpm-global
 TODOs.md
 *.timestamp-*.mjs
-# VuePress files
 docs/.vitepress/.temp/
 docs/.vitepress/.cache/
 docs/.vitepress/dist/
-# Node modules
 node_modules/
-# MacOS Desktop Services Store
 .env
 .env.gitlab
-# VuePress files
-# Dist files
 lib/
 download/
-# Test temp files
 **/__fixtures__/.temp/
-# Test coverage files
 coverage/
-# Node modules
 *..DS_Store
-# Log files
-# Typescript build info
 *.tsbuildinfo
 test.*
 download.sh
