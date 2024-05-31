@@ -37,7 +37,7 @@ export function getDirTree(
 			extensions: /\.md$/,
 			normalizePath: true,
 			attributes: ['type'],
-			exclude: /.vitepress|public/,
+			exclude: /.vitepress|public|single/,
 		},
 		...config,
 	})

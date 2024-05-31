@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: Git
       link: /tools/git
+    - theme: brand
+      text: team
+      link: /single/team
     - theme: alt
       text: Gitee
       link: https://gitee.com/loveagri

@@ -60,8 +60,8 @@ function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
 function sidebar(srcPath: string = SRC_PATH): Sidebar {
 	const srcDir = getDirTree(srcPath)
 	const orderedDir = dirAndFileOrder(srcDir.children)
-	const sideBar = sidebarSingleDir(orderedDir)
-	writeFileSync('sideBar.json', JSON.stringify(sideBar, null, 2) + '\n')
+	// const sideBar = sidebarSingleDir(orderedDir)
+	// writeFileSync('sideBar.json', JSON.stringify(sideBar, null, 2) + '\n')
 	return sidebarSingleDir(orderedDir)
 }
 

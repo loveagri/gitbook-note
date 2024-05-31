@@ -193,6 +193,20 @@ _单个下划线_
     </tr>
 </table>
 
+## [显示js函数定义](https://shiki.style/packages/vitepress)
+````md
+```ts twoslash
+console.log('hello')
+//      ^?
+```
+````
+
+```ts twoslash
+console.log('hello')
+//      ^?
+```
+
+
 ## 组件
 
 你可以在 Markdown 中直接使用 Vue 组件。
