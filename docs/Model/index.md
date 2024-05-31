@@ -1,6 +1,7 @@
 ---
 barName: 示例
 order: 100
+sidebar: false
 ---
 
 # Model

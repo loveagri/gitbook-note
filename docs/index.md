@@ -11,14 +11,11 @@ hero:
   tagline: 记录每天的点点滴滴
   actions:
     - theme: brand
-      text: 什么是 VitePress?
-      link: /zh/guide/what-is-vitepress
+      text: Git
+      link: /tools/git
     - theme: alt
-      text: 快速开始
-      link: /zh/guide/getting-started
-    - theme: alt
-      text: GitHub
-      link: https://github.com/vuejs/vitepress
+      text: Gitee
+      link: https://gitee.com/loveagri
   image:
     src: https://gitlab.com/loveagri/pic/-/raw/main/2024-04-06/21/60383_the-summer-palace.jpg
     alt: Love make all better

@@ -1,5 +1,5 @@
 import {defineConfig} from 'vitepress'
-
+import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import nav from './scripts/nav'
 import sidebar from "./scripts/sidebar";
 
@@ -16,7 +16,7 @@ export default defineConfig({
 
 
 	head: [
-		['meta', {name: 'theme-color', content: '#5f67ee'}],
+		['meta', {name: 'theme-color', content: '#646cff'}],
 	],
 
 	rewrites: {
@@ -35,12 +35,13 @@ export default defineConfig({
 		math: true,
 		image: {
 			lazyLoading: true
-		}
+		},
+		codeTransformers: [transformerTwoslash()],
 	},
 
 	themeConfig: {
 		logo: '/images/logo.png',
-		nav: nav(),
+		nav: [...nav()],
 		sidebar: sidebar(),
 
 		outline: {
@@ -55,10 +56,17 @@ export default defineConfig({
 		socialLinks: [
 			{icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github'},
 		],
-		carbonAds: {
-			code: 'your-carbon-code',
-			placement: 'your-carbon-placement'
+
+		search: {
+			provider: 'local'
 		}
+
+
+
+		// carbonAds: {
+		// 	code: 'fuhong',
+		// 	placement: 'love'
+		// }
 
 	}
 })

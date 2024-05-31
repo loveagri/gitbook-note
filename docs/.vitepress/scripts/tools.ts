@@ -104,17 +104,12 @@ export function isCollapsible(path: string): boolean {
 }
 
 export function getFileDirPathFromSrc(way: string): string {
-	return way.replace(SRC_PATH, '').replace(/\.md$/, "")
+	return way.replace(SRC_PATH, '').replace(/(index)?\.md$/, "")
 }
 
 export function getDirPathFromSrc(way: string, end = '/'): string {
 	return way.replace(SRC_PATH, '') + end
 }
-
-// export function orderDirAndFile(way: string, end = '/'): string {
-// 	return way.replace(SRC_PATH, '') + end
-// }
-
 
 //文件夹和文件分类排序
 export function dirAndFileOrder(

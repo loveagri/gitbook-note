@@ -32,7 +32,6 @@ export function sidebarTree(tree: FileItem[] = []): Sidebar {
 
 function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
 	let sidebarObj: Sidebar = {}
-
 	trees
 		.map((v: FileItem) => {
 			if (v.type === 'directory') {
@@ -46,8 +45,8 @@ function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
 					...sidebarObj[link],
 					{
 						text: getTitleName(indexPath, v.name),
-						collapsed: isCollapsible(indexPath),
-						link,
+						// collapsed: isCollapsible(indexPath),
+						// link,
 						items: sidebarTree(v.children),
 					},
 				]
