@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import nav from './scripts/nav'
 import sidebar from "./scripts/sidebar";
+import {buildEnd} from './buildEnd.config'
 
 export default defineConfig({
 	title: "静思田园",
@@ -61,5 +62,19 @@ export default defineConfig({
 		search: {
 			provider: 'local'
 		}
-	}
+	},
+	transformPageData(pageData) {
+		console.log(34444);
+		console.log(pageData);
+		// const canonicalUrl = `${ogUrl}/${pageData.relativePath}`
+		// 	.replace(/\/index\.md$/, '/')
+		// 	.replace(/\.md$/, '/')
+		// pageData.frontmatter.head ??= []
+		// pageData.frontmatter.head.unshift(
+		// 	['link', {rel: 'canonical', href: canonicalUrl}],
+		// 	['meta', {property: 'og:title', content: pageData.title}],
+		// )
+		return pageData
+	},
+	buildEnd,
 })

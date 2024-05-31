@@ -5,7 +5,6 @@ import {
 	getDirTree,
 	dirAndFileOrder,
 	getTitleName,
-	getDirPathFromSrc,
 	getFileDirPathFromSrc,
 	isCollapsible,
 	FileItem,
