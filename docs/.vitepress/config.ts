@@ -47,10 +47,12 @@ export default defineConfig({
 		outline: {
 			level: [2, 3],
 		},
+		// copyright: `<div style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" ><a
+		// style="text-decoration: none;color: #3eaf7c;" href="https://beian.miit.gov.cn/">冀ICP备19024518号-1</a> </div><p style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >  <a  style="text-decoration: none;color: #3eaf7c;" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802043456" rel="noreferrer" target="_blank">京公网安备11010802043456</a></p>`
 
 		footer: {
 			message: '',
-			copyright: `<div style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" ><a style="text-decoration: none;color: #3eaf7c;" href="https://beian.miit.gov.cn/">冀ICP备19024518号-1</a> </div><p style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >  <a  style="text-decoration: none;color: #3eaf7c;" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802043456" rel="noreferrer" target="_blank">京公网安备11010802043456</a></p>`
+			copyright: ` <span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >冀ICP备19024518号-1</span><span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >京公网安备11010802043456</span>`
 		},
 
 		socialLinks: [
