@@ -31,7 +31,7 @@ export default defineConfig({
 			infoLabel: '信息',
 			detailsLabel: '详细信息'
 		},
-		theme: 'material-theme-palenight',
+		theme: 'one-dark-pro',// ayu-dark one-dark-pro
 		lineNumbers: true,
 		math: true,
 		image: {
