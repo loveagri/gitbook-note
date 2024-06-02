@@ -13,7 +13,7 @@
 }
 ```
 
-### 切换使用docker
+### Windows上切换使用docker和虚拟机
 
 ```shell
 # 详情访问https://docs.docker.com/desktop/troubleshoot/topics/#virtualization
