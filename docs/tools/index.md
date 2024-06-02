@@ -16,3 +16,17 @@
 | 应用   | 加速地址                                                              |
 | ------ | --------------------------------------------------------------------- |
 | docker | [docker](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors) |
+
+## 在线工具
+
+| 工具                             | 二级工具 | 备注 |
+| -------------------------------- | -------- | ---- |
+| [UU在线工具](https://uutool.cn/) |          |      |
+
+## Youtube
+
+| 工具                                                         | 二级工具 | 备注 |
+| ------------------------------------------------------------ | -------- | ---- |
+| [Youtube download](https://www.yt1s.com/enzkvc/youtube-to-mp4) |          |      |
+| [Youtube download](https://ssyoutube.com/en777PJ/)           |          |      |
+
