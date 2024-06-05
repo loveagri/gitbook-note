@@ -2,7 +2,7 @@ import {promises} from 'node:fs'
 import {basename} from 'node:path'
 import axios from 'axios'
 
-const accessTokenGitlab = 'glpat-isQKSBi8fwnQxWnrL2pd'
+const accessTokenGitlab = 'glpat-x8kVLasNzGk2wVU3iath'
 const id = '42381804'
 const branch = 'main'
 const gitlabRaw = 'https://gitlab.com/loveagri/pic/-/raw/'

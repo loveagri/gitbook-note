@@ -2,37 +2,38 @@
 
 ## Common Application
 
-| 应用                                                                                                  | 备注                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [微信](https://weixin.qq.com/)                                                                        |                                                                                                                                                                                          |
-| [搜狗输入法](https://shurufa.sogou.com/)                                                              |                                                                                                                                                                                          |
-| [typora](https://www.typora.net/)                                                                     |                                                                                                                                                                                          |
-| [sublime](https://www.sublimetext.com/download)                                                       |                                                                                                                                                                                          |
-| [phpstorm](https://www.jetbrains.com.cn/phpstorm/download/)                                           |                                                                                                                                                                                          |
-| [git](https://git-scm.com/download/win)                                                               |                                                                                                                                                                                          |
-| [360压缩](https://yasuo.360.cn/)                                                                      |                                                                                                                                                                                          |
-| [item2](https://iterm2.com/)                                                                          |                                                                                                                                                                                          |
-| [go2shell](https://zipzapmac.com/Go2Shell)                                                            |                                                                                                                                                                                          |
-| [edge](https://www.microsoft.com/zh-cn/edge/download?form=MA13FJ)                                     |                                                                                                                                                                                          |
-| [apifox](https://www.baidu.com/s?ie=UTF-8&wd=apifox)                                                  |                                                                                                                                                                                          |
-| [docker](https://www.docker.com/products/docker-desktop/)                                             |                                                                                                                                                                                          |
-| [postman](https://www.postman.com/)                                                                   |                                                                                                                                                                                          |
-| [QQ](https://im.qq.com/index/)                                                                        |                                                                                                                                                                                          |
-| [PotPlayer](https://potplayer.tv/)                                                                    | [PotPlayer中文](https://potplayer.knkjnb.cn/index.html)                                                                                                                                  |
-| [pycharm](https://www.jetbrains.com/pycharm/download/)                                                |                                                                                                                                                                                          |
-| [vscode](https://code.visualstudio.com/)                                                              |                                                                                                                                                                                          |
-| [chrome](https://www.google.cn/chrome/index.html)                                                     |                                                                                                                                                                                          |
-| [IINA](https://www.iina.io/)                                                                          |                                                                                                                                                                                          |
-| [rectangle](https://www.rectangleapp.com/)                                                            |                                                                                                                                                                                          |
-| [lemon](https://lemon.qq.com/)                                                                        |                                                                                                                                                                                          |
-| [microsoft365](https://www.microsoft.com/en-us/microsoft-365/download-office#download)                |                                                                                                                                                                                          |
-| [DBeaver](https://dbeaver.io/download/)                                                               |                                                                                                                                                                                          |
-| [microsoft remote desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12) |                                                                                                                                                                                          |
-| [nodejs](https://nodejs.org/en)                                                                       | [nodejs中文网](https://www.nodeapp.cn/) 、[nrm](https://github.com/Pana/nrm)、[nvm Mac、linux](https://github.com/nvm-sh/nvm)、[nvm Windows](https://github.com/coreybutler/nvm-windows) |
-| [redis desktop manager](https://redis.io/insight/#insight-form)                                       |                                                                                                                                                                                          |
-| [VMware Fusion](https://www.vmware.com/products/fusion/fusion-evaluation.html)                        | 4C21U-2KK9Q-M8130-4V2QH-CF810 \| ZF3R0-FHED2-M80TY-8QYGC-NPKYF \| YF390-0HF8P-M81RQ-2DXQE-M2UT6 \| ZF71R-DMX85-08DQY-8YMNC-PPHV8                                                         |
-| [Virtual Box](https://www.virtualbox.org/wiki/Downloads)                                              |                                                                                                                                                                                          |
-| [GUS-3](https://www.gns3.com/software/download)                                                       |                                                                                                                                                                                          |
+| 应用                                                         | 备注                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [微信](https://weixin.qq.com/)                               |                                                              |
+| [搜狗输入法](https://shurufa.sogou.com/)                     |                                                              |
+| [typora](https://www.typora.net/)                            |                                                              |
+| [sublime](https://www.sublimetext.com/download)              |                                                              |
+| [phpstorm](https://www.jetbrains.com.cn/phpstorm/download/)  |                                                              |
+| [git](https://git-scm.com/download/win)                      |                                                              |
+| [360压缩](https://yasuo.360.cn/)                             |                                                              |
+| [item2](https://iterm2.com/)                                 |                                                              |
+| [go2shell](https://zipzapmac.com/Go2Shell)                   |                                                              |
+| [edge](https://www.microsoft.com/zh-cn/edge/download?form=MA13FJ) |                                                              |
+| [apifox](https://www.baidu.com/s?ie=UTF-8&wd=apifox)         |                                                              |
+| [docker](https://www.docker.com/products/docker-desktop/)    |                                                              |
+| [postman](https://www.postman.com/)                          |                                                              |
+| [QQ](https://im.qq.com/index/)                               |                                                              |
+| [PotPlayer](https://potplayer.tv/)                           |                                                              |
+| [pycharm](https://www.jetbrains.com/pycharm/download/)       |                                                              |
+| [vscode](https://code.visualstudio.com/)                     |                                                              |
+| [chrome](https://www.google.cn/chrome/index.html)            |                                                              |
+| [IINA](https://www.iina.io/)                                 |                                                              |
+| [rectangle](https://www.rectangleapp.com/)                   |                                                              |
+| [lemon](https://lemon.qq.com/)                               |                                                              |
+| [microsoft365](https://www.microsoft.com/en-us/microsoft-365/download-office#download) |                                                              |
+| [DBeaver](https://dbeaver.io/download/)                      |                                                              |
+| [microsoft remote desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12) |                                                              |
+| [nodejs](https://nodejs.org/en)                              | [nodejs中文网](https://www.nodeapp.cn/) 、[nrm](https://github.com/Pana/nrm)、[nvm Mac、linux](https://github.com/nvm-sh/nvm)、[nvm Windows](https://github.com/coreybutler/nvm-windows) |
+| [redis desktop manager](https://redis.io/insight/#insight-form) |                                                              |
+| [VMware Fusion](https://www.vmware.com/products/fusion/fusion-evaluation.html) | 4C21U-2KK9Q-M8130-4V2QH-CF810 \| ZF3R0-FHED2-M80TY-8QYGC-NPKYF \| YF390-0HF8P-M81RQ-2DXQE-M2UT6 \| ZF71R-DMX85-08DQY-8YMNC-PPHV8 |
+| [Virtual Box](https://www.virtualbox.org/wiki/Downloads)     |                                                              |
+| [GUS-3](https://www.gns3.com/software/download)              |                                                              |
+| [vagrant](https://developer.hashicorp.com/vagrant/install)   | [vagrant cloud](https://app.vagrantup.com/boxes/search)      |
 
 ## 国内镜像
 
@@ -89,7 +90,7 @@
 
 ## 微信
 
-| 站点 | 备注 |
-| ---- | ---- |
-|      |      |
-|      |      |
+| 站点                                        | 备注 |
+| ------------------------------------------- | ---- |
+| [微信公众平台](https://mp.weixin.qq.com/)   |      |
+| [微信开放平台](https://open.weixin.qq.com/) |      |
