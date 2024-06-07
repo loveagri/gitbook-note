@@ -4,17 +4,11 @@ order: 100
 sidebar: false
 ---
 
-# Model
+# 示例
 
-## 目录
+## markdown语法
 
-[[toc]]
-
-## 外链
-
-你可以通过 [StackBlitz](https://stackblitz.com/fork/vuepress) 在你的浏览器里直接使用 VuePress 。
-
-## 自定义容器
+### 自定义容器
 
 ::: warning
 VuePress v2 目前仍处于
@@ -29,7 +23,7 @@ VuePress v2 目前仍处于
 
 ::: details 示例 `.gitignore` 文件
 
-```
+```shell
 # VuePress 默认临时文件目录
 .vuepress/.temp
 # VuePress 默认缓存目录
@@ -46,74 +40,44 @@ tip 后直接跟标题
 
 :::
 
-## 无序列表
+### 无序列表
 
 - 当前工作目录 `cwd` 下：
-  - `vuepress.config.ts`
-  - `vuepress.config.js`
-  - `vuepress.config.mjs`
+    - `vuepress.config.ts`
+    - `vuepress.config.js`
+    - `vuepress.config.mjs`
 - 源文件目录 `sourceDir` 下：
-  - `.vuepress/config.ts`
-  - `.vuepress/config.js`
-  - `.vuepress/config.mjs`
+    - `.vuepress/config.ts`
+    - `.vuepress/config.js`
+    - `.vuepress/config.mjs`
 
 ---
 
 - 红色
 - 绿色
-  - 红色
-  - 绿色
+    - 红色
+    - 绿色
 - 蓝色
 
-## 有序列表
+### 有序列表
 
 1. 红色
 2. 绿色
 3. 蓝色
 
-## 内置CodeGroup、CodeGroupItem
-
-<CodeGroup>
-<CodeGroupItem title="pnpm" active>
-
-```bash
-pnpm create vuepress vuepress-starter
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="yarn">
-
-```bash
-yarn create vuepress vuepress-starter
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="npm">
-
-```bash
-npm init vuepress vuepress-starter
-```
-
-</CodeGroupItem>
-</CodeGroup>
-
-## 引用文字
+### 引用文字
 
 > 这是一个有两段的块引用。这是第一段。
 > 这是第二段。Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > 这是另一个只有一个段落的块引用。有三个空行分隔两个块引用。
 
-## 水平线
+### 水平线
 
 ---
 
----
+### 强调（斜体）
 
-## 强调（斜体）
-
-_单个星号_
+*单个星号*
 
 _单个下划线_
 
@@ -121,36 +85,35 @@ _单个下划线_
 
 > 要在用作强调分隔符的位置生成文字星号或下划线，可以用反斜杠转义
 
-## 粗体
+### 粗体
 
 **双星号**
 
 **双重下划线**
 
-## 代码
+### 代码
 
 使用`printf()`函数。
 
-## 删除线
+### 删除线
 
-~~错误的文字。~~ 变成 错误的文字。
+~~错误的文字。~~
 
-## 下划线
+### 下划线
 
-<u>下划线</u> 变成 下划线
+<u>下划线</u>
 
-## 表情符号
+### [表情符号](https://blog.csdn.net/m0_73531461/article/details/136212493)
 
 :smile:
 :cry:
+:pig:
 
-## HTML
+### HTML
 
 <span style="color:red">this text is red</span>
 
-<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
-
-## 表格
+### 表格
 
 <table>
     <tr>
@@ -193,7 +156,8 @@ _单个下划线_
     </tr>
 </table>
 
-## [显示js函数定义](https://shiki.style/packages/vitepress)
+### [显示js函数定义](https://shiki.style/packages/vitepress)
+
 ````md
 ```ts twoslash
 console.log('hello')
@@ -206,8 +170,7 @@ console.log('hello')
 //      ^?
 ```
 
-
-## 组件
+### 组件
 
 你可以在 Markdown 中直接使用 Vue 组件。
 
@@ -221,11 +184,9 @@ console.log('hello')
 
 这是默认主题内置的 `<Badge />` 组件 <Badge text="演示" />
 
-## 代码标题
+### 代码区别
 
-你可以在代码块添加一个 title 键值对来为代码块设置标题。
-
-```diff title=".vuepress/config.ts"
+```diff 
 - module.exports = {
 -   theme: '@vuepress/theme-default',
 -   themeConfig: {
@@ -243,11 +204,11 @@ console.log('hello')
 + })
 ```
 
-## 显示反撇号`` ` ``
+### 反撇号`` ` ``
 
 `` ` ``
 
-## md代码为四个` ```` `
+### 原生显示md代码
 
 ````md
 ```ts{1,7-9}
@@ -258,24 +219,20 @@ export default defineUserConfig({
   title: '你好， VuePress',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: 'https://vuejs.org/logo.png',
   }),
 })
 ```
 ````
 
-## 居中
-
-<center> <strong>居中</strong></center>
-
-## 徽章
+### 徽章
 
 [制作徽章](https://badgen.net/)
 
 <NpmBadge package="@vuepress/cli" />
 <NpmBadge package="@vuepress/plugin-register-components" />
 
-## vue
+### vue
 
 _你好， {{ msg }}_
 
@@ -310,16 +267,22 @@ const count = ref(0)
 ## 数学公式
 
 ::: tip 原文链接
+[markdown公式大全](https://blog.csdn.net/jzj_c_love/article/details/122279703)
+\\
+[typora常用的数学公式编辑语法](https://www.cnblogs.com/wreng/articles/13514391.html)
+\\
 [Markdown常用数学公式](https://zhuanlan.zhihu.com/p/626610544)
 :::
 
-### 1 行内公式
+### 一、基本格式
+
+#### 行内公式
 
 在两个美元符号中输入公式即可。
 
 如`$E=m\times c^2$` 效果：$E=m\times c^2$ （注：\times是乘的意思）
 
-### 2 整行公式
+#### 整行公式
 
 在四个美元符号中输入公式，如果想要给公式后面添加编号，那么在公式后添加空格 + \tag{1}就可以了。
 
@@ -329,12 +292,7 @@ $$
 \{[(x_1+x_2)^2-(y_1-y_2)^4]\times w\}\times (z_1^2-z_2^2) \tag{4}
 $$
 
-### 3 希腊字母
-
-<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-136fceb8eb6f8d6d1c8480548c4358a8_1440w_20240221221030.png" alt="img" style="zoom: 67%;" />
-<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-6d044a7aa7b37f020646f79850c2c81d_1440w_20240221221149.png" alt="img" style="zoom:67%;" />
-
-### 4 上标与下标
+#### 上标与下标
 
 用\_表示下标，^表示上标。
 
@@ -350,7 +308,23 @@ $$
 MSE=\sum_{i=1}^n (w\times x_i+b-y_i)^2 \tag{3}
 $$
 
-### 5 括号
+```tex
+A_1^2
+\\
+B_{12}
+\\
+2^{x^2+y}
+```
+
+$$
+A_1^2
+\\
+B_{12}
+\\
+2^{x^2+y}
+$$
+
+#### 括号
 
 `()`和`[]` 可以直接输入，但花括号{ }前面需要加转义符号\。
 
@@ -360,34 +334,19 @@ $$
 \{[(x_1+x_2)^2-(y_1-y_2)^4]\times w\}\times (z_1^2-z_2^2) \tag{4}
 $$
 
-### 6 累加、累乘、并集和交集
-
-累加：使用 \sum\_{下标表达式}^{上标表达式} {累加表达式}
-
-如`$$ Y_i=\sum_{i=0}^{n} X_i \tag{5} $$`，效果：
+#### 并集
 
 $$
-Y_i=\sum_{i=0}^{n} X_i \tag{5}
+\quad \bigcup_{i=1}^{2} \Bbb{R} \quad
 $$
 
-与累加类似，
-
-累乘使用 `$\prod$`并集使用 `$\bigcup$`交集使用 `$\bigcap$`例如：
+#### 交集
 
 $$
-\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} \Bbb{R} \quad and \quad \bigcap_{i=1}^3
-X_i \tag{6}
+\quad \bigcap_{i=1}^3
 $$
 
-### 7 对数
-
-如`$\log_2 10$`，效果：$\log_2 10$
-
-如`$\lg 10^3$`，效果：$\lg 10^3$
-
-如`$\ln (\pi+2)$`，效果：$\ln (\pi+2)$
-
-### 8 三角函数
+#### 三角函数
 
 如`$$ \sin(x+y)+\cos(y+z)+\tan(z+x)+\arcsin(x+y+z) \tag{7}$$`，效果：
 
@@ -395,7 +354,19 @@ $$
 \sin(x+y)+\cos(y+z)+\tan(z+x)+\arcsin(x+y+z) \tag{7}
 $$
 
-### 9 运算符、积分、导数
+#### 对数
+
+如`$\log_2 10$`，效果：$\log_2 10$
+
+如`$\lg 10^3$`，效果：$\lg 10^3$
+
+如`$\ln (\pi+2)$`，效果：$\ln (\pi+2)$
+
+#### 运算符
+
+<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-28402152865d950ef51bb8befd7da255_1440w_20240221222249.png" alt="img" style="zoom:67%;" />
+
+#### 积分、导数
 
 如`$g(x)=\frac{\partial f(x,y)}{\partial x}$`，效果：$g(x)=\frac{\partial f(x,y)}{\partial x}$
 
@@ -407,43 +378,23 @@ $$
 \displaystyle\int_0^{+\infty} \frac{1}{\sqrt{2\pi}}e^{-\frac {x^2}{2}}dx=\frac{1}{2} \tag{8}
 $$
 
-<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-28402152865d950ef51bb8befd7da255_1440w_20240221222249.png" alt="img" style="zoom:67%;" />
-
-### 10 根式
+#### 开根号
 
 如`$\sqrt{x+y}$`，效果：$\sqrt{x+y}$
 
 如`$\sqrt[n]{a + b}$`，效果：$\sqrt{x+y}$
 
-## typora常用的数学公式编辑语法
-
-::: tip 原文链接
-[markdown公式大全](https://blog.csdn.net/jzj_c_love/article/details/122279703)
-
-[typora常用的数学公式编辑语法](https://www.cnblogs.com/wreng/articles/13514391.html)
-:::
-
-## 一、基本格式
-
-### 1. 上下标
-
 ```tex
-A_1^2
-\\
-B_{12}
-\\
-2^{x^2+y}
+\sqrt{x}
+\sqrt[3]{x}
 ```
 
 $$
-A_1^2
-\\
-B_{12}
-\\
-2^{x^2+y}
+\sqrt{x}
+\sqrt[3]{x}
 $$
 
-### 2. 分数(fraction)
+#### 分数
 
 ```tex
 \frac{x}{1+x^2}
@@ -463,19 +414,7 @@ $$
 \frac{a}{b}
 $$
 
-### 3. 开根号(square root calculations）
-
-```tex
-\sqrt{x}
-\sqrt[3]{x}
-```
-
-$$
-\sqrt{x}
-\sqrt[3]{x}
-$$
-
-### 4. 组合数(combinatorial number)
+#### 组合数
 
 ```tex
 \binom{n}{k}
@@ -487,7 +426,7 @@ $$
 \tbinom{n}{k}
 $$
 
-### 5. 导数(derivative)
+#### 导数
 
 ```tex
 a'
@@ -501,7 +440,7 @@ a''
 a^{\prime}
 $$
 
-### 6. 取模(mod)
+#### 取模
 
 ```tex
 x \pmod a
@@ -515,33 +454,7 @@ x \pmod a
 2\mod{x}
 $$
 
-### 7. 积分
-
-```tex
-\int_{1}^{2}
-\intop_{2}^{1}
-\oint
-\smallint
-\\
-\iint
-\oiint
-\iiint
-\oiiint
-```
-
-$$
-\int_{1}^{2}
-\intop_{2}^{1}
-\oint
-\smallint
-\\
-\iint
-\oiint
-\iiint
-\oiiint
-$$
-
-### 8.微分
+#### 微分
 
 ```tex
 \nabla
@@ -561,39 +474,69 @@ $$
 \Delta
 $$
 
-### 9.累积/累乘/极限
+#### 累加
+
+累加：使用 \sum\_{下标表达式}^{上标表达式} {累加表达式}
+
+如`$$ Y_i=\sum_{i=0}^{n} X_i \tag{5} $$`，效果：
+
+$$
+Y_i=\sum_{i=0}^{n} X_i \tag{5}
+$$
+
+#### 累积
 
 ```tex
 \sum_{i=1}^{k}
 \displaystyle\sum_{i=1}^n
 \textstyle\sum_{i=1}^n
-\\
-\prod_{i=1}^{k}
-\displaystyle\prod_{i=1}^n
-\textstyle\prod_{i=1}^n
-\\
-\lim_{k \to \infty}
-\lim\limits_{k \to \infty}
-\lim\nolimits_{k \to \infty}]
+
 ```
 
 $$
 \sum_{i=1}^{k}
 \displaystyle\sum_{i=1}^n
 \textstyle\sum_{i=1}^n
-\\
+
+$$
+
+#### 累乘
+
+```tex
+
 \prod_{i=1}^{k}
 \displaystyle\prod_{i=1}^n
 \textstyle\prod_{i=1}^n
-\\
+
+```
+
+$$
+
+\prod_{i=1}^{k}
+\displaystyle\prod_{i=1}^n
+\textstyle\prod_{i=1}^n
+
+$$
+
+#### 极限
+
+```tex
+
+\lim_{k \to \infty}
+\lim\limits_{k \to \infty}
+\lim\nolimits_{k \to \infty}]
+```
+
+$$
+
 \lim_{k \to \infty}
 \lim\limits_{k \to \infty}
 \lim\nolimits_{k \to \infty}]
 $$
 
-## 二、修饰符号
+### 二、修饰符号
 
-### 1. 简单的帽子
+#### 1. 简单的帽子
 
 ```tex
 \hat{\theta}
@@ -633,7 +576,7 @@ $$
 \ddot{a}
 $$
 
-### 3. 盒子和帽子
+#### 2. 盒子和帽子
 
 ```tex
 \overbrace{a+b+c}^{\text{note}}
@@ -651,7 +594,7 @@ $$
 \boxed{\pi=3.14}
 $$
 
-### 4. 各种括号
+#### 3. 各种括号
 
 ```tex
 (
@@ -711,13 +654,12 @@ $$
 \lrcorner
 $$
 
-## 三、希腊字母
+### 三、希腊字母
 
-![e6a627023fa735a129f1725b85da1fa3](https://gitlab.com/loveagri/pic/-/raw/main/2024-02-22/21/e6a627023fa735a129f1725b85da1fa3_20240222212812.png)
+<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-22/21/e6a627023fa735a129f1725b85da1fa3_20240222212812.png" alt="img" style="zoom: 67%;" />
+<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-22/21/99c3a73a6e705c382b6b2acc99920392_20240222212837.png" alt="img" style="zoom: 67%;" />
 
-![99c3a73a6e705c382b6b2acc99920392](https://gitlab.com/loveagri/pic/-/raw/main/2024-02-22/21/99c3a73a6e705c382b6b2acc99920392_20240222212837.png)
-
-## 四、算术运算符号
+### 四、算术运算符号
 
 ```tex
 +
@@ -731,6 +673,7 @@ $$
 ```
 
 $$
+
 +
 
 -
@@ -775,7 +718,7 @@ $$
 \divideontimes
 $$
 
-## 五、比较运算符
+### 五、比较运算符
 
 ```tex
 =
@@ -837,7 +780,7 @@ $$
 \succeq
 $$
 
-## 六、集合运算符
+### 六、集合运算符
 
 ```tex
 \in
@@ -903,7 +846,7 @@ $$
 \sqcap
 $$
 
-## 七、各种箭头
+### 七、各种箭头
 
 ```tex
 \gets
@@ -1003,7 +946,7 @@ $$
 \xleftarrow[under]{over}
 $$
 
-## 八、空间间距
+### 八、空间间距
 
 ```tex
 A\!B
@@ -1041,7 +984,7 @@ A\quad B
 A\qquad B
 $$
 
-## 九、矩阵
+### 九、矩阵
 
 ```tex
 A = \begin{matrix}
@@ -1174,7 +1117,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn} \\
 \end{bmatrix}
 $$
 
-## 十、列式/方程组
+### 十、列式/方程组
 
 ```tex
 \begin{aligned}
@@ -1242,7 +1185,7 @@ F_R & & {S_R \leq 0}
 \end{array} \right.
 $$
 
-## 十一、修改颜色和字体大小
+### 十一、修改颜色和字体大小
 
 ```tex
 \textcolor{blue}{F=ma}
@@ -1314,7 +1257,7 @@ AB
 \tiny AB
 $$
 
-## 十二、划掉
+### 十二、划掉
 
 ```tex
 \cancel{5}
@@ -1330,7 +1273,7 @@ $$
 \not =
 $$
 
-## 十三、常见图形
+### 十三、常见图形
 
 ```tex
 \Box
@@ -1412,7 +1355,7 @@ $$
 \$
 $$
 
-## 十四、声明宏
+### 十四、声明宏
 
 对于一些复杂但是只有少许不同的表达式，可以声明一个函数来调用，提高源码的可读性，减少出错
 
@@ -1454,3 +1397,6 @@ e^x = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots
 }
 \EXP
 $$
+
+
+

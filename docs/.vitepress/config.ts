@@ -46,7 +46,7 @@ export default defineConfig({
 		sidebar: sidebar(),
 
 		outline: {
-			level: [2, 3],
+			level: [2, 4],
 		},
 
 		footer: {
