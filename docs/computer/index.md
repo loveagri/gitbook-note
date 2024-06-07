@@ -9,7 +9,7 @@
 | [typora](https://www.typora.net/)                            |                                                              |
 | [sublime](https://www.sublimetext.com/download)              |                                                              |
 | [phpstorm](https://www.jetbrains.com.cn/phpstorm/download/)  |                                                              |
-| [git](https://git-scm.com/download/win)                      |                                                              |
+| [git](https://git-scm.com/download/win)                      | [gitforwindows](https://gitforwindows.org/)                  |
 | [360压缩](https://yasuo.360.cn/)                             |                                                              |
 | [item2](https://iterm2.com/)                                 |                                                              |
 | [go2shell](https://zipzapmac.com/Go2Shell)                   |                                                              |
@@ -34,6 +34,7 @@
 | [Virtual Box](https://www.virtualbox.org/wiki/Downloads)     |                                                              |
 | [GUS-3](https://www.gns3.com/software/download)              |                                                              |
 | [vagrant](https://developer.hashicorp.com/vagrant/install)   | [vagrant cloud](https://app.vagrantup.com/boxes/search)      |
+| [Windows terminal](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare) | [ubuntu 22.04.6](https://www.microsoft.com/store/productId/9MTTCL66CPXJ?ocid=pdpshare) [install wsl2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) |
 
 ## 国内镜像
 

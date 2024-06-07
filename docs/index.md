@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Gitee
       link: https://gitee.com/loveagri
+    - theme: alt
+      text: 示例
+      link: /model/
   image:
     src: https://gitlab.com/loveagri/pic/-/raw/main/2024-04-06/21/60383_the-summer-palace.jpg
     alt: Love make all better
