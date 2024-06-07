@@ -8,10 +8,6 @@ order: 0.5
 
 [https://mirror.ghproxy.com/](https://mirror.ghproxy.com/)
 
-[https://hub.yzuu.cf/](https://hub.yzuu.cf/)
-
-[https://hub.nuaa.cf/](https://hub.nuaa.cf/)
-
 ## 加速clone
 
 ```sh
