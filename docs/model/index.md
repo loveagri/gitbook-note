@@ -334,6 +334,10 @@ $$
 \{[(x_1+x_2)^2-(y_1-y_2)^4]\times w\}\times (z_1^2-z_2^2) \tag{4}
 $$
 
+#### 运算符
+
+<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-28402152865d950ef51bb8befd7da255_1440w_20240221222249.png" alt="img" style="zoom:67%;" />
+
 #### 并集
 
 $$
@@ -361,10 +365,6 @@ $$
 如`$\lg 10^3$`，效果：$\lg 10^3$
 
 如`$\ln (\pi+2)$`，效果：$\ln (\pi+2)$
-
-#### 运算符
-
-<img src="https://gitlab.com/loveagri/pic/-/raw/main/2024-02-21/22/v2-28402152865d950ef51bb8befd7da255_1440w_20240221222249.png" alt="img" style="zoom:67%;" />
 
 #### 积分、导数
 
