@@ -34,9 +34,12 @@ Windows和Mac系统Ctrl和command是对应的，此处不做重复设置。
 
 ## VSCode插件
 
-| 插件                                                                                                    | 描述                                                                                                        | 快捷键          |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------- |
-| [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)         | Ability to duplicate files and directories in VS Code.                                                      | Command+Shift+p |
-| [tabout](https://marketplace.visualstudio.com/items?itemName=albert.TabOut)                             | Tab out of quotes, brackets, etc for Visual Studio Code.                                                    |                 |
+| 插件                                                         | 描述                                                         | 快捷键          |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------- |
+| [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate) | Ability to duplicate files and directories in VS Code.       | Command+Shift+p |
+| [tabout](https://marketplace.visualstudio.com/items?itemName=albert.TabOut) | Tab out of quotes, brackets, etc for Visual Studio Code.     |                 |
 | [Dyno File Utils](https://marketplace.visualstudio.com/items?itemName=dyno-nguyen.vscode-dynofileutils) | The best way to create, copy, move, rename and delete files and folders (multiple files) & create templates | command/ctrl+n  |
-| [CodeGee](https://marketplace.visualstudio.com/items?itemName=aminer.codegeex)                          | AI代码工具                                                                                                  |                 |
+| [CodeGee](https://marketplace.visualstudio.com/items?itemName=aminer.codegeex) | AI代码工具                                                   |                 |
+| [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) | Makes indentation easier to read                             |                 |
+| [Console Ninja](https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja) | displays `console.log` output and **runtime errors** directly in your edito |                 |
+| [Rainglow](https://marketplace.visualstudio.com/items?itemName=daylerees.rainglow) |                                                              |                 |
