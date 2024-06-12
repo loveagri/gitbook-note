@@ -12,11 +12,21 @@
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
 
+Disable Hyper-V using PowerShell
+
+```sh
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V
+```
+
+
+
 ## Enable Hyper-V with CMD and DISM
 
 ```powershell
 DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 ```
+
+
 
 ## GUI打开
 
