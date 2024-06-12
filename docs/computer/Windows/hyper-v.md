@@ -27,3 +27,6 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 ## GUI打开
 
 `Cmd + R`, 然后 `appwiz.cpl`, 启动或关闭Windows 功能。
+
+
+
