@@ -17,8 +17,9 @@
   },
   "experimental": false,
   "registry-mirrors": [
-    "https://ustc-edu-cn.mirror.aliyuncs.com",
     "https://ccr.ccs.tencentyun.com",
+    "https://ustc-edu-cn.mirror.aliyuncs.com",
+    "https://docker.m.daocloud.io",
     "https://ghcr.io",
     "https://mirror.baidubce.com",
     "https://docker.mirrors.ustc.edu.cn",
