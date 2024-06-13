@@ -11,7 +11,7 @@
 
 ```sh
 # install zsh
-apt update && apt install -y wget curl git vim zsh
+sudo apt update && apt install -y wget curl git vim zsh
 
 # check version
 zsh --version
@@ -25,8 +25,8 @@ zsh
 
 ```sh
 # update repo source
-sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
-sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+sudo sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+sudo sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
 # install zsh
 sudo yum update -y && sudo yum -y install wget vim git zsh
@@ -103,11 +103,11 @@ plugins=(git minikube history history-substring-search node npm wd web-search la
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# User configuration--------------------------------------------------------------
 
 #maven
 export PATH="$HOME/Applications/apache-maven-3.8.4/bin:$PATH"
