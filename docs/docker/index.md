@@ -73,8 +73,6 @@ sudo systemctl enable docker
 docker version
 ```
 
-
-
 ## 添加用户到docker组
 
 1. 检查docker组是否存在, 创建docker用户组
