@@ -1,8 +1,9 @@
 # Dockerfile
 
-| 网址                                                        | 备注 |
-| ----------------------------------------------------------- | ---- |
-| [Dockerfile](https://docs.docker.com/reference/dockerfile/) |      |
+| 网址                                                         | 备注 |
+| ------------------------------------------------------------ | ---- |
+| [Dockerfile](https://docs.docker.com/reference/dockerfile/)  |      |
+| [官方镜像示例](https://github.com/docker-library/official-images) |      |
 
 ## FROM
 
@@ -81,4 +82,197 @@ RUN apt-get update && \
 root@09c6445b79a4:/# ipinfo version
 2.0.1
 ```
+
+## CMD & ENTRYPOINT
+
+CMD可以用来设置容器启动时默认会执行的命令。
+
+- 容器启动时默认执行的命令
+
+- 如果docker container run启动容器时指定了其它命令，则CMD命令会被忽略
+
+- 如果定义了多个CMD，只有最后一个会被执行。
+
+  
+
+ENTRYPOINT 也可以设置容器启动时要执行的命令，但是和CMD是有区别的。
+
+- `CMD` 设置的命令，可以在docker container run 时传入其它命令，覆盖掉 `CMD` 的命令，但是 `ENTRYPOINT` 所设置的命令是一定会被执行的。
+- `ENTRYPOINT` 和 `CMD` 可以联合使用，`ENTRYPOINT` 设置执行的命令，CMD传递参数
+
+```dockerfile
+FROM ubuntu:20.04
+ENTRYPOINT ["echo","hello point"]
+CMD []
+
+# docker run -it --rm both echo test
+# hello point echo test
+```
+
+### Shell格式
+
+```dockerfile
+CMD echo "hello docker"
+
+ENTRYPOINT echo "hello docker"
+```
+
+### Exec格式
+
+以可执行命令的方式
+
+```dockerfile
+ENTRYPOINT ["echo", "hello docker"]
+CMD ["echo", "hello docker"]
+```
+
+`"sh", "-c"`执行带变量的命令
+
+```dockerfile
+FROM ubuntu:20.04
+ENV NAME=docker
+CMD echo "hello $NAME"
+
+# hello docker
+```
+
+```dockerfile
+FROM ubuntu:20.04
+ENV NAME=docker
+CMD ["echo", "hello $NAME"]
+
+# hello $NAME
+```
+
+```dockerfile
+FROM ubuntu:20.04
+ENV NAME=docker
+CMD ["sh", "-c", "echo hello $NAME"]
+
+# hello docker
+```
+
+综合示例
+
+```dockerfile
+FROM python:3.9.5-slim
+
+COPY app.py /src/
+
+RUN pip install flask
+
+WORKDIR /src
+
+ENV FLASK=APP.PY
+
+EXPOSE 5000
+
+# CMD [ "flask", "run", "-h", "0.0.0.0"]
+CMD [ "flask", "run", "--host=0.0.0.0"] 
+```
+
+
+
+## context
+
+`docker image build -t demo .`中的`.`代表当前目录，也就是context
+
+`.dockerignore` 文件类似`.gitignore`。
+
+
+
+## 镜像的多阶段构建
+
+```c
+#include <stdio.h>
+
+void main(int argc, char *argv[])
+{
+    printf("hello %s\n", argv[argc - 1]);
+}
+```
+
+如下构建方式，镜像很大
+
+```dockerfile
+FROM gcc:9.4
+
+COPY hello.c /src/hello.c
+
+WORKDIR /src
+
+RUN gcc --static -o hello hello.c
+
+ENTRYPOINT [ "/src/hello" ]
+
+CMD []
+```
+
+如下构建方式，镜像较小
+
+```dockerfile
+FROM gcc:9.4 AS builder
+
+COPY hello.c /src/hello.c
+
+WORKDIR /src
+
+RUN gcc --static -o hello hello.c
+
+
+
+FROM alpine:3.13.5
+
+COPY --from=builder /src/hello /src/hello
+
+ENTRYPOINT [ "/src/hello" ]
+
+CMD []
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

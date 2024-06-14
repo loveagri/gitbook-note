@@ -26,13 +26,15 @@ python3 -m venv env
 
 
 
-## 进入虚拟环境
+## 激活虚拟环境
 
 ```shell
+# Windows
+./env/Script/activate
+
+# Mac & Linux
 source env/bin/activate
 ```
-
-
 
 ## 退出虚拟环境
 
@@ -42,8 +44,19 @@ deactivate
 
 
 
+## Flask框架运行
+
+```sh
+# Mac & Linux
+export FLASK_APP=app.py
+
+# Windows
+$env:FLASK_APP=app.py
+```
 
 
 
 
-### 
+
+
+
