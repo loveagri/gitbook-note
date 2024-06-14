@@ -18,6 +18,12 @@ docker image load -i .\nginx.image
 docker image build -t loveagri/hello:1.0 . # 在有Dockerfile的情况下
 ```
 
+## 镜像构建历史
+
+```sh
+docker image history loveagri/hello:1.0 
+```
+
 ## 打标签
 
 ```sh
