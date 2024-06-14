@@ -59,7 +59,7 @@ if [ ! -f /etc/docker/daemon.json ]; then
     "registry-mirrors": [
         "https://ccr.ccs.tencentyun.com",
         "https://ustc-edu-cn.mirror.aliyuncs.com",
-        "https://docker.m.daocloud.io",
+        "https://docker.m.daocloud.io"
     ]
 }
 EOF
