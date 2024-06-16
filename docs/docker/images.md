@@ -36,5 +36,11 @@ docker image tag loveagri/hello:1.0 hello
 docker image push loveagri/hello:1.0 # 需提前登录
 ```
 
+## 查看镜像
+
+```sh
+docker image inspect <image id>
+```
+
 
 

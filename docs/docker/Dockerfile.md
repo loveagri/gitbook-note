@@ -232,7 +232,14 @@ CMD []
 
 
 
+## EXPOSE
 
+更多的是是提示作用，是否暴露都可以使用端口， 在build完镜像后，可通过`docker image inspect <image id>` 查看暴露的端口，在config里查看。同时也可以定义类型，如
+
+```dockerfile
+EXPOSE 80/udp
+EXPOSE 80/tcp
+```
 
 
 
