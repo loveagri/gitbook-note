@@ -36,6 +36,7 @@
 | [vagrant](https://developer.hashicorp.com/vagrant/install)   | [vagrant cloud](https://app.vagrantup.com/boxes/search)      |
 | [Windows terminal](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare) | [ubuntu 22.04.6](https://www.microsoft.com/store/productId/9MTTCL66CPXJ?ocid=pdpshare) [install wsl2](https://learn.microsoft.com/en-us/windows/wsl/install-manual)，[windows terminal docs](https://learn.microsoft.com/zh-cn/windows/terminal/install) |
 | [brew](https://brew.sh/zh-cn/)                               | Mac                                                          |
+| [Cygwin](https://cygwin.com/install.html)                    | *Cygwin*(类UNIX模拟环境)                                     |
 
 ## 国内镜像
 
