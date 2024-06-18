@@ -73,10 +73,8 @@ Vagrant.configure("2") do |config|
     #增加光驱：
     vb.customize ["storageattach",:id,"--storagectl", "IDE Controller","--port","0","--device","0","--type","dvddrive","--medium","/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso"]
     #注：meduim参数不可以为空，如果只挂载驱动器不挂在iso，指定为“emptydrive”。如果要卸载光驱，medium传入none即可。
-    #从这个指令可以看出，customize方法传入一个json数组，按照顺序传入参数即可。
-     
-    #json数组传入多个参数
-    vb.customize ["modifyvm", :id, "--name", “mfsserver3", "--memory", “2048"]
+    #从这个指令可以看出，customize方法传入一个json数组，按照顺序传入参数即可。 json数组传入多个参数
+    vb.customize ["modifyvm", :id, "--name", "mfsserver3", "--memory", "2048"]
 	end
 
   # 初始脚本

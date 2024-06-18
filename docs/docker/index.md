@@ -36,7 +36,7 @@ sudo apt update -y
 curl -fsSL https://get.docker.com -o install-docker.sh
 
 # Install docker through Aliyun
-sudo sh install-docker.sh --mirror Aliyun
+sudo sh install-docker.sh --mirror Aliyun|AzureChinaCloud
 
 # 设置Docker守护进程配置（可选）
 if [ ! -f /etc/docker/daemon.json ]; then
@@ -103,24 +103,30 @@ sudo systemctl restart docker
 # 为了使修改生效，需要重新登录要添加到docker组的用户。可以使用以下命令注销并重新登录：
 logout
 # or
-su root            # 切换到root用户
-su ${USER}         # 再切换到原来的应用用户以上配置才生效
+
+# 切换到root用户
+su root        
+# 再切换到原来的应用用户以上配置才生效
+su ${USER}         
 ```
 
 5. 切换或者退出当前账户再从新登入
 
 ```sh
-docker ps # 如果当前用户执行无报错， 则表示用户已经加到docker组 
+# 如果当前用户执行无报错， 则表示用户已经加到docker组 
+docker ps 
 ```
 
 6. 如果执行docker ps还有报错
 
 ```sh
-ls -al /var/run/docker.sock # 查看/var/run/docker.sock文件的权限
+# 查看/var/run/docker.sock文件的权限
+ls -al /var/run/docker.sock 
 ```
 
 ```sh
-sudo chmod o+rw /var/run/docker.sock # 若是其他用户没有访问权限，则需要配置下权限
+# 若是其他用户没有访问权限，则需要配置下权限
+sudo chmod o+rw /var/run/docker.sock 
 ```
 
 然后重新执行docker ps 无报错则可以了

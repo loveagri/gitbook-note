@@ -9,6 +9,7 @@ Linux用户需要自行[安装](https://github.com/docker/compose/releases)
 直接安装：
 
 ```sh
+# version=v2.27.1
 $ sudo curl -L "https://github.com/docker/compose/releases/download/<version>/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
@@ -43,11 +44,11 @@ volumes: # 可选，相当于 docker volume create
 networks: # 可选，相当于 docker network create
 ```
 
-示例：
+### 示例：
+
+#### app.py：
 
 ```python
-# app.py
-
 from flask import Flask
 from redis import Redis
 import os
@@ -86,48 +87,213 @@ EXPOSE 5000
 CMD ["flask", "run", "-h", "0.0.0.0"]
 ```
 
+#### docker-compose.yml 文件如下:
 
-
-docker-compose.yml 文件如下:
+##### version 1:
 
 ```yaml
-version: "3.8"
+version: '3.8'
 
 services:
-  flask-demo:
-    image: flask-demo:latest
-    environment:
-      - REDIS_HOST=redis-server
-    networks:
-      - demo-network
-    ports:
-      - 8080:5000
+    redis-server:
+        image: redis:latest
+        networks:
+            - demo-network
 
-  redis-server:
-    image: redis:latest
-    networks:
-     - demo-network
+    flask-demo:
+        image: flask-demo:latest
+        environment:
+            - REDIS_HOST=redis-server
+        networks:
+            - demo-network
+        ports:
+            - 8080:5000
 
 networks:
-  demo-network:
+    demo-network:
+
 ```
 
-启动：
+##### version 2:
+
+```yaml
+version: '3.8'
+
+services:
+    redis-server:
+        image: redis:latest
+        networks:
+            - demo-network
+
+    flask-demo:
+        container_name: my-flask-demo
+        image: flask-demo:latest
+        environment:
+            - REDIS_HOST=redis-server
+        networks:
+            - demo-network
+        ports:
+            - 8080:5000
+
+networks:
+    demo-network:
+
+```
+
+##### Version 3:
+
+```yaml
+version: '3.8'
+
+services:
+    redis-server:
+        image: redis:latest
+        networks:
+            - demo-network
+
+    flask-demo:
+        build: './flask'
+        container_name: my-flask-demo
+        image: flask-demo:latest
+        environment:
+            - REDIS_HOST=redis-server
+        networks:
+            - demo-network
+        ports:
+            - 8080:5000
+
+networks:
+    demo-network:
+
+```
+
+##### Version 4:
+
+```yaml
+version: '3.8'
+
+services:
+    redis-server:
+        image: redis:latest
+        networks:
+            - demo-network
+
+    flask-demo:
+        build:
+            context: ./flask
+            dockerfile: Dockerfile
+        container_name: my-flask-demo
+        image: flask-demo:latest
+        environment:
+            - REDIS_HOST=redis-server
+        networks:
+            - demo-network
+        ports:
+            - 8080:5000
+
+networks:
+    demo-network:
+
+```
+
+#### 启动：
 
 ```sh
-docker-compose up # 前台服务运行
+# 前台服务运行
+docker-compose up 
 
-docker-compose up -d # 后台运行
+# 后台运行
+docker-compose up -d 
 
-docker-compose stop # 停止服务
+# rebuild
+docker-compose up -d --build 
 
-docker-compose down # 移除并停止服务
+# remove not used
+docker-compose up -d --remove-orphans --build 
 
-docker-compose rm # 移除停止法服务
+# 重启服务
+docker-compose restart 
+
+# 停止服务
+docker-compose stop 
+
+# 移除并停止服务
+docker-compose down 
+
+# 移除停止的服务
+docker-compose rm 
 
 # docker-compose 启动的服务，默认会加上文件夹的名字作为前缀，也可以通过 -p 指定服务名称前缀，并且以后所有相关操作都需要加 -p 选项
 docker-composer -p myproject up -d 
+
+
 ```
+
+## 网络
+
+```yaml
+version: '3.8'
+
+services:
+    box1:
+        image: xiaopeng163/net-box:latest
+        command: /bin/sh -c "while true; do sleep 3600; done"
+        networks:
+            - mynetwork1
+    box2:
+        image: xiaopeng163/net-box:latest
+        command: /bin/sh -c "while true; do sleep 3600; done"
+        networks:
+            - mynetwork1
+            - mynetwork2
+
+networks:
+    mynetwork1:
+    mynetwork2:
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
