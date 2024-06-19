@@ -78,7 +78,7 @@ RUN apt-get update && \
 
 进入容器可以查看版本
 
-```sh
+```shell
 root@09c6445b79a4:/# ipinfo version
 2.0.1
 ```
