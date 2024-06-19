@@ -65,7 +65,7 @@ RUN apt-get update && \
 
 ARG 可以在镜像build的时候动态修改value, 通过 `--build-arg`，更多关注构建
 
-```
+```dockerfile
 FROM ubuntu:20.04
 ARG VERSION=2.0.1
 RUN apt-get update && \
