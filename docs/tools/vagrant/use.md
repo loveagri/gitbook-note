@@ -75,13 +75,27 @@ Vagrant.configure("2") do |config|
     #注：meduim参数不可以为空，如果只挂载驱动器不挂在iso，指定为“emptydrive”。如果要卸载光驱，medium传入none即可。
     #从这个指令可以看出，customize方法传入一个json数组，按照顺序传入参数即可。 json数组传入多个参数
     vb.customize ["modifyvm", :id, "--name", "mfsserver3", "--memory", "2048"]
+    
+    # 单个机器执行脚本
+    vb.vm.provision :shell do |shell|
+      shell.path = "db.sh"
+    end
 	end
 
   # 初始脚本
+  # 外置文件初始脚本
+  config.vm.provision "shell", privileged: true, path: "./setup.sh"
+  
+  # 行内样式
+  config.vm.provision "shell", inline: "sudo apt-get update; sudo ln -sf /usr/bin/python3 /usr/bin/python"
+  
+  # 块输入
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y nginx
   SHELL
+
+	 
 end
 ```
 

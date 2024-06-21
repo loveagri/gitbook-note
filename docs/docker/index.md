@@ -83,12 +83,23 @@ grep docker /etc/group
 
 # 不存在则创建docker用户组
 sudo groupadd docker
+
+# or
+if [ ! $(getent group docker) ]; then
+    sudo groupadd docker
+else
+    echo "docker user group already exists"
+fi
 ```
 
 2. 添加当前用户加入docker用户组
 
 ```sh
 sudo usermod -aG docker ${USER}
+
+# or
+
+sudo gpasswd -a $USER docker
 ```
 
 3. 重启docker服务
