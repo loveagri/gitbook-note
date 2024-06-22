@@ -1,4 +1,4 @@
-# git中遇到的错误
+# git报错
 
 ### 一个GitHub的SSH keys不能同时放在两个GitHub上，否则会报错如下
 
