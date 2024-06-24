@@ -273,25 +273,150 @@ ipvsadm
 
 
 
+## 内部负载均衡和 VIP
 
 
 
+```sh
+# web
+vagrant@swarm-manager:~$ docker network ls
 
+vagrant@swarm-manager:~$ docker service create --name web --network mynet --replicas 2 containous/whoami
 
+vagrant@swarm-manager:~$ docker service ls
 
+vagrant@swarm-manager:~$ docker service ps web
 
+# client
+vagrant@swarm-manager:~$ docker service create --name client --network mynet xiaopeng163/net-box:latest ping 8.8.8.8
 
+vagrant@swarm-manager:~$ docker service ls
 
+vagrant@swarm-manager:~$ docker service ps client
 
+# 找到client容器的部署节点 exec 进入,curl web 显示负载均衡的效果
+/omd # curl web
 
+```
 
+这个虚拟IP在一个特殊的网络命令空间里，这个空间连接在我们的mynet这个overlay的网络上
 
+```sh
+# 通过 docker network inspect mynet 可以看到这个命名空间，叫lb-mynet
+docker network inspect mynet
 
+# show lb_viuh1fo7q network interface
+vagrant@swarm-manager:~$ sudo ls /var/run/docker/netns/
+1-14fy2l7a4m  1-lpirdge00y  dfb766d83076  ingress_sbox  lb_viuh1fo7q
 
+# entry lb_lpirdge00 namespace
+vagrant@swarm-manager:~$ sudo nsenter --net=/var/run/docker/netns/lb_viuh1fo7q sh
 
+ip a
+# console output
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+27: eth0@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether 02:42:0a:00:01:08 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.0.1.8/24 brd 10.0.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet 10.0.1.5/32 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet 10.0.1.10/32 scope global eth0
+       valid_lft forever preferred_lft forever
+       
+       
+iptables -nvL -t mangle
 
+ipvsadm
+```
 
+## stack 部署多 service 应用
 
+```sh
+# install docker-compose
+vagrant@swarm-manager:~$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+vagrant@swarm-manager:~$ sudo chmod +x /usr/local/bin/docker-compose
+
+# download flask script
+git clone https://github.com/xiaopeng163/flask-redis
+
+# 通过stack启动服务
+vagrant@swarm-manager:~/flask-redis$ env REDIS_PASSWORD=ABC123 docker stack deploy --compose-file docker-compose.yml flask-demo
+
+docker stack ls
+
+docker stack services flask-demo
+
+curl 127.0.0.1:8080
+```
+
+## swarm 中使用 secret
+
+#### 从标准的收入读取
+
+```sh
+# create
+echo abc123 | docker secret create mysql_pass -
+
+# check
+docker secret ls
+
+# rm
+docker secret rm mysql_pass
+```
+
+#### 从文件读取
+
+```sh
+vagrant@swarm-manager:~$ more mysql_pass.txt
+abc123
+
+docker secret create mysql_pass mysql_pass.txt
+```
+
+#### secret 的使用
+
+```sh
+# 一般在节点下容器中 /run/secrets/下
+docker service create --name mysql-demo --secret mysql_pass --env MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql_pass mysql:5.7
+```
+
+##   local volume
+
+docker-compose.yml
+
+```yaml
+version: "3.8"
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql_pass
+    secrets:
+      - mysql_pass
+    volumes:
+      - data:/var/lib/mysql
+
+volumes:
+  data:
+
+secrets:
+  mysql_pass:
+    file: mysql_pass.txt
+```
+
+mysql_pass.txt
+
+```sh
+vagrant@swarm-manager:~$ more mysql_pass.txt
+abc123
+```
 
 
 
