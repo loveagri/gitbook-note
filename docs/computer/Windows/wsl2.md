@@ -37,6 +37,17 @@ wsl --set-default-version 2
 
 Open the [Microsoft Store](https://aka.ms/wslstore) and select your favorite Linux distribution.
 
-## install Windows Terminal
+## Install Windows Terminal
 
 [install Windows Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare)
+
+## open wsl command line
+
+```cmd
+PS E:\Note\note> wsl
+```
+
+
+
+
+

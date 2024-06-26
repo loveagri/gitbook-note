@@ -17,6 +17,32 @@ set-alias java8 C:\Users\fuhon\.jdks\corretto-1.8.0_382\bin\java.exe
 
 ```sh
 function np { cd E:\Note\note }
+
+//单条命令
+function gitci(){
+     git rev-parse HEAD    
+}
+
+//多条命令
+//依次编写多条命令
+function fe(){
+   cd C:\Users\xingag\Desktop\fe
+   dir
+   explorer .
+}
+
+function open(){
+    explorer .
+}
+
+# 参数：字符串，打开的文件夹目录
+# 使用：feo C:\Users\xingag\Desktop
+function feo([string]$path){
+    cd C:\Users\xingag\Desktop\fe
+    explorer "$path"
+    dir    
+}
+
 ```
 
 设置完成之后保存重启 powerShell，这里大概率会报个错` cannot be loaded because running scripts is disabled on this system.`，因为 Windows 为了安全考虑，不允许自动运行脚本，如果可以接受这个，以管理员身份打开 PowerShell 运行如下：
