@@ -8,17 +8,16 @@ set -e
 # 生成静态文件
 pnpm run docs:build
 
-# 推送到gitee
-echo "------push to gitee start"
 git add -A
 git commit -m  "build: $message"
-git push -u origin master
+
+# 推送到gitee
+echo "------push to gitee start"
+git push -u git@gitee.com:loveagri/vp.git master
 echo "------push to gitee end"
 
 # 推送到github
 echo "------push to github start"
-git add -A
-git commit -m  "build: $message"
 git push -u git@github.com:loveagri/vp.git master
 echo "------push to github end"
 
