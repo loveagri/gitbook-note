@@ -13,6 +13,11 @@ git add -A
 git commit -m  "build: $message"
 git push -u origin master
 
+# 推送到github
+git add -A
+git commit -m  "build: $message"
+git push -u git@github.com:loveagri/vp.git master
+
 echo "push to gitee finished, now push to github"
 echo "------------------------------------------------"
 # 如果是发布到自定义域名
