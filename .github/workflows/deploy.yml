@@ -1,0 +1,26 @@
+name: 'deploy'
+on: [push]
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: '20'
+                  cache: 'npm'
+
+            - name: Install dependencies
+              run: npm install --silent
+
+            - name: Build
+              run: npm run docs:build
+
+            - name: Deploy
+              run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:loveagri/blog.git
+
+            - name: remove dist
+              run: rm -rf dist
