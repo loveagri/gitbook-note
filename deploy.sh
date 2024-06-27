@@ -16,6 +16,7 @@ echo "------push to gitee start"
 git push -u git@gitee.com:loveagri/vp.git master
 echo "------push to gitee end"
 
+echo "\n"
 # 推送到github
 echo "------push to github start"
 git push -u git@github.com:loveagri/vp.git master
