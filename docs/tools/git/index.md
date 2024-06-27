@@ -1,5 +1,14 @@
 # Git
 
+| 网站                                                 | 备注 |
+| ---------------------------------------------------- | ---- |
+| [Git Docs](https://git-scm.com/doc)                  |      |
+| [Git manual book](https://git-scm.com/book/en/v2)    |      |
+| [GitHub官方文档网站](https://docs.github.com/zh)     |      |
+| [Gitee学习Git](https://gitee.com/help/categories/43) |      |
+
+
+
 ## 基本设置
 
 ### SSH
