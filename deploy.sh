@@ -9,14 +9,18 @@ set -e
 pnpm run docs:build
 
 # 推送到gitee
+echo "------push to gitee start"
 git add -A
 git commit -m  "build: $message"
 git push -u origin master
+echo "------push to gitee end"
 
 # 推送到github
+echo "------push to github start"
 git add -A
 git commit -m  "build: $message"
 git push -u git@github.com:loveagri/vp.git master
+echo "------push to github end"
 
 echo "push to gitee finished, now push to github"
 echo "------------------------------------------------"
