@@ -47,6 +47,6 @@ cd -
 echo "------back to root"
 echo `pwd`
 
-rm -rf dist
+# rm -rf dist
 echo "------remove dist"
 echo `pwd`
