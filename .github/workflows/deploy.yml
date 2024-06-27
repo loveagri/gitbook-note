@@ -24,6 +24,8 @@ jobs:
 
             - name: Deploy
               run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' &&  git branch -M master && git push -f git@github.com:loveagri/blog.git master
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: remove dist
               run: rm -rf dist
