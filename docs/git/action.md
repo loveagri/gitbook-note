@@ -81,5 +81,51 @@ jobs:
 
 
 
+## run多条命令汇集
+
+```yaml
+name: 'deploy to github'
+on: [push]
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: '20'
+                  cache: 'npm'
+
+            - name: Install dependencies
+              run: npm install --silent
+
+            - name: Build
+              run: npm run docs:build
+
+            - name: config git
+              run: git config --global user.email "282656050@qq.com" && git config --global user.name "loveagri"
+
+            - name: Deploy
+              run: |
+                  cd dist
+                  echo 'www.dotohi.com' > CNAME
+                  git init && git add -A
+                  git commit -m 'deploy'
+                  git branch -M master
+                  git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
+            - name: Deploy
+              run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git branch -M master && git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
+              
+              
+
+
+            - name: remove dist
+              run: rm -rf dist
+
+```
+
 
 
