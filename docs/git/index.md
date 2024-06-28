@@ -37,7 +37,7 @@ git config --global --list
 git config --global -l
 ```
 
-#### 指令设置token
+#### 命令行自动化验证身份
 
 ```sh
 # 通过指令设置token
@@ -45,6 +45,9 @@ git config user.password "<your_token>"
 
 # 直接添加到远程仓库链接中
 git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
+
+# 直接push
+git push -f https://<your_token>@github.com/<USERNAME>/<REPO>.git master
 ```
 
 ## 加速

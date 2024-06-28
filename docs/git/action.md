@@ -79,8 +79,6 @@ jobs:
     └── entrypoint.sh
 ```
 
-
-
 ## run多条命令汇集
 
 ```yaml
@@ -108,7 +106,7 @@ jobs:
             - name: config git
               run: git config --global user.email "282656050@qq.com" && git config --global user.name "loveagri"
 
-            - name: Deploy
+            - name: 分层 | 
               run: |
                   cd dist
                   echo 'www.dotohi.com' > CNAME
@@ -116,12 +114,12 @@ jobs:
                   git commit -m 'deploy'
                   git branch -M master
                   git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
-            - name: Deploy
+            - name: && 相连
               run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git branch -M master && git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
               
+            - name: ;形式
+              run: cd dist ; echo 'www.dotohi.com' > CNAME ; git init ; git add -A ; git commit -m 'deploy' ; git branch -M master ; git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
               
-
-
             - name: remove dist
               run: rm -rf dist
 
