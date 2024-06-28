@@ -23,7 +23,7 @@ jobs:
               run: git config --global user.email "282656050@qq.com" && git config --global user.name "loveagri"
 
             - name: Deploy
-              run: /
+              run: \
                   cd dist
                   echo 'www.dotohi.com' > CNAME
                   git init && git add -A
