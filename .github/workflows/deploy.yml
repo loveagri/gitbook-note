@@ -29,7 +29,8 @@ jobs:
                   git init && git add -A 
                   git commit -m 'deploy' 
                   git branch -M master 
-                  git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
+                  git config user.password ${{ secrets.GH_TOKEN }}
+                  git push -f https://github.com/loveagri/blog.git master
 
             - name: remove dist
               run: rm -rf dist
