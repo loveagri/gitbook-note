@@ -16,7 +16,7 @@ echo "------push to gitee end"
 echo "-------------------------------------------------------------------"
 # 推送到github
 echo "------push to github start"
-git push -u -f git@github.com:loveagri/vp.git master
+git push -u git@github.com:loveagri/vp.git master
 echo "------push to github end"
 
 
