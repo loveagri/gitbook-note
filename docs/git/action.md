@@ -72,6 +72,9 @@ jobs:
 
 ```sh
 .
+└── .github
+    ├── workflows
+    		└── *.yml
 ├── README.md
 └── action-a
     ├── Dockerfile
