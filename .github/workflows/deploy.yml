@@ -23,7 +23,12 @@ jobs:
               run: git config --global user.email "282656050@qq.com" && git config --global user.name "loveagri"
 
             - name: Deploy
-              run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git branch -M master && git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
+              run: cd dist
+                  echo 'www.dotohi.com' > CNAME
+                  git init && git add -A
+                  git commit -m 'deploy'
+                  git branch -M master
+                  git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/blog.git master
 
             - name: remove dist
               run: rm -rf dist
