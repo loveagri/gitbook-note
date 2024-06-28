@@ -5,9 +5,6 @@ message=${1:-"commit"}
 # 确保脚本抛出遇到的错误1
 set -e
 
-# 生成静态文件
-# pnpm run docs:build
-
 git add -A
 git commit -m  "build: $message"
 
@@ -16,14 +13,16 @@ echo "------push to gitee start"
 git push -u git@gitee.com:loveagri/vp.git master
 echo "------push to gitee end"
 
-echo "\n"
+echo "-------------------------------------------------------------------"
 # 推送到github
 echo "------push to github start"
 git push -u git@github.com:loveagri/vp.git master
 echo "------push to github end"
 
-echo "push to gitee finished, now push to github"
-echo "------------------------------------------------"
+
+# 生成静态文件
+# pnpm run docs:build
+
 # 如果是发布到自定义域名
 # cd dist
 # echo "------go to dist"
