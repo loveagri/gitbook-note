@@ -23,7 +23,7 @@ jobs:
               run: git config --global user.email "282656050@qq.com" && git config --global user.name "loveagri"
 
             - name: Deploy
-              run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git config user.password ${{ secrets.GH_TOKEN }} && git branch -M master && git push -f git@github.com:loveagri/blog.git master
+              run: cd dist && echo 'www.dotohi.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git branch -M master && git push -f https://${{ secrets.GH_TOKEN }}@github.com/loveagri/vp.git master
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
