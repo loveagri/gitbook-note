@@ -31,12 +31,20 @@ git config --global i18n.logoutputencoding utf-8
 
 # git bash 页面中文显示为数字,不是乱码
 git config --global core.quotepath false
-```
 
-```sh
 # 查看git配置信息
 git config --global --list
 git config --global -l
+```
+
+#### 指令设置token
+
+```sh
+# 通过指令设置token
+git config user.password "<your_token>"
+
+# 直接添加到远程仓库链接中
+git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 ```
 
 ## 加速
