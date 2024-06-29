@@ -8,7 +8,8 @@
 | [搜狗输入法](https://shurufa.sogou.com/)                     |                                                              |
 | [typora](https://www.typora.net/)                            |                                                              |
 | [sublime](https://www.sublimetext.com/download)              |                                                              |
-| [phpstorm](https://www.jetbrains.com.cn/phpstorm/download/)  |                                                              |
+| [JetBrains IDE](https://www.jetbrains.com.cn/ides/#choose-your-ide) | [IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=mac)，[pycharm](https://www.jetbrains.com/pycharm/download/)，[phpstorm](https://www.jetbrains.com.cn/phpstorm/download/) |
+| [eclipse](https://www.eclipse.org/downloads/)                |                                                              |
 | [git](https://git-scm.com/download/win)                      | [gitforwindows](https://gitforwindows.org/)                  |
 | [360压缩](https://yasuo.360.cn/)                             |                                                              |
 | [item2](https://iterm2.com/)                                 |                                                              |
@@ -19,7 +20,6 @@
 | [postman](https://www.postman.com/)                          |                                                              |
 | [QQ](https://im.qq.com/index/)                               |                                                              |
 | [PotPlayer](https://potplayer.tv/)                           |                                                              |
-| [pycharm](https://www.jetbrains.com/pycharm/download/)       |                                                              |
 | [vscode](https://code.visualstudio.com/)                     |                                                              |
 | [chrome](https://www.google.cn/chrome/index.html)            |                                                              |
 | [IINA](https://www.iina.io/)                                 |                                                              |
