@@ -8,7 +8,7 @@
 | [搜狗输入法](https://shurufa.sogou.com/)                     |                                                              |
 | [typora](https://www.typora.net/)                            |                                                              |
 | [sublime](https://www.sublimetext.com/download)              |                                                              |
-| [JetBrains IDE](https://www.jetbrains.com.cn/ides/#choose-your-ide) | [IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=mac)，[pycharm](https://www.jetbrains.com/pycharm/download/)，[phpstorm](https://www.jetbrains.com.cn/phpstorm/download/) |
+| [JetBrains](https://www.jetbrains.com/zh-cn/)                |                                                              |
 | [eclipse](https://www.eclipse.org/downloads/)                |                                                              |
 | [git](https://git-scm.com/download/win)                      | [gitforwindows](https://gitforwindows.org/)                  |
 | [360压缩](https://yasuo.360.cn/)                             |                                                              |
