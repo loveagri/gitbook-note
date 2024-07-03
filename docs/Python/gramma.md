@@ -22,3 +22,12 @@ info = f"my name is {name}"
 print(info)
 ```
 
+### 无效转义字符
+
+```sh
+print(r'print \r')
+
+# \r前需空格，前边字符覆盖
+print('1 \rprint ')
+```
+
