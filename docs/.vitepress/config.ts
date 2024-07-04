@@ -1,11 +1,12 @@
-import {defineConfig} from 'vitepress'
-import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
+import { defineConfig } from 'vitepress'
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
 import nav from './scripts/nav'
-import sidebar from "./scripts/sidebar";
+import sidebar from "./scripts/sidebar"
 
 export default defineConfig({
 	title: "静思田园",
 	description: '时不时记录一点点',
+
 	base: '',//如果你使用的是 Github（或 GitLab）页面并部署到 user.github.io/repo/，请将 base 设置为 /repo/
 	outDir: '../dist',
 	cacheDir: '../cache',
@@ -16,7 +17,7 @@ export default defineConfig({
 
 
 	head: [
-		['meta', {name: 'theme-color', content: '#646cff'}],
+		['meta', { name: 'theme-color', content: '#646cff' }],
 	],
 
 	rewrites: {
@@ -41,7 +42,7 @@ export default defineConfig({
 	},
 
 	themeConfig: {
-		logo: '/images/logo.png',
+		logo: '/logo.png',
 		nav: [...nav()],
 		sidebar: sidebar(),
 
@@ -55,7 +56,7 @@ export default defineConfig({
 		},
 
 		socialLinks: [
-			{icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github'},
+			{ icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github' },
 		],
 
 		search: {
