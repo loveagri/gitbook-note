@@ -31,3 +31,5 @@ print(r'print \r')
 print('1 \rprint ')
 ```
 
+## 列表
+
