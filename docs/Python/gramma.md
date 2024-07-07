@@ -119,3 +119,33 @@ assert 1 > 2, "message"
 
 
 
+## package
+
+定义包
+
+```python
+# __init__.py
+├── animal
+│   ├── __init__.py
+│   └── dog
+│       ├── __init__.py
+│       └── dog.py
+└── test.py
+
+# dog.py
+def run():
+    print("dog run")
+
+# animal.dog.__init__.py
+from .dog import run
+
+# animal.__init__.py
+from .dog.dog import run
+# or
+from .dog import run
+
+# test.py
+from animal import run
+run() # dog run
+```
+
