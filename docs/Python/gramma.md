@@ -103,3 +103,19 @@ print(self.name)
 
 
 
+## Exception & assert
+
+### Exception
+
+```python
+raise Exception('error')
+```
+
+### assert
+
+```python
+assert 1 > 2, "message"
+```
+
+
+
