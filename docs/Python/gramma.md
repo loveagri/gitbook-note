@@ -33,3 +33,73 @@ print('1 \rprint ')
 
 ## 列表
 
+
+
+
+
+## 函数
+
+### 装饰器
+
+```python
+# 装饰器
+def main(func):
+    def inner(*args, **kwargs):
+        print(args, kwargs)
+        result = func(*args, **kwargs)
+        return result
+
+    return inner
+
+@main
+def test(data):
+    return data
+
+test('ok') # ('ok',) {}
+test(data='ok')# () {'data': 'ok'}
+```
+
+#### classmethod & staticmethod
+
+```python
+class Test:
+    def __init__(self, name):
+        pass
+        self.name = name
+
+    def run(self):
+        print("run")
+        self.dump()
+        self.sleep()
+
+    @classmethod
+    def dump(cls):
+        print("dump")
+
+    @staticmethod
+    def sleep():
+        print("sleep")
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+
+self = Test('start')
+self.run()
+Test.dump()
+
+self.sleep()
+Test.sleep()
+
+print(self.name)
+self.name = 'after sleep'
+print(self.name)
+```
+
+
+
