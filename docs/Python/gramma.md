@@ -149,3 +149,41 @@ from animal import run
 run() # dog run
 ```
 
+## 迭代器
+
+```python
+# form 1
+def iter():
+  for i in range(10):
+    yield i
+    
+res = iter()
+print(next(res))
+print(next(res))
+print(next(res))
+
+# form 2
+res = (i for i in [1,2,3,4])
+
+print(next(res))
+print(next(res))
+print(next(res))
+   
+# form 3
+iter_obj = iter(range(10))
+print(next(iter_obj))
+print(next(iter_obj))
+print(next(iter_obj))
+
+
+# no error in for loop 
+for i in res:
+    print(i)
+
+```
+
+## 多线程
+
+多个cup的核之间同时进行叫并行
+
+单个cup的核多个线程同时工作叫做并发
