@@ -14,6 +14,7 @@
 | [360压缩](https://yasuo.360.cn/)                             |                                                              |
 | [item2](https://iterm2.com/)                                 |                                                              |
 | [go2shell](https://zipzapmac.com/Go2Shell)                   |                                                              |
+| [苹果解压软件](https://theunarchiver.com/)                   |                                                              |
 | [edge](https://www.microsoft.com/zh-cn/edge/download?form=MA13FJ) |                                                              |
 | [apifox](https://www.baidu.com/s?ie=UTF-8&wd=apifox)         |                                                              |
 | [docker](https://www.docker.com/products/docker-desktop/)    |                                                              |
