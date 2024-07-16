@@ -1,5 +1,0 @@
----
-barName: sidebar
----
-
-# sidebar

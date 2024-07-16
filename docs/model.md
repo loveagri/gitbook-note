@@ -6,6 +6,12 @@ sidebar: false
 
 # 示例
 
+| 博客                                          | 备注 |
+| --------------------------------------------- | ---- |
+| [查尔斯的知识库](https://blog.charles7c.top/) |      |
+
+
+
 ## markdown语法
 
 ### 自定义容器
@@ -129,6 +135,52 @@ _单个下划线_
 海阔&emsp;天空
 海阔&thinsp;天空
 
+### GitHub 风格的警报
+
+> [!NOTE]
+> 强调用户在快速浏览文档时也不应忽略的重要信息。
+
+> [!TIP]
+> 有助于用户更顺利达成目标的建议性信息。
+
+> [!IMPORTANT]
+> 对用户达成目标至关重要的信息。
+
+> [!WARNING]
+> 因为可能存在风险，所以需要用户立即关注的关键内容。
+
+> [!CAUTION]
+> 行为可能带来的负面影响。
+
+### 代码组
+
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
+
+
+
 ### HTML
 
 <span style="color:red">this text is red</span>
@@ -251,6 +303,14 @@ export default defineUserConfig({
 
 <NpmBadge package="@vuepress/cli" />
 <NpmBadge package="@vuepress/plugin-register-components" />
+
+### 脚注
+
+先帝创业未半 [^1]
+
+[^1]: 诸葛亮《出师表》
+
+
 
 ### vue
 

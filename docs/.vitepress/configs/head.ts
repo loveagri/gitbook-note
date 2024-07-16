@@ -1,4 +1,4 @@
-import type {HeadConfig} from 'vuepress/core'
+import type { HeadConfig } from 'vitepress';
 
 export const head: HeadConfig[] = [
 	['meta', {name: 'application-name', content: 'VuePress'}],

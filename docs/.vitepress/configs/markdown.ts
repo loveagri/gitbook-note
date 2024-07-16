@@ -1,6 +1,5 @@
 import {transformerTwoslash} from "@shikijs/vitepress-twoslash";
 import type {MarkdownOptions} from 'vitepress';
-import mathjax3 from 'markdown-it-mathjax3';
 import footnote from 'markdown-it-footnote'; // 脚注 https://blog.csdn.net/gitblog_00080/article/details/139368750
 
 export const markdown: MarkdownOptions = {
@@ -26,7 +25,6 @@ export const markdown: MarkdownOptions = {
 	codeTransformers: [transformerTwoslash()],
 
 	config: (md) => {
-		md.use(mathjax3);
 		md.use(footnote);
 
 		// 在所有文档的<h1>标签后添加<ArticleMetadata/>组件
