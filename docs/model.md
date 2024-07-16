@@ -129,14 +129,6 @@ _单个下划线_
 海阔&emsp;天空
 海阔&thinsp;天空
 
-注： 分号是语法中的内容
-
-### 注脚与解释
-
-参考资料 [^1]  
-
-[^1]: 希望和大家一起学习和进步
-
 ### HTML
 
 <span style="color:red">this text is red</span>
