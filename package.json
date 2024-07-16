@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.9.1",
     "@shikijs/vitepress-twoslash": "^1.6.1",
     "@types/markdown-it": "^14.1.1",
     "@types/node": "^20.12.13",
@@ -11,8 +12,10 @@
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
+    "mermaid": "^10.9.1",
     "prismjs": "^1.29.0",
-    "vitepress": "^1.2.2"
+    "vitepress": "^1.2.2",
+    "vitepress-plugin-mermaid": "^2.0.16"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs --clean-cache --clean-temp",
