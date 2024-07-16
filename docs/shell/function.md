@@ -38,7 +38,7 @@ function name
 
 通过`.`引用外部文件。需要通过绝对路径引入，一般库文件后缀是.lib, 库文件通常没有可执行权限，第一行用如下：
 
-```bash{1}
+```sh
 #!/bin/echo
 
 function name
