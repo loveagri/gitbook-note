@@ -48,12 +48,6 @@ echo "scale=4; $num1 + $num2" | bc
 
 
 
-
-
-
-
-
-
 ```mermaid
 flowchart LR
   Start --> Stop
@@ -63,7 +57,9 @@ flowchart LR
 
 
 
+先帝创业未半 [^1]
 
+[^1]: 诸葛亮《出师表》
 
 
 

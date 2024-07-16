@@ -1,12 +1,17 @@
-import { defineConfig } from 'vitepress'
-import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
+import {defineConfig} from 'vitepress'
+import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import nav from './scripts/nav'
 import sidebar from "./scripts/sidebar"
+import {head} from './configs/head'
+import {markdown} from './configs/markdown'
+
 
 export default defineConfig({
+	lang: 'zh-CN',
 	title: "静思田园",
 	description: '时不时记录一点点',
 
+	cleanUrls: false,
 	base: '',//如果你使用的是 Github（或 GitLab）页面并部署到 user.github.io/repo/，请将 base 设置为 /repo/
 	outDir: '../dist',
 	cacheDir: '../cache',
@@ -15,30 +20,11 @@ export default defineConfig({
 	lastUpdated: true,
 	srcExclude: ['public'],
 
-
-	head: [
-		['meta', { name: 'theme-color', content: '#646cff' }],
-	],
+	head: head,
+	markdown: markdown,
 
 	rewrites: {
 		'packages/:pkg/src/(.*)': ':pkg/index.md'
-	},
-
-	markdown: {
-		container: {
-			tipLabel: '提示',
-			warningLabel: '警告',
-			dangerLabel: '危险',
-			infoLabel: '信息',
-			detailsLabel: '详细信息'
-		},
-		theme: 'one-dark-pro',// ayu-dark one-dark-pro
-		lineNumbers: true,
-		math: true,
-		image: {
-			lazyLoading: true
-		},
-		codeTransformers: [transformerTwoslash()],
 	},
 
 	themeConfig: {
@@ -56,7 +42,7 @@ export default defineConfig({
 		},
 
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github' },
+			{icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github'},
 		],
 
 		search: {

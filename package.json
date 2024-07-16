@@ -12,6 +12,7 @@
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
     "mermaid": "^10.9.1",
     "prismjs": "^1.29.0",
     "vitepress": "^1.2.2",
@@ -23,6 +24,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@types/markdown-it-footnote": "^3.0.4",
     "axios": "^1.7.2",
     "markdown-it-mathjax3": "^4.3.2",
     "vue": "^3.4.27"
