@@ -50,20 +50,6 @@ echo "scale=4; $num1 + $num2" | bc
 
 
 
-~~~mermaid
-```mermaid
-graph LR
-A[曹操] -- 水路 --> B((孙权))
-A --陆路--> C(刘备)
-B --> D{天下一统}
-C --> D
-```
-~~~
-
-
-
-
-
 
 
 
