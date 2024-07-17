@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress'
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 
-import {head} from './configs'
+import {head} from './configs/head'
 import {markdown} from './configs/markdown'
 import {themeConfig} from './configs/theme'
 
