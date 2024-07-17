@@ -1,4 +1,4 @@
-import {NotFoundOptions} from "vitepress/types/default-theme";
+import {NotFoundOptions} from "vitepress";
 
 export const notFound: NotFoundOptions =
 	{
