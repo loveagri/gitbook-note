@@ -26,4 +26,5 @@ export default defineConfig({
 	rewrites: {
 		'packages/:pkg/src/(.*)': ':pkg/index.md'
 	}
+
 })
