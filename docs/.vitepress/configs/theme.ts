@@ -67,9 +67,9 @@ export const themeConfig: DefaultTheme.Config = {
 	],
 
 	search: {
-		provider: 'algolia',
-		options: algoliaSearchOptions,
-		// provider: 'local',
-		// options: localSearchOptions,
+		// provider: 'algolia',  //https://dashboard.algolia.com/apps/4OY6VO2E9N/launchpad/import-data
+		// options: algoliaSearchOptions,
+		provider: 'local',
+		options: localSearchOptions,
 	}
 }
