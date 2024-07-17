@@ -43,10 +43,18 @@ export const themeConfig: DefaultTheme.Config = {
 		pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
 		text: '不妥之处，敬请雅正'
 	},
+
 	footer: {
 		message: '',
 		copyright: ` <span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >冀ICP备19024518号-1</span><span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >京公网安备11010802043456</span>`
 	},
+
+	// footerConfig: {
+	// 	showFooter: true, // 是否显示页脚
+	// 	icpRecordCode: '冀ICP备19024518号-1', // ICP备案号
+	// 	publicSecurityRecordCode: '京公网安备11010802043456', // 联网备案号
+	// 	copyright: `Copyright © 2019-${new Date().getFullYear()} Charles7c` // 版权信息
+	// },
 
 	socialLinks: [
 		{icon: 'github', link: 'https://github.com/loveagri', ariaLabel: 'github'},

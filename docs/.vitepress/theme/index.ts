@@ -7,7 +7,7 @@ import NpmBadge from '../components/NpmBadge.vue'
 export default {
 	extends: DefaultTheme,
 	enhanceApp({app}) {
-		app.use(TwoslashFloatingVue)
+		// app.use(TwoslashFloatingVue)
 		app.component('NpmBadge',NpmBadge)
 	},
 } satisfies Theme
