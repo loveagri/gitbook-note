@@ -1,6 +1,8 @@
 import type {DefaultTheme} from 'vitepress';
 import nav from '../scripts/nav'
 import sidebar from "../scripts/sidebar"
+import {algoliaSearchOptions} from './search/algolia-search';
+import {localSearchOptions} from './search/local-search';
 
 export const themeConfig: DefaultTheme.Config = {
 	logo: '/logo.png',
@@ -8,9 +10,38 @@ export const themeConfig: DefaultTheme.Config = {
 	sidebar: sidebar(),
 
 	outline: {
+		label: '目录', // 右侧大纲标题文本配置
 		level: [2, 4],
+		// level: 'deep', // 右侧大纲标题层级
 	},
 
+	darkModeSwitchLabel: '切换日光/暗黑模式',
+	sidebarMenuLabel: '文3章',
+	returnToTopLabel: '返回顶部',
+
+	lastUpdated: {
+		text: '最后更新',
+		formatOptions: {
+			year: "numeric",
+			month: "2-digit",
+			day: "2-digit",
+			hour: "numeric",
+			minute: "2-digit",
+			second: "numeric",
+			hour12: false,
+			timeZone: 'UTC',
+		}
+	},
+	// 文档页脚文本配置
+	docFooter: {
+		prev: '上一篇',
+		next: '下一篇'
+	},
+	// 编辑链接配置
+	editLink: {
+		pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
+		text: '不妥之处，敬请雅正'
+	},
 	footer: {
 		message: '',
 		copyright: ` <span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >冀ICP备19024518号-1</span><span style="display: flex;justify-content: center;color: #3eaf7c;font-size: 1rem" >京公网安备11010802043456</span>`
@@ -27,6 +58,9 @@ export const themeConfig: DefaultTheme.Config = {
 	],
 
 	search: {
-		provider: 'local'
+		provider: 'algolia',
+		options: algoliaSearchOptions,
+		// provider: 'local',
+		// options: localSearchOptions,
 	}
 }
