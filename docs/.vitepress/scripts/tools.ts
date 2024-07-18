@@ -1,6 +1,5 @@
 import {existsSync} from 'node:fs'
-import {dirname, resolve} from 'node:path'
-import {fileURLToPath} from 'node:url'
+import {resolve} from 'node:path'
 import matter from 'gray-matter'
 import type {DirectoryTreeOptions} from 'directory-tree'
 import dirTree from 'directory-tree'
@@ -10,6 +9,7 @@ import markdown from 'markdown-it'
 export const SRC_PATH = resolve(process.cwd(), 'docs').replace(/\\/g, '/')
 
 console.log(SRC_PATH);
+
 export interface ItemInfo {
 	path: string
 	name: string
