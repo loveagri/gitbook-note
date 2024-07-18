@@ -38,11 +38,11 @@ export const themeConfig: DefaultTheme.Config = {
 		prev: '上一篇',
 		next: '下一篇'
 	},
-	// 编辑链接配置
-	editLink: {
-		pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
-		text: '不妥之处，敬请雅正'
-	},
+	// // 编辑链接配置
+	// editLink: {
+	// 	pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
+	// 	text: '不妥之处，请指正'
+	// },
 
 	footer: {
 		message: '',
