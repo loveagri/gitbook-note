@@ -14,8 +14,7 @@ function getNavbar(tree: FileItem[] = []): DefaultTheme.NavItem[] {
 				if (!existsSync(indexPath)) {
 					writeFileSync(indexPath, `---\nbarName: ${v.name}\n---\n\n# ${v.name}`,)
 				}
-				const item = {text: getTitleName(indexPath, v.name)}
-				return {...item, link: getDirPathFromSrc(v.path)}
+				return {text: getTitleName(indexPath, v.name), link: getDirPathFromSrc(v.path)}
 			} else {
 				if (v.name.toLowerCase() === 'index.md') {
 					return {
@@ -23,7 +22,6 @@ function getNavbar(tree: FileItem[] = []): DefaultTheme.NavItem[] {
 						link: getDirPathFromSrc(v.path, '').replace('index.md', '')
 					}
 				}
-				return ''
 			}
 		})
 		.filter((v) => {

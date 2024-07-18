@@ -7,9 +7,9 @@ import dirTree from 'directory-tree'
 import type {GrayMatterFile} from 'gray-matter'
 import markdown from 'markdown-it'
 
-export const __dirname = dirname(fileURLToPath(import.meta.url))
-export const SRC_PATH = resolve(__dirname, '../../').replace(/\\/g, '/')
+export const SRC_PATH = resolve(process.cwd(), 'docs').replace(/\\/g, '/')
 
+console.log(SRC_PATH);
 export interface ItemInfo {
 	path: string
 	name: string
@@ -23,6 +23,7 @@ export interface FileItem {
 	name: string
 	children?: ItemInfo[]
 	text?: string
+	link?: string
 	size?: number
 	collapsible?: boolean
 	type: string
