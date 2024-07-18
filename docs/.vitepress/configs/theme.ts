@@ -46,7 +46,7 @@ export const themeConfig: DefaultTheme.Config = {
 	// },
 
 	footer: {
-		message: '<p  style="display: flex;justify-content: center;color: #3eaf7c;"><svg style="width: 14px" data-v-33cfc005="" viewBox="0 0 1024 1024" version="1.1"' +
+		message: '<p  style="display: flex;justify-content: center;color: #3eaf7c;"><svg data-v-33cfc005="" viewBox="0 0 1024 1024" version="1.1"' +
 			' xmlns="http://www.w3.org/2000/svg"><title data-v-33cfc005="">ICP备案号</title><path data-v-33cfc005=""' +
 			' d="M778.24 163.84c-76.8-40.96-165.888-61.44-269.312-61.44s-192.512 20.48-269.312 61.44h-133.12l23.552' +
 			' 337.92c8.192 113.664 67.584 217.088 162.816 280.576l215.04 144.384 215.04-144.384c96.256-63.488' +
