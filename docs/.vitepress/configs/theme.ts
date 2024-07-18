@@ -46,7 +46,7 @@ export const themeConfig: DefaultTheme.Config = {
 	// },
 
 	footer: {
-		message:`<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">冀ICP备19024518号<br/>京公网安备11010802043456</p>`,
+		message:`冀ICP备19024518号<br/>京公网安备11010802043456`,
 		copyright: `<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">Copyright © 2019-${new Date().getFullYear()} loveagri</p>`
 	},
 
