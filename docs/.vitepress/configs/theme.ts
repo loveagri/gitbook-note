@@ -46,8 +46,8 @@ export const themeConfig: DefaultTheme.Config = {
 	// },
 
 	footer: {
-		message:`冀ICP备19024518号`,
-		copyright: `<p style="display: flex;justify-content: center;align-items: center"><img src="/gongan.png" style="width: 16px;height: 16px" />京公网安备11010802043456</p>`
+		message: `<p style="display: flex;justify-content: center;align-items: center;font-size: 14px"><img src="/gongan.png" style="width: 14px;height: 14px" />冀ICP备19024518号</p>`,
+		copyright: `<p style="display: flex;justify-content: center;align-items: center;font-size: 14px"><img src="/gongan.png" style="width: 14px;height: 14px" />京公网安备11010802043456</p>`
 	},
 
 	socialLinks: [
