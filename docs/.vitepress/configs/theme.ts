@@ -2,7 +2,6 @@ import type {DefaultTheme} from 'vitepress';
 import nav from '../scripts/nav'
 import {notFound} from "./notFound";
 import sidebar from "../scripts/sidebar"
-import {algoliaSearchOptions} from './search/algolia-search';
 import {localSearchOptions} from './search/local-search';
 
 export const themeConfig: DefaultTheme.Config = {

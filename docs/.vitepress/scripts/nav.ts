@@ -1,6 +1,6 @@
 import {existsSync, writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
-import {DefaultTheme} from "vitepress/types/default-theme";
+import {DefaultTheme} from "vitepress";
 import {
 	getDirTree, dirAndFileOrder, getTitleName, getDirPathFromSrc, FileItem,
 	SRC_PATH
@@ -34,9 +34,9 @@ function getNavbar(tree: FileItem[] = []): DefaultTheme.NavItem[] {
 function nav(srcPath: string = SRC_PATH): DefaultTheme.NavItem[] {
 	const srcDir = getDirTree(srcPath)
 	const orderedDir = dirAndFileOrder(srcDir.children)
-	// writeFileSync('orderedDir.json', JSON.stringify(orderedDir, null, 2) + '\n')
+	writeFileSync('orderedDir.json', JSON.stringify(orderedDir, null, 2) + '\n')
 	const navbar = getNavbar(orderedDir)
-	// writeFileSync('navbar.json', JSON.stringify(navbar, null, 2) + '\n')
+	writeFileSync('navbar.json', JSON.stringify(navbar, null, 2) + '\n')
 	console.log('Generated navbar finished :) ')
 	return navbar
 }

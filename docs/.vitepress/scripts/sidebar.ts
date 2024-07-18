@@ -11,7 +11,7 @@ import {
 	SRC_PATH
 } from './tools'
 
-export function sidebarTree(tree: FileItem[] = []): DefaultTheme.Sidebar {
+export function sidebarTree(tree: FileItem[] = []): DefaultTheme.SidebarItem[] {
 	return tree.map((v: FileItem) => {
 		if (v.type === 'directory') {
 			const indexPath = resolve(v.path!, 'index.md')

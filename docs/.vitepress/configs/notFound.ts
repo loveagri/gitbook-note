@@ -1,6 +1,6 @@
-import {NotFoundOptions} from "vitepress";
+import {DefaultTheme} from "vitepress";
 
-export const notFound: NotFoundOptions =
+export const notFound: DefaultTheme.NotFoundOptions =
 	{
 		title : "走丢了",
 		//
