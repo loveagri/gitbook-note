@@ -1,6 +1,6 @@
-import type {AlgoliaSearchOptions} from 'vitepress';
+import {DefaultTheme} from "vitepress";
 
-export const algoliaSearchOptions: AlgoliaSearchOptions = {
+export const algoliaSearchOptions: DefaultTheme.AlgoliaSearchOptions = {
 	appId: '4OY6VO2E9N',
 	apiKey: 'd501dbe9490250a9b795c8611abf7beb',
 	indexName: 'loveagri',

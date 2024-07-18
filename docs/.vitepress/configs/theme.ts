@@ -10,44 +10,11 @@ export const themeConfig: DefaultTheme.Config = {
 	nav: [...nav()],
 	sidebar: sidebar(),
 	notFound,
+
 	outline: {
 		label: '目录', // 右侧大纲标题文本配置
 		level: [2, 4],
 		// level: 'deep', // 右侧大纲标题层级
-	},
-
-	darkModeSwitchLabel: '切换日光/暗黑模式',
-	sidebarMenuLabel: '文3章',
-	returnToTopLabel: '返回顶部',
-
-	lastUpdated: {
-		text: '最后更新',
-		formatOptions: {
-			year: "numeric",
-			month: "2-digit",
-			day: "2-digit",
-			hour: "numeric",
-			minute: "2-digit",
-			second: "numeric",
-			hour12: false,
-			timeZone: 'UTC',
-		}
-	},
-	// 文档页脚文本配置
-	docFooter: {
-		prev: '上一篇',
-		next: '下一篇'
-	},
-
-	// // 编辑链接配置
-	// editLink: {
-	// 	pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
-	// 	text: '不妥之处，请指正'
-	// },
-
-	footer: {
-		message: `冀ICP备19024518号`,
-		copyright: `京公网安备11010802043456`
 	},
 
 	socialLinks: [
@@ -67,5 +34,39 @@ export const themeConfig: DefaultTheme.Config = {
 		options: localSearchOptions,
 	},
 
+	// 编辑链接配置
+	// editLink: {
+	// 	pattern: 'https://github.com/loveagri/vp/edit/master/docs/:path',
+	// 	text: '不妥之处，请指正'
+	// },
 
+	lastUpdated: {
+		text: '最后更新',
+		formatOptions: {
+			year: "numeric",
+			month: "2-digit",
+			day: "2-digit",
+			hour: "numeric",
+			minute: "2-digit",
+			second: "numeric",
+			hour12: false,
+			timeZone: 'UTC',
+		}
+	},
+
+	// 文档页脚文本配置
+	docFooter: {
+		prev: '上一篇',
+		next: '下一篇'
+	},
+
+	footer: {
+		message: `冀ICP备19024518号`,
+		copyright: `京公网安备11010802043456`
+	},
+
+	carbonAds: {
+		code: '//cdn.carbonads.com/carbon.js?serve=45&placement=1111',
+		placement: 'your-carbon-placement'
+	}
 }

@@ -1,12 +1,12 @@
 import {existsSync, writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
-import {NavItem} from "vitepress/types/default-theme";
+import {DefaultTheme} from "vitepress/types/default-theme";
 import {
 	getDirTree, dirAndFileOrder, getTitleName, getDirPathFromSrc, FileItem,
 	SRC_PATH
 } from './tools'
 
-function getNavbar(tree: FileItem[] = []): NavItem[] {
+function getNavbar(tree: FileItem[] = []): DefaultTheme.NavItem[] {
 	return tree
 		.map((v: FileItem) => {
 			if (v.type === 'directory') {
@@ -31,7 +31,7 @@ function getNavbar(tree: FileItem[] = []): NavItem[] {
 		})
 }
 
-function nav(srcPath: string = SRC_PATH): NavItem[] {
+function nav(srcPath: string = SRC_PATH): DefaultTheme.NavItem[] {
 	const srcDir = getDirTree(srcPath)
 	const orderedDir = dirAndFileOrder(srcDir.children)
 	// writeFileSync('orderedDir.json', JSON.stringify(orderedDir, null, 2) + '\n')

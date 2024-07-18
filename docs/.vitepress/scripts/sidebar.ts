@@ -1,6 +1,6 @@
 import {resolve, dirname} from 'node:path'
 import {writeFileSync, existsSync} from 'node:fs'
-import {Sidebar} from "vitepress/types/default-theme";
+import {DefaultTheme} from "vitepress";
 import {
 	getDirTree,
 	dirAndFileOrder,
@@ -11,7 +11,7 @@ import {
 	SRC_PATH
 } from './tools'
 
-export function sidebarTree(tree: FileItem[] = []): Sidebar {
+export function sidebarTree(tree: FileItem[] = []): DefaultTheme.Sidebar {
 	return tree.map((v: FileItem) => {
 		if (v.type === 'directory') {
 			const indexPath = resolve(v.path!, 'index.md')
@@ -29,8 +29,8 @@ export function sidebarTree(tree: FileItem[] = []): Sidebar {
 	})
 }
 
-function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
-	let sidebarObj: Sidebar = {}
+function sidebarSingleDir(trees: FileItem[] = []):DefaultTheme.Sidebar {
+	let sidebarObj: DefaultTheme.Sidebar = {}
 	trees
 		.map((v: FileItem) => {
 			if (v.type === 'directory') {
@@ -56,7 +56,7 @@ function sidebarSingleDir(trees: FileItem[] = []): Sidebar {
 	return sidebarObj
 }
 
-function sidebar(srcPath: string = SRC_PATH): Sidebar {
+function sidebar(srcPath: string = SRC_PATH): DefaultTheme.Sidebar {
 	const srcDir = getDirTree(srcPath)
 	const orderedDir = dirAndFileOrder(srcDir.children)
 	// const sideBar = sidebarSingleDir(orderedDir)
