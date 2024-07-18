@@ -46,8 +46,8 @@ export const themeConfig: DefaultTheme.Config = {
 	// },
 
 	footer: {
-		message:`冀ICP备19024518号<br/>京公网安备11010802043456`,
-		copyright: `<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">Copyright © 2019-${new Date().getFullYear()} loveagri</p>`
+		message:`冀ICP备19024518号`,
+		copyright: `<p style="display: flex;justify-content: center;align-items: center"><img src="/gongan.png" style="width: 16px;height: 16px" />京公网安备11010802043456</p>`
 	},
 
 	socialLinks: [
@@ -61,10 +61,10 @@ export const themeConfig: DefaultTheme.Config = {
 	],
 
 	search: {
-		provider: 'algolia',  //https://dashboard.algolia.com/apps/4OY6VO2E9N/launchpad/import-data
-		options: algoliaSearchOptions,
-		// provider: 'local',
-		// options: localSearchOptions,
+		// provider: 'algolia',  //https://dashboard.algolia.com/apps/4OY6VO2E9N/launchpad/import-data
+		// options: algoliaSearchOptions,
+		provider: 'local',
+		options: localSearchOptions,
 	},
 
 

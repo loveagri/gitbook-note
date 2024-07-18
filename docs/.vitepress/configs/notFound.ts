@@ -6,9 +6,7 @@ export const notFound: NotFoundOptions =
 		//
 		quote : "永远回家的路",
 		//
-		linkLabel : "GO HOME1",
+		linkLabel : "GO HOME",
 		//
 		linkText: "GO HOME",
-		//
-		// code? : string
 	}
