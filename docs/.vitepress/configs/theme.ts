@@ -66,7 +66,8 @@ export const themeConfig: DefaultTheme.Config = {
 			' m-150.528 194.56h94.208v41.984h-94.208v-41.984z m0 78.848h94.208v41.984h-94.208v-41.984z' +
 			' m-144.384-78.848h94.208v41.984H390.144v-41.984z m0 78.848h94.208v41.984H390.144v-41.984zM424.96' +
 			' 326.656h182.272c-26.624 22.528-57.344 41.984-94.208' +
-			' 57.344-31.744-15.36-61.44-34.816-88.064-57.344z"></path></svg>冀ICP备19024518号-1</p>' +
+			' 57.344-31.744-15.36-61.44-34.816-88.064-57.344z"></path></svg>冀ICP备19024518号-1<br/><img' +
+			' style="width:16px;height: 16px" src="/gongan.png" title="联网备案号">京公网安备11010802043456</p>' +
 			'<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">' +
 			'<img style="width:16px;height: 16px" src="/gongan.png" title="联网备案号">京公网安备11010802043456</p>',
 		copyright: `<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">Copyright © 2019-${new Date().getFullYear()} loveagri</p>`
