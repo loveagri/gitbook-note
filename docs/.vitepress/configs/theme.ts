@@ -46,7 +46,8 @@ export const themeConfig: DefaultTheme.Config = {
 	// },
 
 	footer: {
-		message: '<p  style="display: flex;justify-content: center;color: #3eaf7c;"><svg data-v-33cfc005="" viewBox="0 0 1024 1024" version="1.1"' +
+		message: '<p  style="display: flex;justify-content: center;color: #3eaf7c;"><svg style="width: 16px"' +
+			' data-v-33cfc005="" viewBox="0 0 1024 1024" version="1.1"' +
 			' xmlns="http://www.w3.org/2000/svg"><title data-v-33cfc005="">ICP备案号</title><path data-v-33cfc005=""' +
 			' d="M778.24 163.84c-76.8-40.96-165.888-61.44-269.312-61.44s-192.512 20.48-269.312 61.44h-133.12l23.552' +
 			' 337.92c8.192 113.664 67.584 217.088 162.816 280.576l215.04 144.384 215.04-144.384c96.256-63.488' +
@@ -67,7 +68,7 @@ export const themeConfig: DefaultTheme.Config = {
 			' 326.656h182.272c-26.624 22.528-57.344 41.984-94.208' +
 			' 57.344-31.744-15.36-61.44-34.816-88.064-57.344z"></path></svg>冀ICP备19024518号-1</p>' +
 			'<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">' +
-			'<img style="width:14px;height: 14px" src="/gongan.png" title="联网备案号">京公网安备11010802043456</p>',
+			'<img style="width:16px;height: 16px" src="/gongan.png" title="联网备案号">京公网安备11010802043456</p>',
 		copyright: `<p style="display: flex;justify-content: center; align-items:center;color: #3eaf7c;">Copyright © 2019-${new Date().getFullYear()} loveagri</p>`
 	},
 
