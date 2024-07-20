@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: 示例
       link: /model
+    - theme: alt
+      text: 试验场
+      link: /test
   image:
     src: https://gitlab.com/loveagri/pic/-/raw/main/2024-04-06/21/60383_the-summer-palace.jpg
     alt: Love make all better

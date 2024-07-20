@@ -48,15 +48,6 @@ echo "scale=4; $num1 + $num2" | bc
 
 
 
-```mermaid
-flowchart LR
-  Start --> Stop
-```
-
-
-
-
-
 
 
 

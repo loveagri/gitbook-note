@@ -5,28 +5,30 @@ import {head} from './configs/head'
 import {markdown} from './configs/markdown'
 import {themeConfig} from './configs/theme'
 
-export default defineConfig({
-	lang: 'zh-CN',
-	title: "静思田园",
-	description: '时不时记录一点点',
+import {withMermaid} from 'vitepress-plugin-mermaid';
 
-	cleanUrls: false,
-	base: '',//如果你使用的是 Github（或 GitLab）页面并部署到 user.github.io/repo/，请将 base 设置为 /repo/
-	outDir: '../dist',
-	cacheDir: '../cache',
+export default withMermaid(
+	defineConfig({
+		lang: 'zh-CN',
+		title: "静思田园",
+		description: '时不时记录一点点',
 
-	metaChunk: true,
-	lastUpdated: true,
-	srcExclude: ['public'],
+		cleanUrls: false,
+		base: '',//如果你使用的是 Github（或 GitLab）页面并部署到 user.github.io/repo/，请将 base 设置为 /repo/
+		outDir: '../dist',
+		cacheDir: '../cache',
 
-	head: head,
-	markdown: markdown,
-	themeConfig,
+		metaChunk: true,
+		lastUpdated: true,
+		srcExclude: ['public'],
 
-	rewrites: {
-		'packages/:pkg/src/(.*)': ':pkg/index.md'
-	},
-	// vue: vueConfig,
-})
+		head: head,
+		markdown: markdown,
+		themeConfig,
 
-
+		rewrites: {
+			'packages/:pkg/src/(.*)': ':pkg/index.md'
+		},
+		// vue: vueConfig,
+	})
+);
