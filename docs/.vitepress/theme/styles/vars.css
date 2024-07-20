@@ -61,8 +61,25 @@
 }
 
 /**
+ * Component: code ``
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-code-color: var(--vp-c-green-1);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+/**
  * VitePress: Custom fix
  * -------------------------------------------------------------------------- */
+
 /*
   Use lighter colors for links in dark mode for a11y.
   Also specify some classes twice to have higher specificity
