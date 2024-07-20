@@ -1,0 +1,6 @@
+#VPSidebarNav > div.group > section > div.item{
+    display: none;
+}
+#VPSidebarNav > div > section > div.items > div:nth-child(1) > div > a > p{
+    font-size: 16px;
+}

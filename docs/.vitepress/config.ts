@@ -1,6 +1,6 @@
 import {defineConfig} from 'vitepress'
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
-
+import vueConfig from './configs/vue'
 import {head} from './configs/head'
 import {markdown} from './configs/markdown'
 import {themeConfig} from './configs/theme'
@@ -25,6 +25,8 @@ export default defineConfig({
 
 	rewrites: {
 		'packages/:pkg/src/(.*)': ':pkg/index.md'
-	}
-
+	},
+	// vue: vueConfig,
 })
+
+
