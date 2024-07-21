@@ -3,13 +3,13 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-brand: #646cff;
-  --vp-c-brand-light: #747bff;
-  --vp-c-brand-lighter: #9499ff;
-  --vp-c-brand-lightest: #bcc0ff;
-  --vp-c-brand-dark: #535bf2;
-  --vp-c-brand-darker: #454ce1;
-  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+    --vp-c-brand: #646cff;
+    --vp-c-brand-light: #747bff;
+    --vp-c-brand-lighter: #9499ff;
+    --vp-c-brand-lightest: #bcc0ff;
+    --vp-c-brand-dark: #535bf2;
+    --vp-c-brand-darker: #454ce1;
+    --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
 }
 
 /**
@@ -17,15 +17,15 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-button-brand-border: var(--vp-c-brand-light);
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-border: var(--vp-c-brand-light);
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
-  --vp-button-brand-active-border: var(--vp-c-brand-light);
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+    --vp-button-brand-border: var(--vp-c-brand-light);
+    --vp-button-brand-text: var(--vp-c-white);
+    --vp-button-brand-bg: var(--vp-c-brand);
+    --vp-button-brand-hover-border: var(--vp-c-brand-light);
+    --vp-button-brand-hover-text: var(--vp-c-white);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+    --vp-button-brand-active-border: var(--vp-c-brand-light);
+    --vp-button-brand-active-text: var(--vp-c-white);
+    --vp-button-brand-active-bg: var(--vp-button-brand-bg);
 }
 
 /**
@@ -33,31 +33,31 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+            120deg,
+            #bd34fe 30%,
+            #41d1ff
+    );
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
-  --vp-home-hero-image-filter: blur(40px);
+    --vp-home-hero-image-background-image: linear-gradient(
+            -45deg,
+            #bd34fe 50%,
+            #47caff 50%
+    );
+    --vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
+    :root {
+        --vp-home-hero-image-filter: blur(56px);
+    }
 }
 
 @media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(72px);
-  }
+    :root {
+        --vp-home-hero-image-filter: blur(72px);
+    }
 }
 
 /**
@@ -69,11 +69,19 @@
 }
 
 /**
+ * Component: code ``
+ * -------------------------------------------------------------------------- */
+
+:root {
+    /*--vp-code-block-bg: var(--vp-c-white);*/
+}
+
+/**
  * Component: Algolia
  * -------------------------------------------------------------------------- */
 
 .DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand) !important;
+    --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
 /**
@@ -93,36 +101,36 @@
 .dark .link.link.active,
 .dark .edit-link-button.edit-link-button,
 .dark .pager-link .title {
-  color: var(--vp-c-brand-lighter);
+    color: var(--vp-c-brand-lighter);
 }
 
 .dark .vp-doc a:hover,
 .dark .vp-doc a > code:hover {
-  color: var(--vp-c-brand-lightest);
-  opacity: 1;
+    color: var(--vp-c-brand-lightest);
+    opacity: 1;
 }
 
 /* Transition by color instead of opacity */
 .dark .vp-doc .custom-block a {
-  transition: color 0.25s;
+    transition: color 0.25s;
 }
 
 .vp-sponsor.aside .vp-sponsor-grid.mini .vp-sponsor-grid-image {
-  max-width: 124px;
+    max-width: 124px;
 }
 
 .vp-sponsor-grid.big .vp-sponsor-grid-image {
-  max-height: 96px;
+    max-height: 96px;
 }
 
 .vp-sponsor-grid.mini .vp-sponsor-grid-image[alt='Bit'] {
-  max-height: 48px;
+    max-height: 48px;
 }
 
 .vp-sponsor-grid.xmini .vp-sponsor-grid-image[alt='JetBrains'] {
-  max-height: 54px;
+    max-height: 54px;
 }
 
 .vp-sponsor-grid.medium .vp-sponsor-grid-image[alt='JetBrains'] {
-  max-height: 100px;
+    max-height: 100px;
 }

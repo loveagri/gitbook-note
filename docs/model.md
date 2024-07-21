@@ -127,7 +127,19 @@ _单个下划线_
 :cry:
 :pig:
 
+### CodeGroup
 
+::: code-group
+```sql [正例]
+# email 不是主键，也没有设置唯一约束，根据熵增定律，查询结果是有可能会出现多条的
+SELECT * FROM `sys_user` WHERE `email` = 'charles7c@126.com' LIMIT 1;
+```
+
+```sql [反例]
+# user_id 是主键，主键是非空唯一的，那么不需要添加 LIMIT 进行限制
+SELECT * FROM `sys_user` WHERE `user_id` = 1;
+```
+:::
 
 ### GitHub 风格的警报
 
